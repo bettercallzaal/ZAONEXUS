@@ -360,12 +360,12 @@ export default function Home() {
                   <div className="text-sm opacity-75 mt-1">Total Links</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold">{totalCategories}</div>
-                  <div className="text-sm opacity-75 mt-1">Categories</div>
-                </div>
-                <div>
                   <div className="text-3xl font-bold">{totalSubcategories}</div>
                   <div className="text-sm opacity-75 mt-1">Subcategories</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold">{totalCategories}</div>
+                  <div className="text-sm opacity-75 mt-1">Categories</div>
                 </div>
               </div>
             </div>
