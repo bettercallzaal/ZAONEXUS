@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Search, ExternalLink, ChevronDown, ChevronUp, Moon, Sun, Maximize2, Minimize2 } from 'lucide-react';
+import { Search, ExternalLink, ChevronDown, ChevronUp, Moon, Sun, Maximize2, Minimize2, Copy, Check, Hash } from 'lucide-react';
 import { linksData, type MainCategory, type Subcategory } from './data/links';
 
 export default function Home() {
@@ -9,6 +9,8 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [expandedSubcategories, setExpandedSubcategories] = useState<Set<string>>(new Set());
+  const [copiedUrl, setCopiedUrl] = useState<string | null>(null);
+  const [isSearchSticky, setIsSearchSticky] = useState(false);
 
   const totalLinks = useMemo(() => {
     return linksData.reduce((total, category) => {
@@ -78,11 +80,28 @@ export default function Home() {
     setExpandedSubcategories(new Set());
   };
 
+  const copyToClipboard = async (url: string) => {
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopiedUrl(url);
+      setTimeout(() => setCopiedUrl(null), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
+  const scrollToCategory = (categoryId: string) => {
+    const element = document.getElementById(categoryId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className={darkMode ? 'dark-mode' : ''}>
       <div className="min-h-screen transition-colors duration-300" style={{ backgroundColor: 'var(--bg-color)', color: 'var(--text-color)' }}>
         <div className="max-w-5xl mx-auto px-4 py-8">
-          <header className="text-center mb-12 fade-in">
+          <header className="text-center mb-8 fade-in">
             <h1 className="text-5xl font-bold mb-4" style={{ color: 'var(--text-color)' }}>
               ZAO NEXUS
             </h1>
@@ -92,7 +111,31 @@ export default function Home() {
             </p>
           </header>
 
-          <div className="mb-8 space-y-4">
+          {/* Quick Navigation */}
+          <div className="mb-8 fade-in">
+            <div className="flex items-center gap-2 mb-3 justify-center">
+              <Hash size={16} className="opacity-60" />
+              <span className="text-sm font-semibold opacity-75">Quick Jump:</span>
+            </div>
+            <div className="flex flex-wrap justify-center gap-2">
+              {linksData.map((cat) => (
+                <button
+                  key={cat.mainCategory}
+                  onClick={() => scrollToCategory(cat.mainCategory.toLowerCase().replace(/\s+/g, '-'))}
+                  className="px-3 py-1.5 text-sm rounded-md transition-all duration-200 hover:scale-105"
+                  style={{
+                    backgroundColor: 'var(--accent-bg)',
+                    color: 'var(--accent-text)',
+                    opacity: 0.8,
+                  }}
+                >
+                  {cat.mainCategory}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-8 space-y-4 sticky top-0 z-50 py-4" style={{ backgroundColor: 'var(--bg-color)' }}>
             <div className="relative max-w-2xl mx-auto">
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 opacity-60" size={20} />
               <input
@@ -100,7 +143,7 @@ export default function Home() {
                 placeholder="Search links, descriptions, or URLs..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-3 rounded-lg border-2 transition-all duration-200 focus:outline-none focus:ring-2"
+                className="w-full pl-12 pr-4 py-3 rounded-lg border-2 transition-all duration-200 focus:outline-none focus:ring-2 shadow-lg"
                 style={{
                   backgroundColor: 'var(--bg-color)',
                   color: 'var(--text-color)',
@@ -150,7 +193,8 @@ export default function Home() {
             {filteredData.map((category, idx) => (
               <div
                 key={category.mainCategory}
-                className="rounded-xl shadow-lg overflow-hidden transition-all duration-300 fade-in"
+                id={category.mainCategory.toLowerCase().replace(/\s+/g, '-')}
+                className="rounded-xl shadow-lg overflow-hidden transition-all duration-300 fade-in scroll-mt-32"
                 style={{
                   backgroundColor: 'var(--accent-bg)',
                   color: 'var(--accent-text)',
@@ -174,7 +218,7 @@ export default function Home() {
                     {category.subcategories.map((sub) => {
                       const subKey = `${category.mainCategory}-${sub.subTitle}`;
                       return (
-                        <div key={subKey} className="border-t pt-4" style={{ borderColor: 'var(--accent-text)', opacity: 0.3 }}>
+                        <div key={subKey} className="border-t pt-4" style={{ borderColor: 'rgba(224, 221, 170, 0.2)' }}>
                           <button
                             onClick={() => toggleSubcategory(subKey)}
                             className="w-full flex items-center justify-between mb-3 hover:opacity-80 transition-opacity"
@@ -193,28 +237,51 @@ export default function Home() {
                             <ul className="space-y-2">
                               {sub.links.map((link, linkIdx) => (
                                 <li key={linkIdx} className="group">
-                                  <a
-                                    href={link.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-start gap-3 p-3 rounded-lg transition-all duration-200 hover:scale-[1.02]"
+                                  <div
+                                    className="flex items-start gap-3 p-4 rounded-lg transition-all duration-200 hover:shadow-md border-2"
                                     style={{
-                                      backgroundColor: 'var(--bg-color)',
-                                      color: 'var(--text-color)',
+                                      backgroundColor: 'var(--link-bg)',
+                                      borderColor: 'transparent',
+                                    }}
+                                    onMouseEnter={(e) => {
+                                      e.currentTarget.style.borderColor = 'var(--accent-bg)';
+                                      e.currentTarget.style.transform = 'translateX(4px)';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                      e.currentTarget.style.borderColor = 'transparent';
+                                      e.currentTarget.style.transform = 'translateX(0)';
                                     }}
                                   >
-                                    <ExternalLink size={16} className="mt-1 flex-shrink-0 opacity-60" />
+                                    <ExternalLink size={18} className="mt-1 flex-shrink-0" style={{ color: 'var(--text-color)', opacity: 0.7 }} />
                                     <div className="flex-1 min-w-0">
-                                      <div className="font-medium group-hover:underline">
+                                      <a
+                                        href={link.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="font-semibold group-hover:underline block"
+                                        style={{ color: 'var(--text-color)' }}
+                                      >
                                         {link.title}
-                                      </div>
+                                      </a>
                                       {link.description && (
-                                        <div className="text-sm opacity-75 mt-1">
+                                        <div className="text-sm mt-1.5" style={{ color: 'var(--text-color)', opacity: 0.8 }}>
                                           {link.description}
                                         </div>
                                       )}
                                     </div>
-                                  </a>
+                                    <button
+                                      onClick={() => copyToClipboard(link.url)}
+                                      className="flex-shrink-0 p-2 rounded-md transition-all duration-200 hover:scale-110"
+                                      style={{
+                                        backgroundColor: copiedUrl === link.url ? 'var(--accent-bg)' : 'transparent',
+                                        color: copiedUrl === link.url ? 'var(--accent-text)' : 'var(--text-color)',
+                                        opacity: copiedUrl === link.url ? 1 : 0.5,
+                                      }}
+                                      title="Copy link"
+                                    >
+                                      {copiedUrl === link.url ? <Check size={16} /> : <Copy size={16} />}
+                                    </button>
+                                  </div>
                                 </li>
                               ))}
                             </ul>
