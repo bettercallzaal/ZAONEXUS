@@ -100,19 +100,9 @@ export default function Home() {
   return (
     <div className={darkMode ? 'dark-mode' : ''}>
       <div className="min-h-screen transition-colors duration-300" style={{ backgroundColor: 'var(--bg-color)', color: 'var(--text-color)' }}>
-        <div className="max-w-5xl mx-auto px-4 py-8">
-          <header className="text-center mb-8 fade-in">
-            <h1 className="text-5xl font-bold mb-4" style={{ color: 'var(--text-color)' }}>
-              ZAO NEXUS
-            </h1>
-            <p className="text-lg opacity-90 mb-2">Your Central Hub for All ZAO Links</p>
-            <p className="text-sm opacity-75">
-              {totalLinks} links across {linksData.length} categories
-            </p>
-          </header>
-
+        <div className="max-w-5xl mx-auto px-4 py-4">
           {/* Quick Navigation */}
-          <div className="mb-8 fade-in">
+          <div className="mb-6 fade-in">
             <div className="flex items-center gap-2 mb-3 justify-center">
               <Hash size={16} className="opacity-60" />
               <span className="text-sm font-semibold opacity-75">Quick Jump:</span>
