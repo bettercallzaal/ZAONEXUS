@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Search, ChevronDown, ChevronUp, Moon, Sun, Maximize2, Minimize2, Hash } from 'lucide-react';
 import { linksData, type MainCategory, type Subcategory } from './data/links';
 
@@ -39,6 +39,24 @@ export default function Home() {
       .filter(category => category.subcategories.length > 0);
   }, [searchQuery]);
 
+  // Auto-expand categories and subcategories when searching
+  useEffect(() => {
+    if (searchQuery.trim()) {
+      // Expand all categories that have results
+      const categoriesToExpand = new Set(filteredData.map(cat => cat.mainCategory));
+      setExpandedCategories(categoriesToExpand);
+
+      // Expand all subcategories that have results
+      const subCategoriesToExpand = new Set<string>();
+      filteredData.forEach(cat => {
+        cat.subcategories.forEach(sub => {
+          subCategoriesToExpand.add(`${cat.mainCategory}-${sub.subTitle}`);
+        });
+      });
+      setExpandedSubcategories(subCategoriesToExpand);
+    }
+  }, [searchQuery, filteredData]);
+
   const toggleCategory = (categoryName: string) => {
     setExpandedCategories(prev => {
       const newSet = new Set(prev);
@@ -64,9 +82,10 @@ export default function Home() {
   };
 
   const expandAll = () => {
-    setExpandedCategories(new Set(linksData.map(c => c.mainCategory)));
+    const dataToExpand = searchQuery.trim() ? filteredData : linksData;
+    setExpandedCategories(new Set(dataToExpand.map(c => c.mainCategory)));
     const allSubKeys: string[] = [];
-    linksData.forEach(cat => {
+    dataToExpand.forEach(cat => {
       cat.subcategories.forEach(sub => {
         allSubKeys.push(`${cat.mainCategory}-${sub.subTitle}`);
       });
