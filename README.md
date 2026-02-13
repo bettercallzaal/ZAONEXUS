@@ -1,6 +1,6 @@
 # ZAO NEXUS - Links Hub
 
-> **Version 1.0.0** - A modern, responsive links hub for the ZAO community
+> **Version 1.1.0** - A modern, responsive links hub for the ZAO community
 
 A comprehensive link directory featuring 200+ curated resources across the ZAO ecosystem. Built with Next.js, React, TypeScript, and TailwindCSS.
 

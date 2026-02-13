@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
-import { Search, ChevronDown, ChevronUp, Moon, Sun, Maximize2, Minimize2, Hash } from 'lucide-react';
+import { Search, ChevronDown, ChevronUp, Moon, Sun, Maximize2, Minimize2, Hash, Share2, Copy, Check, ExternalLink } from 'lucide-react';
 import { linksData, type MainCategory, type Subcategory } from './data/links';
 
 export default function Home() {
@@ -10,11 +10,17 @@ export default function Home() {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [expandedSubcategories, setExpandedSubcategories] = useState<Set<string>>(new Set());
   const [isSearchSticky, setIsSearchSticky] = useState(false);
+  const [copiedLink, setCopiedLink] = useState<string | null>(null);
 
   const totalLinks = useMemo(() => {
     return linksData.reduce((total, category) => {
       return total + category.subcategories.reduce((sum, sub) => sum + sub.links.length, 0);
     }, 0);
+  }, []);
+
+  const totalCategories = linksData.length;
+  const totalSubcategories = useMemo(() => {
+    return linksData.reduce((total, category) => total + category.subcategories.length, 0);
   }, []);
 
   const filteredData = useMemo(() => {
@@ -103,6 +109,28 @@ export default function Home() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+  };
+
+  const copyLink = async (url: string, title: string) => {
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopiedLink(url);
+      setTimeout(() => setCopiedLink(null), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
+  const shareToX = (url: string, title: string) => {
+    const text = `I found "${title}" on the ZAO NEXUS! You should check it out: ${url}`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
+    window.open(twitterUrl, '_blank', 'width=550,height=420');
+  };
+
+  const shareToFarcaster = (url: string, title: string) => {
+    const text = `I found "${title}" on the ZAO NEXUS! You should check it out: ${url}`;
+    const farcasterUrl = `https://warpcast.com/~/compose?text=${encodeURIComponent(text)}`;
+    window.open(farcasterUrl, '_blank', 'width=550,height=600');
   };
 
   return (
@@ -235,33 +263,75 @@ export default function Home() {
                             <ul className="space-y-1.5">
                               {sub.links.map((link, linkIdx) => (
                                 <li key={linkIdx} className="group">
-                                  <a
-                                    href={link.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="block p-3 rounded-lg transition-all duration-200 hover:shadow-md border-2"
+                                  <div
+                                    className="p-3 rounded-lg transition-all duration-200 hover:shadow-md border-2"
                                     style={{
                                       backgroundColor: 'var(--link-bg)',
                                       borderColor: 'transparent',
                                     }}
                                     onMouseEnter={(e) => {
                                       e.currentTarget.style.borderColor = 'var(--accent-bg)';
-                                      e.currentTarget.style.transform = 'translateX(4px)';
                                     }}
                                     onMouseLeave={(e) => {
                                       e.currentTarget.style.borderColor = 'transparent';
-                                      e.currentTarget.style.transform = 'translateX(0)';
                                     }}
                                   >
-                                    <div className="font-semibold group-hover:underline" style={{ color: 'var(--text-color)' }}>
-                                      {link.title}
-                                    </div>
-                                    {link.description && (
-                                      <div className="text-sm mt-1" style={{ color: 'var(--text-color)', opacity: 0.75 }}>
-                                        {link.description}
+                                    <div className="flex items-start justify-between gap-3">
+                                      <div className="flex-1 min-w-0">
+                                        <a
+                                          href={link.url}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          className="font-semibold hover:underline inline-flex items-center gap-1.5"
+                                          style={{ color: 'var(--text-color)' }}
+                                        >
+                                          {link.title}
+                                          <ExternalLink size={14} className="opacity-50" />
+                                        </a>
+                                        {link.description && (
+                                          <div className="text-sm mt-1" style={{ color: 'var(--text-color)', opacity: 0.75 }}>
+                                            {link.description}
+                                          </div>
+                                        )}
                                       </div>
-                                    )}
-                                  </a>
+                                      <div className="flex items-center gap-1 flex-shrink-0">
+                                        <button
+                                          onClick={() => copyLink(link.url, link.title)}
+                                          className="p-1.5 rounded transition-all duration-200 hover:scale-110"
+                                          style={{
+                                            backgroundColor: copiedLink === link.url ? 'var(--accent-bg)' : 'transparent',
+                                            color: copiedLink === link.url ? 'var(--accent-text)' : 'var(--text-color)',
+                                            opacity: copiedLink === link.url ? 1 : 0.6,
+                                          }}
+                                          title="Copy link"
+                                        >
+                                          {copiedLink === link.url ? <Check size={14} /> : <Copy size={14} />}
+                                        </button>
+                                        <button
+                                          onClick={() => shareToX(link.url, link.title)}
+                                          className="p-1.5 rounded transition-all duration-200 hover:scale-110"
+                                          style={{ color: 'var(--text-color)', opacity: 0.6 }}
+                                          title="Share to X"
+                                        >
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                          </svg>
+                                        </button>
+                                        <button
+                                          onClick={() => shareToFarcaster(link.url, link.title)}
+                                          className="p-1.5 rounded transition-all duration-200 hover:scale-110"
+                                          style={{ color: 'var(--text-color)', opacity: 0.6 }}
+                                          title="Share to Farcaster"
+                                        >
+                                          <svg width="14" height="14" viewBox="0 0 1000 1000" fill="currentColor">
+                                            <path d="M257.778 155.556H742.222V844.445H671.111V528.889H670.414C662.554 441.677 589.258 373.333 500 373.333C410.742 373.333 337.446 441.677 329.586 528.889H328.889V844.445H257.778V155.556Z"/>
+                                            <path d="M128.889 253.333L157.778 351.111H182.222V746.667C169.949 746.667 160 756.616 160 768.889V795.556H155.556C143.283 795.556 133.333 805.505 133.333 817.778V844.445H382.222V817.778C382.222 805.505 372.273 795.556 360 795.556H355.556V768.889C355.556 756.616 345.606 746.667 333.333 746.667H306.667V253.333H128.889Z"/>
+                                            <path d="M871.111 253.333L842.222 351.111H817.778V746.667C830.051 746.667 840 756.616 840 768.889V795.556H844.444C856.717 795.556 866.667 805.505 866.667 817.778V844.445H617.778V817.778C617.778 805.505 627.727 795.556 640 795.556H644.444V768.889C644.444 756.616 654.394 746.667 666.667 746.667H693.333V253.333H871.111Z"/>
+                                          </svg>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </li>
                               ))}
                             </ul>
@@ -282,8 +352,24 @@ export default function Home() {
             </div>
           )}
 
-          <footer className="text-center mt-16 pb-8 opacity-75">
-            <p className="text-sm">
+          <footer className="text-center mt-16 pb-8">
+            <div className="mb-6 p-6 rounded-xl" style={{ backgroundColor: 'var(--accent-bg)', color: 'var(--accent-text)' }}>
+              <div className="flex flex-wrap justify-center gap-8 text-center">
+                <div>
+                  <div className="text-3xl font-bold">{totalLinks}</div>
+                  <div className="text-sm opacity-75 mt-1">Total Links</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold">{totalCategories}</div>
+                  <div className="text-sm opacity-75 mt-1">Categories</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold">{totalSubcategories}</div>
+                  <div className="text-sm opacity-75 mt-1">Subcategories</div>
+                </div>
+              </div>
+            </div>
+            <p className="text-sm opacity-75">
               ZAO NEXUS © {new Date().getFullYear()} | Built with ❤️ for the ZAO Community
             </p>
           </footer>

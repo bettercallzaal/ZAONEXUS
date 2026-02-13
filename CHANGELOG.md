@@ -2,6 +2,42 @@
 
 All notable changes to ZAO Nexus will be documented in this file.
 
+## [1.1.0] - 2026-02-12
+
+### ✨ New Features
+
+#### **Social Sharing**
+- **Share to X (Twitter)** - One-click sharing with custom message format
+- **Share to Farcaster** - Direct sharing to Warpcast with pre-filled text
+- **Copy Link** - Quick copy button with visual feedback
+- **Share Message Template** - "I found [title] on the ZAO NEXUS! You should check it out: [url]"
+
+#### **Stats Footer**
+- **Total Links Counter** - Display total number of links in collection
+- **Categories Counter** - Show number of main categories
+- **Subcategories Counter** - Display total subcategories
+- **Visual Stats Card** - Prominent display at bottom of page
+
+#### **Enhanced Link Cards**
+- **External Link Icon** - Visual indicator for external links
+- **Action Buttons** - Copy, X, and Farcaster buttons on each link
+- **Hover States** - Improved button interactions
+- **Compact Layout** - Buttons integrated without cluttering design
+
+### 🎨 Design Improvements
+- Stats displayed in highlighted card with brand colors
+- Social sharing icons using official X and Farcaster logos
+- Smooth button animations and hover effects
+- Better visual hierarchy with external link indicators
+
+### 🔧 Technical Updates
+- Added social sharing utility functions
+- Implemented clipboard API for copy functionality
+- Window.open for social share popups
+- URL encoding for share text
+
+---
+
 ## [1.0.0] - 2026-02-12
 
 ### 🎉 Initial Release - ZAO Nexus V1
