@@ -137,7 +137,8 @@ export const linksData: MainCategory[] = [
           { title: "ZABAL on Songjam", url: "https://songjam.space/zabal", description: "ZABAL hub on Songjam." },
           { title: "ZABAL Website", url: "https://zabal.art", description: "Official ZABAL website." },
           { title: "ZABAL Incented", url: "https://incented.zabal.art", description: "ZABAL quests and incentives via Incented." },
-          { title: "ZABAL Update #7", url: "https://paragraph.com/@thezao/zabal-update-7", description: "ZABAL progress update on Paragraph." }
+          { title: "ZABAL Update #7", url: "https://paragraph.com/@thezao/zabal-update-7", description: "ZABAL progress update on Paragraph." },
+          { title: "ZABAL Connector", url: "https://zabal.lol", description: "Get the ZABAL connector." }
         ]
       },
       {
