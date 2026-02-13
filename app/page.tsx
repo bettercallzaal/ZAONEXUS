@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Search, ExternalLink, ChevronDown, ChevronUp, Moon, Sun, Maximize2, Minimize2, Copy, Check, Hash } from 'lucide-react';
+import { Search, ChevronDown, ChevronUp, Moon, Sun, Maximize2, Minimize2, Hash } from 'lucide-react';
 import { linksData, type MainCategory, type Subcategory } from './data/links';
 
 export default function Home() {
@@ -9,7 +9,6 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [expandedSubcategories, setExpandedSubcategories] = useState<Set<string>>(new Set());
-  const [copiedUrl, setCopiedUrl] = useState<string | null>(null);
   const [isSearchSticky, setIsSearchSticky] = useState(false);
 
   const totalLinks = useMemo(() => {
@@ -78,16 +77,6 @@ export default function Home() {
   const collapseAll = () => {
     setExpandedCategories(new Set());
     setExpandedSubcategories(new Set());
-  };
-
-  const copyToClipboard = async (url: string) => {
-    try {
-      await navigator.clipboard.writeText(url);
-      setCopiedUrl(url);
-      setTimeout(() => setCopiedUrl(null), 2000);
-    } catch (err) {
-      console.error('Failed to copy:', err);
-    }
   };
 
   const scrollToCategory = (categoryId: string) => {
@@ -224,11 +213,14 @@ export default function Home() {
                           </button>
 
                           {expandedSubcategories.has(subKey) && (
-                            <ul className="space-y-2">
+                            <ul className="space-y-1.5">
                               {sub.links.map((link, linkIdx) => (
                                 <li key={linkIdx} className="group">
-                                  <div
-                                    className="flex items-start gap-3 p-4 rounded-lg transition-all duration-200 hover:shadow-md border-2"
+                                  <a
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block p-3 rounded-lg transition-all duration-200 hover:shadow-md border-2"
                                     style={{
                                       backgroundColor: 'var(--link-bg)',
                                       borderColor: 'transparent',
@@ -242,36 +234,15 @@ export default function Home() {
                                       e.currentTarget.style.transform = 'translateX(0)';
                                     }}
                                   >
-                                    <ExternalLink size={18} className="mt-1 flex-shrink-0" style={{ color: 'var(--text-color)', opacity: 0.7 }} />
-                                    <div className="flex-1 min-w-0">
-                                      <a
-                                        href={link.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="font-semibold group-hover:underline block"
-                                        style={{ color: 'var(--text-color)' }}
-                                      >
-                                        {link.title}
-                                      </a>
-                                      {link.description && (
-                                        <div className="text-sm mt-1.5" style={{ color: 'var(--text-color)', opacity: 0.8 }}>
-                                          {link.description}
-                                        </div>
-                                      )}
+                                    <div className="font-semibold group-hover:underline" style={{ color: 'var(--text-color)' }}>
+                                      {link.title}
                                     </div>
-                                    <button
-                                      onClick={() => copyToClipboard(link.url)}
-                                      className="flex-shrink-0 p-2 rounded-md transition-all duration-200 hover:scale-110"
-                                      style={{
-                                        backgroundColor: copiedUrl === link.url ? 'var(--accent-bg)' : 'transparent',
-                                        color: copiedUrl === link.url ? 'var(--accent-text)' : 'var(--text-color)',
-                                        opacity: copiedUrl === link.url ? 1 : 0.5,
-                                      }}
-                                      title="Copy link"
-                                    >
-                                      {copiedUrl === link.url ? <Check size={16} /> : <Copy size={16} />}
-                                    </button>
-                                  </div>
+                                    {link.description && (
+                                      <div className="text-sm mt-1" style={{ color: 'var(--text-color)', opacity: 0.75 }}>
+                                        {link.description}
+                                      </div>
+                                    )}
+                                  </a>
                                 </li>
                               ))}
                             </ul>
