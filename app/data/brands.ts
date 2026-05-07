@@ -1,0 +1,674 @@
+export type BrandStage = 'active' | 'incubating' | 'zabal-track' | 'graduated' | 'paused';
+export type BrandTier = 'umbrella' | 'organization' | 'project' | 'sub-brand';
+
+export interface Link {
+  title: string;
+  url: string;
+  description: string;
+  category?: string;
+}
+
+export interface Milestone {
+  date: string;
+  title: string;
+  description?: string;
+  url?: string;
+}
+
+export interface TokenContract {
+  chain: 'base' | 'optimism' | 'mainnet';
+  address: string;
+  symbol: string;
+}
+
+export interface FarcasterInfo {
+  handle?: string;
+  channel?: string;
+  fid?: number;
+}
+
+export interface LiveData {
+  farcasterCastCount?: number;
+  farcasterLastCast?: { hash: string; text: string; timestamp: string };
+  githubLastCommit?: { sha: string; message: string; date: string };
+  tokenHolderCount?: number;
+}
+
+export interface Brand {
+  slug: string;
+  name: string;
+  tagline: string;
+  description: string;
+  stage: BrandStage;
+  tier: BrandTier;
+  parent?: string;
+  status: 'live' | 'down' | 'paused' | 'unknown';
+  founders?: string[];
+  founded?: string;
+
+  // primary surfaces
+  homepage?: string;
+  github?: string;
+  farcaster?: FarcasterInfo;
+  x?: string;
+  instagram?: string;
+  telegram?: string;
+  email?: string;
+
+  // extended
+  tokenContract?: TokenContract;
+  links: Link[];
+  milestones?: Milestone[];
+  featured?: boolean;
+
+  // live-data targets (filled at request time)
+  liveData?: LiveData;
+}
+
+export const brands: Brand[] = [
+  // Umbrella & Core Organization
+  {
+    slug: 'bettercallzaal',
+    name: 'BetterCallZaal',
+    tagline: 'Founder-first business and creative services',
+    description: 'BCZ Strategies LLC is the legal hub and umbrella for all ZABAL projects. Zaal\'s solo founder track incubating community ideas into The ZAO. Home for Empire Builder, Bonfire integration, POIDH bounties, and cross-project tooling.',
+    stage: 'active',
+    tier: 'umbrella',
+    status: 'live',
+    founded: 'Jan 2024 (The ZAO structure)',
+    homepage: 'https://bettercallzaal.com',
+    x: 'bettercallzaal',
+    farcaster: { handle: 'bettercallzaal' },
+    github: 'github.com/bettercallzaal',
+    links: [
+      {
+        title: 'Website',
+        url: 'https://bettercallzaal.com',
+        description: 'Official BCZ website'
+      },
+      {
+        title: 'Nexus Portal',
+        url: 'https://bettercallzaal.com/nexus.html',
+        description: 'All links and surfaces across the ZABAL ecosystem'
+      },
+      {
+        title: 'X Profile',
+        url: 'https://x.com/bettercallzaal',
+        description: 'Follow for updates'
+      }
+    ]
+  },
+
+  {
+    slug: 'the-zao',
+    name: 'The ZAO',
+    tagline: 'Decentralized impact network for digital creators',
+    description: 'A collective impact network that operates as an incubator for community-driven projects. Founded by Zaal to help digital creators build their brand and scale. The ZAO is the hub where artists, developers, and builders collaborate to ship projects.',
+    stage: 'active',
+    tier: 'organization',
+    status: 'live',
+    founders: ['Zaal'],
+    founded: 'Jan 2024',
+    homepage: 'https://thezao.com',
+    x: 'thezao',
+    farcaster: { handle: 'thezao', channel: 'zao', fid: 19640 },
+    github: 'github.com/bettercallzaal/ZAOOS',
+    links: [
+      {
+        title: 'Website',
+        url: 'https://thezao.com',
+        description: 'Official ZAO hub'
+      },
+      {
+        title: 'ZAOOS Monorepo',
+        url: 'https://github.com/bettercallzaal/ZAOOS',
+        description: 'Main codebase and research library'
+      },
+      {
+        title: 'Fractal Process',
+        url: 'https://thezao.com/fractals',
+        description: 'Weekly community governance Mondays 6pm EST'
+      }
+    ]
+  },
+
+  // ZAO Projects (Incubated)
+  {
+    slug: 'zao-festivals',
+    name: 'ZAO Festivals',
+    tagline: 'IRL and digital music events bringing the community together',
+    description: 'The live events arm of The ZAO. Produces flagship festivals connecting artists, fans, and builders in person. Umbrella for ZAOstock (Oct 3 2026) and music releases like Cipher.',
+    stage: 'active',
+    tier: 'project',
+    parent: 'the-zao',
+    status: 'live',
+    founders: ['Zaal', 'attabotty'],
+    founded: 'June 2024',
+    homepage: 'https://zaofestivals.com',
+    x: 'zaofestivals',
+    instagram: 'zaofestivals',
+    farcaster: { handle: 'zaofestivals' },
+    links: [
+      {
+        title: 'Website',
+        url: 'https://zaofestivals.com',
+        description: 'Official ZAO Festivals site'
+      },
+      {
+        title: 'Instagram',
+        url: 'https://instagram.com/zaofestivals',
+        description: 'Follow for festival updates'
+      }
+    ]
+  },
+
+  {
+    slug: 'zaostock',
+    name: 'ZAOstock 2026',
+    tagline: 'Flagship Oct 3 festival celebrating independent artists',
+    description: 'The primary ZAO Festivals event. Oct 3 2026, Franklin St Parklet, Ellsworth. Celebrating independent artists with performances, art installations, and community connection.',
+    stage: 'incubating',
+    tier: 'sub-brand',
+    parent: 'zao-festivals',
+    status: 'live',
+    founded: 'April 2026',
+    homepage: 'https://zaofestivals.com/zaostock',
+    farcaster: { channel: 'zaostock' },
+    links: [
+      {
+        title: 'ZAOstock on ZAO Festivals',
+        url: 'https://zaofestivals.com/zaostock',
+        description: 'Festival details'
+      },
+      {
+        title: 'Team Bot (Telegram)',
+        url: 'https://t.me/ZAOstockTeamBot',
+        description: 'Coordinate with the team'
+      }
+    ]
+  },
+
+  {
+    slug: 'cipher',
+    name: 'Cipher',
+    tagline: 'First music release from ZAO Festivals',
+    description: 'The inaugural music release from the ZAO Festivals program. Showcasing original tracks from ZAO community artists.',
+    stage: 'incubating',
+    tier: 'sub-brand',
+    parent: 'zao-festivals',
+    status: 'live',
+    founded: '2026',
+    links: [
+      {
+        title: 'Coming Soon',
+        url: 'https://zaofestivals.com',
+        description: 'More details on Cipher coming soon'
+      }
+    ]
+  },
+
+  {
+    slug: 'wavewarz',
+    name: 'WaveWarZ',
+    tagline: 'Web3 music production and remix platform',
+    description: 'First ZAO incubated project. A decentralized music production platform where artists create, remix, and collaborate on-chain. Built by Hurric4n3ike with Zaal and Samantha (candytoybox) as cofounders.',
+    stage: 'active',
+    tier: 'project',
+    parent: 'the-zao',
+    status: 'live',
+    founders: ['Hurric4n3ike', 'Zaal', 'Samantha (candytoybox)'],
+    founded: '2024',
+    homepage: 'https://wavewarz.io',
+    github: 'github.com/wavewarz',
+    x: 'wavewarzmusi',
+    farcaster: { channel: 'wavewarz' },
+    links: [
+      {
+        title: 'Platform',
+        url: 'https://wavewarz.io',
+        description: 'Create and collaborate on music'
+      },
+      {
+        title: 'GitHub',
+        url: 'https://github.com/wavewarz',
+        description: 'Source code'
+      }
+    ]
+  },
+
+  {
+    slug: 'wavewarz-africa',
+    name: 'WaveWarZ Africa',
+    tagline: 'Expanding music creation to African communities',
+    description: 'WaveWarZ\'s Africa initiative led by Iman. Bringing music production tools and community to creators across the African continent.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'wavewarz',
+    status: 'live',
+    founders: ['Iman'],
+    links: [
+      {
+        title: 'WaveWarZ',
+        url: 'https://wavewarz.io',
+        description: 'Learn more on main site'
+      }
+    ]
+  },
+
+  {
+    slug: 'zao-fractals',
+    name: 'ZAO Fractals',
+    tagline: 'Weekly community governance and alignment meetings',
+    description: 'Recurring Monday 6pm EST governance meetings. Both a decision-making structure AND a project deliverable. Community members discuss priorities, allocate resources, and align on strategy.',
+    stage: 'active',
+    tier: 'project',
+    parent: 'the-zao',
+    status: 'live',
+    founded: 'June 3 2024',
+    links: [
+      {
+        title: 'Fractal Info',
+        url: 'https://thezao.com/fractals',
+        description: 'Join the Fractals'
+      }
+    ]
+  },
+
+  {
+    slug: 'zabal-newsletter',
+    name: 'ZABAL Newsletter',
+    tagline: 'Daily updates from the founder',
+    description: 'The official newsletter covering ZABAL ecosystem updates. Published daily via ZOE concierge bot. Curated insights on projects, community, and the vision.',
+    stage: 'active',
+    tier: 'project',
+    parent: 'the-zao',
+    status: 'live',
+    founded: '2026',
+    links: [
+      {
+        title: 'Subscribe',
+        url: 'https://paragraph.com/@thezao',
+        description: 'Get daily updates'
+      }
+    ]
+  },
+
+  {
+    slug: 'zao-devz',
+    name: 'ZAO Devz',
+    tagline: 'Community of developers building in the ZAO ecosystem',
+    description: 'Developer community led by Iman. Dispatch, collaboration, and hourly learning tips. Features the @zaodevz_bot Telegram bot for group coordination.',
+    stage: 'active',
+    tier: 'project',
+    parent: 'the-zao',
+    status: 'live',
+    founders: ['Iman'],
+    telegram: 'zaodevz_bot',
+    farcaster: { handle: 'zaodevz_bot' },
+    links: [
+      {
+        title: 'Telegram Bot',
+        url: 'https://t.me/zaodevz_bot',
+        description: 'Join the dev community'
+      }
+    ]
+  },
+
+  {
+    slug: 'web3-podcast',
+    name: 'Web3 Podcast',
+    tagline: 'Deep dives into the future of web3 and music',
+    description: 'A ZAO project podcast exploring web3, music, and technology. Hosted by Zaal with Ohnahji B.',
+    stage: 'active',
+    tier: 'project',
+    parent: 'the-zao',
+    status: 'live',
+    founders: ['Zaal', 'Ohnahji B'],
+    links: [
+      {
+        title: 'Episodes',
+        url: 'https://zaofestivals.com',
+        description: 'Find all episodes on ZAO Festivals'
+      }
+    ]
+  },
+
+  // ZAO OS (Substrate)
+  {
+    slug: 'zao-os',
+    name: 'ZAO OS',
+    tagline: 'Operating system for the decentralized music community',
+    description: 'The lab and substrate where ZAO projects are built. Monorepo containing the Farcaster client, agent stack (ZOE, Hermes), research library, and infrastructure for The ZAO ecosystem.',
+    stage: 'active',
+    tier: 'project',
+    parent: 'the-zao',
+    status: 'live',
+    founded: 'Jan 2024',
+    homepage: 'https://zaoos.com',
+    github: 'github.com/bettercallzaal/ZAOOS',
+    x: 'zaoos',
+    links: [
+      {
+        title: 'App',
+        url: 'https://zaoos.com',
+        description: 'Main ZAO OS application'
+      },
+      {
+        title: 'Repository',
+        url: 'https://github.com/bettercallzaal/ZAOOS',
+        description: '301 routes, 279 components, 540+ research docs'
+      }
+    ]
+  },
+
+  {
+    slug: 'zoe',
+    name: 'ZOE',
+    tagline: 'Concierge agent for The ZAO',
+    description: 'Single autonomous concierge bot handling tasks, captures, briefs, reflection, and recall. Lives in ZAO OS. Available as @zaoclaw_bot on Telegram.',
+    stage: 'active',
+    tier: 'project',
+    parent: 'zao-os',
+    status: 'live',
+    telegram: 'zaoclaw_bot',
+    farcaster: { handle: 'zaoclaw_bot' },
+    links: [
+      {
+        title: 'Chat Interface',
+        url: 'https://chat.zaoos.com',
+        description: 'Talk to ZOE'
+      },
+      {
+        title: 'Telegram',
+        url: 'https://t.me/zaoclaw_bot',
+        description: '@zaoclaw_bot'
+      }
+    ]
+  },
+
+  {
+    slug: 'hermes',
+    name: 'Hermes',
+    tagline: 'Autonomous fix-PR pipeline for code quality',
+    description: 'Autonomous agent that handles code reviews, fixes, and pull request creation. Part of the ZAO agent stack. Available as @zoe_hermes_bot on Telegram.',
+    stage: 'active',
+    tier: 'project',
+    parent: 'zao-os',
+    status: 'live',
+    telegram: 'zoe_hermes_bot',
+    links: [
+      {
+        title: 'GitHub Integration',
+        url: 'https://github.com/bettercallzaal/ZAOOS',
+        description: 'Integrated in ZAOOS repo'
+      }
+    ]
+  },
+
+  // Graduated & Independent
+  {
+    slug: 'coc-concertz',
+    name: 'COC Concertz',
+    tagline: 'Live music streaming and concert platform',
+    description: 'Graduated from The ZAO into its own brand. Livestreaming team also handles ZAO Festivals production. Independent brand with operational overlap.',
+    stage: 'graduated',
+    tier: 'project',
+    status: 'live',
+    founded: '2024',
+    homepage: 'https://cocconcertz.com',
+    x: 'cocconcertz',
+    instagram: 'cocconcertz',
+    links: [
+      {
+        title: 'Website',
+        url: 'https://cocconcertz.com',
+        description: 'Stream live concerts'
+      }
+    ]
+  },
+
+  // ZABAL Track Projects
+  {
+    slug: 'empire-builder',
+    name: 'Empire Builder',
+    tagline: 'Token launch and creator-economy primitives',
+    description: 'ZABAL track project. Token launch + ecosystem primitive. Featured at two crypto conferences. Being integrated into ZAO OS. Pending formal proposal to become a ZAO Project.',
+    stage: 'zabal-track',
+    tier: 'project',
+    parent: 'bettercallzaal',
+    status: 'live',
+    links: [
+      {
+        title: 'Learn More',
+        url: 'https://bettercallzaal.com',
+        description: 'Check out BCZ site for details'
+      }
+    ]
+  },
+
+  {
+    slug: 'bonfire',
+    name: 'Bonfire Integration',
+    tagline: 'Community knowledge graph and recall system',
+    description: 'ZABAL track. Personal and community knowledge graph at bonfires.ai. Integrated into ZOE via Hermes-brain pattern. Auto-push pipeline for knowledge capture.',
+    stage: 'zabal-track',
+    tier: 'project',
+    parent: 'bettercallzaal',
+    status: 'live',
+    homepage: 'https://bonfires.ai',
+    links: [
+      {
+        title: 'Bonfires',
+        url: 'https://bonfires.ai',
+        description: 'Access the knowledge graph'
+      }
+    ]
+  },
+
+  {
+    slug: 'poidh',
+    name: 'POIDH Bounties',
+    tagline: 'Community bounty system for creators',
+    description: 'ZABAL track. Community bounty platform. First ZAO POIDH clip-up bounty live 2026-04-27 at poidh.xyz/base/bounty/1151.',
+    stage: 'zabal-track',
+    tier: 'project',
+    parent: 'bettercallzaal',
+    status: 'live',
+    homepage: 'https://poidh.xyz',
+    links: [
+      {
+        title: 'POIDH Platform',
+        url: 'https://poidh.xyz',
+        description: 'Explore bounties'
+      },
+      {
+        title: 'First ZAO Bounty',
+        url: 'https://poidh.xyz/base/bounty/1151',
+        description: 'Clip-up bounty - Deadline May 4'
+      }
+    ]
+  },
+
+  {
+    slug: 'bcz-yapz',
+    name: 'BCZ YapZ',
+    tagline: 'Decentralized social identity and reputation',
+    description: 'ZABAL track. Graduated from ZAOOS to own repo and domain May 2026. Social identity and reputation system. Available at bczyapz.com.',
+    stage: 'zabal-track',
+    tier: 'project',
+    parent: 'bettercallzaal',
+    status: 'live',
+    founded: '2024',
+    homepage: 'https://bczyapz.com',
+    github: 'github.com/bettercallzaal/bcz-yapz',
+    links: [
+      {
+        title: 'BCZ YapZ',
+        url: 'https://bczyapz.com',
+        description: 'Social identity platform'
+      },
+      {
+        title: 'Repository',
+        url: 'https://github.com/bettercallzaal/bcz-yapz',
+        description: 'Open source code'
+      }
+    ]
+  },
+
+  // Paused
+  {
+    slug: 'fishbowlz',
+    name: 'FISHBOWLZ',
+    tagline: 'Community bounties and collaboration platform',
+    description: 'PAUSED 2026-04-16. Pivoted to partnership with Juke. Was exploring community bounties and on-chain collaboration.',
+    stage: 'paused',
+    tier: 'project',
+    status: 'paused',
+    founded: '2024',
+    links: [
+      {
+        title: 'Historical Site',
+        url: 'https://fishbowlz.com',
+        description: 'Archived (paused)'
+      }
+    ]
+  },
+
+  // Artist Sub-brands
+  {
+    slug: 'tom-fellenz',
+    name: 'Tom Fellenz',
+    tagline: 'Experimental electronic music producer',
+    description: 'Artist and collaborator within The ZAO ecosystem.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    x: 'tomfellenz',
+    links: [
+      {
+        title: 'X Profile',
+        url: 'https://x.com/tomfellenz',
+        description: 'Follow for updates'
+      }
+    ]
+  },
+
+  {
+    slug: 'stilo-world',
+    name: 'Stilo World',
+    tagline: 'Creative visual and audio experience',
+    description: 'Artist and creator within The ZAO community.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    links: [
+      {
+        title: 'Website',
+        url: 'https://stiloworld.com',
+        description: 'Explore the world'
+      }
+    ]
+  },
+
+  {
+    slug: 'joseph-goats',
+    name: 'Joseph Goats',
+    tagline: 'Music producer and community builder',
+    description: 'Artist and collaborator. Formerly known as Jose Goats, now Joseph Goats.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    links: [
+      {
+        title: 'Farcaster',
+        url: 'https://farcaster.xyz/~/user/josephgoats',
+        description: 'Connect on Farcaster'
+      }
+    ]
+  },
+
+  {
+    slug: 'jangouu-forever',
+    name: 'JANGOUU FOREVER',
+    tagline: 'Origin figure in Zaal\'s indie artist journey',
+    description: 'Foundational musician relationship from college 2018/2019. The collaboration that triggered Zaal\'s entrepreneurial thinking about supporting independent artists. Semi-active in ZAO orbit.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    founded: '2018',
+    x: 'jangouuforever',
+    links: [
+      {
+        title: 'X Profile',
+        url: 'https://x.com/jangouuforever',
+        description: 'Follow @jangouuforever'
+      },
+      {
+        title: 'Beacons.ai',
+        url: 'https://beacons.ai/jango.uu',
+        description: 'Link hub'
+      }
+    ]
+  },
+
+  {
+    slug: 'ritzy-periwinkle',
+    name: 'Ritzy Periwinkle',
+    tagline: 'Creative artist and collaborator',
+    description: 'Artist and creator within The ZAO ecosystem.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    links: []
+  },
+
+  // Other Ecosystems & Tools (if any should be tracked)
+  {
+    slug: 'zabal-token',
+    name: 'ZABAL Token',
+    tagline: 'Native ecosystem token',
+    description: 'The ZABAL token. ERC-20 standard token representing ecosystem participation and value.',
+    stage: 'active',
+    tier: 'project',
+    status: 'live',
+    tokenContract: {
+      chain: 'base',
+      address: '0x...',
+      symbol: 'ZABAL'
+    },
+    links: [
+      {
+        title: 'Token Info',
+        url: 'https://bettercallzaal.com',
+        description: 'Learn more on BCZ site'
+      }
+    ]
+  }
+];
+
+export function getBrandBySlug(slug: string): Brand | undefined {
+  return brands.find(b => b.slug === slug);
+}
+
+export function getBrandsByStage(stage: BrandStage): Brand[] {
+  return brands.filter(b => b.stage === stage);
+}
+
+export function getBrandsByTier(tier: BrandTier): Brand[] {
+  return brands.filter(b => b.tier === tier);
+}
+
+export function getBrandChildren(parentSlug: string): Brand[] {
+  return brands.filter(b => b.parent === parentSlug);
+}
+
+export function getAllStages(): BrandStage[] {
+  const stages = new Set<BrandStage>();
+  brands.forEach(b => stages.add(b.stage));
+  return Array.from(stages).sort();
+}
