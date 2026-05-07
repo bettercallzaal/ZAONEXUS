@@ -811,20 +811,83 @@ export const brands: Brand[] = [
     slug: 'zabal-token',
     name: 'ZABAL Token',
     tagline: 'Native ecosystem token',
-    description: 'The ZABAL token. ERC-20 standard token representing ecosystem participation and value.',
+    description: 'The ZABAL token. ERC-20 on Base representing ecosystem participation and value.',
     stage: 'active',
     tier: 'project',
     status: 'live',
     tokenContract: {
       chain: 'base',
-      address: '0x...',
+      address: '0xbB48f19B0494Ff7C1fE5Dc2032aeEE14312f0b07',
       symbol: 'ZABAL'
     },
     links: [
       {
-        title: 'Token Info',
-        url: 'https://bettercallzaal.com',
-        description: 'Learn more on BCZ site'
+        title: 'ZABAL on Empire Builder',
+        url: 'https://empirebuilder.world/profile/0x7234c36A71ec237c2Ae7698e8916e0735001E9Af',
+        description: 'Empire V3 profile for ZABAL'
+      },
+      {
+        title: 'Empire Leaderboard API',
+        url: 'https://empirebuilder.world/api/leaderboards?tokenAddress=0xbB48f19B0494Ff7C1fE5Dc2032aeEE14312f0b07',
+        description: 'Live leaderboard JSON for ZABAL holders'
+      },
+      {
+        title: 'Magnetiq Zabal Connector (zabal.lol)',
+        url: 'https://app.magnetiq.xyz/brand/ZABAL/magnet/Zabal%20Connector',
+        description: 'ZABAL x Magnetiq partnership magnet. Vanity URL: zabal.lol'
+      },
+      {
+        title: 'Bonfires KG for ZABAL',
+        url: 'https://graph.bonfires.ai/zabal',
+        description: 'ZABAL knowledge-graph view'
+      },
+      {
+        title: 'Incented org',
+        url: 'https://incented.co/organizations/zabal',
+        description: 'ZABAL on Incented'
+      },
+      {
+        title: 'SongJam ZABAL hub',
+        url: 'https://songjam.space/zabal',
+        description: 'ZABAL track on SongJam'
+      }
+    ]
+  },
+
+  {
+    slug: 'magnetiq',
+    name: 'Magnetiq',
+    tagline: 'Brand-magnet platform partnered with ZABAL',
+    description: 'Magnetiq powers the ZABAL Connector magnet at zabal.lol -> app.magnetiq.xyz/brand/ZABAL. Partnership for ecosystem activation flows.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'bettercallzaal',
+    status: 'live',
+    homepage: 'https://app.magnetiq.xyz/brand/ZABAL/magnet/Zabal%20Connector',
+    links: [
+      {
+        title: 'ZABAL Connector (zabal.lol)',
+        url: 'https://app.magnetiq.xyz/brand/ZABAL/magnet/Zabal%20Connector',
+        description: 'Vanity: zabal.lol -> ZABAL magnet on Magnetiq'
+      }
+    ]
+  },
+
+  {
+    slug: 'iykyk',
+    name: 'iykyk',
+    tagline: 'Partner brand on blank.space',
+    description: 'iykyk - partner brand within The ZAO ecosystem. Hosted on blank.space creator infrastructure.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    homepage: 'https://iykyk.blank.space/home/Explore',
+    links: [
+      {
+        title: 'iykyk Explore',
+        url: 'https://iykyk.blank.space/home/Explore',
+        description: 'iykyk home on blank.space'
       }
     ]
   }
