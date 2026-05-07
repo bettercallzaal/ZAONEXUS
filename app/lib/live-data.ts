@@ -14,21 +14,30 @@ interface GithubCommit {
   };
 }
 
+// Farcaster reads via haatz.quilibrium.com (Cassie Heart's free Neynar v2 mirror)
+// Free, no API key, ~140ms latency, identical Neynar v2 schema.
+// Verified empirically 2026-05-02 in research/farcaster/589-haatz-coverage-cassie-casts-may2026/
+// Override via FARCASTER_API_BASE env (e.g., to use api.neynar.com if haatz is down).
+// If using Neynar fallback, set NEYNAR_API_KEY too; haatz needs no key.
+const FARCASTER_API_BASE = process.env.FARCASTER_API_BASE || 'https://haatz.quilibrium.com';
+
+function farcasterHeaders(): HeadersInit {
+  const key = process.env.NEYNAR_API_KEY;
+  const base: HeadersInit = { 'Content-Type': 'application/json' };
+  if (FARCASTER_API_BASE.includes('neynar.com') && key) {
+    return { ...base, 'x-api-key': key };
+  }
+  return base;
+}
+
 export async function getFarcasterStats(handle: string): Promise<Partial<LiveData> | null> {
   try {
-    const apiKey = process.env.NEYNAR_API_KEY;
-    if (!apiKey) return null;
-
-    // Get user info and cast count
     const userResponse = await fetch(
-      `https://api.neynar.com/v2/farcaster/user/by_username?username=${encodeURIComponent(handle)}`,
+      `${FARCASTER_API_BASE}/v2/farcaster/user/by_username?username=${encodeURIComponent(handle)}`,
       {
-        headers: {
-          'x-api-key': apiKey,
-          'Content-Type': 'application/json',
-        },
-        next: { revalidate: 3600 } // 1 hour cache
-      }
+        headers: farcasterHeaders(),
+        next: { revalidate: 3600 },
+      },
     );
 
     if (!userResponse.ok) return null;
@@ -37,16 +46,12 @@ export async function getFarcasterStats(handle: string): Promise<Partial<LiveDat
     const user = userData.user;
     if (!user) return null;
 
-    // Get recent casts
     const castsResponse = await fetch(
-      `https://api.neynar.com/v2/farcaster/feed/user/casts?fid=${user.fid}&limit=1`,
+      `${FARCASTER_API_BASE}/v2/farcaster/feed/user/casts?fid=${user.fid}&limit=1`,
       {
-        headers: {
-          'x-api-key': apiKey,
-          'Content-Type': 'application/json',
-        },
-        next: { revalidate: 3600 }
-      }
+        headers: farcasterHeaders(),
+        next: { revalidate: 3600 },
+      },
     );
 
     if (!castsResponse.ok) return null;
@@ -64,8 +69,7 @@ export async function getFarcasterStats(handle: string): Promise<Partial<LiveDat
           }
         : undefined,
     };
-  } catch (error) {
-    // Silently fail - return null
+  } catch {
     return null;
   }
 }
