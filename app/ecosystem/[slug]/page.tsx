@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { ChevronRight, Github, ExternalLink, Mail, MessageSquare } from 'lucide-react';
 import { brands, getBrandBySlug, getBrandChildren, type BrandStage } from '../../data/brands';
+import LiveDataPanel from '../../components/LiveDataPanel';
+import { getFarcasterStats, getGithubLastCommit, getTokenHolderCount } from '../../lib/live-data';
 
 const STAGE_LABELS: Record<BrandStage, string> = {
   active: 'Active',
@@ -24,6 +26,23 @@ export default async function BrandDetailPage(props: BrandDetailPageProps) {
   const params = await props.params;
   const brand = getBrandBySlug(params.slug);
   const children = getBrandChildren(params.slug);
+
+  // Fetch live data in parallel
+  let liveData = {};
+  if (brand) {
+    const liveDataPromises = [
+      brand.farcaster?.handle ? getFarcasterStats(brand.farcaster.handle) : null,
+      brand.github ? getGithubLastCommit(brand.github) : null,
+      brand.tokenContract ? getTokenHolderCount(brand.tokenContract.chain, brand.tokenContract.address) : null,
+    ];
+
+    const liveDataResults = await Promise.allSettled(liveDataPromises);
+    liveDataResults.forEach(result => {
+      if (result.status === 'fulfilled' && result.value) {
+        liveData = { ...liveData, ...result.value };
+      }
+    });
+  }
 
   if (!brand) {
     return (
@@ -204,6 +223,11 @@ export default async function BrandDetailPage(props: BrandDetailPageProps) {
             )}
           </div>
         </div>
+
+        {/* Live Data Section */}
+        {Object.keys(liveData).length > 0 && (
+          <LiveDataPanel data={liveData as any} />
+        )}
 
         {/* Links Section */}
         {brand.links.length > 0 && (

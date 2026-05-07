@@ -1,10 +1,10 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, Suspense } from 'react';
 import { Search, X as XIcon, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
 import { brands, type BrandStage, getBrandsByStage } from '../data/brands';
+import EcosystemOrgChart from '../components/EcosystemOrgChart';
 
 const STAGES: BrandStage[] = ['active', 'incubating', 'zabal-track', 'graduated', 'paused'];
 const STAGE_LABELS: Record<BrandStage, string> = {
@@ -15,8 +15,7 @@ const STAGE_LABELS: Record<BrandStage, string> = {
   paused: 'Paused'
 };
 
-export default function EcosystemPage() {
-  const searchParams = useSearchParams();
+function EcosystemContent() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedStages, setSelectedStages] = useState<Set<BrandStage>>(new Set());
 
@@ -101,6 +100,11 @@ export default function EcosystemPage() {
               <p className="text-sm opacity-75">Community-built tools</p>
             </div>
           </div>
+        </section>
+
+        {/* Org Chart */}
+        <section className="mb-12">
+          <EcosystemOrgChart />
         </section>
 
         {/* Search & Filter */}
@@ -243,5 +247,13 @@ export default function EcosystemPage() {
         </footer>
       </div>
     </div>
+  );
+}
+
+export default function EcosystemPage() {
+  return (
+    <Suspense fallback={<div style={{ backgroundColor: '#0a1628', color: '#e4e2dd' }} className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <EcosystemContent />
+    </Suspense>
   );
 }
