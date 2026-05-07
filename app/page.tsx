@@ -2,9 +2,35 @@
 
 import { useState, useMemo, useEffect } from 'react';
 import { Search, ChevronDown, ChevronUp, Moon, Sun, Maximize2, Minimize2, Hash, Share2, Copy, Check, ExternalLink } from 'lucide-react';
-import { linksData, type MainCategory, type Subcategory } from './data/links';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { linksData, type MainCategory, type Subcategory, type Link as LinkType } from './data/links';
 
-export default function Home() {
+type Audience = 'community' | 'ecosystem' | 'both';
+
+function filterByAudience(data: MainCategory[], audience: Audience): MainCategory[] {
+  return data
+    .map(category => ({
+      ...category,
+      subcategories: category.subcategories
+        .map(sub => ({
+          ...sub,
+          links: sub.links.filter(
+            link => !link.audience || link.audience === audience || link.audience === 'both'
+          ),
+        }))
+        .filter(sub => sub.links.length > 0),
+    }))
+    .filter(category => category.subcategories.length > 0);
+}
+
+interface HomeProps {
+  audience?: 'community' | 'ecosystem';
+}
+
+export default function Home({ audience = 'community' }: HomeProps) {
+  const pathname = usePathname();
+  const currentAudience: Audience = pathname === '/ecosystem' ? 'ecosystem' : 'community';
   const [searchQuery, setSearchQuery] = useState('');
   const [darkMode, setDarkMode] = useState(true);
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
@@ -12,22 +38,26 @@ export default function Home() {
   const [isSearchSticky, setIsSearchSticky] = useState(false);
   const [copiedLink, setCopiedLink] = useState<string | null>(null);
 
+  const audienceFilteredData = useMemo(() => {
+    return filterByAudience(linksData, currentAudience);
+  }, [currentAudience]);
+
   const totalLinks = useMemo(() => {
-    return linksData.reduce((total, category) => {
+    return audienceFilteredData.reduce((total, category) => {
       return total + category.subcategories.reduce((sum, sub) => sum + sub.links.length, 0);
     }, 0);
-  }, []);
+  }, [audienceFilteredData]);
 
-  const totalCategories = linksData.length;
+  const totalCategories = audienceFilteredData.length;
   const totalSubcategories = useMemo(() => {
-    return linksData.reduce((total, category) => total + category.subcategories.length, 0);
-  }, []);
+    return audienceFilteredData.reduce((total, category) => total + category.subcategories.length, 0);
+  }, [audienceFilteredData]);
 
   const filteredData = useMemo(() => {
-    if (!searchQuery.trim()) return linksData;
+    if (!searchQuery.trim()) return audienceFilteredData;
 
     const query = searchQuery.toLowerCase();
-    return linksData
+    return audienceFilteredData
       .map(category => ({
         ...category,
         subcategories: category.subcategories
@@ -43,7 +73,7 @@ export default function Home() {
           .filter(sub => sub.links.length > 0),
       }))
       .filter(category => category.subcategories.length > 0);
-  }, [searchQuery]);
+  }, [searchQuery, audienceFilteredData]);
 
   // Auto-expand categories and subcategories when searching
   useEffect(() => {
@@ -61,7 +91,7 @@ export default function Home() {
       });
       setExpandedSubcategories(subCategoriesToExpand);
     }
-  }, [searchQuery, filteredData]);
+  }, [searchQuery, filteredData, audienceFilteredData]);
 
   const toggleCategory = (categoryName: string) => {
     setExpandedCategories(prev => {
@@ -136,6 +166,43 @@ export default function Home() {
   return (
     <div className={darkMode ? 'dark-mode' : ''}>
       <div className="min-h-screen transition-colors duration-300" style={{ backgroundColor: 'var(--bg-color)', color: 'var(--text-color)' }}>
+        {/* Top Navigation */}
+        <nav className="border-b" style={{ borderColor: 'rgba(224, 221, 170, 0.2)' }}>
+          <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+            <h1 className="text-2xl font-bold">ZAO NEXUS</h1>
+            <div className="flex gap-4">
+              <Link
+                href="/community"
+                className={`px-4 py-2 rounded-lg transition-all duration-200 ${
+                  currentAudience === 'community'
+                    ? 'font-semibold'
+                    : 'opacity-60 hover:opacity-100'
+                }`}
+                style={{
+                  backgroundColor: currentAudience === 'community' ? 'var(--accent-bg)' : 'transparent',
+                  color: currentAudience === 'community' ? 'var(--accent-text)' : 'var(--text-color)',
+                }}
+              >
+                ZAO Community
+              </Link>
+              <Link
+                href="/ecosystem"
+                className={`px-4 py-2 rounded-lg transition-all duration-200 ${
+                  currentAudience === 'ecosystem'
+                    ? 'font-semibold'
+                    : 'opacity-60 hover:opacity-100'
+                }`}
+                style={{
+                  backgroundColor: currentAudience === 'ecosystem' ? 'var(--accent-bg)' : 'transparent',
+                  color: currentAudience === 'ecosystem' ? 'var(--accent-text)' : 'var(--text-color)',
+                }}
+              >
+                ZAO Ecosystem
+              </Link>
+            </div>
+          </div>
+        </nav>
+
         <div className="max-w-5xl mx-auto px-4 py-4">
           {/* Quick Navigation */}
           <div className="mb-6 fade-in">
@@ -144,7 +211,7 @@ export default function Home() {
               <span className="text-sm font-semibold opacity-75">Quick Jump:</span>
             </div>
             <div className="flex flex-wrap justify-center gap-2">
-              {linksData.map((cat) => (
+              {audienceFilteredData.map((cat) => (
                 <button
                   key={cat.mainCategory}
                   onClick={() => scrollToCategory(cat.mainCategory.toLowerCase().replace(/\s+/g, '-'))}

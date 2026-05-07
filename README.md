@@ -1,16 +1,21 @@
-# ZAO NEXUS - Links Hub
+# ZAO NEXUS - Canonical Link Hub
 
-> **Version 1.1.0** - A modern, responsive links hub for the ZAO community
+> **Version 1.2.0** - Two-audience portal for ZAO community and ecosystem discovery
 
-A comprehensive link directory featuring 200+ curated resources across the ZAO ecosystem. Built with Next.js, React, TypeScript, and TailwindCSS.
+A comprehensive two-route link directory featuring 200+ curated resources across the ZAO ecosystem. Built with Next.js 14, React 18, TypeScript, and TailwindCSS v3. Strategy D canonical rebuild per research/community/624.
 
 ## ✨ Features
 
 ### Core Functionality
 - 🔍 **Smart Search** - Real-time search across titles, descriptions, and URLs
 - 🎯 **Auto-Expand Results** - Automatically opens categories containing search matches
-- 📂 **Hierarchical Organization** - 5 main categories with multiple subcategories
+- 📂 **Dual-Audience Routes** - Community-focused and ecosystem-focused views
 - 🔗 **200+ Curated Links** - Comprehensive ZAO ecosystem resources
+
+### Two-Audience Architecture
+- **/community** - Member-facing content (ZAO holder resources, internal tools, governance)
+- **/ecosystem** - External-facing content (brand pages, projects, partner integrations)
+- **Smart Filtering** - Each link tagged with audience (`community`, `ecosystem`, or `both`)
 
 ### Navigation & UX
 - ⚡ **Quick Jump** - Instant scroll to any category
@@ -114,7 +119,7 @@ NexusV2/
 
 ### Adding New Links
 
-Edit `app/data/links.ts` and add your links following the existing structure:
+Edit `app/data/links.ts` and add your links following the existing structure with the new audience field:
 
 ```typescript
 {
@@ -126,13 +131,24 @@ Edit `app/data/links.ts` and add your links following the existing structure:
         {
           title: "Link Title",
           url: "https://example.com",
-          description: "Link description"
+          description: "Link description",
+          audience: "community",           // NEW: 'community' | 'ecosystem' | 'both'
+          featured: true,                   // OPTIONAL: pin to top
+          addedDate: "2026-05-07",          // OPTIONAL: for "What's New"
+          status: "live",                   // OPTIONAL: 'live' | 'down' | 'paused'
+          tags: ["music", "onchain"]        // OPTIONAL: for v1.3 filtering
         }
       ]
     }
   ]
 }
 ```
+
+### Audience Tagging Guidelines
+
+- **community**: ZAO member-only tools, governance, internal documentation
+- **ecosystem**: Public brand pages, projects, partner integrations, artist profiles
+- **both**: Core ZAO resources, social media, key onboarding pages
 
 ### Changing Colors
 
@@ -280,3 +296,43 @@ When searching for missing links, check:
 ## Support
 
 For issues or questions, reach out to the ZAO community.
+
+## Changelog
+
+### 1.2.0 - Strategy D Canonical Rebuild (2026-05-07)
+
+**Major Features**
+- Two-audience route architecture: `/community` and `/ecosystem`
+- Extended Link interface with audience filtering, featured flag, addedDate, status, and tags fields
+- Merged 87 URLs from BetterCallZaal nexus.html into canonical ZAONEXUS data
+- Reorganized 8 main categories with ecosystem-first naming (The ZAO, ZAO OS, ZAO Festivals, ZAO Stock, Community Projects, BetterCallZaal, Ecosystem & Tokens, Artists & Sub-brands)
+- Added top navigation bar with route switching
+- Audience-aware search and filtering
+- All 200+ links tagged by audience (community/ecosystem/both)
+
+**Data Expansion**
+- Existing 126 links → merged 200+ unique URLs
+- Community audience: 45 links (member tools, governance, internal)
+- Ecosystem audience: 90 links (brands, projects, artists)
+- Both audience: 65+ links (core ZAO, socials, documentation)
+
+**Next Steps (v1.3+)**
+- What's New badges (via addedDate field)
+- Health status indicators (via status field)
+- Tag-based filtering (via tags field)
+- Featured link pinning (via featured field)
+- Separate bettercallzaal.com/nexus.html → nexus.thezao.com/ecosystem redirect flow
+
+**Research Reference**
+- Per research/community/624-nexus-portal-canon-may7/ Strategy D
+- Deduped case-insensitive URLs, added missing ecosystem brands
+- Preserved all existing ZAONEXUS data integrity
+
+### 1.1.0 - Initial Release
+
+- 5 main categories with subcategories
+- Real-time search across 126 links
+- Dark/light mode toggle
+- Responsive design for all devices
+- Quick jump navigation
+- Copy, share to X, share to Farcaster buttons
