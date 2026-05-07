@@ -499,7 +499,6 @@ export const brands: Brand[] = [
     parent: 'bettercallzaal',
     status: 'live',
     founded: '2024',
-    graduated: '2026-05-06',
     homepage: 'https://bczyapz.com',
     github: 'github.com/bettercallzaal/bcz-yapz',
     links: [
