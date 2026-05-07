@@ -1,7 +1,7 @@
 {
   "name": "zao-nexus",
-  "version": "1.1.0",
-  "description": "A modern link directory for the ZAO community with 200+ curated resources",
+  "version": "1.2.0",
+  "description": "Canonical two-audience Nexus portal for ZAO community and ecosystem with 200+ curated resources",
   "author": "BetterCallZaal",
   "repository": {
     "type": "git",
