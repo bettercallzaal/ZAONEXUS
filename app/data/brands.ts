@@ -44,6 +44,8 @@ export interface Brand {
   parent?: string;
   status: 'live' | 'down' | 'paused' | 'unknown';
   founders?: string[];
+  cofounders?: string[];
+  staff?: string[];
   founded?: string;
 
   // primary surfaces
@@ -108,6 +110,12 @@ export const brands: Brand[] = [
     tier: 'organization',
     status: 'live',
     founders: ['Zaal'],
+    // Note: Webflow source lists candytoybox, attabotty, HURRIC4N3IKE, Jango UU as "ZAO Co-Founders".
+    // Per doc 621 (2026-05-07), Zaal is the solo founder of The ZAO.
+    // Community members are cofounders of specific ZAO PROJECTS, not of The ZAO itself.
+    // This field preserved for historical/aspirational context from Webflow.
+    cofounders: ['candytoybox', 'attabotty', 'HURRIC4N3IKE', 'Jango UU'],
+    staff: ['EZinCrypto'],
     founded: 'Jan 2024',
     homepage: 'https://thezao.com',
     x: 'thezao',
@@ -158,6 +166,31 @@ export const brands: Brand[] = [
         title: 'Instagram',
         url: 'https://instagram.com/zaofestivals',
         description: 'Follow for festival updates'
+      },
+      {
+        title: 'X / Twitter',
+        url: 'https://x.com/zaofestivals',
+        description: 'Follow @zaofestivals'
+      },
+      {
+        title: 'Facebook',
+        url: 'https://www.facebook.com/zaofestivals',
+        description: 'Follow on Facebook'
+      },
+      {
+        title: 'LinkedIn',
+        url: 'https://www.linkedin.com/company/zaofestivals',
+        description: 'Follow on LinkedIn'
+      },
+      {
+        title: 'YouTube',
+        url: 'https://www.youtube.com/c/zaofestivals',
+        description: 'Watch on YouTube'
+      },
+      {
+        title: 'Merch Shop',
+        url: 'https://merch.zaofestivals.com',
+        description: 'ZAO Festivals merchandise'
       }
     ]
   },
@@ -601,11 +634,22 @@ export const brands: Brand[] = [
     status: 'live',
     founded: '2018',
     x: 'jangouuforever',
+    instagram: 'jangouuforever',
     links: [
       {
         title: 'X Profile',
         url: 'https://x.com/jangouuforever',
         description: 'Follow @jangouuforever'
+      },
+      {
+        title: 'Instagram',
+        url: 'https://instagram.com/jangouuforever',
+        description: 'Follow @jangouuforever'
+      },
+      {
+        title: 'Spotify',
+        url: 'https://open.spotify.com/artist/5nc2dgefoPLfvsrJVx3PNz',
+        description: 'Listen on Spotify'
       },
       {
         title: 'Beacons.ai',
@@ -620,6 +664,141 @@ export const brands: Brand[] = [
     name: 'Ritzy Periwinkle',
     tagline: 'Creative artist and collaborator',
     description: 'Artist and creator within The ZAO ecosystem.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    links: []
+  },
+
+  {
+    slug: 'ohnahji-b',
+    name: 'Ohnahji B',
+    tagline: 'Audio and web3 creator',
+    description: 'Artist and collaborator in The ZAO ecosystem. Co-host of the Web3 Podcast with Zaal.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    links: [
+      {
+        title: 'Linktree',
+        url: 'https://linktr.ee/ohnahji',
+        description: 'All Ohnahji B links'
+      }
+    ]
+  },
+
+  {
+    slug: 'midipunkz',
+    name: 'MidiPunkZ',
+    tagline: 'On-chain music production and community platform',
+    description: 'Community and collaboration partner within The ZAO ecosystem. Platform for music creation, gaming, and collectible avatars. Collaborates with ZAO on music tracks and community spaces.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    founded: '2023',
+    homepage: 'https://midipunkz.com',
+    links: [
+      {
+        title: 'Website',
+        url: 'https://midipunkz.com',
+        description: 'Main MidiPunkZ platform'
+      },
+      {
+        title: 'MidiVaderz Game',
+        url: 'https://midipunkz.com/games',
+        description: 'Play MidiVaderz'
+      },
+      {
+        title: 'MidiPunkz Community',
+        url: 'https://ima.midipunkz.com/communities/midipunkz',
+        description: 'Community hub'
+      },
+      {
+        title: 'FeatherFrogs Community',
+        url: 'https://ima.midipunkz.com/communities/featherfrogs',
+        description: 'FeatherFrogs community'
+      },
+      {
+        title: 'MidiEzz Avatars',
+        url: 'https://midipunkz.com/midiezz',
+        description: 'Collectible avatars'
+      },
+      {
+        title: 'ZAO Community Page',
+        url: 'https://ima.midipunkz.com/communities/the-zao',
+        description: 'ZAO on MidiPunkZ'
+      }
+    ]
+  },
+
+  {
+    slug: 'godcloud',
+    name: 'GodCloud',
+    tagline: 'Web3 artist and musician in The ZAO',
+    description: 'ZAO community musician and artist. Active contributor to The ZAO ecosystem.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    homepage: 'https://godcloud.org',
+    links: [
+      {
+        title: 'Website',
+        url: 'https://godcloud.org',
+        description: 'GodCloud main site'
+      },
+      {
+        title: 'Drip.haus',
+        url: 'https://drip.haus/godcloud',
+        description: 'Support GodCloud on Drip'
+      }
+    ]
+  },
+
+  {
+    slug: 'jed-xo',
+    name: 'Jed XO',
+    tagline: 'Creator and community member',
+    description: 'Community member within The ZAO ecosystem.',
+    stage: 'incubating',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'unknown',
+    links: []
+  },
+
+  {
+    slug: 'defi-space-donkeys',
+    name: 'Defi Space Donkeys',
+    tagline: 'Community project (coming soon)',
+    description: 'Upcoming project within The ZAO ecosystem. Details coming soon.',
+    stage: 'incubating',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'paused',
+    links: []
+  },
+
+  {
+    slug: 'impact-concerts',
+    name: 'Impact Concerts',
+    tagline: 'Community project (coming soon)',
+    description: 'Upcoming concert initiative within The ZAO ecosystem. Details coming soon.',
+    stage: 'incubating',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'paused',
+    links: []
+  },
+
+  {
+    slug: 'ez-in-crypto',
+    name: 'EZinCrypto',
+    tagline: 'ZAO staff member and contributor',
+    description: 'ZAO ecosystem contributor and staff member. Part of the core team supporting The ZAO.',
     stage: 'active',
     tier: 'sub-brand',
     parent: 'the-zao',

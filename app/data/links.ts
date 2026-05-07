@@ -30,7 +30,7 @@ export const linksData: MainCategory[] = [
           { title: "About", url: "https://thezao.com/about", description: "Learn about The ZAO", audience: "both" },
           { title: "Community", url: "https://thezao.com/community", description: "ZAO community hub", audience: "community" },
           { title: "Timeline", url: "https://thezao.com/timeline", description: "ZAO history and timeline", audience: "both" },
-          { title: "Newsletter", url: "https://paragraph.com/@thezao", description: "Read ZAO updates", audience: "both" },
+          { title: "Newsletter (Paragraph)", url: "https://paragraph.xyz/@thezao", description: "Read ZAO updates", audience: "both" },
           { title: "Farcaster channel", url: "https://farcaster.xyz/~/channel/zao", description: "Join /zao Farcaster channel", audience: "both" },
           { title: "X / Twitter", url: "https://x.com/thezao", description: "Follow @thezao", audience: "both" },
           { title: "POIDH", url: "https://poidh.xyz/a/thezao", description: "ZAO on POIDH", audience: "ecosystem" }
@@ -41,6 +41,26 @@ export const linksData: MainCategory[] = [
         links: [
           { title: "GitHub - ZAOOS", url: "https://github.com/bettercallzaal/ZAOOS", description: "Main codebase", audience: "ecosystem" },
           { title: "Research library", url: "https://github.com/bettercallzaal/ZAOOS/tree/main/research", description: "540+ research docs", audience: "both" }
+        ]
+      },
+      {
+        subTitle: "Calendars & Coordination",
+        links: [
+          { title: "ZAO Calendar", url: "https://lu.ma/zao", description: "ZAO events and updates", audience: "both" },
+          { title: "ZAO Music Calendar", url: "https://lu.ma/zao-m", description: "Music-specific events", audience: "community" },
+          { title: "Huddle01 Meeting Room", url: "https://huddle01.app", description: "Join ZAO meetings", audience: "community" }
+        ]
+      },
+      {
+        subTitle: "Whitepaper & Documentation",
+        links: [
+          { title: "ZAO Whitepaper Draft", url: "https://charmverse.io/thezao", description: "Community whitepaper", audience: "ecosystem" }
+        ]
+      },
+      {
+        subTitle: "Giving & Support",
+        links: [
+          { title: "Donate via Giveth", url: "https://giveth.io/project/the-zao", description: "Support The ZAO", audience: "ecosystem" }
         ]
       }
     ]
@@ -78,8 +98,32 @@ export const linksData: MainCategory[] = [
           { title: "Website", url: "https://zaofestivals.com", description: "Official Festivals site", audience: "both", featured: true },
           { title: "Instagram", url: "https://www.instagram.com/zaofestivals", description: "Follow @zaofestivals", audience: "both" },
           { title: "X / Twitter", url: "https://x.com/zaofestivals", description: "Follow @zaofestivals", audience: "both" },
+          { title: "Facebook", url: "https://www.facebook.com/zaofestivals", description: "Follow on Facebook", audience: "both" },
+          { title: "LinkedIn", url: "https://www.linkedin.com/company/zaofestivals", description: "Follow on LinkedIn", audience: "both" },
+          { title: "YouTube Channel", url: "https://www.youtube.com/c/zaofestivals", description: "ZAO Festivals videos", audience: "both" },
+          { title: "YouTube Playlist", url: "https://www.youtube.com/playlist?list=PLAJfhSekeHMLPEd-PjFnuU_UZmXFR5kvA", description: "Festival recaps and performances", audience: "both" },
           { title: "ZAO-Palooza collectible", url: "https://app.manifold.xyz/c/zao-card-jango-uu-zaopalooza", description: "Jango UU edition collectible", audience: "both" },
-          { title: "YouTube playlist", url: "https://www.youtube.com/playlist?list=PLAJfhSekeHMLPEd-PjFnuU_UZmXFR5kvA", description: "Festival recaps and performances", audience: "both" }
+          { title: "Merch Shop", url: "https://merch.zaofestivals.com", description: "ZAO Festivals merchandise", audience: "both" }
+        ]
+      },
+      {
+        subTitle: "ZAO Music & Playlists",
+        links: [
+          { title: "Spotify Playlist", url: "https://open.spotify.com/playlist/thezao", description: "ZAO curated music", audience: "both" },
+          { title: "Sound.xyz Playlist", url: "https://sound.xyz/collections/thezao", description: "ZAO on Sound.xyz", audience: "both" }
+        ]
+      },
+      {
+        subTitle: "ZAO Interviews & Media",
+        links: [
+          { title: "CMOTM Interview #1", url: "https://paragraph.com/@thezao/cmotm-1", description: "Creator of the Month interview", audience: "both" },
+          { title: "CMOTM Interview #2", url: "https://paragraph.com/@thezao/cmotm-2", description: "Creator of the Month interview", audience: "both" },
+          { title: "CMOTM Interview #3", url: "https://paragraph.com/@thezao/cmotm-3", description: "Creator of the Month interview", audience: "both" },
+          { title: "CMOTM Interview #4", url: "https://paragraph.com/@thezao/cmotm-4", description: "Creator of the Month interview", audience: "both" },
+          { title: "CMOTM Interview #5", url: "https://paragraph.com/@thezao/cmotm-5", description: "Creator of the Month interview", audience: "both" },
+          { title: "CMOTM Interview #6", url: "https://paragraph.com/@thezao/cmotm-6", description: "Creator of the Month interview", audience: "both" },
+          { title: "CMOTM Interview #7", url: "https://paragraph.com/@thezao/cmotm-7", description: "Creator of the Month interview", audience: "both" },
+          { title: "CMOTM Interview #8", url: "https://paragraph.com/@thezao/cmotm-8", description: "Creator of the Month interview", audience: "both" }
         ]
       }
     ]
@@ -136,6 +180,27 @@ export const linksData: MainCategory[] = [
           { title: "Adam on X", url: "https://x.com/adam_songjam", description: "Follow Adam", audience: "ecosystem" },
           { title: "CoinGecko ($SANG)", url: "https://www.coingecko.com/en/coins/songjam-by-virtuals", description: "Token price and info", audience: "ecosystem" }
         ]
+      },
+      {
+        subTitle: "$Loanz",
+        links: [
+          { title: "Website", url: "https://studentloanz.xyz", description: "Student loans platform", audience: "ecosystem", featured: true },
+          { title: "ZAO.lol Memebook", url: "https://zao.lol", description: "ZAO memebook and culture", audience: "community" },
+          { title: "Whitepaper", url: "https://paragraph.xyz/@thezao/student-loanz-whitepaper", description: "Student Loanz whitepaper", audience: "ecosystem" },
+          { title: "Daily Spaces on X", url: "https://x.com/loanzonbase", description: "Follow @loanzonbase for Daily Spaces", audience: "ecosystem" }
+        ]
+      },
+      {
+        subTitle: "ZVerse",
+        links: [
+          { title: "ZVerse", url: "https://thezao.xyz", description: "ZAO on Hivemind (ZVerse)", audience: "community" }
+        ]
+      },
+      {
+        subTitle: "Hats Tree - Org Chart",
+        links: [
+          { title: "ZAO Hats Tree", url: "https://hats.thezao.com", description: "ZAO organizational structure on Hats Protocol", audience: "ecosystem" }
+        ]
       }
     ]
   },
@@ -152,6 +217,13 @@ export const linksData: MainCategory[] = [
           { title: "LinkedIn", url: "https://www.linkedin.com/in/zaalp/", description: "Zaal on LinkedIn", audience: "ecosystem" },
           { title: "GitHub org", url: "https://github.com/bettercallzaal", description: "Organization repositories", audience: "ecosystem" },
           { title: "Book a call", url: "https://calendly.com/zaalp99/30minmeeting", description: "Schedule meeting with Zaal", audience: "ecosystem" }
+        ]
+      },
+      {
+        subTitle: "Zaal Interviews",
+        links: [
+          { title: "YouTube Interview #1", url: "https://youtube.com/c/bettercallzaal/videos", description: "Zaal on YouTube", audience: "ecosystem" },
+          { title: "YouTube Interview #2", url: "https://youtube.com/@bettercallzaal", description: "Zaal's YouTube channel", audience: "ecosystem" }
         ]
       },
       {
