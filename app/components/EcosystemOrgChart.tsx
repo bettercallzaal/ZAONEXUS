@@ -5,105 +5,81 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
 import { brands, type BrandTier } from '../data/brands';
 
+const AMBER = '#f5a623';
+const TEXT  = '#e4e2dd';
+const MUTED = 'rgba(228,226,221,0.45)';
+
+const TIER_STYLE: Record<BrandTier, { border: string; bg: string; size: number }> = {
+  umbrella:     { border: 'rgba(245,166,35,0.5)',  bg: 'rgba(245,166,35,0.1)',  size: 15 },
+  organization: { border: 'rgba(245,166,35,0.3)',  bg: 'rgba(245,166,35,0.06)', size: 14 },
+  project:      { border: 'rgba(245,166,35,0.18)', bg: 'rgba(245,166,35,0.04)', size: 13 },
+  'sub-brand':  { border: 'rgba(245,166,35,0.12)', bg: 'rgba(245,166,35,0.02)', size: 12 },
+};
+
 const TIER_LABELS: Record<BrandTier, string> = {
-  umbrella: 'Umbrella',
-  organization: 'Organization',
-  project: 'Project',
-  'sub-brand': 'Sub-brand',
+  umbrella: 'Umbrella', organization: 'Organization', project: 'Project', 'sub-brand': 'Sub-brand',
 };
 
-const TIER_COLORS: Record<BrandTier, { bg: string; border: string }> = {
-  umbrella: {
-    bg: 'rgba(245, 166, 35, 0.15)',
-    border: 'rgba(245, 166, 35, 0.4)',
-  },
-  organization: {
-    bg: 'rgba(245, 166, 35, 0.12)',
-    border: 'rgba(245, 166, 35, 0.3)',
-  },
-  project: {
-    bg: 'rgba(245, 166, 35, 0.08)',
-    border: 'rgba(245, 166, 35, 0.2)',
-  },
-  'sub-brand': {
-    bg: 'rgba(245, 166, 35, 0.04)',
-    border: 'rgba(245, 166, 35, 0.15)',
-  },
-};
-
-function getChildren(parentSlug: string | undefined) {
-  if (!parentSlug) {
-    return brands.filter(b => !b.parent);
-  }
-  return brands.filter(b => b.parent === parentSlug);
+function getChildren(slug?: string) {
+  return slug ? brands.filter(b => b.parent === slug) : brands.filter(b => !b.parent);
 }
 
-interface NodeProps {
-  slug: string;
-  name: string;
-  tier: BrandTier;
-  hasChildren: boolean;
-}
-
-function OrgNode({ slug, name, tier, hasChildren }: NodeProps) {
-  const [isExpanded, setIsExpanded] = useState(tier === 'umbrella' || tier === 'organization');
+function OrgNode({ slug, name, tier }: { slug: string; name: string; tier: BrandTier }) {
+  const [open, setOpen] = useState(tier === 'umbrella' || tier === 'organization');
   const children = getChildren(slug);
+  const ts = TIER_STYLE[tier];
 
   return (
-    <div className="flex flex-col items-center">
-      {/* Node Card */}
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <Link
         href={`/ecosystem/${slug}`}
-        className="group relative px-4 py-2 rounded-lg border-2 transition-all hover:shadow-md hover:-translate-y-0.5 cursor-pointer mb-4"
         style={{
-          backgroundColor: TIER_COLORS[tier].bg,
-          borderColor: TIER_COLORS[tier].border,
+          padding: '8px 14px', borderRadius: 10, marginBottom: 10,
+          border: `1px solid ${ts.border}`,
+          backgroundColor: ts.bg,
+          textAlign: 'center', textDecoration: 'none',
+          transition: 'all 0.15s',
+          minWidth: 90,
+        }}
+        onMouseEnter={e => {
+          (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(-2px)';
+          (e.currentTarget as HTMLAnchorElement).style.borderColor = AMBER;
+        }}
+        onMouseLeave={e => {
+          (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(0)';
+          (e.currentTarget as HTMLAnchorElement).style.borderColor = ts.border;
         }}
       >
-        <div className="font-semibold text-sm">{name}</div>
-        <div className="text-xs opacity-60">{TIER_LABELS[tier]}</div>
+        <div style={{ fontWeight: 700, fontSize: ts.size, color: TEXT, whiteSpace: 'nowrap' }}>{name}</div>
+        <div style={{ fontSize: 10, color: AMBER, opacity: 0.65, marginTop: 2, fontWeight: 600 }}>
+          {TIER_LABELS[tier]}
+        </div>
       </Link>
 
-      {/* Children */}
-      {hasChildren && children.length > 0 && (
+      {children.length > 0 && (
         <>
-          {/* Expand/Collapse Button */}
           <button
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="mb-2 p-1 opacity-60 hover:opacity-100 transition-opacity"
-            title={isExpanded ? 'Collapse' : 'Expand'}
+            onClick={() => setOpen(o => !o)}
+            style={{
+              marginBottom: 8, padding: '2px 6px', borderRadius: 6,
+              border: 'none', background: 'none', cursor: 'pointer',
+              color: MUTED, display: 'flex', alignItems: 'center',
+              transition: 'color 0.15s',
+            }}
+            onMouseEnter={e => (e.currentTarget.style.color = TEXT)}
+            onMouseLeave={e => (e.currentTarget.style.color = MUTED)}
           >
-            {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+            {open ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
           </button>
 
-          {isExpanded && children.length > 0 && (
-            <div className="relative">
-              {/* Connector line */}
-              <div
-                className="absolute top-0 left-1/2 w-0.5 h-4 -translate-x-1/2 -translate-y-full"
-                style={{ backgroundColor: 'rgba(245, 166, 35, 0.2)' }}
-              />
-
-              {/* Children container */}
-              <div className="flex gap-8 pt-6 px-4">
+          {open && (
+            <div style={{ position: 'relative' }}>
+              <div style={{ position: 'absolute', top: 0, left: '50%', width: 1, height: 16, backgroundColor: 'rgba(245,166,35,0.18)', transform: 'translateY(-100%)' }} />
+              <div style={{ display: 'flex', gap: 20, paddingTop: 18, paddingLeft: 8, paddingRight: 8 }}>
                 {children.map(child => (
-                  <div key={child.slug} className="relative flex flex-col items-center">
-                    {/* Horizontal connector */}
-                    <div
-                      className="absolute top-0 left-1/2 h-4 w-12 border-t border-l"
-                      style={{
-                        borderColor: 'rgba(245, 166, 35, 0.2)',
-                        transform: 'translateX(-50%)',
-                      }}
-                    />
-                    <div className="pt-4">
-                      <OrgNode
-                        slug={child.slug}
-                        name={child.name}
-                        tier={child.tier}
-                        hasChildren={getChildren(child.slug).length > 0}
-                      />
-                    </div>
+                  <div key={child.slug} style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <div style={{ position: 'absolute', top: 0, left: '50%', width: 1, height: 18, backgroundColor: 'rgba(245,166,35,0.18)', transform: 'translateX(-50%) translateY(-100%)' }} />
+                    <OrgNode slug={child.slug} name={child.name} tier={child.tier} />
                   </div>
                 ))}
               </div>
@@ -116,36 +92,43 @@ function OrgNode({ slug, name, tier, hasChildren }: NodeProps) {
 }
 
 export default function EcosystemOrgChart() {
-  const [isExpanded, setIsExpanded] = useState(true);
-
-  const umbrellas = getChildren(undefined);
+  const [open, setOpen] = useState(true);
+  const roots = getChildren(undefined);
 
   return (
-    <div className="mb-12 p-6 rounded-lg border-2" style={{ borderColor: 'rgba(245, 166, 35, 0.2)' }}>
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-lg font-bold">Ecosystem Structure</h2>
+    <div style={{
+      borderRadius: 16,
+      border: '1px solid rgba(255,255,255,0.07)',
+      backgroundColor: 'rgba(255,255,255,0.03)',
+      overflow: 'hidden',
+    }}>
+      {/* Header */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+        <div>
+          <p style={{ fontWeight: 700, fontSize: 15, margin: 0, letterSpacing: '-0.01em' }}>Ecosystem Structure</p>
+          <p style={{ fontSize: 12, color: MUTED, margin: '2px 0 0' }}>Organization hierarchy</p>
+        </div>
         <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="flex items-center gap-2 px-3 py-1.5 rounded text-sm transition-all opacity-75 hover:opacity-100"
-          style={{ backgroundColor: 'rgba(245, 166, 35, 0.1)' }}
+          onClick={() => setOpen(o => !o)}
+          style={{
+            display: 'flex', alignItems: 'center', gap: 5,
+            padding: '5px 12px', borderRadius: 8, fontSize: 12, fontWeight: 600,
+            border: 'none', backgroundColor: 'rgba(245,166,35,0.1)',
+            color: AMBER, cursor: 'pointer', transition: 'background 0.15s',
+          }}
+          onMouseEnter={e => (e.currentTarget.style.backgroundColor = 'rgba(245,166,35,0.18)')}
+          onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'rgba(245,166,35,0.1)')}
         >
-          {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-          {isExpanded ? 'Collapse' : 'Expand'}
+          {open ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
+          {open ? 'Collapse' : 'Expand'}
         </button>
       </div>
 
-      {isExpanded && (
-        <div className="overflow-x-auto pb-6">
-          <div className="flex gap-8 min-w-max px-4">
-            {umbrellas.map(umbrella => (
-              <div key={umbrella.slug} className="flex flex-col items-center">
-                <OrgNode
-                  slug={umbrella.slug}
-                  name={umbrella.name}
-                  tier={umbrella.tier}
-                  hasChildren={getChildren(umbrella.slug).length > 0}
-                />
-              </div>
+      {open && (
+        <div style={{ overflowX: 'auto', padding: '24px 24px 20px' }}>
+          <div style={{ display: 'flex', gap: 32, minWidth: 'max-content' }}>
+            {roots.map(r => (
+              <OrgNode key={r.slug} slug={r.slug} name={r.name} tier={r.tier} />
             ))}
           </div>
         </div>
