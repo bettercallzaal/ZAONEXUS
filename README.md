@@ -2,7 +2,7 @@
 
 > **Version 1.2.0** - Two-audience portal for ZAO community and ecosystem discovery
 
-A comprehensive two-route link directory featuring 119 curated links across 10 categories, plus 37 ecosystem brands. Built with Next.js 14, React 18, TypeScript, and TailwindCSS v3. Strategy D canonical rebuild per research/community/624.
+A comprehensive two-route link directory featuring 125 curated links across 10 categories, plus 44 ecosystem brands. Built with Next.js 14, React 18, TypeScript, and TailwindCSS v3. Strategy D canonical rebuild per research/community/624.
 
 ## ✨ Features
 
@@ -10,7 +10,7 @@ A comprehensive two-route link directory featuring 119 curated links across 10 c
 - 🔍 **Smart Search** - Real-time search across titles, descriptions, and URLs
 - 🎯 **Auto-Expand Results** - Automatically opens categories containing search matches
 - 📂 **Dual-Audience Routes** - Community-focused and ecosystem-focused views
-- 🔗 **119 Curated Links** - Across 10 categories, plus 37 ecosystem brands
+- 🔗 **125 Curated Links** - Across 10 categories, plus 44 ecosystem brands
 
 ### Two-Audience Architecture
 - **/community** - Member-facing content (ZAO holder resources, internal tools, governance)
@@ -299,7 +299,7 @@ For issues or questions, reach out to the ZAO community.
 
 ## Changelog
 
-> **Current canonical totals:** 119 links across 10 categories and 37 ecosystem brands. Numbers in older entries below are historical (e.g. the original "126 links / 8 categories") and are kept as a record, not current counts.
+> **Current canonical totals:** 125 links across 10 categories and 44 ecosystem brands. Numbers in older entries below are historical (e.g. the original "126 links / 8 categories") and are kept as a record, not current counts.
 
 ### 1.2.0 - Strategy D Canonical Rebuild (2026-05-07)
 

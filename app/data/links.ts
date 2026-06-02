@@ -30,7 +30,7 @@ export const linksData: MainCategory[] = [
           { title: "About", url: "https://thezao.com/about", description: "Learn about The ZAO", audience: "both" },
           { title: "Community", url: "https://thezao.com/community", description: "ZAO community hub", audience: "community" },
           { title: "Timeline", url: "https://thezao.com/timeline", description: "ZAO history and timeline", audience: "both" },
-          { title: "Newsletter (Paragraph)", url: "https://paragraph.xyz/@thezao", description: "Read ZAO updates", audience: "both" },
+          { title: "Newsletter (Paragraph)", url: "https://paragraph.com/@thezao", description: "Read ZAO updates", audience: "both" },
           { title: "Farcaster channel", url: "https://farcaster.xyz/~/channel/zao", description: "Join /zao Farcaster channel", audience: "both" },
           { title: "X / Twitter", url: "https://x.com/thezao", description: "Follow @thezao", audience: "both" },
           { title: "POIDH", url: "https://poidh.xyz/a/thezao", description: "ZAO on POIDH", audience: "ecosystem" }
@@ -54,7 +54,18 @@ export const linksData: MainCategory[] = [
       {
         subTitle: "Whitepaper & Documentation",
         links: [
-          { title: "ZAO Whitepaper Draft", url: "https://charmverse.io/thezao", description: "Community whitepaper", audience: "ecosystem" }
+          { title: "ZAO Whitepaper Draft", url: "https://charmverse.io/thezao", description: "Community whitepaper", audience: "ecosystem" },
+          { title: "ZTalent Whitepaper (HackMD)", url: "https://hackmd.io/u9jZ5Q1BR_uUwmRuksvF6Q", description: "The ZAO / ZTalent Artist Organization governance doc", audience: "ecosystem" }
+        ]
+      },
+      {
+        subTitle: "Artists & Music",
+        links: [
+          { title: "ZAO Artists", url: "https://www.thezao.com/artists", description: "ZAO Music artist roster", audience: "both" },
+          { title: "Music Releases", url: "https://www.thezao.com/music-releases", description: "ZAO discography and drops", audience: "both" },
+          { title: "ZTalent Ecosystem (ZAO CHART)", url: "https://www.thezao.com/ztalent-ecosystem", description: "ZTalent ecosystem overview", audience: "ecosystem" },
+          { title: "ZAO Leaderboard", url: "https://www.thezao.com/zao-leaderboard", description: "Member reputation leaderboard", audience: "community" },
+          { title: "$ZAO Respect Token", url: "https://www.thezao.com/zao-token", description: "Soulbound, non-transferable reputation token", audience: "both" }
         ]
       },
       {
@@ -186,7 +197,7 @@ export const linksData: MainCategory[] = [
         links: [
           { title: "Website", url: "https://studentloanz.xyz", description: "Student loans platform", audience: "ecosystem", featured: true },
           { title: "ZAO.lol Memebook", url: "https://zao.lol", description: "ZAO memebook and culture", audience: "community" },
-          { title: "Whitepaper", url: "https://paragraph.xyz/@thezao/student-loanz-whitepaper", description: "Student Loanz whitepaper", audience: "ecosystem" },
+          { title: "Whitepaper", url: "https://paragraph.com/@thezao/student-loanz-whitepaper", description: "Student Loanz whitepaper", audience: "ecosystem" },
           { title: "Daily Spaces on X", url: "https://x.com/loanzonbase", description: "Follow @loanzonbase for Daily Spaces", audience: "ecosystem" }
         ]
       },
