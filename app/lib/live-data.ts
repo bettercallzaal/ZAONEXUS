@@ -74,8 +74,15 @@ export async function getFarcasterStats(handle: string): Promise<Partial<LiveDat
   }
 }
 
-export async function getGithubLastCommit(repo: string): Promise<Partial<LiveData> | null> {
+export async function getGithubLastCommit(repoOrUrl: string): Promise<Partial<LiveData> | null> {
   try {
+    // Accept either "owner/repo" or a full github.com URL (the brand.github field
+    // stores full https:// URLs). Normalize to "owner/repo"; skip org/user-only values.
+    const repo = repoOrUrl
+      .replace(/^https?:\/\/(www\.)?github\.com\//i, '')
+      .replace(/\/+$/, '');
+    if (!repo.includes('/')) return null; // org/user only, not a specific repo
+
     const response = await fetch(
       `https://api.github.com/repos/${repo}/commits?per_page=1`,
       {
