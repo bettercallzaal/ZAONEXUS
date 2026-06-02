@@ -199,7 +199,13 @@ export const linksData: MainCategory[] = [
       {
         subTitle: "Hats Tree - Org Chart",
         links: [
-          { title: "ZAO Hats Tree", url: "https://hats.thezao.com", description: "ZAO organizational structure on Hats Protocol", audience: "ecosystem" }
+          { title: "ZAO Hats Tree", url: "https://hats.thezao.com", description: "ZAO organizational structure on Hats Protocol (Optimism, treeId 226)", audience: "ecosystem" }
+        ]
+      },
+      {
+        subTitle: "ZABAL Gamez (Season 1)",
+        links: [
+          { title: "ZABAL Gamez Empire", url: "https://empirebuilder.world/empire/zabalgamez01e9af", description: "Tokenless ZABAL Gamez Empire created live on Day 1 (Jun 1 2026)", audience: "both" }
         ]
       }
     ]
@@ -260,7 +266,8 @@ export const linksData: MainCategory[] = [
           { title: "Leaderboard API", url: "https://empirebuilder.world/api/leaderboards?tokenAddress=0xbB48f19B0494Ff7C1fE5Dc2032aeEE14312f0b07", description: "Leaderboard data", audience: "ecosystem" },
           { title: "Bonfires graph", url: "https://graph.bonfires.ai/zabal", description: "Knowledge graph", audience: "ecosystem" },
           { title: "Incented org", url: "https://incented.co/organizations/zabal", description: "Incentives management", audience: "ecosystem" },
-          { title: "ZABAL on SongJam", url: "https://songjam.space/zabal", description: "ZABAL hub on SongJam", audience: "ecosystem" }
+          { title: "ZABAL on SongJam", url: "https://songjam.space/zabal", description: "ZABAL hub on SongJam", audience: "ecosystem" },
+          { title: "Magnetiq Connector (zabal.lol)", url: "https://app.magnetiq.xyz/brand/ZABAL/magnet/Zabal%20Connector", description: "ZABAL Connector magnet — vanity zabal.lol", audience: "ecosystem" }
         ]
       }
     ]
