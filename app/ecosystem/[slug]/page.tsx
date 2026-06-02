@@ -229,7 +229,7 @@ export default async function BrandDetailPage(props: BrandDetailPageProps) {
             <div className="flex flex-wrap gap-2">
               {brand.github && (
                 <a
-                  href={`https://github.com/${brand.github}`}
+                  href={brand.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={socialLinkClass}
