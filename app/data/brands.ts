@@ -1,5 +1,6 @@
 export type BrandStage = 'active' | 'incubating' | 'zabal-track' | 'graduated' | 'paused';
 export type BrandTier = 'umbrella' | 'organization' | 'project' | 'sub-brand';
+export type Chain = 'base' | 'optimism' | 'mainnet' | 'solana';
 
 export interface Link {
   title: string;
@@ -59,6 +60,8 @@ export interface Brand {
 
   // extended
   tokenContract?: TokenContract;
+  chain?: Chain;          // primary chain when not captured by tokenContract
+  hatsTreeId?: string;    // Hats Protocol tree id (Respect Game role tree)
   links: Link[];
   milestones?: Milestone[];
   featured?: boolean;
@@ -81,7 +84,7 @@ export const brands: Brand[] = [
     homepage: 'https://bettercallzaal.com',
     x: 'bettercallzaal',
     farcaster: { handle: 'bettercallzaal' },
-    github: 'github.com/bettercallzaal',
+    github: 'https://github.com/bettercallzaal',
     links: [
       {
         title: 'Website',
@@ -120,7 +123,7 @@ export const brands: Brand[] = [
     homepage: 'https://thezao.com',
     x: 'thezao',
     farcaster: { handle: 'thezao', channel: 'zao', fid: 19640 },
-    github: 'github.com/bettercallzaal/ZAOOS',
+    github: 'https://github.com/bettercallzaal/ZAOOS',
     links: [
       {
         title: 'Website',
@@ -243,28 +246,34 @@ export const brands: Brand[] = [
   {
     slug: 'wavewarz',
     name: 'WaveWarZ',
-    tagline: 'Web3 music production and remix platform',
-    description: 'First ZAO incubated project. A decentralized music production platform where artists create, remix, and collaborate on-chain. Built by Hurric4n3ike with Zaal and Samantha (candytoybox) as cofounders.',
+    tagline: 'Web3 music production and prediction platform',
+    description: 'First ZAO incubated project. A decentralized music production and prediction platform where artists create, remix, and collaborate on-chain. Production runs on Solana with an agentic port on Base. Built by Hurric4n3ike with Zaal and Samantha (candytoybox) as cofounders.',
     stage: 'active',
     tier: 'project',
     parent: 'the-zao',
     status: 'live',
     founders: ['Hurric4n3ike', 'Zaal', 'Samantha (candytoybox)'],
     founded: '2024',
-    homepage: 'https://wavewarz.io',
-    github: 'github.com/wavewarz',
-    x: 'wavewarzmusi',
+    chain: 'solana',
+    homepage: 'https://wavewarz.com',
+    github: 'https://github.com/CandyToyBox',
+    x: 'WaveWarZ',
     farcaster: { channel: 'wavewarz' },
     links: [
       {
-        title: 'Platform',
-        url: 'https://wavewarz.io',
-        description: 'Create and collaborate on music'
+        title: 'Main site',
+        url: 'https://wavewarz.com',
+        description: 'Music prediction market (Solana production, Base agentic port)'
       },
       {
-        title: 'GitHub',
-        url: 'https://github.com/wavewarz',
-        description: 'Source code'
+        title: 'Intelligence dashboard',
+        url: 'https://wavewarz-intelligence.vercel.app',
+        description: 'Analytics dashboard'
+      },
+      {
+        title: 'GitHub (CandyToyBox org)',
+        url: 'https://github.com/CandyToyBox',
+        description: 'wavewarz-base, wavewarz-intelligence, wavewarz-merch-shop repos'
       }
     ]
   },
@@ -378,7 +387,7 @@ export const brands: Brand[] = [
     status: 'live',
     founded: 'Jan 2024',
     homepage: 'https://zaoos.com',
-    github: 'github.com/bettercallzaal/ZAOOS',
+    github: 'https://github.com/bettercallzaal/ZAOOS',
     x: 'zaoos',
     links: [
       {
@@ -465,7 +474,7 @@ export const brands: Brand[] = [
     slug: 'empire-builder',
     name: 'Empire Builder',
     tagline: 'Token launch and creator-economy primitives',
-    description: 'ZABAL track project. Token launch + ecosystem primitive. Featured at two crypto conferences. Being integrated into ZAO OS. Pending formal proposal to become a ZAO Project.',
+    description: 'ZABAL track project. Token launch + ecosystem primitive. Featured at two crypto conferences. Being integrated into ZAO OS. Used live in ZABAL Gamez S1 (Jun 1 2026) to spin up a tokenless ZABAL Gamez Empire. Pending formal proposal to become a ZAO Project.',
     stage: 'zabal-track',
     tier: 'project',
     parent: 'bettercallzaal',
@@ -475,6 +484,11 @@ export const brands: Brand[] = [
         title: 'Learn More',
         url: 'https://bettercallzaal.com',
         description: 'Check out BCZ site for details'
+      },
+      {
+        title: 'ZABAL Gamez Empire (live)',
+        url: 'https://empirebuilder.world/empire/zabalgamez01e9af',
+        description: 'Tokenless ZABAL Gamez Empire created live on Day 1'
       }
     ]
   },
@@ -488,6 +502,15 @@ export const brands: Brand[] = [
     tier: 'project',
     parent: 'bettercallzaal',
     status: 'live',
+    // Team note: Joshua.eth (Josh) is the FOUNDER. Ryan ("Rskagy") is a SEPARATE
+    // person who authors the Bonfires SDK — do NOT conflate Josh and Ryan.
+    // Plat0x = Carlos (technical architect). Jen Tran = business strategy (UNCONFIRMED).
+    founders: ['Joshua.eth (Josh)'],
+    staff: [
+      'Plat0x / Carlos (technical architect)',
+      'Ryan / Rskagy (Bonfires SDK author)',
+      'Jen Tran (business strategy — unconfirmed)'
+    ],
     homepage: 'https://bonfires.ai',
     links: [
       {
@@ -533,7 +556,7 @@ export const brands: Brand[] = [
     status: 'live',
     founded: '2024',
     homepage: 'https://bczyapz.com',
-    github: 'github.com/bettercallzaal/bcz-yapz',
+    github: 'https://github.com/bettercallzaal/bcz-yapz',
     links: [
       {
         title: 'BCZ YapZ',
@@ -552,17 +575,23 @@ export const brands: Brand[] = [
   {
     slug: 'fishbowlz',
     name: 'FISHBOWLZ',
-    tagline: 'Community bounties and collaboration platform',
-    description: 'PAUSED 2026-04-16. Pivoted to partnership with Juke. Was exploring community bounties and on-chain collaboration.',
+    tagline: 'Audio rooms platform (paused)',
+    description: 'PAUSED 2026-04-16. Pivoted to partnership with Juke. Was an audio rooms platform at fishbowlz.xyz.',
     stage: 'paused',
     tier: 'project',
     status: 'paused',
     founded: '2024',
+    homepage: 'https://fishbowlz.xyz',
     links: [
       {
         title: 'Historical Site',
-        url: 'https://fishbowlz.com',
+        url: 'https://fishbowlz.xyz',
         description: 'Archived (paused)'
+      },
+      {
+        title: 'Rooms',
+        url: 'https://fishbowlz.xyz/rooms/',
+        description: 'Browse FISHBOWLZ rooms (archived)'
       }
     ]
   },
@@ -616,6 +645,11 @@ export const brands: Brand[] = [
     status: 'live',
     links: [
       {
+        title: 'SoundCloud',
+        url: 'https://soundcloud.com/luijoseph',
+        description: 'Music platform'
+      },
+      {
         title: 'Farcaster',
         url: 'https://farcaster.xyz/~/user/josephgoats',
         description: 'Connect on Farcaster'
@@ -668,7 +702,15 @@ export const brands: Brand[] = [
     tier: 'sub-brand',
     parent: 'the-zao',
     status: 'live',
-    links: []
+    homepage: 'https://www.ritzyperiwinkle.com',
+    x: 'ritzy_p',
+    instagram: 'ritzyp',
+    links: [
+      { title: 'Website', url: 'https://www.ritzyperiwinkle.com', description: 'Personal site' },
+      { title: 'X / Twitter', url: 'https://x.com/ritzy_p', description: 'Follow on X' },
+      { title: 'Instagram', url: 'https://instagram.com/ritzyp', description: 'Follow on Instagram' },
+      { title: 'LinkedIn', url: 'https://linkedin.com/in/ritzyp', description: 'Professional profile' }
+    ]
   },
 
   {
@@ -762,12 +804,12 @@ export const brands: Brand[] = [
     slug: 'jed-xo',
     name: 'Jed XO',
     tagline: 'Creator and community member',
-    description: 'Community member within The ZAO ecosystem.',
-    stage: 'incubating',
+    description: 'Community member within The ZAO ecosystem. No public brand surface yet.',
+    stage: 'paused',
     tier: 'sub-brand',
     parent: 'the-zao',
-    status: 'unknown',
-    links: []
+    status: 'paused', // was 'unknown' — reconciled to a dormant placeholder
+    links: [] // intentionally empty — no canonical links yet
   },
 
   {
@@ -775,11 +817,11 @@ export const brands: Brand[] = [
     name: 'Defi Space Donkeys',
     tagline: 'Community project (coming soon)',
     description: 'Upcoming project within The ZAO ecosystem. Details coming soon.',
-    stage: 'incubating',
+    stage: 'paused', // reconciled: was stage:incubating + status:paused (contradiction)
     tier: 'sub-brand',
     parent: 'the-zao',
     status: 'paused',
-    links: []
+    links: [] // intentionally empty — "coming soon", no surface yet
   },
 
   {
@@ -787,11 +829,11 @@ export const brands: Brand[] = [
     name: 'Impact Concerts',
     tagline: 'Community project (coming soon)',
     description: 'Upcoming concert initiative within The ZAO ecosystem. Details coming soon.',
-    stage: 'incubating',
+    stage: 'paused', // reconciled: was stage:incubating + status:paused (contradiction)
     tier: 'sub-brand',
     parent: 'the-zao',
     status: 'paused',
-    links: []
+    links: [] // intentionally empty — "coming soon", no surface yet
   },
 
   {
@@ -803,7 +845,7 @@ export const brands: Brand[] = [
     tier: 'sub-brand',
     parent: 'the-zao',
     status: 'live',
-    links: []
+    links: [] // intentionally empty — staff contributor, no dedicated brand surface
   },
 
   // Other Ecosystems & Tools (if any should be tracked)
@@ -815,6 +857,7 @@ export const brands: Brand[] = [
     stage: 'active',
     tier: 'project',
     status: 'live',
+    chain: 'base',
     tokenContract: {
       chain: 'base',
       address: '0xbB48f19B0494Ff7C1fE5Dc2032aeEE14312f0b07',
@@ -888,6 +931,51 @@ export const brands: Brand[] = [
         title: 'iykyk Explore',
         url: 'https://iykyk.blank.space/home/Explore',
         description: 'iykyk home on blank.space'
+      }
+    ]
+  },
+
+  // Events & Governance
+  {
+    slug: 'zabal-gamez',
+    name: 'ZABAL Gamez',
+    tagline: 'Season 1 — 3-month community buildathon',
+    description: 'ZABAL Gamez Season 1 is live: a 3-month buildathon running daily workshops. Day 1 (Jun 1 2026) shipped two workshops — yerbearserker on Empire Builder (a tokenless ZABAL Gamez Empire was created live) and Joshua.eth + Plat0x on Bonfire. Day 2 (Jun 2 2026) Ohnahji on livestreaming.',
+    stage: 'active',
+    tier: 'project',
+    parent: 'bettercallzaal',
+    status: 'live',
+    founded: 'Jun 1 2026',
+    links: [
+      {
+        title: 'ZABAL Gamez Empire',
+        url: 'https://empirebuilder.world/empire/zabalgamez01e9af',
+        description: 'Tokenless Empire created live on Day 1'
+      }
+    ],
+    milestones: [
+      { date: '2026-06-01', title: 'S1 Day 1', description: 'yerbearserker / Empire Builder (tokenless ZABAL Gamez Empire created live) + Joshua.eth & Plat0x on Bonfire' },
+      { date: '2026-06-02', title: 'S1 Day 2', description: 'Ohnahji on livestreaming' }
+    ]
+  },
+
+  {
+    slug: 'respect-game',
+    name: 'Respect Game (ZAO Hats Tree)',
+    tagline: 'On-chain role/respect tree for ZAO governance',
+    description: 'The ZAO governance role tree built on Hats Protocol (the "Respect Game"). Lives on Optimism as tree id 226. Surfaces the org structure at hats.thezao.com.',
+    stage: 'active',
+    tier: 'project',
+    parent: 'the-zao',
+    status: 'live',
+    chain: 'optimism',
+    hatsTreeId: '226',
+    homepage: 'https://hats.thezao.com',
+    links: [
+      {
+        title: 'ZAO Hats Tree',
+        url: 'https://hats.thezao.com',
+        description: 'Org structure on Hats Protocol (Optimism, treeId 226)'
       }
     ]
   }
