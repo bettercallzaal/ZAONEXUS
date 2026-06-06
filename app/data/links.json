@@ -3504,5 +3504,17 @@
       "2026"
     ],
     "audience": "both"
+  },
+  {
+    "title": "ZAO Discord (vanity)",
+    "url": "https://discord.thezao.com",
+    "category": "The ZAO",
+    "subcategory": "ZAO Social Media Chats",
+    "description": "",
+    "tags": [
+      "discord",
+      "chat"
+    ],
+    "audience": "both"
   }
 ]
