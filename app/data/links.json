@@ -2423,5 +2423,57 @@
       "open-source"
     ],
     "audience": "both"
+  },
+  {
+    "title": "ZAO Spaces",
+    "url": "https://zaoos.com/spaces",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "zaoos",
+      "spaces",
+      "audio"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Live",
+    "url": "https://zaoos.com/live",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "zaoos",
+      "live",
+      "streaming"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Juke (status)",
+    "url": "https://zaoos.com/juke-status",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "zaoos",
+      "juke",
+      "jukebox",
+      "music"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "Zaal on Farcaster",
+    "url": "https://farcaster.xyz/zaal",
+    "category": "ZAO Members",
+    "subcategory": "BetterCallZaal",
+    "description": "",
+    "tags": [
+      "founder",
+      "farcaster"
+    ],
+    "audience": "community"
   }
 ]
