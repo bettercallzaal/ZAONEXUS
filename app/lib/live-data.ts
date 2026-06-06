@@ -1,11 +1,5 @@
 import { LiveData } from '../data/brands';
 
-interface FarcasterResponse {
-  result?: {
-    casts?: Array<{ hash: string; text: string; timestamp: string }>;
-  };
-}
-
 interface GithubCommit {
   sha: string;
   commit: {

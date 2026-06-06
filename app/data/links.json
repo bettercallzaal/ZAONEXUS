@@ -75,18 +75,6 @@
     "audience": "both"
   },
   {
-    "title": "ZAO Paragraph",
-    "url": "https://paragraph.com/@thezao",
-    "category": "The ZAO",
-    "subcategory": "ZAO Platforms",
-    "description": "ZAO writing and updates on Paragraph.",
-    "tags": [
-      "newsletter",
-      "writing"
-    ],
-    "audience": "both"
-  },
-  {
     "title": "ZAO Website",
     "url": "https://thezao.com",
     "category": "The ZAO",
@@ -127,7 +115,7 @@
   },
   {
     "title": "ZOR DAO",
-    "url": "http://zao.frapps.xyz/",
+    "url": "https://zao.frapps.xyz/",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
     "description": "Access ZOR DAO - the decentralized governance hub for The ZAO.",

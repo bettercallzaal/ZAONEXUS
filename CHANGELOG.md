@@ -11,6 +11,13 @@ All notable changes to ZAO Nexus will be documented in this file.
 - **Tag filtering** — toolbar tag chips (top 18 by frequency) filter links across all categories; combine with search. Clear-all when active.
 - Plumbing: `groupLinks` now passes `featured` / `addedDate` through from `links.json`; `FlatLink` gains both fields.
 
+### 🔧 Audit fixes
+
+- ZOR DAO link `http://` → `https://`.
+- Removed a duplicate `paragraph.com/@thezao` entry ("ZAO Paragraph", same URL as "Daily Newsletter Articles"). Total **146 → 145** (`/community` 68, `/ecosystem` 101).
+- Added Losi socials (Spotify + X `@izzylosi`) — flagged unverified pending confirmation.
+- Removed dead `FarcasterResponse` interface in `live-data.ts`.
+
 ## [1.3.2] - 2026-06-06
 
 ### 🔗 Verified socials + cleanups
