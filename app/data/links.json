@@ -5851,5 +5851,93 @@
     ],
     "audience": "both",
     "addedDate": "2026-06-06"
+  },
+  {
+    "title": "WaveWarZ Intelligence (repo)",
+    "url": "https://github.com/CandyToyBox/wavewarz-intelligence",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "Source for the WaveWarZ Intelligence analytics platform.",
+    "tags": [
+      "github",
+      "wavewarz",
+      "open-source"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "WaveWarZ Analytics (live)",
+    "url": "https://analytics-wave-warz.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "WaveWarz artist, trader, and fan stats app (by CandyToyBox).",
+    "tags": [
+      "wavewarz",
+      "analytics",
+      "stats",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "WaveWarZ Base (live)",
+    "url": "https://wavewarz-base.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "WaveWarz Base — agentic music battles on Base L2, mechanics proven on Solana.",
+    "tags": [
+      "wavewarz",
+      "base",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "WaveWarZ Africa Battle Zone (repo)",
+    "url": "https://github.com/songchaindao-dot/africa-battle-live-ui",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "Frontend for WaveWarz Africa live music battles and hosting flows (SongChain DAO).",
+    "tags": [
+      "github",
+      "wavewarz",
+      "africa",
+      "open-source"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "$ZABAL on GeckoTerminal",
+    "url": "https://www.geckoterminal.com/base/tokens/0xbB48f19B0494Ff7C1fE5Dc2032aeEE14312f0b07",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Tokens",
+    "description": "$ZABAL price, charts, and pools on GeckoTerminal (Base).",
+    "tags": [
+      "token",
+      "zabal",
+      "charts",
+      "base"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "$LOANZ on GeckoTerminal",
+    "url": "https://www.geckoterminal.com/base/tokens/0x03315307b202bf9c55ebebb8e9341d30411a0bc4",
+    "category": "Community Projects",
+    "subcategory": "$Loanz",
+    "description": "$LOANZ price, charts, and pools on GeckoTerminal (Base).",
+    "tags": [
+      "token",
+      "loanz",
+      "charts",
+      "base"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
   }
 ]
