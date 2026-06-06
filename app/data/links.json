@@ -4791,5 +4791,428 @@
       "x"
     ],
     "audience": "community"
+  },
+  {
+    "title": "ZAO ZABAL page",
+    "url": "https://thezao.com/zabal",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "zabal"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Festivals page",
+    "url": "https://thezao.com/festivals",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "festivals"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Member Portal",
+    "url": "https://portal.zaoos.com",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "zaoos",
+      "portal"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAO Claude Agent",
+    "url": "https://claude.zaoos.com",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "zaoos",
+      "agents",
+      "claude"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Agent Registry",
+    "url": "https://agents.zaoos.com",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "zaoos",
+      "agents"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAO Agent Orchestrator",
+    "url": "https://ao.zaoos.com",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "zaoos",
+      "agents",
+      "orchestrator"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAO Public API + MCP",
+    "url": "https://api.zaoos.com/mcp",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "zaoos",
+      "api",
+      "mcp"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "FISHBOWLZ (fishbowlz.xyz)",
+    "url": "https://fishbowlz.xyz",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "fishbowlz",
+      "music"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "FISHBOWLZ Rooms",
+    "url": "https://fishbowlz.xyz/rooms/",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "fishbowlz",
+      "rooms"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "Zlank (live)",
+    "url": "https://zlank.online",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "zlank",
+      "farcaster"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAOstock (zaostock.com)",
+    "url": "https://zaostock.com",
+    "category": "ZAO Festivals",
+    "subcategory": "ZAO Festivals",
+    "description": "",
+    "tags": [
+      "zaostock",
+      "festival"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAOstock Apply",
+    "url": "https://zaostock.com/apply",
+    "category": "ZAO Festivals",
+    "subcategory": "ZAO Festivals",
+    "description": "",
+    "tags": [
+      "zaostock",
+      "apply"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAOstock Volunteer",
+    "url": "https://zaostock.com/volunteer",
+    "category": "ZAO Festivals",
+    "subcategory": "ZAO Festivals",
+    "description": "",
+    "tags": [
+      "zaostock",
+      "volunteer"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZABAL Games (page)",
+    "url": "https://bettercallzaal.com/zabalgames.html",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "",
+    "tags": [
+      "zabal",
+      "games"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "C.O.C ConcertZ (repo)",
+    "url": "https://github.com/bettercallzaal/CoCConcertZ",
+    "category": "Community Projects",
+    "subcategory": "C.O.C ConcertZ",
+    "description": "",
+    "tags": [
+      "cocconcertz",
+      "github"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ (BCZ page)",
+    "url": "https://bettercallzaal.com/wavewarz/",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "wavewarz"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "BCZ YapZ (page)",
+    "url": "https://bettercallzaal.com/bczyapz/",
+    "category": "Community Projects",
+    "subcategory": "BCZ YapZ",
+    "description": "",
+    "tags": [
+      "yapz"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "BCZ YapZ Episodes",
+    "url": "https://bczyapz.com/ep/",
+    "category": "Community Projects",
+    "subcategory": "BCZ YapZ",
+    "description": "",
+    "tags": [
+      "yapz",
+      "episodes"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "BCZ YapZ Podcast (Spotify)",
+    "url": "https://open.spotify.com/show/1Bk6bsMYciOMyJohMVZUgt",
+    "category": "Community Projects",
+    "subcategory": "BCZ YapZ",
+    "description": "",
+    "tags": [
+      "yapz",
+      "podcast",
+      "spotify"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Bonfires SDK",
+    "url": "https://github.com/NERDDAO/bonfires-sdk",
+    "category": "Community Projects",
+    "subcategory": "Bonfire",
+    "description": "",
+    "tags": [
+      "bonfire",
+      "sdk"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Bonfires Mint",
+    "url": "https://mint.bonfires.ai",
+    "category": "Community Projects",
+    "subcategory": "Bonfire",
+    "description": "",
+    "tags": [
+      "bonfire",
+      "mint"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "POIDH (ZAO profile)",
+    "url": "https://poidh.xyz/a/thezao",
+    "category": "Community Projects",
+    "subcategory": "POIDH",
+    "description": "",
+    "tags": [
+      "poidh"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Juke (audio client)",
+    "url": "https://juke.audio",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "",
+    "tags": [
+      "partner",
+      "juke",
+      "audio"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Juke Developers",
+    "url": "https://juke.audio/developers",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "",
+    "tags": [
+      "partner",
+      "juke",
+      "dev"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "SongJam (.io)",
+    "url": "https://songjam.io",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "",
+    "tags": [
+      "partner",
+      "songjam"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "SongJam Docs",
+    "url": "https://docs.songjam.space",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "",
+    "tags": [
+      "partner",
+      "songjam",
+      "docs"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "$SANG on CoinGecko",
+    "url": "https://www.coingecko.com/en/coins/songjam-by-virtuals",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Tokens",
+    "description": "",
+    "tags": [
+      "sang",
+      "songjam",
+      "token"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Optimystics Tools",
+    "url": "https://optimystics.io/tools",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Infrastructure",
+    "description": "",
+    "tags": [
+      "governance",
+      "tools"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "BetterCallZaal YouTube",
+    "url": "https://youtube.com/@bettercallzaal",
+    "category": "ZAO Members",
+    "subcategory": "BetterCallZaal",
+    "description": "",
+    "tags": [
+      "founder",
+      "youtube"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "BetterCallZaal LinkedIn",
+    "url": "https://www.linkedin.com/in/zaalp",
+    "category": "ZAO Members",
+    "subcategory": "BetterCallZaal",
+    "description": "",
+    "tags": [
+      "founder",
+      "linkedin"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "BetterCallZaal Instagram",
+    "url": "https://instagram.com/bettercallzaal",
+    "category": "ZAO Members",
+    "subcategory": "BetterCallZaal",
+    "description": "",
+    "tags": [
+      "founder",
+      "instagram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Tom Fellenz Linktree (music)",
+    "url": "https://linktr.ee/fellenzmusic",
+    "category": "ZAO Members",
+    "subcategory": "Tom Fellenz",
+    "description": "",
+    "tags": [
+      "artist",
+      "links"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Tom Fellenz LinkedIn",
+    "url": "https://www.linkedin.com/in/tomfellenz",
+    "category": "ZAO Members",
+    "subcategory": "Tom Fellenz",
+    "description": "",
+    "tags": [
+      "artist",
+      "linkedin"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Suspekt Stilo SoundCloud",
+    "url": "https://soundcloud.com/stilosd",
+    "category": "ZAO Members",
+    "subcategory": "Stilo World",
+    "description": "",
+    "tags": [
+      "artist",
+      "soundcloud"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Stilo World X",
+    "url": "https://x.com/stilo_world",
+    "category": "ZAO Members",
+    "subcategory": "Stilo World",
+    "description": "",
+    "tags": [
+      "artist",
+      "x"
+    ],
+    "audience": "community"
   }
 ]
