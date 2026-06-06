@@ -3786,5 +3786,72 @@
       "github"
     ],
     "audience": "ecosystem"
+  },
+  {
+    "title": "ZOUNZ (Farcaster music app)",
+    "url": "https://github.com/bettercallzaal/ZOUNZ",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "farcaster",
+      "music",
+      "app",
+      "github"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Aurdour (DJ platform)",
+    "url": "https://github.com/bettercallzaal/Aurdour",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "dj",
+      "music",
+      "app",
+      "github"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAO Fractal (site)",
+    "url": "https://github.com/ZAODEVZ/ZAOfractal",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "governance",
+      "fractal",
+      "github"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "BCZ Coding Hub",
+    "url": "https://github.com/bettercallzaal/bettercallzaal-coding-hub",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "projects",
+      "hub"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "FarScout (Farcaster research agent)",
+    "url": "https://github.com/bettercallzaal/farscout",
+    "category": "Agents & Bots",
+    "subcategory": "Telegram Bots",
+    "description": "",
+    "tags": [
+      "agent",
+      "farcaster",
+      "github"
+    ],
+    "audience": "community"
   }
 ]
