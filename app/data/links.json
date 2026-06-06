@@ -2475,5 +2475,270 @@
       "farcaster"
     ],
     "audience": "community"
+  },
+  {
+    "title": "$ZABAL on BaseScan",
+    "url": "https://basescan.org/token/0xbB48f19B0494Ff7C1fE5Dc2032aeEE14312f0b07",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Tokens",
+    "description": "",
+    "tags": [
+      "zabal",
+      "token",
+      "basescan"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "$ZABAL on DexScreener",
+    "url": "https://dexscreener.com/base/0xbB48f19B0494Ff7C1fE5Dc2032aeEE14312f0b07",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Tokens",
+    "description": "",
+    "tags": [
+      "zabal",
+      "token",
+      "dex",
+      "chart"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "$LOANZ on DexScreener",
+    "url": "https://dexscreener.com/base/0x03315307b202bf9c55ebebb8e9341d30411a0bc4",
+    "category": "Community Projects",
+    "subcategory": "$Loanz",
+    "description": "",
+    "tags": [
+      "loanz",
+      "token",
+      "dex",
+      "chart"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZOUNZ DAO on BaseScan",
+    "url": "https://basescan.org/address/0xCB80Ef04DA68667c9a4450013BDD69269842c883",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "",
+    "tags": [
+      "zounz",
+      "dao",
+      "nouns",
+      "basescan"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAO About",
+    "url": "https://www.thezao.com/about",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "about",
+      "official"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Community",
+    "url": "https://www.thezao.com/community",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "community"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Timeline",
+    "url": "https://thezao.com/timeline",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "timeline",
+      "history"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "Respect Game (Optimystics)",
+    "url": "https://optimystics.io/respectgame",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "governance",
+      "respect",
+      "fractal"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Optimystics",
+    "url": "https://optimystics.io",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "governance",
+      "partner"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Fractalgram (GitHub)",
+    "url": "https://github.com/Optimystics/fractalgram",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "governance",
+      "github",
+      "fractal"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "SongJam (platform)",
+    "url": "https://songjam.space",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "",
+    "tags": [
+      "partner",
+      "audio",
+      "songjam"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Magnetiq (site)",
+    "url": "https://magnetiq.xyz",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "",
+    "tags": [
+      "partner",
+      "pom",
+      "magnetiq"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ.info",
+    "url": "https://wavewarz.info",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "wavewarz",
+      "info"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAO-PALOOZA Jango UU Card (Manifold)",
+    "url": "https://app.manifold.xyz/c/zao-card-jango-uu-ZAO-PALOOZA",
+    "category": "ZAO Onchain",
+    "subcategory": "ZAO Tokens",
+    "description": "",
+    "tags": [
+      "nft",
+      "manifold",
+      "artist-card"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Jango UU Website",
+    "url": "https://www.jangouu.com",
+    "category": "ZAO Members",
+    "subcategory": "Jango UU",
+    "description": "",
+    "tags": [
+      "artist",
+      "website"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Ohnahji Website",
+    "url": "https://ohnahjiu.com",
+    "category": "ZAO Members",
+    "subcategory": "Ohnahji B",
+    "description": "",
+    "tags": [
+      "artist",
+      "website"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "CandyToyBox X",
+    "url": "https://x.com/CandyToyBoxYT1",
+    "category": "ZAO Members",
+    "subcategory": "CandyToyBox",
+    "description": "",
+    "tags": [
+      "artist",
+      "cofounder",
+      "x"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "EZinCrypto (KnownOrigin)",
+    "url": "https://knownorigin.io/ezincrypto",
+    "category": "ZAO Members",
+    "subcategory": "EZinCrypto",
+    "description": "",
+    "tags": [
+      "artist",
+      "nft"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "NessytheRilla on Nina",
+    "url": "https://www.ninaprotocol.com/releases/nessy-the-rilla-with-love-1-5",
+    "category": "ZAO Members",
+    "subcategory": "NessytheRilla",
+    "description": "",
+    "tags": [
+      "artist",
+      "release",
+      "nina"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Mr Darius",
+    "url": "https://mrdariusmusic.com",
+    "category": "ZAO Members",
+    "subcategory": "Mr Darius",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Stilo World (stilo.world)",
+    "url": "https://www.stilo.world",
+    "category": "ZAO Members",
+    "subcategory": "Stilo World",
+    "description": "",
+    "tags": [
+      "artist",
+      "website"
+    ],
+    "audience": "community"
   }
 ]
