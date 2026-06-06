@@ -4426,5 +4426,18 @@
       "app"
     ],
     "audience": "ecosystem"
+  },
+  {
+    "title": "ZoundZ Marketplace (mini-app)",
+    "url": "https://github.com/hurric4n3ike/zoundz",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "zoundz",
+      "marketplace",
+      "github"
+    ],
+    "audience": "ecosystem"
   }
 ]
