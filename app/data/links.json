@@ -5897,5 +5897,103 @@
       "base"
     ],
     "audience": "both"
+  },
+  {
+    "title": "ZAO OS — Members Directory",
+    "url": "https://zaoos.com/members",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "Public unified ZAO member directory — PFP, ZID, tier, and Respect.",
+    "tags": [
+      "members",
+      "directory",
+      "zaoos"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAOstock Public Landing",
+    "url": "https://zaoos.com/stock",
+    "category": "ZAO Stock",
+    "subcategory": "Calendar",
+    "description": "ZAOstock 2026 public landing — RSVP, apply, and suggestion box.",
+    "tags": [
+      "zaostock",
+      "festival",
+      "public"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAOstock Team Dashboard",
+    "url": "https://zaoos.com/stock/team",
+    "category": "ZAO Stock",
+    "subcategory": "Calendar",
+    "description": "Auth-gated ZAOstock team dashboard — sponsors, artists, todos, and budget.",
+    "tags": [
+      "zaostock",
+      "dashboard",
+      "team"
+    ],
+    "audience": "community",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAOstock Circles",
+    "url": "https://zaoos.com/stock/circles",
+    "category": "ZAO Stock",
+    "subcategory": "Calendar",
+    "description": "ZAOstock self-join team circles and workstreams.",
+    "tags": [
+      "zaostock",
+      "circles",
+      "team"
+    ],
+    "audience": "community",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAOstock One-Pagers",
+    "url": "https://zaoos.com/stock/onepagers",
+    "category": "ZAO Stock",
+    "subcategory": "Calendar",
+    "description": "ZAOstock sponsor, partner, and venue one-pager briefings.",
+    "tags": [
+      "zaostock",
+      "onepagers",
+      "sponsors"
+    ],
+    "audience": "community",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Sopha Social",
+    "url": "https://sopha.social",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "Curated, quality-scored Farcaster feed powering the ZAO OS Trending tab.",
+    "tags": [
+      "partner",
+      "farcaster",
+      "feed"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAOOS GitHub Issues",
+    "url": "https://github.com/bettercallzaal/zaoos/issues",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "Bug reports and feature requests for the ZAOOS monorepo.",
+    "tags": [
+      "github",
+      "issues",
+      "open-source"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
   }
 ]
