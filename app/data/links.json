@@ -3853,5 +3853,400 @@
       "github"
     ],
     "audience": "community"
+  },
+  {
+    "title": "ZAO Projects (repo)",
+    "url": "https://github.com/bettercallzaal/zaoprojects",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "projects"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAOstock (repo)",
+    "url": "https://github.com/bettercallzaal/zao-stock",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "zaostock",
+      "festival"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Leaderboard (repo)",
+    "url": "https://github.com/bettercallzaal/ZAO-Leaderboard",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "leaderboard"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "Side by Side (repo)",
+    "url": "https://github.com/bettercallzaal/SidebySidev2",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "music",
+      "collab"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "Zalora Mascot (repo)",
+    "url": "https://github.com/bettercallzaal/zaloraV1",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "mascot",
+      "nft"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Video Editor (repo)",
+    "url": "https://github.com/bettercallzaal/ZAO-Video-Editor",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "tool",
+      "video"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Zaal Timeline (repo)",
+    "url": "https://github.com/bettercallzaal/zaaltimelinev1.1",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "timeline"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO NEXUS (repo)",
+    "url": "https://github.com/bettercallzaal/ZAONEXUS",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "nexus",
+      "directory"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "Iman Projects (repo)",
+    "url": "https://github.com/bettercallzaal/imanprojects",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "projects"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "FISHBOWLZ (repo)",
+    "url": "https://github.com/bettercallzaal/fishbowlz",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "github",
+      "fishbowlz",
+      "music"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Zlank Snap Template",
+    "url": "https://github.com/bettercallzaal/zlank-snap-template",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "github",
+      "farcaster",
+      "template"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAOcowork (research pipeline)",
+    "url": "https://github.com/bettercallzaal/zaocowork",
+    "category": "Agents & Bots",
+    "subcategory": "Telegram Bots",
+    "description": "",
+    "tags": [
+      "github",
+      "agent",
+      "research"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAO Newsletter Bot",
+    "url": "https://github.com/bettercallzaal/newsletter-bot-1",
+    "category": "Agents & Bots",
+    "subcategory": "Telegram Bots",
+    "description": "",
+    "tags": [
+      "github",
+      "bot",
+      "newsletter"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAO Fractal Bot v2",
+    "url": "https://github.com/bettercallzaal/ZAO-FRACTAL-BOTV2",
+    "category": "Agents & Bots",
+    "subcategory": "Telegram Bots",
+    "description": "",
+    "tags": [
+      "github",
+      "bot",
+      "fractal"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZABAL Bot (repo)",
+    "url": "https://github.com/bettercallzaal/zabalbot",
+    "category": "Agents & Bots",
+    "subcategory": "Telegram Bots",
+    "description": "",
+    "tags": [
+      "github",
+      "bot",
+      "zabal"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAOScribe Bot (ZAODEVZ)",
+    "url": "https://github.com/ZAODEVZ/ZAOsribeBOT",
+    "category": "Agents & Bots",
+    "subcategory": "Telegram Bots",
+    "description": "",
+    "tags": [
+      "github",
+      "bot",
+      "capture"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Zuke (ZAODEVZ)",
+    "url": "https://github.com/ZAODEVZ/Zuke",
+    "category": "Agents & Bots",
+    "subcategory": "Telegram Bots",
+    "description": "",
+    "tags": [
+      "github",
+      "zaodevz"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "WARZAI (WaveWarZ AI)",
+    "url": "https://github.com/bettercallzaal/WARZAI",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "github",
+      "wavewarz",
+      "ai"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ Base (repo)",
+    "url": "https://github.com/CandyToyBox/wavewarz-base",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "github",
+      "wavewarz",
+      "base"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ Analytics",
+    "url": "https://github.com/CandyToyBox/analytics-wave-warz",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "github",
+      "wavewarz",
+      "analytics"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ Stats App",
+    "url": "https://github.com/CandyToyBox/WaveWarz-Stats-App",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "github",
+      "wavewarz",
+      "stats"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ MusicToken",
+    "url": "https://github.com/CandyToyBox/MusicToken",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "github",
+      "wavewarz",
+      "token"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ StreamVoter",
+    "url": "https://github.com/CandyToyBox/streamvoter",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "github",
+      "wavewarz",
+      "voting"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ Homepage (Hurric4n3Ike)",
+    "url": "https://github.com/hurric4n3ike/wavewarzhomepage",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "github",
+      "wavewarz",
+      "design"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZABAL Socials (repo)",
+    "url": "https://github.com/bettercallzaal/zabalsocials",
+    "category": "Community Projects",
+    "subcategory": "ZABAL",
+    "description": "",
+    "tags": [
+      "github",
+      "zabal",
+      "socials"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZABAL Art Submission (repo)",
+    "url": "https://github.com/bettercallzaal/zabalartsubmission",
+    "category": "Community Projects",
+    "subcategory": "ZABAL",
+    "description": "",
+    "tags": [
+      "github",
+      "zabal",
+      "art"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "MidiPunkZ Moon Raid (game)",
+    "url": "https://github.com/johngoad/MidiPunkz-Moon-Raid",
+    "category": "Community Projects",
+    "subcategory": "MidiPunkZ",
+    "description": "",
+    "tags": [
+      "github",
+      "midipunkz",
+      "game"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "MidiPunkZ Site (repo)",
+    "url": "https://github.com/midipunkz/midipunkz.github.io",
+    "category": "Community Projects",
+    "subcategory": "MidiPunkZ",
+    "description": "",
+    "tags": [
+      "github",
+      "midipunkz",
+      "website"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "CandyToyBox Site (repo)",
+    "url": "https://github.com/CandyToyBox/candytoybox-site",
+    "category": "ZAO Members",
+    "subcategory": "CandyToyBox",
+    "description": "",
+    "tags": [
+      "github",
+      "website"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "SongJam UI (repo)",
+    "url": "https://github.com/SongjamSpace/songjam-ui",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "",
+    "tags": [
+      "github",
+      "songjam"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "SongJam Site (repo)",
+    "url": "https://github.com/SongjamSpace/songjam-site",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "",
+    "tags": [
+      "github",
+      "songjam"
+    ],
+    "audience": "ecosystem"
   }
 ]
