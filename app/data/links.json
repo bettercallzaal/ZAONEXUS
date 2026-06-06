@@ -5729,5 +5729,127 @@
     ],
     "audience": "both",
     "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAO Projects (live)",
+    "url": "https://zaoprojects.vercel.app",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "ZAO Projects — index of ZAO ecosystem projects and builds.",
+    "tags": [
+      "projects",
+      "directory",
+      "app"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "BCZ Coding Hub (live)",
+    "url": "https://bettercallzaal-coding-hub.vercel.app",
+    "category": "ZAO Members",
+    "subcategory": "BetterCallZaal Media",
+    "description": "BetterCallZaal personal GitHub hub — aggregates all projects with embedded READMEs.",
+    "tags": [
+      "github",
+      "hub",
+      "app"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "BetterCallZaal Strategies (live)",
+    "url": "https://bettercallzaal-strategies.vercel.app",
+    "category": "ZAO Members",
+    "subcategory": "BetterCallZaal",
+    "description": "BetterCallZaal strategies app.",
+    "tags": [
+      "strategies",
+      "app"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Side by Side (live)",
+    "url": "https://sideby-sidev2.vercel.app",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "Side by Side — ZAO comparison/showcase app.",
+    "tags": [
+      "app"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "$Loanz Platform (live)",
+    "url": "https://loanz-platform-1.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "$Loanz",
+    "description": "$Loanz platform — donate/lend ETH surface in the ZAO ecosystem.",
+    "tags": [
+      "loanz",
+      "defi",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZABAL Newsletter (live)",
+    "url": "https://zabalnewsletter.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "ZABAL",
+    "description": "ZABAL newsletter app.",
+    "tags": [
+      "zabal",
+      "newsletter",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Zaal Timeline (live)",
+    "url": "https://zaaltimelinev1-1.vercel.app",
+    "category": "ZAO Members",
+    "subcategory": "BetterCallZaal Media",
+    "description": "BetterCallZaal interactive timeline of builds and milestones.",
+    "tags": [
+      "timeline",
+      "app"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Fractal Bot (live)",
+    "url": "https://fractalbotnov2025.vercel.app",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "Fractal Bot — governance/fractals automation surface (Nov 2025).",
+    "tags": [
+      "fractals",
+      "bot",
+      "app"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "$Loanz Platform (repo)",
+    "url": "https://github.com/bettercallzaal/loanz-platform-1",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "Source for the $Loanz donate/lend-ETH platform.",
+    "tags": [
+      "github",
+      "loanz",
+      "open-source"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
   }
 ]
