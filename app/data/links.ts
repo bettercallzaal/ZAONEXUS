@@ -43,6 +43,8 @@ export interface FlatLink {
   description?: string;
   tags?: string[];
   audience?: 'community' | 'ecosystem' | 'both';
+  featured?: boolean;
+  addedDate?: string;
 }
 
 /** Canonical display order of the top-level categories. */
@@ -85,6 +87,8 @@ export function groupLinks(flat: FlatLink[]): MainCategory[] {
       description: item.description ?? '',
       audience: item.audience ?? 'both',
       tags: item.tags,
+      featured: item.featured,
+      addedDate: item.addedDate,
     });
   }
 

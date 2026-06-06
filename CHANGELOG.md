@@ -2,6 +2,15 @@
 
 All notable changes to ZAO Nexus will be documented in this file.
 
+## [1.4.0] - 2026-06-06
+
+### ✨ Discovery features
+
+- **Featured links** — links flagged `featured: true` render in a Featured grid at the top and get a star badge in-list. Seeded 6 marquee links (ZAO Website, ZAO OS App, Discord, WaveWarZ, $ZABAL Token, ZAO Artists).
+- **What's New** — links with an `addedDate` surface in a grid with a NEW badge (shown for the last 45 days). Seeded the 7 most recently added links.
+- **Tag filtering** — toolbar tag chips (top 18 by frequency) filter links across all categories; combine with search. Clear-all when active.
+- Plumbing: `groupLinks` now passes `featured` / `addedDate` through from `links.json`; `FlatLink` gains both fields.
+
 ## [1.3.2] - 2026-06-06
 
 ### 🔗 Verified socials + cleanups

@@ -5,7 +5,11 @@
     "category": "The ZAO",
     "subcategory": "Calendars",
     "description": "Browse upcoming ZAO events and activities on Luma.",
-    "tags": ["calendar", "events", "luma"],
+    "tags": [
+      "calendar",
+      "events",
+      "luma"
+    ],
     "audience": "both"
   },
   {
@@ -14,7 +18,10 @@
     "category": "The ZAO",
     "subcategory": "Calendars",
     "description": "Stay up to date with ZAO events on Google Calendar.",
-    "tags": ["calendar", "events"],
+    "tags": [
+      "calendar",
+      "events"
+    ],
     "audience": "both"
   },
   {
@@ -23,7 +30,12 @@
     "category": "The ZAO",
     "subcategory": "Calendars",
     "description": "Explore ZAO music-related events and gigs on Luma.",
-    "tags": ["calendar", "events", "music", "luma"],
+    "tags": [
+      "calendar",
+      "events",
+      "music",
+      "luma"
+    ],
     "audience": "both"
   },
   {
@@ -32,7 +44,10 @@
     "category": "The ZAO",
     "subcategory": "Daily Newsletter",
     "description": "Read daily newsletter articles.",
-    "tags": ["newsletter", "paragraph"],
+    "tags": [
+      "newsletter",
+      "paragraph"
+    ],
     "audience": "both"
   },
   {
@@ -41,7 +56,10 @@
     "category": "The ZAO",
     "subcategory": "Daily Newsletter",
     "description": "Subscribe for daily updates.",
-    "tags": ["newsletter", "subscribe"],
+    "tags": [
+      "newsletter",
+      "subscribe"
+    ],
     "audience": "both"
   },
   {
@@ -50,7 +68,10 @@
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
     "description": "Dive into the ZAO ORG CHART to see our team and projects.",
-    "tags": ["org-chart", "hats"],
+    "tags": [
+      "org-chart",
+      "hats"
+    ],
     "audience": "both"
   },
   {
@@ -59,7 +80,10 @@
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
     "description": "ZAO writing and updates on Paragraph.",
-    "tags": ["newsletter", "writing"],
+    "tags": [
+      "newsletter",
+      "writing"
+    ],
     "audience": "both"
   },
   {
@@ -68,8 +92,12 @@
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
     "description": "Visit the official ZAO website for all the latest news and resources.",
-    "tags": ["official", "website"],
-    "audience": "both"
+    "tags": [
+      "official",
+      "website"
+    ],
+    "audience": "both",
+    "featured": true
   },
   {
     "title": "ZAO Music (zaomusic.xyz)",
@@ -77,8 +105,13 @@
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
     "description": "Alternate domain mirroring thezao.com.",
-    "tags": ["official", "website", "mirror"],
-    "audience": "both"
+    "tags": [
+      "official",
+      "website",
+      "mirror"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
   },
   {
     "title": "ZAO YouTube",
@@ -86,7 +119,10 @@
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
     "description": "Official ZAO YouTube channel.",
-    "tags": ["youtube", "video"],
+    "tags": [
+      "youtube",
+      "video"
+    ],
     "audience": "both"
   },
   {
@@ -95,7 +131,10 @@
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
     "description": "Access ZOR DAO - the decentralized governance hub for The ZAO.",
-    "tags": ["dao", "governance"],
+    "tags": [
+      "dao",
+      "governance"
+    ],
     "audience": "both"
   },
   {
@@ -104,7 +143,10 @@
     "category": "The ZAO",
     "subcategory": "ZAO Social Media Chats",
     "description": "BetterCallZaal live streams on Twitch.",
-    "tags": ["twitch", "streaming"],
+    "tags": [
+      "twitch",
+      "streaming"
+    ],
     "audience": "both"
   },
   {
@@ -113,8 +155,12 @@
     "category": "The ZAO",
     "subcategory": "ZAO Social Media Chats",
     "description": "Join our ZAO Discord for real-time group chats.",
-    "tags": ["discord", "chat"],
-    "audience": "both"
+    "tags": [
+      "discord",
+      "chat"
+    ],
+    "audience": "both",
+    "featured": true
   },
   {
     "title": "Retake (Zaal)",
@@ -122,7 +168,10 @@
     "category": "The ZAO",
     "subcategory": "ZAO Social Media Chats",
     "description": "Zaal on Retake.",
-    "tags": ["retake", "streaming"],
+    "tags": [
+      "retake",
+      "streaming"
+    ],
     "audience": "both"
   },
   {
@@ -131,7 +180,10 @@
     "category": "The ZAO",
     "subcategory": "ZAO Social Media Chats",
     "description": "Connect with us on Telegram for updates and discussions.",
-    "tags": ["telegram", "chat"],
+    "tags": [
+      "telegram",
+      "chat"
+    ],
     "audience": "both"
   },
   {
@@ -140,7 +192,10 @@
     "category": "The ZAO",
     "subcategory": "ZAO Whitepaper",
     "description": "Dive into the ZAO Whitepaper for a deeper understanding of the ecosystem.",
-    "tags": ["whitepaper", "docs"],
+    "tags": [
+      "whitepaper",
+      "docs"
+    ],
     "audience": "both"
   },
   {
@@ -149,7 +204,11 @@
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
     "description": "Music battles and NFT jukebox.",
-    "tags": ["zaoos", "fishbowlz", "music"],
+    "tags": [
+      "zaoos",
+      "fishbowlz",
+      "music"
+    ],
     "audience": "both"
   },
   {
@@ -158,7 +217,11 @@
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
     "description": "Paperclip agent interface.",
-    "tags": ["zaoos", "agents", "paperclip"],
+    "tags": [
+      "zaoos",
+      "agents",
+      "paperclip"
+    ],
     "audience": "both"
   },
   {
@@ -167,7 +230,11 @@
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
     "description": "Pixel agent office - visualize your agent squad.",
-    "tags": ["zaoos", "agents", "pixels"],
+    "tags": [
+      "zaoos",
+      "agents",
+      "pixels"
+    ],
     "audience": "both"
   },
   {
@@ -176,8 +243,13 @@
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
     "description": "Main ZAO community app - chat, music, governance, and more.",
-    "tags": ["zaoos", "app", "official"],
-    "audience": "both"
+    "tags": [
+      "zaoos",
+      "app",
+      "official"
+    ],
+    "audience": "both",
+    "featured": true
   },
   {
     "title": "ZOE Dashboard",
@@ -185,7 +257,11 @@
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
     "description": "Agent dashboard - manage ZOE and the agent squad.",
-    "tags": ["zaoos", "agents", "zoe"],
+    "tags": [
+      "zaoos",
+      "agents",
+      "zoe"
+    ],
     "audience": "both"
   },
   {
@@ -242,7 +318,10 @@
     "category": "ZAO Festivals",
     "subcategory": "CMOTM Interviews",
     "description": "Attabotty Interview.",
-    "tags": ["interview", "cmotm"],
+    "tags": [
+      "interview",
+      "cmotm"
+    ],
     "audience": "community"
   },
   {
@@ -251,7 +330,10 @@
     "category": "ZAO Festivals",
     "subcategory": "CMOTM Interviews",
     "description": "CandyToyBox Interview.",
-    "tags": ["interview", "cmotm"],
+    "tags": [
+      "interview",
+      "cmotm"
+    ],
     "audience": "community"
   },
   {
@@ -260,7 +342,10 @@
     "category": "ZAO Festivals",
     "subcategory": "CMOTM Interviews",
     "description": "Daniel Obute Interview.",
-    "tags": ["interview", "cmotm"],
+    "tags": [
+      "interview",
+      "cmotm"
+    ],
     "audience": "community"
   },
   {
@@ -269,7 +354,10 @@
     "category": "ZAO Festivals",
     "subcategory": "CMOTM Interviews",
     "description": "Davyd Interview.",
-    "tags": ["interview", "cmotm"],
+    "tags": [
+      "interview",
+      "cmotm"
+    ],
     "audience": "community"
   },
   {
@@ -278,7 +366,10 @@
     "category": "ZAO Festivals",
     "subcategory": "CMOTM Interviews",
     "description": "Heather Interview.",
-    "tags": ["interview", "cmotm"],
+    "tags": [
+      "interview",
+      "cmotm"
+    ],
     "audience": "community"
   },
   {
@@ -287,7 +378,10 @@
     "category": "ZAO Festivals",
     "subcategory": "CMOTM Interviews",
     "description": "Hurric4n3Ike Interview.",
-    "tags": ["interview", "cmotm"],
+    "tags": [
+      "interview",
+      "cmotm"
+    ],
     "audience": "community"
   },
   {
@@ -296,7 +390,10 @@
     "category": "ZAO Festivals",
     "subcategory": "CMOTM Interviews",
     "description": "Ohnahji B Interview.",
-    "tags": ["interview", "cmotm"],
+    "tags": [
+      "interview",
+      "cmotm"
+    ],
     "audience": "community"
   },
   {
@@ -305,7 +402,10 @@
     "category": "ZAO Festivals",
     "subcategory": "CMOTM Interviews",
     "description": "Tej Interview.",
-    "tags": ["interview", "cmotm"],
+    "tags": [
+      "interview",
+      "cmotm"
+    ],
     "audience": "community"
   },
   {
@@ -314,7 +414,10 @@
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals",
     "description": "Donate to support ZAO Festivals.",
-    "tags": ["festivals", "donate"],
+    "tags": [
+      "festivals",
+      "donate"
+    ],
     "audience": "community"
   },
   {
@@ -323,7 +426,10 @@
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals",
     "description": "Shop for ZAO Festivals merchandise.",
-    "tags": ["festivals", "merch"],
+    "tags": [
+      "festivals",
+      "merch"
+    ],
     "audience": "community"
   },
   {
@@ -332,7 +438,10 @@
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals",
     "description": "Visit the official ZAO Festivals website.",
-    "tags": ["festivals", "official"],
+    "tags": [
+      "festivals",
+      "official"
+    ],
     "audience": "community"
   },
   {
@@ -341,7 +450,11 @@
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals",
     "description": "View ZAO PALOOZA Artist Cards.",
-    "tags": ["festivals", "nft", "artist-card"],
+    "tags": [
+      "festivals",
+      "nft",
+      "artist-card"
+    ],
     "audience": "community"
   },
   {
@@ -350,7 +463,10 @@
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals Socials",
     "description": "Like ZAO Festivals on Facebook.",
-    "tags": ["festivals", "facebook"],
+    "tags": [
+      "festivals",
+      "facebook"
+    ],
     "audience": "community"
   },
   {
@@ -359,7 +475,10 @@
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals Socials",
     "description": "Follow ZAO Festivals on Instagram.",
-    "tags": ["festivals", "instagram"],
+    "tags": [
+      "festivals",
+      "instagram"
+    ],
     "audience": "community"
   },
   {
@@ -368,7 +487,10 @@
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals Socials",
     "description": "Connect with ZAO Festivals on LinkedIn.",
-    "tags": ["festivals", "linkedin"],
+    "tags": [
+      "festivals",
+      "linkedin"
+    ],
     "audience": "community"
   },
   {
@@ -377,7 +499,10 @@
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals Socials",
     "description": "Follow ZAO Festivals on Twitter.",
-    "tags": ["festivals", "twitter"],
+    "tags": [
+      "festivals",
+      "twitter"
+    ],
     "audience": "community"
   },
   {
@@ -386,7 +511,10 @@
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals Socials",
     "description": "Watch ZAO Festivals videos on YouTube.",
-    "tags": ["festivals", "youtube"],
+    "tags": [
+      "festivals",
+      "youtube"
+    ],
     "audience": "community"
   },
   {
@@ -395,7 +523,10 @@
     "category": "ZAO Festivals",
     "subcategory": "ZAO Playlists",
     "description": "Listen to the ZAO SOUND.XYZ Playlist.",
-    "tags": ["playlist", "soundxyz"],
+    "tags": [
+      "playlist",
+      "soundxyz"
+    ],
     "audience": "community"
   },
   {
@@ -404,7 +535,10 @@
     "category": "ZAO Festivals",
     "subcategory": "ZAO Playlists",
     "description": "Listen to ZAO Spotify 2024 playlist.",
-    "tags": ["playlist", "spotify"],
+    "tags": [
+      "playlist",
+      "spotify"
+    ],
     "audience": "community"
   },
   {
@@ -413,7 +547,10 @@
     "category": "ZAO Festivals",
     "subcategory": "ZAO Playlists",
     "description": "Listen to ZAO Spotify 2025 playlist.",
-    "tags": ["playlist", "spotify"],
+    "tags": [
+      "playlist",
+      "spotify"
+    ],
     "audience": "community"
   },
   {
@@ -422,7 +559,10 @@
     "category": "Community Projects",
     "subcategory": "$Loanz",
     "description": "Dive into the original $Loanz Whitepaper for in-depth info on Student Loanz.",
-    "tags": ["loanz", "whitepaper"],
+    "tags": [
+      "loanz",
+      "whitepaper"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -431,7 +571,10 @@
     "category": "Community Projects",
     "subcategory": "$Loanz",
     "description": "Make your own $loanz memes.",
-    "tags": ["loanz", "memes"],
+    "tags": [
+      "loanz",
+      "memes"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -440,7 +583,10 @@
     "category": "Community Projects",
     "subcategory": "$Loanz",
     "description": "Visit the official $Loanz website to explore student loan solutions.",
-    "tags": ["loanz", "official"],
+    "tags": [
+      "loanz",
+      "official"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -449,7 +595,10 @@
     "category": "Community Projects",
     "subcategory": "$Loanz",
     "description": "Loanz Daily Spaces.",
-    "tags": ["loanz", "spaces"],
+    "tags": [
+      "loanz",
+      "spaces"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -466,7 +615,11 @@
     "category": "Community Projects",
     "subcategory": "C.O.C ConcertZ",
     "description": "Watch the full collection of C.O.C ConcertZ performances on YouTube.",
-    "tags": ["cocconcertz", "video", "youtube"],
+    "tags": [
+      "cocconcertz",
+      "video",
+      "youtube"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -475,7 +628,10 @@
     "category": "Community Projects",
     "subcategory": "C.O.C ConcertZ",
     "description": "Official website for C.O.C ConcertZ - Community of Creators live shows and events.",
-    "tags": ["cocconcertz", "events"],
+    "tags": [
+      "cocconcertz",
+      "events"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -484,7 +640,10 @@
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
     "description": "Explore the FeatherFrogs community on IMA.",
-    "tags": ["midipunkz", "featherfrogs"],
+    "tags": [
+      "midipunkz",
+      "featherfrogs"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -493,7 +652,11 @@
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
     "description": "Browse and collect MidiPunkz avatars.",
-    "tags": ["midipunkz", "nft", "avatar"],
+    "tags": [
+      "midipunkz",
+      "nft",
+      "avatar"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -502,7 +665,10 @@
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
     "description": "The official MidiPunkZ website.",
-    "tags": ["midipunkz", "partner"],
+    "tags": [
+      "midipunkz",
+      "partner"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -511,7 +677,10 @@
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
     "description": "Join the MidiPunkz community on IMA.",
-    "tags": ["midipunkz", "community"],
+    "tags": [
+      "midipunkz",
+      "community"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -520,7 +689,10 @@
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
     "description": "Play MidiVaderz on the MidiPunkZ website.",
-    "tags": ["midipunkz", "game"],
+    "tags": [
+      "midipunkz",
+      "game"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -529,7 +701,10 @@
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
     "description": "Check out the ZAO dedicated community space on midipunkz.com.",
-    "tags": ["midipunkz", "community"],
+    "tags": [
+      "midipunkz",
+      "community"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -546,7 +721,11 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
     "description": "Apply to battle in upcoming WaveWarZ events.",
-    "tags": ["wavewarz", "signup", "form"],
+    "tags": [
+      "wavewarz",
+      "signup",
+      "form"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -555,7 +734,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
     "description": "Subscribe to WaveWarZ news and announcements.",
-    "tags": ["wavewarz", "newsletter"],
+    "tags": [
+      "wavewarz",
+      "newsletter"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -564,7 +746,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
     "description": "Developer and participant documentation for WaveWarZ.",
-    "tags": ["wavewarz", "docs"],
+    "tags": [
+      "wavewarz",
+      "docs"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -573,7 +758,11 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
     "description": "Live-traded music battles streaming 24/7 on FLIX.fun.",
-    "tags": ["wavewarz", "streaming", "battles"],
+    "tags": [
+      "wavewarz",
+      "streaming",
+      "battles"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -582,7 +771,11 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
     "description": "Collect the official WaveWarZ OG Badge on Magnetiq.",
-    "tags": ["wavewarz", "badge", "magnetiq"],
+    "tags": [
+      "wavewarz",
+      "badge",
+      "magnetiq"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -591,7 +784,11 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
     "description": "WaveWarZ leaderboard powered by Songjam.",
-    "tags": ["wavewarz", "leaderboard", "songjam"],
+    "tags": [
+      "wavewarz",
+      "leaderboard",
+      "songjam"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -600,8 +797,12 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
     "description": "Official WaveWarZ site for live-traded music battles.",
-    "tags": ["wavewarz", "official"],
-    "audience": "ecosystem"
+    "tags": [
+      "wavewarz",
+      "official"
+    ],
+    "audience": "ecosystem",
+    "featured": true
   },
   {
     "title": "WaveWarZ Whitepaper Draft",
@@ -609,7 +810,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
     "description": "Read the WaveWarZ whitepaper draft on HackMD.",
-    "tags": ["wavewarz", "whitepaper"],
+    "tags": [
+      "wavewarz",
+      "whitepaper"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -618,7 +822,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "Community art contribution by Mumbo.",
-    "tags": ["wavewarz", "art"],
+    "tags": [
+      "wavewarz",
+      "art"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -627,7 +834,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "Animated battle card by Cannon Jones - V1.",
-    "tags": ["wavewarz", "art"],
+    "tags": [
+      "wavewarz",
+      "art"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -636,7 +846,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "Animated battle card by Cannon Jones - V2.",
-    "tags": ["wavewarz", "art"],
+    "tags": [
+      "wavewarz",
+      "art"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -645,7 +858,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "Clout.FM interview about WaveWarZ.",
-    "tags": ["wavewarz", "interview"],
+    "tags": [
+      "wavewarz",
+      "interview"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -654,7 +870,11 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "WaveWarZ feature on Darkside Podcast.",
-    "tags": ["wavewarz", "podcast", "interview"],
+    "tags": [
+      "wavewarz",
+      "podcast",
+      "interview"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -663,7 +883,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "WaveWarZ artist interview hosted by CandyToyBox.",
-    "tags": ["wavewarz", "interview"],
+    "tags": [
+      "wavewarz",
+      "interview"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -672,7 +895,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "Flix.Talk conversation featuring WaveWarZ.",
-    "tags": ["wavewarz", "interview"],
+    "tags": [
+      "wavewarz",
+      "interview"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -681,7 +907,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "Walkout theme created by Hurricane & Cannon for MokokaFlow.",
-    "tags": ["wavewarz", "collab"],
+    "tags": [
+      "wavewarz",
+      "collab"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -690,7 +919,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "WaveWarZ live update #6 on X.",
-    "tags": ["wavewarz", "update"],
+    "tags": [
+      "wavewarz",
+      "update"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -699,7 +931,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "WaveWarZ X Space featuring LUI & Stilo.",
-    "tags": ["wavewarz", "space"],
+    "tags": [
+      "wavewarz",
+      "space"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -708,7 +943,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "Cosmos ecosystem shoutout to WaveWarZ.",
-    "tags": ["wavewarz", "press"],
+    "tags": [
+      "wavewarz",
+      "press"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -717,7 +955,11 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "The Future of Music Engagement with Adam Place.",
-    "tags": ["wavewarz", "interview", "songjam"],
+    "tags": [
+      "wavewarz",
+      "interview",
+      "songjam"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -726,7 +968,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Content",
     "description": "Interview and article on Twisted Tweak.",
-    "tags": ["wavewarz", "interview"],
+    "tags": [
+      "wavewarz",
+      "interview"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -735,7 +980,11 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Partners",
     "description": "Home of WaveWarZ TV - continuous streaming.",
-    "tags": ["wavewarz", "partner", "streaming"],
+    "tags": [
+      "wavewarz",
+      "partner",
+      "streaming"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -744,7 +993,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Partners",
     "description": "Follow FLIX.fun on X for media and event updates.",
-    "tags": ["wavewarz", "partner"],
+    "tags": [
+      "wavewarz",
+      "partner"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -753,7 +1005,11 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Partners",
     "description": "Follow Magnetiq on X.",
-    "tags": ["wavewarz", "partner", "magnetiq"],
+    "tags": [
+      "wavewarz",
+      "partner",
+      "magnetiq"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -762,7 +1018,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Partners",
     "description": "Partner: Quakey Nation ecosystem.",
-    "tags": ["wavewarz", "partner"],
+    "tags": [
+      "wavewarz",
+      "partner"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -771,7 +1030,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Partners",
     "description": "Follow Quakey Nation on X.",
-    "tags": ["wavewarz", "partner"],
+    "tags": [
+      "wavewarz",
+      "partner"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -780,7 +1042,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Partners",
     "description": "Official partner - SIGEA Cloud.",
-    "tags": ["wavewarz", "partner"],
+    "tags": [
+      "wavewarz",
+      "partner"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -789,7 +1054,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Partners",
     "description": "Follow SIGEA Cloud on X.",
-    "tags": ["wavewarz", "partner"],
+    "tags": [
+      "wavewarz",
+      "partner"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -798,7 +1066,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Socials",
     "description": "Follow WaveWarZ activity on Farcaster.",
-    "tags": ["wavewarz", "farcaster"],
+    "tags": [
+      "wavewarz",
+      "farcaster"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -807,7 +1078,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Socials",
     "description": "Follow WaveWarZ on Instagram for visuals and clips.",
-    "tags": ["wavewarz", "instagram"],
+    "tags": [
+      "wavewarz",
+      "instagram"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -816,7 +1090,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Socials",
     "description": "Join the WaveWarZ Telegram community.",
-    "tags": ["wavewarz", "telegram"],
+    "tags": [
+      "wavewarz",
+      "telegram"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -825,7 +1102,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Socials",
     "description": "Stream live WaveWarZ events on Twitch.",
-    "tags": ["wavewarz", "twitch"],
+    "tags": [
+      "wavewarz",
+      "twitch"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -834,7 +1114,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Socials",
     "description": "Follow WaveWarZ on X for battle updates and highlights.",
-    "tags": ["wavewarz", "twitter"],
+    "tags": [
+      "wavewarz",
+      "twitter"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -843,7 +1126,10 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Socials",
     "description": "Watch WaveWarZ battles and interviews on YouTube.",
-    "tags": ["wavewarz", "youtube"],
+    "tags": [
+      "wavewarz",
+      "youtube"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -852,7 +1138,11 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Socials",
     "description": "Collect WaveWarZ drops on Zora.",
-    "tags": ["wavewarz", "zora", "nft"],
+    "tags": [
+      "wavewarz",
+      "zora",
+      "nft"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -861,7 +1151,11 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Wallets",
     "description": "Solana wallet for connecting to WaveWarZ.",
-    "tags": ["wavewarz", "wallet", "solana"],
+    "tags": [
+      "wavewarz",
+      "wallet",
+      "solana"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -870,7 +1164,11 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Wallets",
     "description": "Alternative Solana wallet compatible with WaveWarZ.",
-    "tags": ["wavewarz", "wallet", "solana"],
+    "tags": [
+      "wavewarz",
+      "wallet",
+      "solana"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -879,7 +1177,11 @@
     "category": "Community Projects",
     "subcategory": "WaveWarZ Wallets",
     "description": "Blockchain explorer for Solana transactions.",
-    "tags": ["wavewarz", "explorer", "solana"],
+    "tags": [
+      "wavewarz",
+      "explorer",
+      "solana"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -888,7 +1190,10 @@
     "category": "Community Projects",
     "subcategory": "ZABAL",
     "description": "Get the ZABAL connector.",
-    "tags": ["zabal", "tool"],
+    "tags": [
+      "zabal",
+      "tool"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -897,7 +1202,11 @@
     "category": "Community Projects",
     "subcategory": "ZABAL",
     "description": "ZABAL quests and incentives via Incented.",
-    "tags": ["zabal", "incented", "quests"],
+    "tags": [
+      "zabal",
+      "incented",
+      "quests"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -906,7 +1215,10 @@
     "category": "Community Projects",
     "subcategory": "ZABAL",
     "description": "ZABAL progress update on Paragraph.",
-    "tags": ["zabal", "update"],
+    "tags": [
+      "zabal",
+      "update"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -915,7 +1227,10 @@
     "category": "Community Projects",
     "subcategory": "ZABAL",
     "description": "Official ZABAL website.",
-    "tags": ["zabal", "official"],
+    "tags": [
+      "zabal",
+      "official"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -924,7 +1239,10 @@
     "category": "Community Projects",
     "subcategory": "ZABAL",
     "description": "ZABAL hub on Songjam.",
-    "tags": ["zabal", "songjam"],
+    "tags": [
+      "zabal",
+      "songjam"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -949,7 +1267,10 @@
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal",
     "description": "Access all BetterCallZaal links and resources on Linktree.",
-    "tags": ["founder", "zaal"],
+    "tags": [
+      "founder",
+      "zaal"
+    ],
     "audience": "community"
   },
   {
@@ -958,7 +1279,11 @@
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal",
     "description": "Schedule a meeting with Zaal.",
-    "tags": ["founder", "zaal", "meeting"],
+    "tags": [
+      "founder",
+      "zaal",
+      "meeting"
+    ],
     "audience": "community"
   },
   {
@@ -967,7 +1292,11 @@
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal Interviews",
     "description": "Interview #0: Blitzscaling a Startup w/Bayo.",
-    "tags": ["founder", "zaal", "interview"],
+    "tags": [
+      "founder",
+      "zaal",
+      "interview"
+    ],
     "audience": "community"
   },
   {
@@ -976,7 +1305,11 @@
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal Interviews",
     "description": "Interview #1: ZAO Fractal w/NovaCrypto.",
-    "tags": ["founder", "zaal", "interview"],
+    "tags": [
+      "founder",
+      "zaal",
+      "interview"
+    ],
     "audience": "community"
   },
   {
@@ -985,7 +1318,11 @@
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal Interviews",
     "description": "Interview #2: ZAO w/Lindsey.",
-    "tags": ["founder", "zaal", "interview"],
+    "tags": [
+      "founder",
+      "zaal",
+      "interview"
+    ],
     "audience": "community"
   },
   {
@@ -994,7 +1331,11 @@
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal Interviews",
     "description": "Interview #3: THE ZAO w/Will T.",
-    "tags": ["founder", "zaal", "interview"],
+    "tags": [
+      "founder",
+      "zaal",
+      "interview"
+    ],
     "audience": "community"
   },
   {
@@ -1003,7 +1344,11 @@
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal Interviews",
     "description": "Interview #4: HomeBase Interview with Lucciano.",
-    "tags": ["founder", "zaal", "interview"],
+    "tags": [
+      "founder",
+      "zaal",
+      "interview"
+    ],
     "audience": "community"
   },
   {
@@ -1012,7 +1357,11 @@
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal Interviews",
     "description": "Interview #5: Build on Base Ep1.",
-    "tags": ["founder", "zaal", "interview"],
+    "tags": [
+      "founder",
+      "zaal",
+      "interview"
+    ],
     "audience": "community"
   },
   {
@@ -1021,7 +1370,11 @@
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal Interviews",
     "description": "Interview #6: HomeBase follow-up with Lucciano.",
-    "tags": ["founder", "zaal", "interview"],
+    "tags": [
+      "founder",
+      "zaal",
+      "interview"
+    ],
     "audience": "community"
   },
   {
@@ -1030,7 +1383,11 @@
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal Interviews",
     "description": "Interview #7: Guest appearance on Late Night on Base with Bill.",
-    "tags": ["founder", "zaal", "interview"],
+    "tags": [
+      "founder",
+      "zaal",
+      "interview"
+    ],
     "audience": "community"
   },
   {
@@ -1039,7 +1396,12 @@
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal Media",
     "description": "KFMedia Talks featuring Zaal discussing The ZAO, creator ownership, and decentralized culture.",
-    "tags": ["founder", "zaal", "interview", "media"],
+    "tags": [
+      "founder",
+      "zaal",
+      "interview",
+      "media"
+    ],
     "audience": "community"
   },
   {
@@ -1048,7 +1410,11 @@
     "category": "ZAO Members",
     "subcategory": "GodCloud",
     "description": "Collect GodCloud tracks.",
-    "tags": ["member", "artist", "nft"],
+    "tags": [
+      "member",
+      "artist",
+      "nft"
+    ],
     "audience": "community"
   },
   {
@@ -1057,7 +1423,10 @@
     "category": "ZAO Members",
     "subcategory": "GodCloud",
     "description": "Website for GodCloud.",
-    "tags": ["member", "artist"],
+    "tags": [
+      "member",
+      "artist"
+    ],
     "audience": "community"
   },
   {
@@ -1066,7 +1435,11 @@
     "category": "ZAO Members",
     "subcategory": "Jango UU",
     "description": "Follow Jango UU on Instagram.",
-    "tags": ["member", "artist", "instagram"],
+    "tags": [
+      "member",
+      "artist",
+      "instagram"
+    ],
     "audience": "community"
   },
   {
@@ -1075,7 +1448,11 @@
     "category": "ZAO Members",
     "subcategory": "Jango UU",
     "description": "Listen to Jango UU on Spotify.",
-    "tags": ["member", "artist", "spotify"],
+    "tags": [
+      "member",
+      "artist",
+      "spotify"
+    ],
     "audience": "community"
   },
   {
@@ -1084,7 +1461,11 @@
     "category": "ZAO Members",
     "subcategory": "Jango UU",
     "description": "Follow Jango UU on X (Twitter).",
-    "tags": ["member", "artist", "twitter"],
+    "tags": [
+      "member",
+      "artist",
+      "twitter"
+    ],
     "audience": "community"
   },
   {
@@ -1093,7 +1474,10 @@
     "category": "ZAO Members",
     "subcategory": "Ohnahji B",
     "description": "Linktree for Ohnahji B.",
-    "tags": ["member", "artist"],
+    "tags": [
+      "member",
+      "artist"
+    ],
     "audience": "community"
   },
   {
@@ -1110,7 +1494,10 @@
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
     "description": "$ZABAL token launcher - the origin of the community token.",
-    "tags": ["partner", "token"],
+    "tags": [
+      "partner",
+      "token"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1119,7 +1506,11 @@
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
     "description": "Token empire rewards - stake and earn in the ZABAL ecosystem.",
-    "tags": ["partner", "staking", "rewards"],
+    "tags": [
+      "partner",
+      "staking",
+      "rewards"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1128,7 +1519,11 @@
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
     "description": "Community campaigns - bounties and tasks that grow the ZAO.",
-    "tags": ["partner", "bounties", "quests"],
+    "tags": [
+      "partner",
+      "bounties",
+      "quests"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1137,7 +1532,11 @@
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
     "description": "Proof of Meet hub - verify real-world connections and earn attestations.",
-    "tags": ["partner", "pom", "attestation"],
+    "tags": [
+      "partner",
+      "pom",
+      "attestation"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1146,7 +1545,11 @@
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
     "description": "Live audio spaces & ZABAL mention leaderboard - host rooms, earn points.",
-    "tags": ["partner", "audio", "leaderboard"],
+    "tags": [
+      "partner",
+      "audio",
+      "leaderboard"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1155,7 +1558,12 @@
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
     "description": "ZABAL Nouns DAO - daily NFT auctions funding the community treasury on Base.",
-    "tags": ["partner", "dao", "nouns", "nft"],
+    "tags": [
+      "partner",
+      "dao",
+      "nouns",
+      "nft"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1172,7 +1580,8 @@
     "category": "Ecosystem & Tokens",
     "subcategory": "Tokens",
     "description": "ZABAL token on Base (Clanker)",
-    "audience": "ecosystem"
+    "audience": "ecosystem",
+    "featured": true
   },
   {
     "title": "Mint Attabotty ZAO-PALOOZA Card",
@@ -1180,7 +1589,11 @@
     "category": "ZAO Onchain",
     "subcategory": "ZAO Tokens",
     "description": "Collect the limited-edition Attabotty artist card from ZAO-PALOOZA.",
-    "tags": ["mint", "nft", "artist-card"],
+    "tags": [
+      "mint",
+      "nft",
+      "artist-card"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1189,7 +1602,11 @@
     "category": "ZAO Onchain",
     "subcategory": "ZAO Tokens",
     "description": "Own a piece of the ZAO-CHELLA experience by minting the Vibez track.",
-    "tags": ["mint", "nft", "zora"],
+    "tags": [
+      "mint",
+      "nft",
+      "zora"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1198,7 +1615,11 @@
     "category": "ZAO Onchain",
     "subcategory": "ZAO Tokens",
     "description": "Bring Zalora into your wallet - the on-chain mascot of the ZAO.",
-    "tags": ["mint", "nft", "mascot"],
+    "tags": [
+      "mint",
+      "nft",
+      "mascot"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1207,7 +1628,11 @@
     "category": "ZAO Onchain",
     "subcategory": "ZAO Tracks",
     "description": "Vibe to the first official ZAO track from ZAO-CHELLA.",
-    "tags": ["track", "zora", "mint"],
+    "tags": [
+      "track",
+      "zora",
+      "mint"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1216,7 +1641,9 @@
     "category": "ZAO Onchain",
     "subcategory": "ZAO Tracks",
     "description": "Listen to the multi-artist Cypher track from ZAO-CHELLA.",
-    "tags": ["track"],
+    "tags": [
+      "track"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1225,7 +1652,11 @@
     "category": "ZAO Onchain",
     "subcategory": "ZAO Tracks",
     "description": "Watch the Side-by-Side collab in MidiVaderZ - MidiPunkz side.",
-    "tags": ["track", "collab", "midipunkz"],
+    "tags": [
+      "track",
+      "collab",
+      "midipunkz"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1234,7 +1665,11 @@
     "category": "ZAO Onchain",
     "subcategory": "ZAO Tracks",
     "description": "Watch the Side-by-Side collab in MidiVaderZ - ZAO side.",
-    "tags": ["track", "collab", "midipunkz"],
+    "tags": [
+      "track",
+      "collab",
+      "midipunkz"
+    ],
     "audience": "ecosystem"
   },
   {
@@ -1251,8 +1686,13 @@
     "category": "The ZAO",
     "subcategory": "Artists & Music",
     "description": "ZAO Music artist roster.",
-    "tags": ["artists", "music"],
-    "audience": "both"
+    "tags": [
+      "artists",
+      "music"
+    ],
+    "audience": "both",
+    "featured": true,
+    "addedDate": "2026-06-06"
   },
   {
     "title": "Music Releases",
@@ -1260,8 +1700,12 @@
     "category": "The ZAO",
     "subcategory": "Artists & Music",
     "description": "ZAO discography and drops.",
-    "tags": ["music", "releases"],
-    "audience": "both"
+    "tags": [
+      "music",
+      "releases"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
   },
   {
     "title": "ZTalent Ecosystem (ZAO CHART)",
@@ -1269,8 +1713,12 @@
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
     "description": "ZTalent ecosystem overview (ZAO CHART).",
-    "tags": ["ztalent", "ecosystem"],
-    "audience": "ecosystem"
+    "tags": [
+      "ztalent",
+      "ecosystem"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
   },
   {
     "title": "ZAO Leaderboard",
@@ -1278,8 +1726,12 @@
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
     "description": "Member reputation leaderboard.",
-    "tags": ["leaderboard", "reputation"],
-    "audience": "community"
+    "tags": [
+      "leaderboard",
+      "reputation"
+    ],
+    "audience": "community",
+    "addedDate": "2026-06-06"
   },
   {
     "title": "ZTalent Whitepaper (HackMD)",
@@ -1287,8 +1739,13 @@
     "category": "The ZAO",
     "subcategory": "ZAO Whitepaper",
     "description": "The ZAO / ZTalent Artist Organization governance doc.",
-    "tags": ["whitepaper", "ztalent", "docs"],
-    "audience": "ecosystem"
+    "tags": [
+      "whitepaper",
+      "ztalent",
+      "docs"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
   },
   {
     "title": "$ZAO Respect Token",
@@ -1296,7 +1753,12 @@
     "category": "Ecosystem & Tokens",
     "subcategory": "Tokens",
     "description": "Soulbound, non-transferable reputation token (distinct from tradable $ZABAL).",
-    "tags": ["token", "respect", "soulbound"],
-    "audience": "both"
+    "tags": [
+      "token",
+      "respect",
+      "soulbound"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
   }
 ]
