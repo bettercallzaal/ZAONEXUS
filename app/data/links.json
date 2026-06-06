@@ -3033,5 +3033,114 @@
       "youtube"
     ],
     "audience": "community"
+  },
+  {
+    "title": "CandyToyBox YouTube",
+    "url": "https://www.youtube.com/@CandyToyBox",
+    "category": "ZAO Members",
+    "subcategory": "CandyToyBox",
+    "description": "",
+    "tags": [
+      "cofounder",
+      "youtube"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "CandyToyBox Instagram",
+    "url": "https://www.instagram.com/candytoyboxyt",
+    "category": "ZAO Members",
+    "subcategory": "CandyToyBox",
+    "description": "",
+    "tags": [
+      "cofounder",
+      "instagram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "CandyToyBox TikTok",
+    "url": "https://www.tiktok.com/@candytoybox",
+    "category": "ZAO Members",
+    "subcategory": "CandyToyBox",
+    "description": "",
+    "tags": [
+      "cofounder",
+      "tiktok"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Mr Darius on HUG",
+    "url": "https://hug.art/artists/mrdarius",
+    "category": "ZAO Members",
+    "subcategory": "Mr Darius",
+    "description": "",
+    "tags": [
+      "artist",
+      "hug",
+      "nft"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Daniel Obuté Spotify",
+    "url": "https://open.spotify.com/artist/5FPLqTys3eNuqINrJWAGJ5",
+    "category": "ZAO Members",
+    "subcategory": "Daniel Obuté",
+    "description": "",
+    "tags": [
+      "artist",
+      "spotify"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Hurric4n3Ike X",
+    "url": "https://x.com/Hurric4n3Ike",
+    "category": "ZAO Members",
+    "subcategory": "Hurric4n3Ike",
+    "description": "",
+    "tags": [
+      "artist",
+      "x"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Hurric4n3Ike BeatStars",
+    "url": "https://hurric4n3ike.beatstars.com",
+    "category": "ZAO Members",
+    "subcategory": "Hurric4n3Ike",
+    "description": "",
+    "tags": [
+      "artist",
+      "beats"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Hurric4n3Ike TikTok",
+    "url": "https://www.tiktok.com/@hurric4n3ike",
+    "category": "ZAO Members",
+    "subcategory": "Hurric4n3Ike",
+    "description": "",
+    "tags": [
+      "artist",
+      "tiktok"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Hurric4n3Ike Instagram",
+    "url": "https://www.instagram.com/hurric4n3ike.wav",
+    "category": "ZAO Members",
+    "subcategory": "Hurric4n3Ike",
+    "description": "",
+    "tags": [
+      "artist",
+      "instagram"
+    ],
+    "audience": "community"
   }
 ]
