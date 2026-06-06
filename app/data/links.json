@@ -3454,5 +3454,18 @@
       "label"
     ],
     "audience": "community"
+  },
+  {
+    "title": "Bonfires App",
+    "url": "https://app.bonfires.ai",
+    "category": "Community Projects",
+    "subcategory": "Bonfire",
+    "description": "",
+    "tags": [
+      "bonfire",
+      "app",
+      "knowledge-graph"
+    ],
+    "audience": "ecosystem"
   }
 ]

@@ -2,7 +2,7 @@
 
 > **Version 1.4.0** - Two-audience portal for ZAO community and ecosystem discovery
 
-A comprehensive two-route link directory featuring 285 curated links across 9 categories, plus 44 ecosystem brands. Built with Next.js 14, React 18, TypeScript, and TailwindCSS v3. Strategy D canonical rebuild per research/community/624.
+A comprehensive two-route link directory featuring 286 curated links across 9 categories, plus 44 ecosystem brands. Built with Next.js 14, React 18, TypeScript, and TailwindCSS v3. Strategy D canonical rebuild per research/community/624.
 
 ## ✨ Features
 
@@ -10,7 +10,7 @@ A comprehensive two-route link directory featuring 285 curated links across 9 ca
 - 🔍 **Smart Search** - Real-time search across titles, descriptions, and URLs
 - 🎯 **Auto-Expand Results** - Automatically opens categories containing search matches
 - 📂 **Dual-Audience Routes** - Community-focused and ecosystem-focused views
-- 🔗 **285 Curated Links** - Across 9 categories, plus 44 ecosystem brands
+- 🔗 **286 Curated Links** - Across 9 categories, plus 44 ecosystem brands
 
 ### Two-Audience Architecture
 - **/community** - Member-facing content (ZAO holder resources, internal tools, governance)
