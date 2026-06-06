@@ -2,7 +2,7 @@
 
 > **Version 1.2.0** - Two-audience portal for ZAO community and ecosystem discovery
 
-A comprehensive two-route link directory featuring 125 curated links across 10 categories, plus 44 ecosystem brands. Built with Next.js 14, React 18, TypeScript, and TailwindCSS v3. Strategy D canonical rebuild per research/community/624.
+A comprehensive two-route link directory featuring 141 curated links across 9 categories, plus 44 ecosystem brands. Built with Next.js 14, React 18, TypeScript, and TailwindCSS v3. Strategy D canonical rebuild per research/community/624.
 
 ## ✨ Features
 
@@ -10,7 +10,7 @@ A comprehensive two-route link directory featuring 125 curated links across 10 c
 - 🔍 **Smart Search** - Real-time search across titles, descriptions, and URLs
 - 🎯 **Auto-Expand Results** - Automatically opens categories containing search matches
 - 📂 **Dual-Audience Routes** - Community-focused and ecosystem-focused views
-- 🔗 **125 Curated Links** - Across 10 categories, plus 44 ecosystem brands
+- 🔗 **141 Curated Links** - Across 9 categories, plus 44 ecosystem brands
 
 ### Two-Audience Architecture
 - **/community** - Member-facing content (ZAO holder resources, internal tools, governance)
@@ -119,30 +119,28 @@ NexusV2/
 
 ### Adding New Links
 
-Edit `app/data/links.ts` and add your links following the existing structure with the new audience field:
+Links live in the flat, canonical **`app/data/links.json`** — one object per link. The
+site fetches this file at runtime from raw GitHub (`main` branch), so **editing
+`links.json` on GitHub updates the live site without a redeploy** (the bundled copy
+is used as a fallback if the fetch fails). `app/data/links.ts` groups this flat
+list into the nested category view the UI renders.
 
-```typescript
+Add an entry following this shape:
+
+```json
 {
-  mainCategory: "Your Category",
-  subcategories: [
-    {
-      subTitle: "Your Subcategory",
-      links: [
-        {
-          title: "Link Title",
-          url: "https://example.com",
-          description: "Link description",
-          audience: "community",           // NEW: 'community' | 'ecosystem' | 'both'
-          featured: true,                   // OPTIONAL: pin to top
-          addedDate: "2026-05-07",          // OPTIONAL: for "What's New"
-          status: "live",                   // OPTIONAL: 'live' | 'down' | 'paused'
-          tags: ["music", "onchain"]        // OPTIONAL: for v1.3 filtering
-        }
-      ]
-    }
-  ]
+  "title": "Link Title",
+  "url": "https://example.com",
+  "category": "The ZAO",
+  "subcategory": "ZAO Platforms",
+  "description": "Link description",
+  "tags": ["music", "onchain"]
 }
 ```
+
+- `title`, `url`, `category` are required; `subcategory`, `description`, `tags` are optional.
+- `category` must be one of the 9 canonical categories (order defined by `CATEGORY_ORDER` in `links.ts`): The ZAO, ZAO OS, Agents & Bots, ZAO Festivals, Community Projects, ZAO Members, Ecosystem & Tokens, ZAO Onchain, ZAO Stock.
+- Categories and subcategories render in first-seen order within the canonical category order.
 
 ### Audience Tagging Guidelines
 
@@ -266,11 +264,11 @@ ZAO Nexus is the **central discovery hub** for everything ZAO - an amalgamation 
 
 We're continuously expanding the Nexus! If you know of ZAO links that should be included:
 
-1. **Via Pull Request**:
-   - Fork the repository
-   - Edit `app/data/links.ts`
-   - Add your links following the existing structure
-   - Submit a PR
+1. **Via Pull Request** (or edit directly on GitHub — no redeploy needed):
+   - Fork the repository (or edit in the GitHub UI)
+   - Edit `app/data/links.json`
+   - Add your links following the canonical flat schema above
+   - Commit to `main` (or submit a PR) — the live site picks up changes from raw GitHub
 
 2. **Via Link Management Script**:
    ```bash
@@ -299,7 +297,7 @@ For issues or questions, reach out to the ZAO community.
 
 ## Changelog
 
-> **Current canonical totals:** 125 links across 10 categories and 44 ecosystem brands. Numbers in older entries below are historical (e.g. the original "126 links / 8 categories") and are kept as a record, not current counts.
+> **Current canonical totals:** 141 links across 9 categories and 44 ecosystem brands. Numbers in older entries below are historical (e.g. the original "126 links / 8 categories") and are kept as a record, not current counts.
 
 ### 1.2.0 - Strategy D Canonical Rebuild (2026-05-07)
 
