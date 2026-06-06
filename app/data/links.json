@@ -3418,5 +3418,41 @@
       "soundcloud"
     ],
     "audience": "community"
+  },
+  {
+    "title": "Let's Talk About Web3 (Podcast)",
+    "url": "https://pods.media/lets-talk-about-web3",
+    "category": "Community Projects",
+    "subcategory": "Web3 Podcast",
+    "description": "",
+    "tags": [
+      "podcast",
+      "web3"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "Web3 Podcast Community (LTAW3)",
+    "url": "https://ltaw3.thezao.com",
+    "category": "Community Projects",
+    "subcategory": "Web3 Podcast",
+    "description": "",
+    "tags": [
+      "podcast",
+      "community"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "Goldilox on Blonde Records",
+    "url": "https://blonderecords.com/goldi",
+    "category": "ZAO Members",
+    "subcategory": "Goldilox",
+    "description": "",
+    "tags": [
+      "artist",
+      "label"
+    ],
+    "audience": "community"
   }
 ]
