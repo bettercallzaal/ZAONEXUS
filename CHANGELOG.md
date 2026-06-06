@@ -2,6 +2,15 @@
 
 All notable changes to ZAO Nexus will be documented in this file.
 
+## [1.3.0] - 2026-06-06
+
+### 🔄 Canonical data consolidation + GitHub sync
+
+- **Canonical link set** - Replaced the bundled link data with a consolidated set of **139 links across 9 categories** (The ZAO, ZAO OS, Agents & Bots, ZAO Festivals, Community Projects, ZAO Members, Ecosystem & Tokens, ZAO Onchain, ZAO Stock), merged from three previously-drifted sources.
+- **Audience split** - Each link carries an `audience` (`community` / `ecosystem` / `both`). `/community` shows community + both (64); `/ecosystem` shows ecosystem + both (96). The 21 `both` links appear on each.
+- **Flat JSON source of truth** - Link data now lives in `app/data/links.json` (flat, one object per link). `app/data/links.ts` groups it into the nested category view at load time.
+- **Runtime GitHub sync** - The site fetches `links.json` from raw GitHub (`main`) at runtime, so edits to the file update the live site **without a redeploy**. The bundled copy is used as a fallback if the fetch fails.
+
 ## [1.1.0] - 2026-02-12
 
 ### ✨ New Features

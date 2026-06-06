@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { linksData, type MainCategory } from './data/links';
+import { linksData, fetchLinksData, type MainCategory } from './data/links';
 
 type Audience = 'community' | 'ecosystem' | 'both';
 
@@ -36,9 +36,19 @@ export default function Home({ audience = 'community' }: { audience?: 'community
   const [expandedCats, setExpandedCats] = useState<Set<string>>(new Set());
   const [expandedSubs, setExpandedSubs] = useState<Set<string>>(new Set());
   const [copied, setCopied]             = useState<string | null>(null);
+  const [linkData, setLinkData]         = useState<MainCategory[]>(linksData);
   const searchRef = useRef<HTMLInputElement>(null);
 
-  const allData = useMemo(() => filterByAudience(linksData, currentAudience), [currentAudience]);
+  // Sync the latest links from raw GitHub at runtime (no redeploy needed to
+  // edit links). Bundled data renders immediately; the fetch silently falls
+  // back to it on any failure.
+  useEffect(() => {
+    let active = true;
+    fetchLinksData().then(d => { if (active) setLinkData(d); });
+    return () => { active = false; };
+  }, []);
+
+  const allData = useMemo(() => filterByAudience(linkData, currentAudience), [linkData, currentAudience]);
 
   const totalLinks = useMemo(
     () => allData.reduce((t, c) => t + c.subcategories.reduce((s, sub) => s + sub.links.length, 0), 0),
