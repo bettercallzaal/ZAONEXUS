@@ -963,19 +963,6 @@
     "audience": "ecosystem"
   },
   {
-    "title": "Flix.Fun",
-    "url": "https://flix.fun/",
-    "category": "Community Projects",
-    "subcategory": "WaveWarZ Partners",
-    "description": "Home of WaveWarZ TV - continuous streaming.",
-    "tags": [
-      "wavewarz",
-      "partner",
-      "streaming"
-    ],
-    "audience": "ecosystem"
-  },
-  {
     "title": "Flix.Fun X",
     "url": "https://x.com/FLIXdotFUN",
     "category": "Community Projects",
@@ -5214,5 +5201,422 @@
       "x"
     ],
     "audience": "community"
+  },
+  {
+    "title": "ZABAL Games (zabalgames.com)",
+    "url": "https://zabalgames.com",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "",
+    "tags": [
+      "zabal",
+      "games",
+      "official"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZABAL Games Doc (HackMD)",
+    "url": "https://hackmd.io/@bB0dXoPfSAuUEqyo43pHZw/Hyq0LS-Z-g",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "",
+    "tags": [
+      "zabal",
+      "games",
+      "docs"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "$ZABAL on Empire Builder",
+    "url": "https://empirebuilder.world/empire/0xbB48f19B0494Ff7C1fE5Dc2032aeEE14312f0b07",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Tokens",
+    "description": "",
+    "tags": [
+      "zabal",
+      "token",
+      "empire"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAO NEXUS (live)",
+    "url": "https://zaonexus.vercel.app",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "The ZAO Nexus link directory — searchable hub of community + ecosystem links (this site).",
+    "tags": [
+      "directory",
+      "links",
+      "app"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Songjam Site (leaderboard)",
+    "url": "https://songjam-site-delta.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "Songjam leaderboard + music-drops frontend — aggregates Farcaster, Space, and timeline contribution points into a live leaderboard.",
+    "tags": [
+      "music",
+      "leaderboard",
+      "farcaster",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "zPOIDH (live)",
+    "url": "https://zpoidh.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "POIDH",
+    "description": "BetterCallZaal POIDH bounty ops home — rounds, judging pages, and brand kit.",
+    "tags": [
+      "bounties",
+      "poidh",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "C.O.C ConcertZ (live)",
+    "url": "https://co-c-concert-z.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "C.O.C ConcertZ",
+    "description": "C.O.C ConcertZ app — concert/event experience in the ZAO ecosystem.",
+    "tags": [
+      "music",
+      "events",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAO Video Editor (live)",
+    "url": "https://zao-video-editor.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZAO Music video editor — browser tool for editing music/video content.",
+    "tags": [
+      "music",
+      "video",
+      "tool",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAO Stock (live)",
+    "url": "https://zaostock.vercel.app",
+    "category": "ZAO Stock",
+    "subcategory": "Calendar",
+    "description": "ZAOstock app — stock footage / asset library for ZAO Festivals creators.",
+    "tags": [
+      "stock",
+      "assets",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZABAL Gamez (mini app)",
+    "url": "https://zabalgamez.com",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Gamez Farcaster mini app — workshops, data streams, builder leaderboard, and submissions.",
+    "tags": [
+      "games",
+      "farcaster",
+      "app"
+    ],
+    "audience": "both",
+    "featured": true,
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZABAL Art Submission (live)",
+    "url": "https://zabalartsubmission.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL art submission portal — submit artwork to ZABAL Gamez rounds.",
+    "tags": [
+      "games",
+      "art",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "BCZ YapZ (live)",
+    "url": "https://bcz-yapz.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "BCZ YapZ",
+    "description": "BCZ YapZ streaming app — BetterCallZaal yap/stream surface.",
+    "tags": [
+      "streaming",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAOcowork (live)",
+    "url": "https://za-ocowork.vercel.app",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "ZAOcowork — coworking/focus sessions surface for ZAO builders.",
+    "tags": [
+      "cowork",
+      "community",
+      "app"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Aurdour (live)",
+    "url": "https://aurdour.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "Aurdour — ZAO Music app for audio/listening experiences.",
+    "tags": [
+      "music",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Zuke (live)",
+    "url": "https://zuke-sandy.vercel.app",
+    "category": "ZAO Festivals",
+    "subcategory": "ZAO Festivals",
+    "description": "Zuke — ZAO Festivals app surface.",
+    "tags": [
+      "festivals",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Nouns Snap (live)",
+    "url": "https://nouns-snap.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "Nouns Snap — example Farcaster Snap built on the zlank Snap rail.",
+    "tags": [
+      "snap",
+      "farcaster",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Duo Do Snap (live)",
+    "url": "https://duodo-snap.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "Duo Do Snap — example Farcaster Snap built on the zlank Snap rail.",
+    "tags": [
+      "snap",
+      "farcaster",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZABAL Snap 1 (live)",
+    "url": "https://zabalsnap1.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Snap — example Farcaster Snap built on the zlank Snap rail.",
+    "tags": [
+      "snap",
+      "farcaster",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "LTAE Snap (live)",
+    "url": "https://ltaesnap.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "LTAE Snap — example Farcaster Snap built on the zlank Snap rail.",
+    "tags": [
+      "snap",
+      "farcaster",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Songjam Site (repo)",
+    "url": "https://github.com/bettercallzaal/songjam-site",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "Source for the Songjam leaderboard + music-drops frontend.",
+    "tags": [
+      "github",
+      "music",
+      "open-source"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Nouns Snap (repo)",
+    "url": "https://github.com/bettercallzaal/nouns-snap",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "Source for the Nouns Snap example Farcaster Snap.",
+    "tags": [
+      "github",
+      "snap",
+      "open-source"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZABAL Snap 1 (repo)",
+    "url": "https://github.com/bettercallzaal/zabalsnap1",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "Source for the ZABAL Snap example Farcaster Snap.",
+    "tags": [
+      "github",
+      "snap",
+      "open-source"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAO Video Editor (repo)",
+    "url": "https://github.com/bettercallzaal/ZAOVideoEditor",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "Source for the ZAO Music video editor.",
+    "tags": [
+      "github",
+      "video",
+      "open-source"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAO Stock (repo)",
+    "url": "https://github.com/bettercallzaal/zaostock",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "Source for the ZAOstock asset library app.",
+    "tags": [
+      "github",
+      "stock",
+      "open-source"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Hermes Orchestrator (repo)",
+    "url": "https://github.com/bettercallzaal/hermes-orchestrator",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "Hermes Orchestrator — agent/automation orchestration for the ZAO stack.",
+    "tags": [
+      "github",
+      "agents",
+      "open-source"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Fractal Bot (repo)",
+    "url": "https://github.com/bettercallzaal/fractalbotapril2026",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "Fractal Bot — governance/fractals automation bot (April 2026).",
+    "tags": [
+      "github",
+      "fractals",
+      "open-source"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Workshop: Empire Builder V3 (yerbearserker)",
+    "url": "https://luma.com/7nfside5",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Gamez workshop — Empire Builder V3: leaderboards, Empires, and token mechanics.",
+    "tags": [
+      "workshop",
+      "event",
+      "luma"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Workshop: Bonfire + ZABAL Bonfire bot (Joshua.eth)",
+    "url": "https://luma.com/y189qk8p",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Gamez workshop — Bonfire and the ZABAL Bonfire bot for following ZABAL Gamez in real time.",
+    "tags": [
+      "workshop",
+      "event",
+      "luma"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Workshop: Live streaming (Ohnahji)",
+    "url": "https://luma.com/xa3bsp21",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Gamez workshop — starting and growing your own live stream.",
+    "tags": [
+      "workshop",
+      "event",
+      "luma"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Workshop: Farcaster protocol build-along (Cassie, Quilibrium)",
+    "url": "https://luma.com/fdrdxpuj",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Gamez workshop — the Farcaster protocol ins and outs, a live build-along.",
+    "tags": [
+      "workshop",
+      "event",
+      "luma"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
   }
 ]
