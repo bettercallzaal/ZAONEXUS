@@ -4324,5 +4324,94 @@
       "conference"
     ],
     "audience": "community"
+  },
+  {
+    "title": "ZAO Leaderboard (app)",
+    "url": "https://zao-leaderboard.vercel.app",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "leaderboard",
+      "app"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "WaveWarZ Live (app)",
+    "url": "https://wavewarzapp.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "wavewarz",
+      "app",
+      "live"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAO Fractal (app)",
+    "url": "https://zaofractal.vercel.app",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "governance",
+      "fractal",
+      "app"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAO Nexus (page)",
+    "url": "https://www.thezao.com/nexus",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "nexus",
+      "directory"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZABAL Farcaster Channel",
+    "url": "https://farcaster.xyz/~/channel/zabal",
+    "category": "Community Projects",
+    "subcategory": "ZABAL",
+    "description": "",
+    "tags": [
+      "zabal",
+      "farcaster",
+      "channel"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZABAL Gamez (Magnetiq)",
+    "url": "https://app.magnetiq.xyz/brand/zabal/magnet/zabal-gamez",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "",
+    "tags": [
+      "zabal",
+      "games",
+      "magnetiq"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAO (thezao.xyz)",
+    "url": "https://www.thezao.xyz",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "official",
+      "website",
+      "mirror"
+    ],
+    "audience": "both"
   }
 ]
