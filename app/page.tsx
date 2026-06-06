@@ -234,6 +234,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
             <button
               onClick={() => setLightMode(l => !l)}
               title={lightMode ? 'Switch to dark' : 'Switch to light'}
+              aria-label={lightMode ? 'Switch to dark mode' : 'Switch to light mode'}
               style={{
                 marginLeft: 6, padding: 6, borderRadius: 7, border: 'none',
                 background: 'transparent', cursor: 'pointer',
@@ -270,6 +271,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
             <input
               ref={searchRef}
               type="text"
+              aria-label="Search links"
               placeholder="Search links, tools, resources…"
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
@@ -281,7 +283,6 @@ export default function Home({ audience = 'community' }: { audience?: 'community
                 backgroundColor: surface,
                 color: text,
                 fontSize: 14,
-                outline: 'none',
                 transition: 'border-color 0.15s',
               }}
               onFocus={e => (e.currentTarget.style.borderColor = borderHov)}
@@ -290,6 +291,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
+                aria-label="Clear search"
                 style={{
                   position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)',
                   background: 'none', border: 'none', cursor: 'pointer',
@@ -654,6 +656,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
                                     <button
                                       onClick={() => copyURL(link.url)}
                                       title="Copy URL"
+                                      aria-label="Copy link URL"
                                       style={{
                                         padding: '5px 6px', borderRadius: 7, border: 'none',
                                         background: copied === link.url ? rowHov : 'transparent',
@@ -670,6 +673,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
                                     <button
                                       onClick={() => shareX(link.url, link.title)}
                                       title="Share to X"
+                                      aria-label="Share on X"
                                       style={{
                                         padding: '5px 6px', borderRadius: 7, border: 'none',
                                         background: 'transparent', color: text,
@@ -685,6 +689,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
                                     <button
                                       onClick={() => shareFarcaster(link.url, link.title)}
                                       title="Share to Farcaster"
+                                      aria-label="Share on Farcaster"
                                       style={{
                                         padding: '5px 6px', borderRadius: 7, border: 'none',
                                         background: 'transparent', color: text,
