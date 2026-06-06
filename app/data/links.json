@@ -3142,5 +3142,101 @@
       "instagram"
     ],
     "audience": "community"
+  },
+  {
+    "title": "Goldilox SoundCloud",
+    "url": "https://soundcloud.com/yesiamgoldilocks",
+    "category": "ZAO Members",
+    "subcategory": "Goldilox",
+    "description": "",
+    "tags": [
+      "artist",
+      "soundcloud"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Goldilox Spotify",
+    "url": "https://open.spotify.com/artist/336wP75Xfy1WoqKRFt17IO",
+    "category": "ZAO Members",
+    "subcategory": "Goldilox",
+    "description": "",
+    "tags": [
+      "artist",
+      "spotify"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Clejan TikTok",
+    "url": "https://www.tiktok.com/@thetrapviolinist",
+    "category": "ZAO Members",
+    "subcategory": "Clejan",
+    "description": "",
+    "tags": [
+      "artist",
+      "tiktok"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Clejan YouTube",
+    "url": "https://www.youtube.com/@Thetrapviolinist",
+    "category": "ZAO Members",
+    "subcategory": "Clejan",
+    "description": "",
+    "tags": [
+      "artist",
+      "youtube"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Attabotty Instagram",
+    "url": "https://www.instagram.com/attabotty",
+    "category": "ZAO Members",
+    "subcategory": "Attabotty",
+    "description": "",
+    "tags": [
+      "artist",
+      "instagram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Attabotty YouTube",
+    "url": "https://www.youtube.com/channel/UC3cB4FnMIRKcNFGUOPvNvsg",
+    "category": "ZAO Members",
+    "subcategory": "Attabotty",
+    "description": "",
+    "tags": [
+      "artist",
+      "youtube"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Attabotty X",
+    "url": "https://x.com/AttaBotty",
+    "category": "ZAO Members",
+    "subcategory": "Attabotty",
+    "description": "",
+    "tags": [
+      "artist",
+      "x"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Joseph Goats Spotify",
+    "url": "https://open.spotify.com/artist/7MS7B4QRp1n6c5H8N7s3wB",
+    "category": "ZAO Members",
+    "subcategory": "Joseph Goats",
+    "description": "",
+    "tags": [
+      "artist",
+      "spotify"
+    ],
+    "audience": "community"
   }
 ]
