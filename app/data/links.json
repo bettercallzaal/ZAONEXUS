@@ -2338,5 +2338,90 @@
       "music"
     ],
     "audience": "community"
+  },
+  {
+    "title": "BetterCallZaal X",
+    "url": "https://x.com/bettercallzaal",
+    "category": "ZAO Members",
+    "subcategory": "BetterCallZaal",
+    "description": "",
+    "tags": [
+      "founder",
+      "x"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "BetterCallZaal Farcaster",
+    "url": "https://farcaster.xyz/bettercallzaal",
+    "category": "ZAO Members",
+    "subcategory": "BetterCallZaal",
+    "description": "",
+    "tags": [
+      "founder",
+      "farcaster"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "BetterCallZaal GitHub",
+    "url": "https://github.com/bettercallzaal",
+    "category": "ZAO Members",
+    "subcategory": "BetterCallZaal",
+    "description": "",
+    "tags": [
+      "founder",
+      "github"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Joseph Goats Farcaster",
+    "url": "https://farcaster.xyz/~/user/josephgoats",
+    "category": "ZAO Members",
+    "subcategory": "Joseph Goats",
+    "description": "",
+    "tags": [
+      "artist",
+      "farcaster"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Ritzy Periwinkle LinkedIn",
+    "url": "https://linkedin.com/in/ritzyp",
+    "category": "ZAO Members",
+    "subcategory": "Ritzy Periwinkle",
+    "description": "",
+    "tags": [
+      "artist",
+      "linkedin"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZABAL on Empire Builder",
+    "url": "https://empirebuilder.world/profile/0x7234c36A71ec237c2Ae7698e8916e0735001E9Af",
+    "category": "Community Projects",
+    "subcategory": "ZABAL",
+    "description": "",
+    "tags": [
+      "zabal",
+      "empire-builder"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAOOS Research Library",
+    "url": "https://github.com/bettercallzaal/ZAOOS/tree/main/research",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "github",
+      "research",
+      "open-source"
+    ],
+    "audience": "both"
   }
 ]
