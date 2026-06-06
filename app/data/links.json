@@ -4286,5 +4286,43 @@
       "strategies"
     ],
     "audience": "community"
+  },
+  {
+    "title": "ZABAL Newsletter (repo)",
+    "url": "https://github.com/bettercallzaal/zabalnewsletter",
+    "category": "Community Projects",
+    "subcategory": "ZABAL",
+    "description": "",
+    "tags": [
+      "github",
+      "zabal",
+      "newsletter"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAOFlights (repo)",
+    "url": "https://github.com/bettercallzaal/ZAOFlights",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "github",
+      "app"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ETHBoulder Journal (BCZ)",
+    "url": "https://github.com/bettercallzaal/ethboulderjournal",
+    "category": "ZAO Members",
+    "subcategory": "BetterCallZaal",
+    "description": "",
+    "tags": [
+      "github",
+      "journal",
+      "conference"
+    ],
+    "audience": "community"
   }
 ]
