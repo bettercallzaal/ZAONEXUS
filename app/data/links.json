@@ -1748,5 +1748,353 @@
     ],
     "audience": "both",
     "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAO on X",
+    "url": "https://x.com/thezao",
+    "category": "The ZAO",
+    "subcategory": "ZAO Social Media Chats",
+    "description": "",
+    "tags": [
+      "x",
+      "social"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Farcaster",
+    "url": "https://farcaster.xyz/thezao",
+    "category": "The ZAO",
+    "subcategory": "ZAO Social Media Chats",
+    "description": "",
+    "tags": [
+      "farcaster",
+      "social"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Farcaster Channel",
+    "url": "https://farcaster.xyz/~/channel/zao",
+    "category": "The ZAO",
+    "subcategory": "ZAO Social Media Chats",
+    "description": "",
+    "tags": [
+      "farcaster",
+      "channel"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAOOS Monorepo (GitHub)",
+    "url": "https://github.com/bettercallzaal/ZAOOS",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "github",
+      "open-source"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "Fractal Process",
+    "url": "https://thezao.com/fractals",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "governance",
+      "fractal"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Chat (ZOE)",
+    "url": "https://chat.zaoos.com",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "zaoos",
+      "agents",
+      "zoe"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO OS on X",
+    "url": "https://x.com/zaoos",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "zaoos",
+      "social"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Festivals Farcaster",
+    "url": "https://farcaster.xyz/zaofestivals",
+    "category": "ZAO Festivals",
+    "subcategory": "ZAO Festivals Socials",
+    "description": "",
+    "tags": [
+      "festivals",
+      "farcaster"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAOstock 2026",
+    "url": "https://zaofestivals.com/zaostock",
+    "category": "ZAO Festivals",
+    "subcategory": "ZAO Festivals",
+    "description": "",
+    "tags": [
+      "festival",
+      "zaostock"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAOstock Team Bot (Telegram)",
+    "url": "https://t.me/ZAOstockTeamBot",
+    "category": "ZAO Festivals",
+    "subcategory": "ZAO Festivals",
+    "description": "",
+    "tags": [
+      "zaostock",
+      "telegram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAOstock Farcaster Channel",
+    "url": "https://farcaster.xyz/~/channel/zaostock",
+    "category": "ZAO Festivals",
+    "subcategory": "ZAO Festivals Socials",
+    "description": "",
+    "tags": [
+      "zaostock",
+      "farcaster"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "WaveWarZ Farcaster Channel",
+    "url": "https://farcaster.xyz/~/channel/wavewarz",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ Socials",
+    "description": "",
+    "tags": [
+      "wavewarz",
+      "farcaster"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ Intelligence",
+    "url": "https://wavewarz-intelligence.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "wavewarz",
+      "analytics"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ GitHub",
+    "url": "https://github.com/CandyToyBox",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "wavewarz",
+      "github"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ.io",
+    "url": "https://wavewarz.io",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "wavewarz"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZABAL Knowledge Graph",
+    "url": "https://graph.bonfires.ai/zabal",
+    "category": "Community Projects",
+    "subcategory": "ZABAL",
+    "description": "",
+    "tags": [
+      "zabal",
+      "bonfire",
+      "graph"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZABAL Connector (Magnetiq)",
+    "url": "https://app.magnetiq.xyz/brand/ZABAL/magnet/Zabal%20Connector",
+    "category": "Community Projects",
+    "subcategory": "ZABAL",
+    "description": "",
+    "tags": [
+      "zabal",
+      "magnetiq"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "POIDH",
+    "url": "https://poidh.xyz",
+    "category": "Community Projects",
+    "subcategory": "POIDH",
+    "description": "",
+    "tags": [
+      "bounties",
+      "poidh"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Bonfire",
+    "url": "https://bonfires.ai",
+    "category": "Community Projects",
+    "subcategory": "Bonfire",
+    "description": "",
+    "tags": [
+      "bonfire",
+      "knowledge-graph"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "FAETD",
+    "url": "https://www.thezao.com/artists/faetd",
+    "category": "ZAO Members",
+    "subcategory": "FAETD",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "FAETD SoundCloud",
+    "url": "https://soundcloud.com/faetd",
+    "category": "ZAO Members",
+    "subcategory": "FAETD",
+    "description": "",
+    "tags": [
+      "artist",
+      "soundcloud"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Losi",
+    "url": "https://www.thezao.com/artists/losi",
+    "category": "ZAO Members",
+    "subcategory": "Losi",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Goldilox",
+    "url": "https://www.yesiamgoldilocks.com",
+    "category": "ZAO Members",
+    "subcategory": "Goldilox",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Goldilox Instagram",
+    "url": "https://www.instagram.com/yesiamgoldilocks",
+    "category": "ZAO Members",
+    "subcategory": "Goldilox",
+    "description": "",
+    "tags": [
+      "artist",
+      "instagram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Clejan",
+    "url": "https://clejan.com",
+    "category": "ZAO Members",
+    "subcategory": "Clejan",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Clejan Spotify",
+    "url": "https://open.spotify.com/artist/6CbxzZHyeIz1Pig7giCufl",
+    "category": "ZAO Members",
+    "subcategory": "Clejan",
+    "description": "",
+    "tags": [
+      "artist",
+      "spotify"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "NessytheRilla SoundCloud",
+    "url": "https://soundcloud.com/nessytherilla",
+    "category": "ZAO Members",
+    "subcategory": "NessytheRilla",
+    "description": "",
+    "tags": [
+      "artist",
+      "soundcloud"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Attabotty",
+    "url": "https://www.attabotty.com",
+    "category": "ZAO Members",
+    "subcategory": "Attabotty",
+    "description": "",
+    "tags": [
+      "artist",
+      "audiovisual"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Ritzy Periwinkle",
+    "url": "https://www.ritzyperiwinkle.com",
+    "category": "ZAO Members",
+    "subcategory": "Ritzy Periwinkle",
+    "description": "",
+    "tags": [
+      "artist"
+    ],
+    "audience": "community"
   }
 ]
