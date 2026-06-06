@@ -2096,5 +2096,247 @@
       "artist"
     ],
     "audience": "community"
+  },
+  {
+    "title": "$LOANZ Token (Base)",
+    "url": "https://basescan.org/token/0x03315307b202bf9c55ebebb8e9341d30411a0bc4",
+    "category": "Community Projects",
+    "subcategory": "$Loanz",
+    "description": "",
+    "tags": [
+      "loanz",
+      "token",
+      "base"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "MidiPunkZ X",
+    "url": "https://x.com/midipunkz",
+    "category": "Community Projects",
+    "subcategory": "MidiPunkZ",
+    "description": "",
+    "tags": [
+      "midipunkz",
+      "x"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "MidiPunkZ Instagram",
+    "url": "https://www.instagram.com/midipunkz",
+    "category": "Community Projects",
+    "subcategory": "MidiPunkZ",
+    "description": "",
+    "tags": [
+      "midipunkz",
+      "instagram"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "MidiPunkZ TikTok",
+    "url": "https://www.tiktok.com/@midipunkz",
+    "category": "Community Projects",
+    "subcategory": "MidiPunkZ",
+    "description": "",
+    "tags": [
+      "midipunkz",
+      "tiktok"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "MidiPunkZ on OpenSea",
+    "url": "https://opensea.io/MidiPunks",
+    "category": "Community Projects",
+    "subcategory": "MidiPunkZ",
+    "description": "",
+    "tags": [
+      "midipunkz",
+      "nft",
+      "opensea"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "MidiPunkZ Touch Grass (ELF mint)",
+    "url": "https://touchgrass.midipunkz.com",
+    "category": "Community Projects",
+    "subcategory": "MidiPunkZ",
+    "description": "",
+    "tags": [
+      "midipunkz",
+      "mint",
+      "nft"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "MidiPunkZ Mint List",
+    "url": "https://mint-list.midipunkz.com",
+    "category": "Community Projects",
+    "subcategory": "MidiPunkZ",
+    "description": "",
+    "tags": [
+      "midipunkz",
+      "mint"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "C.O.C ConcertZ X",
+    "url": "https://x.com/cocconcertz",
+    "category": "Community Projects",
+    "subcategory": "C.O.C ConcertZ",
+    "description": "",
+    "tags": [
+      "cocconcertz",
+      "x"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "C.O.C ConcertZ Instagram",
+    "url": "https://www.instagram.com/cocconcertz",
+    "category": "Community Projects",
+    "subcategory": "C.O.C ConcertZ",
+    "description": "",
+    "tags": [
+      "cocconcertz",
+      "instagram"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "BCZ YapZ GitHub",
+    "url": "https://github.com/bettercallzaal/bcz-yapz",
+    "category": "Community Projects",
+    "subcategory": "BCZ YapZ",
+    "description": "",
+    "tags": [
+      "yapz",
+      "github"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "IYKYK",
+    "url": "https://iykyk.blank.space/home/Explore",
+    "category": "Community Projects",
+    "subcategory": "IYKYK",
+    "description": "",
+    "tags": [
+      "iykyk"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Jango UU Apple Music",
+    "url": "https://music.apple.com/gb/artist/jango-uu/1726641175",
+    "category": "ZAO Members",
+    "subcategory": "Jango UU",
+    "description": "",
+    "tags": [
+      "artist",
+      "apple-music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Jango UU Beacons",
+    "url": "https://beacons.ai/jango.uu",
+    "category": "ZAO Members",
+    "subcategory": "Jango UU",
+    "description": "",
+    "tags": [
+      "artist",
+      "links"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Tom Fellenz",
+    "url": "https://tomfellenz.com",
+    "category": "ZAO Members",
+    "subcategory": "Tom Fellenz",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Tom Fellenz SoundCloud",
+    "url": "https://soundcloud.com/tomfellenz",
+    "category": "ZAO Members",
+    "subcategory": "Tom Fellenz",
+    "description": "",
+    "tags": [
+      "artist",
+      "soundcloud"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Tom Fellenz X",
+    "url": "https://x.com/tomfellenz",
+    "category": "ZAO Members",
+    "subcategory": "Tom Fellenz",
+    "description": "",
+    "tags": [
+      "artist",
+      "x"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Ritzy Periwinkle X",
+    "url": "https://x.com/ritzy_p",
+    "category": "ZAO Members",
+    "subcategory": "Ritzy Periwinkle",
+    "description": "",
+    "tags": [
+      "artist",
+      "x"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Ritzy Periwinkle Instagram",
+    "url": "https://www.instagram.com/ritzyp",
+    "category": "ZAO Members",
+    "subcategory": "Ritzy Periwinkle",
+    "description": "",
+    "tags": [
+      "artist",
+      "instagram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Joseph Goats SoundCloud",
+    "url": "https://soundcloud.com/luijoseph",
+    "category": "ZAO Members",
+    "subcategory": "Joseph Goats",
+    "description": "",
+    "tags": [
+      "artist",
+      "soundcloud"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Attabotty (ZAO profile)",
+    "url": "https://www.thezao.com/artists/attabotty",
+    "category": "ZAO Members",
+    "subcategory": "Attabotty",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
   }
 ]
