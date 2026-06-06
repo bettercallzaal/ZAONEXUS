@@ -3617,5 +3617,18 @@
       "wiki"
     ],
     "audience": "ecosystem"
+  },
+  {
+    "title": "SongJam X",
+    "url": "https://x.com/SongjamSpace",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "",
+    "tags": [
+      "partner",
+      "songjam",
+      "x"
+    ],
+    "audience": "ecosystem"
   }
 ]
