@@ -4413,5 +4413,18 @@
       "mirror"
     ],
     "audience": "both"
+  },
+  {
+    "title": "ZABAL Socials (app)",
+    "url": "https://zabalsocials.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "ZABAL",
+    "description": "",
+    "tags": [
+      "zabal",
+      "socials",
+      "app"
+    ],
+    "audience": "ecosystem"
   }
 ]
