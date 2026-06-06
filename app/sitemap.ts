@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { brands } from './data/brands'
 
-const SITE_URL = 'https://zaonexus.vercel.app'
+const SITE_URL = 'https://nexus.thezao.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
