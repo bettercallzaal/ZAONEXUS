@@ -3467,5 +3467,42 @@
       "knowledge-graph"
     ],
     "audience": "ecosystem"
+  },
+  {
+    "title": "ZTalent Newsletter #5",
+    "url": "https://paragraph.com/@thezao/ztalent-newsletter5",
+    "category": "The ZAO",
+    "subcategory": "Daily Newsletter",
+    "description": "",
+    "tags": [
+      "newsletter",
+      "ztalent"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZABAL Update #3",
+    "url": "https://paragraph.com/@thezao/zabal-update-3",
+    "category": "Community Projects",
+    "subcategory": "ZABAL",
+    "description": "",
+    "tags": [
+      "zabal",
+      "update"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAO Whitepaper 2026 (HackMD)",
+    "url": "https://hackmd.io/2DVVvP1oTzCMIqLKRSLgRw",
+    "category": "The ZAO",
+    "subcategory": "ZAO Whitepaper",
+    "description": "",
+    "tags": [
+      "whitepaper",
+      "docs",
+      "2026"
+    ],
+    "audience": "both"
   }
 ]
