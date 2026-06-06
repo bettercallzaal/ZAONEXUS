@@ -5995,5 +5995,47 @@
     ],
     "audience": "ecosystem",
     "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAO Telegram (vanity)",
+    "url": "https://t.me/thezao",
+    "category": "The ZAO",
+    "subcategory": "ZAO Social Media Chats",
+    "description": "Clean vanity invite to the official ZAO community Telegram.",
+    "tags": [
+      "telegram",
+      "community",
+      "social"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAO Discord (vanity invite)",
+    "url": "https://discord.gg/thezao",
+    "category": "The ZAO",
+    "subcategory": "ZAO Social Media Chats",
+    "description": "Vanity invite to the ZAO Discord — home of the weekly Fractal governance sessions.",
+    "tags": [
+      "discord",
+      "community",
+      "governance"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZAO OS — Farcaster Mini App",
+    "url": "https://zaoos.com/miniapp",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "The ZAO OS Farcaster Mini App entry surface (declared in the farcaster.json manifest).",
+    "tags": [
+      "farcaster",
+      "miniapp",
+      "app"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
   }
 ]
