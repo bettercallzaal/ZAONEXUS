@@ -150,19 +150,20 @@ function EcosystemContent() {
             <Search size={15} style={{ position: 'absolute', left: 14, top: '50%', transform: 'translateY(-50%)', color: TEXT, opacity: 0.3, pointerEvents: 'none' }} />
             <input
               type="text"
+              aria-label="Search brands"
               placeholder="Search brands, projects, links…"
               value={search}
               onChange={e => setSearch(e.target.value)}
               style={{
                 width: '100%', padding: '10px 36px 10px 38px', borderRadius: 12,
                 border: `1px solid ${BORD}`, backgroundColor: CARD, color: TEXT,
-                fontSize: 14, outline: 'none', transition: 'border-color 0.15s',
+                fontSize: 14, transition: 'border-color 0.15s',
               }}
               onFocus={e => (e.currentTarget.style.borderColor = 'rgba(245,166,35,0.4)')}
               onBlur={e => (e.currentTarget.style.borderColor = BORD)}
             />
             {search && (
-              <button onClick={() => setSearch('')} style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer', color: TEXT, opacity: 0.35, display: 'flex' }}>
+              <button onClick={() => setSearch('')} aria-label="Clear search" style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer', color: TEXT, opacity: 0.35, display: 'flex' }}>
                 <X size={14} />
               </button>
             )}

@@ -60,6 +60,8 @@ function OrgNode({ slug, name, tier }: { slug: string; name: string; tier: Brand
         <>
           <button
             onClick={() => setOpen(o => !o)}
+            aria-label={`${open ? 'Collapse' : 'Expand'} ${name} children`}
+            aria-expanded={open}
             style={{
               marginBottom: 8, padding: '2px 6px', borderRadius: 6,
               border: 'none', background: 'none', cursor: 'pointer',
@@ -110,6 +112,7 @@ export default function EcosystemOrgChart() {
         </div>
         <button
           onClick={() => setOpen(o => !o)}
+          aria-expanded={open}
           style={{
             display: 'flex', alignItems: 'center', gap: 5,
             padding: '5px 12px', borderRadius: 8, fontSize: 12, fontWeight: 600,
