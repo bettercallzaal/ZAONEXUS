@@ -4538,5 +4538,258 @@
       "huddle01"
     ],
     "audience": "community"
+  },
+  {
+    "title": "APORKALYPSE SoundCloud",
+    "url": "https://soundcloud.com/aporkalypse-now",
+    "category": "ZAO Members",
+    "subcategory": "APORKALYPSE",
+    "description": "",
+    "tags": [
+      "artist",
+      "soundcloud"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "APORKALYPSE Apple Music",
+    "url": "https://music.apple.com/us/artist/aporkalypse-now/1633048308",
+    "category": "ZAO Members",
+    "subcategory": "APORKALYPSE",
+    "description": "",
+    "tags": [
+      "artist",
+      "apple-music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "APORKALYPSE Instagram",
+    "url": "https://www.instagram.com/aporkalypsenownola",
+    "category": "ZAO Members",
+    "subcategory": "APORKALYPSE",
+    "description": "",
+    "tags": [
+      "artist",
+      "instagram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Joseph Goats Instagram (LUI)",
+    "url": "https://www.instagram.com/_luithe1st",
+    "category": "ZAO Members",
+    "subcategory": "Joseph Goats",
+    "description": "",
+    "tags": [
+      "artist",
+      "instagram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Suspekt Stilo (stilosd.com)",
+    "url": "https://www.stilosd.com/music",
+    "category": "ZAO Members",
+    "subcategory": "Stilo World",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Sonata (Coop Records)",
+    "url": "https://github.com/Coop-Records/sonata",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "",
+    "tags": [
+      "partner",
+      "farcaster",
+      "music"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Danici Instagram",
+    "url": "https://www.instagram.com/danici.art",
+    "category": "ZAO Members",
+    "subcategory": "Danici",
+    "description": "",
+    "tags": [
+      "artist",
+      "instagram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Ohnahji Instagram",
+    "url": "https://www.instagram.com/ohnahji",
+    "category": "ZAO Members",
+    "subcategory": "Ohnahji B",
+    "description": "",
+    "tags": [
+      "artist",
+      "instagram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Hurric4n3Ike SoundCloud",
+    "url": "https://soundcloud.com/hurric4n3ike",
+    "category": "ZAO Members",
+    "subcategory": "Hurric4n3Ike",
+    "description": "",
+    "tags": [
+      "artist",
+      "soundcloud"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "DCoop (X)",
+    "url": "https://x.com/dcoopofficial",
+    "category": "ZAO Members",
+    "subcategory": "DCoop",
+    "description": "",
+    "tags": [
+      "producer",
+      "x"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "3Planet Studio (X)",
+    "url": "https://x.com/3PlanetStudio",
+    "category": "ZAO Members",
+    "subcategory": "3Planet Studio",
+    "description": "",
+    "tags": [
+      "studio",
+      "x"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Ohnahji X",
+    "url": "https://x.com/ohnahji",
+    "category": "ZAO Members",
+    "subcategory": "Ohnahji B",
+    "description": "",
+    "tags": [
+      "artist",
+      "x"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Ohnahji Medium",
+    "url": "https://medium.com/ohnahji",
+    "category": "ZAO Members",
+    "subcategory": "Ohnahji B",
+    "description": "",
+    "tags": [
+      "artist",
+      "blog"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "DCoop SoundCloud",
+    "url": "https://soundcloud.com/coopdville",
+    "category": "ZAO Members",
+    "subcategory": "DCoop",
+    "description": "",
+    "tags": [
+      "producer",
+      "soundcloud"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "DCoop Spotify",
+    "url": "https://open.spotify.com/artist/5m9Qd7ozenUHMPtxePX0Zl",
+    "category": "ZAO Members",
+    "subcategory": "DCoop",
+    "description": "",
+    "tags": [
+      "producer",
+      "spotify"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "DCoop Bandcamp",
+    "url": "https://coopdville.bandcamp.com",
+    "category": "ZAO Members",
+    "subcategory": "DCoop",
+    "description": "",
+    "tags": [
+      "producer",
+      "bandcamp"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "DCoop Instagram",
+    "url": "https://www.instagram.com/coopdville2000",
+    "category": "ZAO Members",
+    "subcategory": "DCoop",
+    "description": "",
+    "tags": [
+      "producer",
+      "instagram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "DCoop Facebook",
+    "url": "https://www.facebook.com/DCoopOfficial",
+    "category": "ZAO Members",
+    "subcategory": "DCoop",
+    "description": "",
+    "tags": [
+      "producer",
+      "facebook"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Steve's Theme Park (site)",
+    "url": "https://www.stevesthemepark.com",
+    "category": "ZAO Members",
+    "subcategory": "Steve's Theme Park",
+    "description": "",
+    "tags": [
+      "artist",
+      "website"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Steve's Theme Park Apple Music",
+    "url": "https://music.apple.com/us/artist/steves-theme-park/1618265192",
+    "category": "ZAO Members",
+    "subcategory": "Steve's Theme Park",
+    "description": "",
+    "tags": [
+      "artist",
+      "apple-music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "PolyRaiders (X)",
+    "url": "https://x.com/polyraiders",
+    "category": "ZAO Members",
+    "subcategory": "PolyRaiders",
+    "description": "",
+    "tags": [
+      "member",
+      "x"
+    ],
+    "audience": "community"
   }
 ]
