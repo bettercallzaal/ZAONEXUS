@@ -3238,5 +3238,161 @@
       "spotify"
     ],
     "audience": "community"
+  },
+  {
+    "title": "Tom Fellenz Linktree",
+    "url": "https://fellenz.net",
+    "category": "ZAO Members",
+    "subcategory": "Tom Fellenz",
+    "description": "",
+    "tags": [
+      "artist",
+      "links"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Ritzy Periwinkle YouTube",
+    "url": "https://www.youtube.com/@ritzyperiwinkle",
+    "category": "ZAO Members",
+    "subcategory": "Ritzy Periwinkle",
+    "description": "",
+    "tags": [
+      "artist",
+      "youtube"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "EZinCrypto Farcaster",
+    "url": "https://warpcast.com/ezincrypto",
+    "category": "ZAO Members",
+    "subcategory": "EZinCrypto",
+    "description": "",
+    "tags": [
+      "contributor",
+      "farcaster"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Mr Darius Spotify",
+    "url": "https://open.spotify.com/artist/3zXy9QS3GpoMQPVLPbuqtb",
+    "category": "ZAO Members",
+    "subcategory": "Mr Darius",
+    "description": "",
+    "tags": [
+      "artist",
+      "spotify"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Mr Darius Apple Music",
+    "url": "https://music.apple.com/us/artist/mr-darius/1576522851",
+    "category": "ZAO Members",
+    "subcategory": "Mr Darius",
+    "description": "",
+    "tags": [
+      "artist",
+      "apple-music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Mr Darius SoundCloud",
+    "url": "https://soundcloud.com/mrdariusofficial",
+    "category": "ZAO Members",
+    "subcategory": "Mr Darius",
+    "description": "",
+    "tags": [
+      "artist",
+      "soundcloud"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Mr Darius Instagram",
+    "url": "https://www.instagram.com/mrdariusmusic",
+    "category": "ZAO Members",
+    "subcategory": "Mr Darius",
+    "description": "",
+    "tags": [
+      "artist",
+      "instagram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Mr Darius YouTube",
+    "url": "https://www.youtube.com/@mrdariusmusic",
+    "category": "ZAO Members",
+    "subcategory": "Mr Darius",
+    "description": "",
+    "tags": [
+      "artist",
+      "youtube"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Mr Darius X",
+    "url": "https://x.com/mrdariusone",
+    "category": "ZAO Members",
+    "subcategory": "Mr Darius",
+    "description": "",
+    "tags": [
+      "artist",
+      "x"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "FAETD Instagram",
+    "url": "https://www.instagram.com/faetd_",
+    "category": "ZAO Members",
+    "subcategory": "FAETD",
+    "description": "",
+    "tags": [
+      "artist",
+      "instagram"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Stilo (Dope Stilo) SoundCloud",
+    "url": "https://soundcloud.com/dopestilo",
+    "category": "ZAO Members",
+    "subcategory": "Stilo World",
+    "description": "",
+    "tags": [
+      "artist",
+      "soundcloud"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Stilo (Dope Stilo) X",
+    "url": "https://x.com/DopeStilo",
+    "category": "ZAO Members",
+    "subcategory": "Stilo World",
+    "description": "",
+    "tags": [
+      "artist",
+      "x"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Stilo (Dope Stilo) Instagram",
+    "url": "https://www.instagram.com/dopestilo",
+    "category": "ZAO Members",
+    "subcategory": "Stilo World",
+    "description": "",
+    "tags": [
+      "artist",
+      "instagram"
+    ],
+    "audience": "community"
   }
 ]
