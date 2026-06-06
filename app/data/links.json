@@ -593,8 +593,13 @@
     "url": "https://bczyapz.com",
     "category": "Community Projects",
     "subcategory": "BCZ YapZ",
-    "description": "Graduated podcast/clips project",
-    "audience": "ecosystem"
+    "description": "Zaal's long-form interview show — conversations with builders, founders, and organizers in the ZAO ecosystem.",
+    "audience": "ecosystem",
+    "tags": [
+      "interviews",
+      "show",
+      "content"
+    ]
   },
   {
     "title": "C.O.C ConcertZ Videos",
@@ -5599,19 +5604,6 @@
     "addedDate": "2026-06-06"
   },
   {
-    "title": "BCZ YapZ (bczyapz.com)",
-    "url": "https://www.bczyapz.com/",
-    "category": "Community Projects",
-    "subcategory": "BCZ YapZ",
-    "description": "Zaal's long-form interview show — conversations with builders, founders, and organizers in the ZAO ecosystem.",
-    "tags": [
-      "interviews",
-      "show",
-      "content"
-    ],
-    "audience": "both"
-  },
-  {
     "title": "Farcaster Agentic Bootcamp (Builders Garden)",
     "url": "https://builders-garden.notion.site/farcaster-agentic-bootcamp",
     "category": "Ecosystem & Tokens",
@@ -6036,6 +6028,20 @@
       "app"
     ],
     "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Songjam on GitHub",
+    "url": "https://github.com/SongjamSpace",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "Songjam's open-source GitHub org — the X/Spaces-to-music-drops platform behind the WaveWarZ leaderboard and ZABAL spaces.",
+    "tags": [
+      "partner",
+      "songjam",
+      "open-source"
+    ],
+    "audience": "ecosystem",
     "addedDate": "2026-06-06"
   }
 ]
