@@ -978,6 +978,118 @@ export const brands: Brand[] = [
         description: 'Org structure on Hats Protocol (Optimism, treeId 226)'
       }
     ]
+  },
+
+  // $ZAO Respect — soulbound reputation token (distinct from tradable $ZABAL)
+  {
+    slug: 'zao-respect-token',
+    name: '$ZAO Respect',
+    tagline: 'Soulbound reputation token for ZAO members',
+    description: 'The $ZAO Respect token is illiquid (not for sale or trade) and soulbound (non-transferable), representing a member\'s on-chain identity and contributions to The ZAO. Allocated via the Respect Game / Hats role tree — distinct from the tradable $ZABAL token.',
+    stage: 'active',
+    tier: 'project',
+    parent: 'the-zao',
+    status: 'live',
+    homepage: 'https://www.thezao.com/zao-token',
+    links: [
+      { title: '$ZAO Token page', url: 'https://www.thezao.com/zao-token', description: 'Soulbound reputation token overview' },
+      { title: 'ZTalent Whitepaper (HackMD)', url: 'https://hackmd.io/u9jZ5Q1BR_uUwmRuksvF6Q', description: 'The ZAO / ZTalent governance doc' }
+    ]
+  },
+
+  // ZAO Music artist roster (sub-brands under The ZAO). Profiles live at thezao.com/artists/<slug>.
+  // Socials are search-derived where included — verify before treating as canonical.
+  {
+    slug: 'faetd',
+    name: 'FAETD',
+    tagline: 'House producer & sound engineer',
+    description: 'Filip, aka FAETD — a music producer and sound engineer with 10+ years making electronic music, mainly house. ZAO Music artist.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    homepage: 'https://www.thezao.com/artists/faetd',
+    links: [
+      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/faetd', description: 'Artist page on The ZAO' },
+      { title: 'SoundCloud', url: 'https://soundcloud.com/faetd', description: 'Music platform' }
+    ]
+  },
+
+  {
+    slug: 'losi',
+    name: 'Losi',
+    tagline: 'Singer-songwriter from Cali, Colombia',
+    description: 'Singer-songwriter, creative, and entrepreneur from Cali, Colombia, selling her songs to collectors onchain. ZAO Music artist.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    homepage: 'https://www.thezao.com/artists/losi',
+    links: [
+      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/losi', description: 'Artist page on The ZAO' }
+    ]
+  },
+
+  {
+    slug: 'goldilox',
+    name: 'Goldilox',
+    tagline: 'Reggaeton & Hip-Hop artist (NYC)',
+    description: 'Reggaeton and Hip-Hop artist from NYC by way of Asturias, Spain. "Saab Story" debuted on Spotify\'s New Music Friday Latin. ZAO Music artist.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    homepage: 'https://www.thezao.com/artists/goldilox',
+    links: [
+      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/goldilox', description: 'Artist page on The ZAO' }
+    ]
+  },
+
+  {
+    slug: 'clejan',
+    name: 'Clejan',
+    tagline: 'The Trap Violinist',
+    description: 'American rapper, singer, songwriter and classically trained violinist ("The Trap Violinist"), from Atlanta and based in LA. ZAO Music artist.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    homepage: 'https://www.thezao.com/artists/clejan',
+    links: [
+      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/clejan', description: 'Artist page on The ZAO' },
+      { title: 'Website', url: 'https://clejan.com', description: 'Official site' },
+      { title: 'SoundCloud', url: 'https://soundcloud.com/clejan', description: 'Music platform' }
+    ]
+  },
+
+  {
+    slug: 'nessytherilla',
+    name: 'NessytheRilla',
+    tagline: 'Detroit rapper',
+    description: 'Detroit, Michigan rapper. Began writing raps at 8 and making music at 15; has opened for major mainstream artists. ZAO Music artist.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    homepage: 'https://www.thezao.com/artists/nessytherilla',
+    links: [
+      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/nessytherilla', description: 'Artist page on The ZAO' }
+    ]
+  },
+
+  {
+    slug: 'attabotty',
+    name: 'Attabotty',
+    tagline: 'Composer & audiovisual storyteller',
+    description: 'Composer, multi-instrumentalist, and audiovisual storyteller fusing 2D/3D animation with EDM, lo-fi, and cinematic orchestra. Named among The ZAO cofounders; co-founder of ZAO Festivals. ZAO Music artist.',
+    stage: 'active',
+    tier: 'sub-brand',
+    parent: 'the-zao',
+    status: 'live',
+    homepage: 'https://www.thezao.com/artists/attabotty',
+    links: [
+      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/attabotty', description: 'Artist page on The ZAO' }
+    ]
   }
 ];
 
