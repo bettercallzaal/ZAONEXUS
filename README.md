@@ -76,24 +76,26 @@ vercel login
 vercel
 ```
 
-## Embedding in Webflow
+## Embedding (nexus.thezao.com)
 
-Once deployed, you can embed this in Webflow using an iframe:
+The Nexus is served on Vercel and embedded at **nexus.thezao.com**. To embed
+it on a Webflow/HTML page, iframe the Vercel deployment:
 
 ```html
-<iframe 
-  src="https://your-nexus-url.vercel.app" 
-  width="100%" 
-  height="800px" 
+<iframe
+  src="https://zaonexus.vercel.app"
+  width="100%"
+  height="800px"
   frameborder="0"
   style="border: none; border-radius: 8px;"
+  title="ZAO NEXUS"
 ></iframe>
 ```
 
 Or simply link to it:
 
 ```html
-<a href="https://your-nexus-url.vercel.app" target="_blank">
+<a href="https://nexus.thezao.com" target="_blank" rel="noopener">
   Visit ZAO NEXUS
 </a>
 ```

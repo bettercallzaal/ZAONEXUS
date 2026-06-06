@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 
-const SITE_URL = 'https://zaonexus.vercel.app'
+const SITE_URL = 'https://nexus.thezao.com'
 const SITE_NAME = 'ZAO NEXUS'
 const SITE_DESCRIPTION =
   'The central hub for all ZAO links, projects, brands, and community resources.'
