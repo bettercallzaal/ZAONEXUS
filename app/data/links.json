@@ -3009,5 +3009,29 @@
       "bio"
     ],
     "audience": "community"
+  },
+  {
+    "title": "GodCloud (ZAO profile)",
+    "url": "https://www.thezao.com/artists/godcloud",
+    "category": "ZAO Members",
+    "subcategory": "GodCloud",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "GodCloud YouTube",
+    "url": "https://www.youtube.com/thegodcloud",
+    "category": "ZAO Members",
+    "subcategory": "GodCloud",
+    "description": "",
+    "tags": [
+      "artist",
+      "youtube"
+    ],
+    "audience": "community"
   }
 ]
