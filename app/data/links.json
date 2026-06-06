@@ -3516,5 +3516,41 @@
       "chat"
     ],
     "audience": "both"
+  },
+  {
+    "title": "POIDH (BCZ)",
+    "url": "https://bettercallzaal.com/poidh.html",
+    "category": "Community Projects",
+    "subcategory": "POIDH",
+    "description": "",
+    "tags": [
+      "poidh",
+      "bounties"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "POIDH Bounty Best Practices",
+    "url": "https://bettercallzaal.com/poidh-bounty-best-practices.html",
+    "category": "Community Projects",
+    "subcategory": "POIDH",
+    "description": "",
+    "tags": [
+      "poidh",
+      "guide"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZABAL Games Brand Kit",
+    "url": "https://bettercallzaal.com/assets/zabal-games-brand/",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "",
+    "tags": [
+      "zabal",
+      "brand-kit"
+    ],
+    "audience": "ecosystem"
   }
 ]
