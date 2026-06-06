@@ -479,6 +479,7 @@ export const brands: Brand[] = [
     tier: 'project',
     parent: 'bettercallzaal',
     status: 'live',
+    homepage: 'https://www.empirebuilder.world',
     links: [
       {
         title: 'Learn More',
@@ -606,8 +607,19 @@ export const brands: Brand[] = [
     tier: 'sub-brand',
     parent: 'the-zao',
     status: 'live',
+    homepage: 'https://tomfellenz.com',
     x: 'tomfellenz',
     links: [
+      {
+        title: 'Website',
+        url: 'https://tomfellenz.com',
+        description: 'Official site'
+      },
+      {
+        title: 'SoundCloud',
+        url: 'https://soundcloud.com/tomfellenz',
+        description: 'Music platform'
+      },
       {
         title: 'X Profile',
         url: 'https://x.com/tomfellenz',
@@ -625,11 +637,17 @@ export const brands: Brand[] = [
     tier: 'sub-brand',
     parent: 'the-zao',
     status: 'live',
+    homepage: 'https://stiloworld.com',
     links: [
       {
         title: 'Website',
         url: 'https://stiloworld.com',
         description: 'Explore the world'
+      },
+      {
+        title: 'YouTube',
+        url: 'https://www.youtube.com/c/DopeStilox',
+        description: 'STILO WORLD channel'
       }
     ]
   },
