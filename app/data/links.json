@@ -4248,5 +4248,43 @@
       "songjam"
     ],
     "audience": "ecosystem"
+  },
+  {
+    "title": "Duodo Snap (Farcaster)",
+    "url": "https://github.com/bettercallzaal/duodo-snap",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "github",
+      "farcaster",
+      "snap"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "LTAW3 Snap",
+    "url": "https://github.com/bettercallzaal/ltaesnap",
+    "category": "Community Projects",
+    "subcategory": "Web3 Podcast",
+    "description": "",
+    "tags": [
+      "github",
+      "farcaster",
+      "podcast"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "BetterCallZaal Strategies",
+    "url": "https://github.com/bettercallzaal/bettercallzaal-strategies",
+    "category": "ZAO Members",
+    "subcategory": "BetterCallZaal",
+    "description": "",
+    "tags": [
+      "github",
+      "strategies"
+    ],
+    "audience": "community"
   }
 ]
