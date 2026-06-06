@@ -1,8 +1,8 @@
 # ZAO NEXUS - Canonical Link Hub
 
-> **Version 1.2.0** - Two-audience portal for ZAO community and ecosystem discovery
+> **Version 1.4.0** - Two-audience portal for ZAO community and ecosystem discovery
 
-A comprehensive two-route link directory featuring 146 curated links across 9 categories, plus 44 ecosystem brands. Built with Next.js 14, React 18, TypeScript, and TailwindCSS v3. Strategy D canonical rebuild per research/community/624.
+A comprehensive two-route link directory featuring 145 curated links across 9 categories, plus 44 ecosystem brands. Built with Next.js 14, React 18, TypeScript, and TailwindCSS v3. Strategy D canonical rebuild per research/community/624.
 
 ## ✨ Features
 
@@ -10,12 +10,17 @@ A comprehensive two-route link directory featuring 146 curated links across 9 ca
 - 🔍 **Smart Search** - Real-time search across titles, descriptions, and URLs
 - 🎯 **Auto-Expand Results** - Automatically opens categories containing search matches
 - 📂 **Dual-Audience Routes** - Community-focused and ecosystem-focused views
-- 🔗 **146 Curated Links** - Across 9 categories, plus 44 ecosystem brands
+- 🔗 **145 Curated Links** - Across 9 categories, plus 44 ecosystem brands
 
 ### Two-Audience Architecture
 - **/community** - Member-facing content (ZAO holder resources, internal tools, governance)
 - **/ecosystem** - External-facing content (brand pages, projects, partner integrations)
 - **Smart Filtering** - Each link tagged with audience (`community`, `ecosystem`, or `both`)
+
+### Discovery
+- ⭐ **Featured Links** - Marquee links pinned to a Featured grid + a star badge in-list (`featured: true`)
+- 🆕 **What's New** - Recently added links surfaced in a grid with a NEW badge (`addedDate`, last 45 days)
+- 🏷️ **Tag Filtering** - Filter links across all categories by tag (chips in the toolbar; combine with search)
 
 ### Navigation & UX
 - ⚡ **Quick Jump** - Instant scroll to any category

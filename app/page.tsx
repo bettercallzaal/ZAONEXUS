@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
 import {
   Search, ChevronDown, Moon, Sun, Maximize2, Minimize2,
-  Copy, Check, ExternalLink, X,
+  Copy, Check, ExternalLink, X, Star, Sparkles,
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -37,6 +37,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
   const [expandedSubs, setExpandedSubs] = useState<Set<string>>(new Set());
   const [copied, setCopied]             = useState<string | null>(null);
   const [linkData, setLinkData]         = useState<MainCategory[]>(linksData);
+  const [selectedTags, setSelectedTags] = useState<Set<string>>(new Set());
   const searchRef = useRef<HTMLInputElement>(null);
 
   // Sync the latest links from raw GitHub at runtime (no redeploy needed to
@@ -57,34 +58,71 @@ export default function Home({ audience = 'community' }: { audience?: 'community
   const totalCats = allData.length;
   const totalSubs = useMemo(() => allData.reduce((t, c) => t + c.subcategories.length, 0), [allData]);
 
+  // Flat view of the current audience's links (for featured / what's new / tags).
+  const allLinks = useMemo(() => {
+    const out: { title: string; url: string; description: string; tags?: string[]; featured?: boolean; addedDate?: string }[] = [];
+    allData.forEach(c => c.subcategories.forEach(s => s.links.forEach(l => out.push(l))));
+    return out;
+  }, [allData]);
+
+  const featuredLinks = useMemo(() => allLinks.filter(l => l.featured), [allLinks]);
+
+  const recentLinks = useMemo(
+    () => allLinks
+      .filter(l => l.addedDate)
+      .sort((a, b) => (b.addedDate as string).localeCompare(a.addedDate as string))
+      .slice(0, 8),
+    [allLinks]
+  );
+
+  const topTags = useMemo(() => {
+    const counts: Record<string, number> = {};
+    allLinks.forEach(l => l.tags?.forEach(t => { counts[t] = (counts[t] || 0) + 1; }));
+    return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 18).map(e => e[0]);
+  }, [allLinks]);
+
+  const isRecent = (d?: string) => {
+    if (!d) return false;
+    const t = Date.parse(d);
+    return !isNaN(t) && Date.now() - t < 45 * 86400000;
+  };
+
+  const toggleTag = (t: string) =>
+    setSelectedTags(p => { const n = new Set(p); n.has(t) ? n.delete(t) : n.add(t); return n; });
+
+  const hasFilter = searchQuery.trim() !== '' || selectedTags.size > 0;
+
   const filtered = useMemo(() => {
-    if (!searchQuery.trim()) return allData;
-    const q = searchQuery.toLowerCase();
+    if (!hasFilter) return allData;
+    const q = searchQuery.trim().toLowerCase();
     return allData
       .map(cat => ({
         ...cat,
         subcategories: cat.subcategories
           .map(sub => ({
             ...sub,
-            links: sub.links.filter(
-              l =>
+            links: sub.links.filter(l => {
+              const matchesSearch = !q ||
                 l.title.toLowerCase().includes(q) ||
                 l.description.toLowerCase().includes(q) ||
-                l.url.toLowerCase().includes(q)
-            ),
+                l.url.toLowerCase().includes(q);
+              const matchesTags = selectedTags.size === 0 ||
+                (l.tags ? l.tags.some(t => selectedTags.has(t)) : false);
+              return matchesSearch && matchesTags;
+            }),
           }))
           .filter(sub => sub.links.length > 0),
       }))
       .filter(cat => cat.subcategories.length > 0);
-  }, [searchQuery, allData]);
+  }, [searchQuery, selectedTags, allData, hasFilter]);
 
   useEffect(() => {
-    if (!searchQuery.trim()) return;
+    if (!hasFilter) return;
     setExpandedCats(new Set(filtered.map(c => c.mainCategory)));
     const subs = new Set<string>();
     filtered.forEach(c => c.subcategories.forEach(s => subs.add(`${c.mainCategory}::${s.subTitle}`)));
     setExpandedSubs(subs);
-  }, [searchQuery, filtered]);
+  }, [hasFilter, filtered]);
 
   const toggleCat = (name: string) =>
     setExpandedCats(p => { const n = new Set(p); n.has(name) ? n.delete(name) : n.add(name); return n; });
@@ -140,6 +178,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
   const border    = lightMode ? 'rgba(20,30,39,0.08)' : 'rgba(255,255,255,0.07)';
   const borderHov = lightMode ? 'rgba(20,30,39,0.18)' : 'rgba(255,255,255,0.14)';
   const rowHov    = lightMode ? 'rgba(0,0,0,0.055)'  : 'rgba(255,255,255,0.055)';
+  const accent    = '#f5a623';
 
   return (
     <div style={{ minHeight: '100vh', backgroundColor: bg, color: text, transition: 'background 0.25s, color 0.25s' }}>
@@ -330,12 +369,125 @@ export default function Home({ audience = 'community' }: { audience?: 'community
             </div>
           </div>
 
-          {searchQuery.trim() && (
+          {/* Tag filter chips */}
+          {topTags.length > 0 && (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, marginTop: 10, alignItems: 'center' }}>
+              <span style={{ fontSize: 11, fontWeight: 600, color: faint, textTransform: 'uppercase', letterSpacing: '0.06em', marginRight: 2 }}>
+                Tags
+              </span>
+              {topTags.map(t => {
+                const on = selectedTags.has(t);
+                return (
+                  <button
+                    key={t}
+                    onClick={() => toggleTag(t)}
+                    style={{
+                      padding: '3px 9px', borderRadius: 20, fontSize: 12, fontWeight: 600,
+                      border: `1px solid ${on ? accent : border}`,
+                      background: on ? accent : 'transparent',
+                      color: on ? '#0a1628' : text,
+                      opacity: on ? 1 : 0.6, cursor: 'pointer', transition: 'all 0.12s',
+                    }}
+                  >
+                    {t}
+                  </button>
+                );
+              })}
+              {selectedTags.size > 0 && (
+                <button
+                  onClick={() => setSelectedTags(new Set())}
+                  style={{
+                    padding: '3px 8px', borderRadius: 20, fontSize: 11, fontWeight: 600,
+                    border: 'none', background: 'transparent', color: accent, cursor: 'pointer',
+                    display: 'flex', alignItems: 'center', gap: 3,
+                  }}
+                >
+                  <X size={11} /> clear
+                </button>
+              )}
+            </div>
+          )}
+
+          {hasFilter && (
             <p style={{ marginTop: 8, fontSize: 12, color: faint }}>
-              {filteredCount} result{filteredCount !== 1 ? 's' : ''} for &ldquo;{searchQuery}&rdquo;
+              {filteredCount} result{filteredCount !== 1 ? 's' : ''}
+              {searchQuery.trim() && <> for &ldquo;{searchQuery}&rdquo;</>}
+              {selectedTags.size > 0 && <> · tagged {Array.from(selectedTags).join(', ')}</>}
             </p>
           )}
         </div>
+
+        {/* ── FEATURED ── */}
+        {!hasFilter && featuredLinks.length > 0 && (
+          <section style={{ marginTop: 8, marginBottom: 14 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8 }}>
+              <Star size={13} style={{ color: accent }} fill={accent} />
+              <h2 style={{ margin: 0, fontSize: 13, fontWeight: 700, color: text, letterSpacing: '-0.01em' }}>Featured</h2>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: 8 }}>
+              {featuredLinks.map((l, i) => (
+                <a
+                  key={i}
+                  href={l.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'block', padding: '11px 13px', borderRadius: 12,
+                    border: `1px solid ${border}`, background: surface,
+                    textDecoration: 'none', transition: 'border-color 0.12s, background 0.12s',
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.borderColor = borderHov; e.currentTarget.style.background = surfaceHov; }}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = border; e.currentTarget.style.background = surface; }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 14, fontWeight: 600, color: text, marginBottom: 3 }}>
+                    <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{l.title}</span>
+                    <ExternalLink size={10} style={{ opacity: 0.3, flexShrink: 0 }} />
+                  </div>
+                  {l.description && (
+                    <p style={{ margin: 0, fontSize: 12, color: muted, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{l.description}</p>
+                  )}
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* ── WHAT'S NEW ── */}
+        {!hasFilter && recentLinks.length > 0 && (
+          <section style={{ marginTop: 8, marginBottom: 14 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8 }}>
+              <Sparkles size={13} style={{ color: accent }} />
+              <h2 style={{ margin: 0, fontSize: 13, fontWeight: 700, color: text, letterSpacing: '-0.01em' }}>What&rsquo;s New</h2>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: 8 }}>
+              {recentLinks.map((l, i) => (
+                <a
+                  key={i}
+                  href={l.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'block', padding: '11px 13px', borderRadius: 12,
+                    border: `1px solid ${border}`, background: surface,
+                    textDecoration: 'none', transition: 'border-color 0.12s, background 0.12s',
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.borderColor = borderHov; e.currentTarget.style.background = surfaceHov; }}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = border; e.currentTarget.style.background = surface; }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 14, fontWeight: 600, color: text, marginBottom: 3 }}>
+                    <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{l.title}</span>
+                    {isRecent(l.addedDate) && (
+                      <span style={{ fontSize: 9, fontWeight: 700, color: '#0a1628', backgroundColor: accent, padding: '1px 5px', borderRadius: 4, letterSpacing: '0.04em', flexShrink: 0 }}>NEW</span>
+                    )}
+                  </div>
+                  {l.description && (
+                    <p style={{ margin: 0, fontSize: 12, color: muted, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{l.description}</p>
+                  )}
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* ── CATEGORY LIST ── */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 4 }}>
@@ -471,6 +623,12 @@ export default function Home({ audience = 'community' }: { audience?: 'community
                                       <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                                         {link.title}
                                       </span>
+                                      {link.featured && (
+                                        <Star size={11} fill={accent} style={{ color: accent, flexShrink: 0 }} />
+                                      )}
+                                      {isRecent(link.addedDate) && (
+                                        <span style={{ fontSize: 9, fontWeight: 700, color: '#0a1628', backgroundColor: accent, padding: '1px 5px', borderRadius: 4, letterSpacing: '0.04em', flexShrink: 0 }}>NEW</span>
+                                      )}
                                       <ExternalLink size={11} style={{ opacity: 0.25, flexShrink: 0 }} />
                                     </div>
                                     {link.description && (
