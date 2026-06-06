@@ -5618,5 +5618,116 @@
     ],
     "audience": "both",
     "addedDate": "2026-06-06"
+  },
+  {
+    "title": "BCZ YapZ (bczyapz.com)",
+    "url": "https://www.bczyapz.com/",
+    "category": "Community Projects",
+    "subcategory": "BCZ YapZ",
+    "description": "Zaal's long-form interview show — conversations with builders, founders, and organizers in the ZAO ecosystem.",
+    "tags": [
+      "interviews",
+      "show",
+      "content"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Farcaster Agentic Bootcamp (Builders Garden)",
+    "url": "https://builders-garden.notion.site/farcaster-agentic-bootcamp",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "Farcaster Agentic Bootcamp portal by Builders Garden — a data stream feeding ZABAL Gamez.",
+    "tags": [
+      "bootcamp",
+      "farcaster",
+      "partner"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Farcaster Agentic Bootcamp (Luma)",
+    "url": "https://luma.com/f7ok6tbp",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "Luma event page for the Farcaster Agentic Bootcamp.",
+    "tags": [
+      "bootcamp",
+      "event",
+      "luma"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZABAL Gamez — Data Streams",
+    "url": "https://zabalgamez.com/streams",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Gamez data streams — chronological feed of sources feeding the ecosystem (YapZ, bootcamp, bounty, workshops).",
+    "tags": [
+      "games",
+      "data",
+      "feed"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZABAL Gamez — Graph Explorer",
+    "url": "https://zabalgamez.com/graph",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "Searchable Bonfire knowledge-graph explorer — people, tools, brands, and data streams with their connections.",
+    "tags": [
+      "games",
+      "graph",
+      "bonfire"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZABAL Gamez — Leaderboard",
+    "url": "https://zabalgamez.com/leaderboard",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Gamez builder leaderboard — ranks builders by social-action points.",
+    "tags": [
+      "games",
+      "leaderboard"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZABAL Gamez — Workshop Sign-up",
+    "url": "https://zabalgamez.com/lead",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "Sign up to lead a ZABAL Gamez workshop session.",
+    "tags": [
+      "games",
+      "workshop",
+      "signup"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "ZABAL Gamez — Finals",
+    "url": "https://zabalgamez.com/finals",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Gamez finals settlement page — prize pool and finalists.",
+    "tags": [
+      "games",
+      "finals",
+      "prizes"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-06"
   }
 ]
