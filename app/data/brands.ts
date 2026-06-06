@@ -1058,7 +1058,8 @@ export const brands: Brand[] = [
     links: [
       { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/clejan', description: 'Artist page on The ZAO' },
       { title: 'Website', url: 'https://clejan.com', description: 'Official site' },
-      { title: 'SoundCloud', url: 'https://soundcloud.com/clejan', description: 'Music platform' }
+      { title: 'Spotify', url: 'https://open.spotify.com/artist/6CbxzZHyeIz1Pig7giCufl', description: 'Music platform' },
+      { title: 'Instagram', url: 'https://www.instagram.com/thetrapviolinist', description: '@thetrapviolinist' }
     ]
   },
 
@@ -1088,7 +1089,8 @@ export const brands: Brand[] = [
     status: 'live',
     homepage: 'https://www.thezao.com/artists/attabotty',
     links: [
-      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/attabotty', description: 'Artist page on The ZAO' }
+      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/attabotty', description: 'Artist page on The ZAO' },
+      { title: 'Website', url: 'https://www.attabotty.com', description: 'Official audiovisual art site' }
     ]
   }
 ];
