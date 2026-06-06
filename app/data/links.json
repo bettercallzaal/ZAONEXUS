@@ -2740,5 +2740,274 @@
       "website"
     ],
     "audience": "community"
+  },
+  {
+    "title": "ZAO Calendar (page)",
+    "url": "https://www.thezao.com/calendar",
+    "category": "The ZAO",
+    "subcategory": "Calendars",
+    "description": "",
+    "tags": [
+      "calendar",
+      "events"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Newsletter (page)",
+    "url": "https://www.thezao.com/newsletter",
+    "category": "The ZAO",
+    "subcategory": "Daily Newsletter",
+    "description": "",
+    "tags": [
+      "newsletter"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Map",
+    "url": "https://www.thezao.com/zao-map",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "map",
+      "community",
+      "people"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "Formerly LEN",
+    "url": "https://www.thezao.com/artists/formerly-len",
+    "category": "ZAO Members",
+    "subcategory": "Formerly LEN",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Formerly LEN Apple Music",
+    "url": "https://music.apple.com/us/artist/formerly-len/1536989729",
+    "category": "ZAO Members",
+    "subcategory": "Formerly LEN",
+    "description": "",
+    "tags": [
+      "artist",
+      "apple-music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "WaveWarZ Donate (Mainnet Launch)",
+    "url": "https://www.wavewarz.com/donate",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "wavewarz",
+      "donate"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Hurric4n3Ike (ZAO profile)",
+    "url": "https://www.thezao.com/artists/hurric4n3ike",
+    "category": "ZAO Members",
+    "subcategory": "Hurric4n3Ike",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Clejan (ZAO profile)",
+    "url": "https://www.thezao.com/artists/clejan",
+    "category": "ZAO Members",
+    "subcategory": "Clejan",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Goldilox (ZAO profile)",
+    "url": "https://www.thezao.com/artists/goldilox",
+    "category": "ZAO Members",
+    "subcategory": "Goldilox",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "NessytheRilla (ZAO profile)",
+    "url": "https://www.thezao.com/artists/nessytherilla",
+    "category": "ZAO Members",
+    "subcategory": "NessytheRilla",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "MidiElves Collection",
+    "url": "https://touchgrass.midipunkz.com/midielves",
+    "category": "Community Projects",
+    "subcategory": "MidiPunkZ",
+    "description": "",
+    "tags": [
+      "midipunkz",
+      "nft",
+      "collection"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "The Moon Song (MidiPunkZ)",
+    "url": "https://ima.midipunkz.com/buy-moon-song",
+    "category": "Community Projects",
+    "subcategory": "MidiPunkZ",
+    "description": "",
+    "tags": [
+      "midipunkz",
+      "music",
+      "nft"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "MiDiVaderZ (game)",
+    "url": "https://midivaderz.midipunkz.com",
+    "category": "Community Projects",
+    "subcategory": "MidiPunkZ",
+    "description": "",
+    "tags": [
+      "midipunkz",
+      "game"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ORDAO (governance)",
+    "url": "https://optimystics.io/ordao",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "governance",
+      "ordao"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "OREC (Executive Contract)",
+    "url": "https://optimystics.io/orec",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "governance",
+      "orec"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Respect Tokens (Optimystics)",
+    "url": "https://optimystics.io/respect",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "",
+    "tags": [
+      "governance",
+      "respect"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAO-CHELLA Vibes (MidiVaderZ event)",
+    "url": "https://ima.midipunkz.com/events/zao-chella-vibes-2024",
+    "category": "ZAO Festivals",
+    "subcategory": "ZAO Festivals",
+    "description": "",
+    "tags": [
+      "zaochella",
+      "game",
+      "nft"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Daniel Obuté",
+    "url": "https://www.thezao.com/artists/daniel-obute",
+    "category": "ZAO Members",
+    "subcategory": "Daniel Obuté",
+    "description": "",
+    "tags": [
+      "artist",
+      "music"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "CandyToyBox",
+    "url": "https://candytoybox.com",
+    "category": "ZAO Members",
+    "subcategory": "CandyToyBox",
+    "description": "",
+    "tags": [
+      "cofounder",
+      "web3",
+      "website"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAO Artists Newsletter",
+    "url": "https://paragraph.com/@thezao/category/artists",
+    "category": "The ZAO",
+    "subcategory": "Daily Newsletter",
+    "description": "",
+    "tags": [
+      "newsletter",
+      "artists"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "GodCloud Sample Packs",
+    "url": "https://www.godcloud.org/shop",
+    "category": "ZAO Members",
+    "subcategory": "GodCloud",
+    "description": "",
+    "tags": [
+      "artist",
+      "sample-packs",
+      "shop"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "GodCloud Bio / EPK",
+    "url": "https://www.godcloud.org/about",
+    "category": "ZAO Members",
+    "subcategory": "GodCloud",
+    "description": "",
+    "tags": [
+      "artist",
+      "bio"
+    ],
+    "audience": "community"
   }
 ]
