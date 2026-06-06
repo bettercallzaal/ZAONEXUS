@@ -1235,5 +1235,59 @@
     "subcategory": "Calendar",
     "description": "ZAO events calendar",
     "audience": "both"
+  },
+  {
+    "title": "ZAO Artists",
+    "url": "https://www.thezao.com/artists",
+    "category": "The ZAO",
+    "subcategory": "Artists & Music",
+    "description": "ZAO Music artist roster.",
+    "tags": ["artists", "music"],
+    "audience": "both"
+  },
+  {
+    "title": "Music Releases",
+    "url": "https://www.thezao.com/music-releases",
+    "category": "The ZAO",
+    "subcategory": "Artists & Music",
+    "description": "ZAO discography and drops.",
+    "tags": ["music", "releases"],
+    "audience": "both"
+  },
+  {
+    "title": "ZTalent Ecosystem (ZAO CHART)",
+    "url": "https://www.thezao.com/ztalent-ecosystem",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "ZTalent ecosystem overview (ZAO CHART).",
+    "tags": ["ztalent", "ecosystem"],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAO Leaderboard",
+    "url": "https://www.thezao.com/zao-leaderboard",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "Member reputation leaderboard.",
+    "tags": ["leaderboard", "reputation"],
+    "audience": "community"
+  },
+  {
+    "title": "ZTalent Whitepaper (HackMD)",
+    "url": "https://hackmd.io/u9jZ5Q1BR_uUwmRuksvF6Q",
+    "category": "The ZAO",
+    "subcategory": "ZAO Whitepaper",
+    "description": "The ZAO / ZTalent Artist Organization governance doc.",
+    "tags": ["whitepaper", "ztalent", "docs"],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "$ZAO Respect Token",
+    "url": "https://www.thezao.com/zao-token",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Tokens",
+    "description": "Soulbound, non-transferable reputation token (distinct from tradable $ZABAL).",
+    "tags": ["token", "respect", "soulbound"],
+    "audience": "both"
   }
 ]
