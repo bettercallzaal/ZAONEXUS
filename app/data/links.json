@@ -4439,5 +4439,41 @@
       "github"
     ],
     "audience": "ecosystem"
+  },
+  {
+    "title": "POIDH Bounty #1151",
+    "url": "https://poidh.xyz/base/bounty/1151",
+    "category": "Community Projects",
+    "subcategory": "POIDH",
+    "description": "",
+    "tags": [
+      "poidh",
+      "bounty"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "POIDH Bounty #1166",
+    "url": "https://poidh.xyz/base/bounty/1166",
+    "category": "Community Projects",
+    "subcategory": "POIDH",
+    "description": "",
+    "tags": [
+      "poidh",
+      "bounty"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "POIDH Bounty #1180",
+    "url": "https://poidh.xyz/base/bounty/1180",
+    "category": "Community Projects",
+    "subcategory": "POIDH",
+    "description": "",
+    "tags": [
+      "poidh",
+      "bounty"
+    ],
+    "audience": "ecosystem"
   }
 ]
