@@ -2,6 +2,13 @@
 
 All notable changes to ZAO Nexus will be documented in this file.
 
+## [1.3.1] - 2026-06-06
+
+### 🔗 Restored links + authoring tooling
+
+- **Re-added 6 links** dropped during the canonical consolidation: ZAO Artists, Music Releases, ZTalent Ecosystem (ZAO CHART), ZAO Leaderboard, $ZAO Respect Token, and the ZTalent Whitepaper (HackMD). Total now **145 links** — `/community` = 68, `/ecosystem` = 101.
+- **`scripts/add-link.js`** rewritten to append to the flat `app/data/links.json` (new schema: title/url/category/subcategory/description/tags/audience, with the canonical 9 categories) instead of the old nested `links.ts`.
+
 ## [1.3.0] - 2026-06-06
 
 ### 🔄 Canonical data consolidation + GitHub sync

@@ -2,136 +2,98 @@
 
 /**
  * Quick Link Addition Script for ZAO Nexus
- * 
+ *
  * Usage:
  *   node scripts/add-link.js
- * 
- * This interactive script helps you add new links to the ZAO Nexus
- * with proper categorization and formatting.
+ *
+ * Interactive helper that appends a new link to the canonical, flat
+ * `app/data/links.json` (the source of truth the live site syncs from).
  */
 
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
+const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 const question = (query) => new Promise((resolve) => rl.question(query, resolve));
 
+// Canonical top-level categories (keep in sync with CATEGORY_ORDER in app/data/links.ts).
 const CATEGORIES = [
+  'The ZAO',
+  'ZAO OS',
+  'Agents & Bots',
+  'ZAO Festivals',
+  'Community Projects',
+  'ZAO Members',
+  'Ecosystem & Tokens',
   'ZAO Onchain',
-  'ZAO Links',
-  'ZAO Projects Links',
-  'ZAO Community Links',
-  'ZAO Community Members'
+  'ZAO Stock',
 ];
+
+const AUDIENCES = ['community', 'ecosystem', 'both'];
 
 async function main() {
   console.log('\n🔗 ZAO NEXUS - Quick Link Addition Tool\n');
-  console.log('This tool helps you add new links to the Nexus.\n');
 
-  // Get link details
-  const title = await question('Link Title: ');
-  const url = await question('URL: ');
-  const description = await question('Description: ');
+  const dataPath = path.join(__dirname, '../app/data/links.json');
+  const links = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
-  // Show categories
+  const title = (await question('Link Title: ')).trim();
+  const url = (await question('URL: ')).trim();
+  const description = (await question('Description (optional): ')).trim();
+
   console.log('\nAvailable Categories:');
-  CATEGORIES.forEach((cat, idx) => {
-    console.log(`  ${idx + 1}. ${cat}`);
-  });
-  
-  const categoryIdx = parseInt(await question('\nSelect Category (1-5): ')) - 1;
-  const mainCategory = CATEGORIES[categoryIdx];
+  CATEGORIES.forEach((cat, idx) => console.log(`  ${idx + 1}. ${cat}`));
+  const categoryIdx = parseInt(await question(`\nSelect Category (1-${CATEGORIES.length}): `), 10) - 1;
+  const category = CATEGORIES[categoryIdx];
 
-  const subTitle = await question('Subcategory Name (e.g., "WaveWarZ", "ZAO Tokens"): ');
+  if (!category) {
+    console.log('❌ Invalid category');
+    rl.close();
+    return;
+  }
 
-  // Confirm
+  // Suggest existing subcategories in the chosen category.
+  const existingSubs = [...new Set(links.filter(l => l.category === category).map(l => l.subcategory).filter(Boolean))];
+  if (existingSubs.length) console.log(`\nExisting subcategories in "${category}": ${existingSubs.join(', ')}`);
+  const subcategory = (await question('Subcategory (e.g., "WaveWarZ", "ZAO Tokens"): ')).trim();
+
+  console.log('\nAudience:');
+  AUDIENCES.forEach((a, idx) => console.log(`  ${idx + 1}. ${a}`));
+  const audienceIdx = parseInt(await question('Select Audience (1-3) [default 3=both]: '), 10) - 1;
+  const audience = AUDIENCES[audienceIdx] || 'both';
+
+  const tagsRaw = (await question('Tags (comma-separated, optional): ')).trim();
+  const tags = tagsRaw ? tagsRaw.split(',').map(t => t.trim()).filter(Boolean) : undefined;
+
+  if (!title || !url) {
+    console.log('❌ Title and URL are required');
+    rl.close();
+    return;
+  }
+
+  const entry = { title, url, category };
+  if (subcategory) entry.subcategory = subcategory;
+  if (description) entry.description = description;
+  if (tags && tags.length) entry.tags = tags;
+  entry.audience = audience;
+
   console.log('\n📋 Preview:');
-  console.log(`  Category: ${mainCategory}`);
-  console.log(`  Subcategory: ${subTitle}`);
-  console.log(`  Title: ${title}`);
-  console.log(`  URL: ${url}`);
-  console.log(`  Description: ${description}`);
+  console.log(JSON.stringify(entry, null, 2));
 
   const confirm = await question('\nAdd this link? (y/n): ');
-  
   if (confirm.toLowerCase() !== 'y') {
     console.log('❌ Cancelled');
     rl.close();
     return;
   }
 
-  // Read current data
-  const dataPath = path.join(__dirname, '../app/data/links.ts');
-  let content = fs.readFileSync(dataPath, 'utf8');
-
-  // Create link object string
-  const linkObj = `      { title: "${title}", url: "${url}", description: "${description}" }`;
-
-  // Find the category and subcategory
-  const categoryRegex = new RegExp(`mainCategory: "${mainCategory}"[\\s\\S]*?subcategories: \\[`, 'g');
-  const categoryMatch = categoryRegex.exec(content);
-
-  if (!categoryMatch) {
-    console.log(`❌ Category "${mainCategory}" not found`);
-    rl.close();
-    return;
-  }
-
-  // Find subcategory
-  const subCategoryRegex = new RegExp(`subTitle: "${subTitle}"[\\s\\S]*?links: \\[([\\s\\S]*?)\\]`, 'g');
-  const subMatch = subCategoryRegex.exec(content);
-
-  if (subMatch) {
-    // Subcategory exists, add to it
-    const linksArray = subMatch[1];
-    const lastLinkIndex = content.indexOf(linksArray) + linksArray.length;
-    
-    // Insert before the closing bracket
-    const insertPosition = content.lastIndexOf(']', lastLinkIndex);
-    const beforeInsert = content.substring(0, insertPosition);
-    const afterInsert = content.substring(insertPosition);
-    
-    // Add comma if there are existing links
-    const needsComma = linksArray.trim().length > 0;
-    const newContent = beforeInsert + (needsComma ? ',\n' : '\n') + linkObj + '\n    ' + afterInsert;
-    
-    fs.writeFileSync(dataPath, newContent, 'utf8');
-    console.log('\n✅ Link added successfully!');
-  } else {
-    console.log(`\n⚠️  Subcategory "${subTitle}" not found.`);
-    const createNew = await question('Create new subcategory? (y/n): ');
-    
-    if (createNew.toLowerCase() === 'y') {
-      // Create new subcategory
-      const newSubcategory = `    {\n      subTitle: "${subTitle}",\n      links: [\n${linkObj}\n      ]\n    }`;
-      
-      // Find where to insert (after last subcategory in this category)
-      const categoryEndRegex = new RegExp(`mainCategory: "${mainCategory}"[\\s\\S]*?subcategories: \\[([\\s\\S]*?)\\]\\s*\\}`, 'g');
-      const categoryEndMatch = categoryEndRegex.exec(content);
-      
-      if (categoryEndMatch) {
-        const subcategoriesContent = categoryEndMatch[1];
-        const insertPos = content.indexOf(subcategoriesContent) + subcategoriesContent.length;
-        const beforeInsert = content.substring(0, insertPos);
-        const afterInsert = content.substring(insertPos);
-        
-        const needsComma = subcategoriesContent.trim().length > 0;
-        const newContent = beforeInsert + (needsComma ? ',\n' : '\n') + newSubcategory + '\n  ' + afterInsert;
-        
-        fs.writeFileSync(dataPath, newContent, 'utf8');
-        console.log('\n✅ New subcategory and link added successfully!');
-      }
-    } else {
-      console.log('❌ Cancelled');
-    }
-  }
+  links.push(entry);
+  fs.writeFileSync(dataPath, JSON.stringify(links, null, 2) + '\n', 'utf8');
+  console.log(`\n✅ Link added. links.json now has ${links.length} entries.`);
+  console.log('   Commit & push to main to update the live site (no redeploy needed).');
 
   rl.close();
 }
 
-main().catch(console.error);
+main().catch((err) => { console.error(err); rl.close(); });
