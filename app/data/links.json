@@ -3552,5 +3552,70 @@
       "brand-kit"
     ],
     "audience": "ecosystem"
+  },
+  {
+    "title": "Hats Protocol",
+    "url": "https://www.hatsprotocol.xyz",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Infrastructure",
+    "description": "",
+    "tags": [
+      "governance",
+      "hats",
+      "infra"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Optimism Fractal",
+    "url": "https://optimismfractal.com",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Infrastructure",
+    "description": "",
+    "tags": [
+      "governance",
+      "fractal",
+      "respect"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Eden Fractal",
+    "url": "https://edenfractal.com",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Infrastructure",
+    "description": "",
+    "tags": [
+      "governance",
+      "fractal",
+      "respect"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "0xSplits",
+    "url": "https://splits.org",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Infrastructure",
+    "description": "",
+    "tags": [
+      "revenue",
+      "splits",
+      "infra"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "$LOANZ on IQ.wiki",
+    "url": "https://iq.wiki/wiki/student-loanz-loanz",
+    "category": "Community Projects",
+    "subcategory": "$Loanz",
+    "description": "",
+    "tags": [
+      "loanz",
+      "token",
+      "wiki"
+    ],
+    "audience": "ecosystem"
   }
 ]
