@@ -1,8 +1,27 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ChevronRight, Github, ExternalLink, Mail, MessageSquare, ArrowLeft } from 'lucide-react';
 import { brands, getBrandBySlug, getBrandChildren, type BrandStage } from '../../data/brands';
 import LiveDataPanel from '../../components/LiveDataPanel';
 import { getFarcasterStats, getGithubLastCommit, getTokenHolderCount } from '../../lib/live-data';
+
+export async function generateMetadata(props: BrandDetailPageProps): Promise<Metadata> {
+  const { slug } = await props.params;
+  const brand = getBrandBySlug(slug);
+  if (!brand) {
+    return { title: 'Brand not found', robots: { index: false, follow: false } };
+  }
+  const title = brand.tagline ? `${brand.name} — ${brand.tagline}` : brand.name;
+  const description = brand.description || brand.tagline || `${brand.name} in the ZAO ecosystem.`;
+  const path = `/ecosystem/${brand.slug}`;
+  return {
+    title: brand.name,
+    description,
+    alternates: { canonical: path },
+    openGraph: { type: 'profile', title, description, url: path },
+    twitter: { card: 'summary_large_image', title, description },
+  };
+}
 
 const STAGE_LABELS: Record<BrandStage, string> = {
   active: 'Active',
