@@ -98,8 +98,7 @@
       "website",
       "mirror"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "ZAO YouTube",
@@ -1666,8 +1665,7 @@
       "music"
     ],
     "audience": "both",
-    "featured": true,
-    "addedDate": "2026-06-06"
+    "featured": true
   },
   {
     "title": "Music Releases",
@@ -1679,8 +1677,7 @@
       "music",
       "releases"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "ZTalent Ecosystem (ZAO CHART)",
@@ -1692,8 +1689,7 @@
       "ztalent",
       "ecosystem"
     ],
-    "audience": "ecosystem",
-    "addedDate": "2026-06-06"
+    "audience": "ecosystem"
   },
   {
     "title": "ZAO Leaderboard",
@@ -1705,8 +1701,7 @@
       "leaderboard",
       "reputation"
     ],
-    "audience": "community",
-    "addedDate": "2026-06-06"
+    "audience": "community"
   },
   {
     "title": "ZTalent Whitepaper (HackMD)",
@@ -1719,8 +1714,7 @@
       "ztalent",
       "docs"
     ],
-    "audience": "ecosystem",
-    "addedDate": "2026-06-06"
+    "audience": "ecosystem"
   },
   {
     "title": "$ZAO Respect Token",
@@ -1733,15 +1727,14 @@
       "respect",
       "soulbound"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "ZAO on X",
     "url": "https://x.com/thezao",
     "category": "The ZAO",
     "subcategory": "ZAO Social Media Chats",
-    "description": "",
+    "description": "ZAO on X (Twitter).",
     "tags": [
       "x",
       "social"
@@ -1753,7 +1746,7 @@
     "url": "https://farcaster.xyz/thezao",
     "category": "The ZAO",
     "subcategory": "ZAO Social Media Chats",
-    "description": "",
+    "description": "ZAO on Farcaster.",
     "tags": [
       "farcaster",
       "social"
@@ -1765,7 +1758,7 @@
     "url": "https://farcaster.xyz/~/channel/zao",
     "category": "The ZAO",
     "subcategory": "ZAO Social Media Chats",
-    "description": "",
+    "description": "The ZAO channel on Farcaster.",
     "tags": [
       "farcaster",
       "channel"
@@ -1777,7 +1770,7 @@
     "url": "https://github.com/bettercallzaal/ZAOOS",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/ZAOOS).",
     "tags": [
       "github",
       "open-source"
@@ -1789,7 +1782,7 @@
     "url": "https://thezao.com/fractals",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "Fractal Process — official page on thezao.com.",
     "tags": [
       "governance",
       "fractal"
@@ -1801,7 +1794,7 @@
     "url": "https://chat.zaoos.com",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "Chat (ZOE) — part of ZAO OS, the ZAO operating system.",
     "tags": [
       "zaoos",
       "agents",
@@ -1814,7 +1807,7 @@
     "url": "https://x.com/zaoos",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "ZAO OS on X (Twitter).",
     "tags": [
       "zaoos",
       "social"
@@ -1826,7 +1819,7 @@
     "url": "https://farcaster.xyz/zaofestivals",
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals Socials",
-    "description": "",
+    "description": "ZAO Festivals on Farcaster.",
     "tags": [
       "festivals",
       "farcaster"
@@ -1838,7 +1831,7 @@
     "url": "https://zaofestivals.com/zaostock",
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals",
-    "description": "",
+    "description": "ZAOstock 2026 — The ZAO's physical music festival in Maine.",
     "tags": [
       "festival",
       "zaostock"
@@ -1850,7 +1843,7 @@
     "url": "https://t.me/ZAOstockTeamBot",
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals",
-    "description": "",
+    "description": "ZAOstock Team Bot — Telegram channel.",
     "tags": [
       "zaostock",
       "telegram"
@@ -1862,7 +1855,7 @@
     "url": "https://farcaster.xyz/~/channel/zaostock",
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals Socials",
-    "description": "",
+    "description": "The ZAOstock channel on Farcaster.",
     "tags": [
       "zaostock",
       "farcaster"
@@ -1874,7 +1867,7 @@
     "url": "https://farcaster.xyz/~/channel/wavewarz",
     "category": "Community Projects",
     "subcategory": "WaveWarZ Socials",
-    "description": "",
+    "description": "The WaveWarZ channel on Farcaster.",
     "tags": [
       "wavewarz",
       "farcaster"
@@ -1886,7 +1879,7 @@
     "url": "https://wavewarz-intelligence.vercel.app",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "WaveWarZ Intelligence — deployed ZAO ecosystem app.",
     "tags": [
       "wavewarz",
       "analytics"
@@ -1898,7 +1891,7 @@
     "url": "https://github.com/CandyToyBox",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "WaveWarZ's open-source work on GitHub.",
     "tags": [
       "wavewarz",
       "github"
@@ -1910,7 +1903,7 @@
     "url": "https://wavewarz.io",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "WaveWarZ — live-traded music battles where fans trade per-battle tokens on a bonding curve.",
     "tags": [
       "wavewarz"
     ],
@@ -1921,7 +1914,7 @@
     "url": "https://graph.bonfires.ai/zabal",
     "category": "Community Projects",
     "subcategory": "ZABAL",
-    "description": "",
+    "description": "ZABAL Knowledge Graph — Bonfire, the ZAO knowledge-graph / agent layer.",
     "tags": [
       "zabal",
       "bonfire",
@@ -1934,7 +1927,7 @@
     "url": "https://app.magnetiq.xyz/brand/ZABAL/magnet/Zabal%20Connector",
     "category": "Community Projects",
     "subcategory": "ZABAL",
-    "description": "",
+    "description": "ZABAL Connector (Magnetiq) on Magnetiq.",
     "tags": [
       "zabal",
       "magnetiq"
@@ -1946,7 +1939,7 @@
     "url": "https://poidh.xyz",
     "category": "Community Projects",
     "subcategory": "POIDH",
-    "description": "",
+    "description": "POIDH — on-chain bounty platform (pics or it didn't happen) used by The ZAO.",
     "tags": [
       "bounties",
       "poidh"
@@ -1958,7 +1951,7 @@
     "url": "https://bonfires.ai",
     "category": "Community Projects",
     "subcategory": "Bonfire",
-    "description": "",
+    "description": "Bonfire — Bonfire, the ZAO knowledge-graph / agent layer.",
     "tags": [
       "bonfire",
       "knowledge-graph"
@@ -1970,7 +1963,7 @@
     "url": "https://www.thezao.com/artists/faetd",
     "category": "ZAO Members",
     "subcategory": "FAETD",
-    "description": "",
+    "description": "FAETD's artist profile on The ZAO.",
     "tags": [
       "artist",
       "music"
@@ -1982,7 +1975,7 @@
     "url": "https://soundcloud.com/faetd",
     "category": "ZAO Members",
     "subcategory": "FAETD",
-    "description": "",
+    "description": "Listen to FAETD on SoundCloud.",
     "tags": [
       "artist",
       "soundcloud"
@@ -1994,7 +1987,7 @@
     "url": "https://www.thezao.com/artists/losi",
     "category": "ZAO Members",
     "subcategory": "Losi",
-    "description": "",
+    "description": "Losi's artist profile on The ZAO.",
     "tags": [
       "artist",
       "music"
@@ -2006,7 +1999,7 @@
     "url": "https://www.yesiamgoldilocks.com",
     "category": "ZAO Members",
     "subcategory": "Goldilox",
-    "description": "",
+    "description": "Goldilox — official site.",
     "tags": [
       "artist",
       "music"
@@ -2018,7 +2011,7 @@
     "url": "https://www.instagram.com/yesiamgoldilocks",
     "category": "ZAO Members",
     "subcategory": "Goldilox",
-    "description": "",
+    "description": "Goldilox on Instagram.",
     "tags": [
       "artist",
       "instagram"
@@ -2030,7 +2023,7 @@
     "url": "https://clejan.com",
     "category": "ZAO Members",
     "subcategory": "Clejan",
-    "description": "",
+    "description": "Clejan — official site.",
     "tags": [
       "artist",
       "music"
@@ -2042,7 +2035,7 @@
     "url": "https://open.spotify.com/artist/6CbxzZHyeIz1Pig7giCufl",
     "category": "ZAO Members",
     "subcategory": "Clejan",
-    "description": "",
+    "description": "Listen to Clejan on Spotify.",
     "tags": [
       "artist",
       "spotify"
@@ -2054,7 +2047,7 @@
     "url": "https://soundcloud.com/nessytherilla",
     "category": "ZAO Members",
     "subcategory": "NessytheRilla",
-    "description": "",
+    "description": "Listen to NessytheRilla on SoundCloud.",
     "tags": [
       "artist",
       "soundcloud"
@@ -2066,7 +2059,7 @@
     "url": "https://www.attabotty.com",
     "category": "ZAO Members",
     "subcategory": "Attabotty",
-    "description": "",
+    "description": "Attabotty — official site.",
     "tags": [
       "artist",
       "audiovisual"
@@ -2078,7 +2071,7 @@
     "url": "https://www.ritzyperiwinkle.com",
     "category": "ZAO Members",
     "subcategory": "Ritzy Periwinkle",
-    "description": "",
+    "description": "Ritzy Periwinkle — official site.",
     "tags": [
       "artist"
     ],
@@ -2089,7 +2082,7 @@
     "url": "https://basescan.org/token/0x03315307b202bf9c55ebebb8e9341d30411a0bc4",
     "category": "Community Projects",
     "subcategory": "$Loanz",
-    "description": "",
+    "description": "$LOANZ Token (Base) — on-chain contract on BaseScan (Base network explorer).",
     "tags": [
       "loanz",
       "token",
@@ -2102,7 +2095,7 @@
     "url": "https://x.com/midipunkz",
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
-    "description": "",
+    "description": "MidiPunkZ on X (Twitter).",
     "tags": [
       "midipunkz",
       "x"
@@ -2114,7 +2107,7 @@
     "url": "https://www.instagram.com/midipunkz",
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
-    "description": "",
+    "description": "MidiPunkZ on Instagram.",
     "tags": [
       "midipunkz",
       "instagram"
@@ -2126,7 +2119,7 @@
     "url": "https://www.tiktok.com/@midipunkz",
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
-    "description": "",
+    "description": "MidiPunkZ on TikTok.",
     "tags": [
       "midipunkz",
       "tiktok"
@@ -2138,7 +2131,7 @@
     "url": "https://opensea.io/MidiPunks",
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
-    "description": "",
+    "description": "MidiPunkZ on OpenSea.",
     "tags": [
       "midipunkz",
       "nft",
@@ -2151,7 +2144,7 @@
     "url": "https://touchgrass.midipunkz.com",
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
-    "description": "",
+    "description": "MidiPunkZ Touch Grass (ELF mint) — MidiPunkZ on-chain music experience.",
     "tags": [
       "midipunkz",
       "mint",
@@ -2164,7 +2157,7 @@
     "url": "https://mint-list.midipunkz.com",
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
-    "description": "",
+    "description": "MidiPunkZ Mint List — MidiPunkZ on-chain music experience.",
     "tags": [
       "midipunkz",
       "mint"
@@ -2176,7 +2169,7 @@
     "url": "https://x.com/cocconcertz",
     "category": "Community Projects",
     "subcategory": "C.O.C ConcertZ",
-    "description": "",
+    "description": "C.O.C ConcertZ on X (Twitter).",
     "tags": [
       "cocconcertz",
       "x"
@@ -2188,7 +2181,7 @@
     "url": "https://www.instagram.com/cocconcertz",
     "category": "Community Projects",
     "subcategory": "C.O.C ConcertZ",
-    "description": "",
+    "description": "C.O.C ConcertZ on Instagram.",
     "tags": [
       "cocconcertz",
       "instagram"
@@ -2200,7 +2193,7 @@
     "url": "https://github.com/bettercallzaal/bcz-yapz",
     "category": "Community Projects",
     "subcategory": "BCZ YapZ",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/bcz-yapz).",
     "tags": [
       "yapz",
       "github"
@@ -2212,7 +2205,7 @@
     "url": "https://iykyk.blank.space/home/Explore",
     "category": "Community Projects",
     "subcategory": "IYKYK",
-    "description": "",
+    "description": "IYKYK — ZAO community space on Blank.space.",
     "tags": [
       "iykyk"
     ],
@@ -2223,7 +2216,7 @@
     "url": "https://music.apple.com/gb/artist/jango-uu/1726641175",
     "category": "ZAO Members",
     "subcategory": "Jango UU",
-    "description": "",
+    "description": "Listen to Jango UU on Apple Music.",
     "tags": [
       "artist",
       "apple-music"
@@ -2235,7 +2228,7 @@
     "url": "https://beacons.ai/jango.uu",
     "category": "ZAO Members",
     "subcategory": "Jango UU",
-    "description": "",
+    "description": "Jango UU on Beacons.",
     "tags": [
       "artist",
       "links"
@@ -2247,7 +2240,7 @@
     "url": "https://tomfellenz.com",
     "category": "ZAO Members",
     "subcategory": "Tom Fellenz",
-    "description": "",
+    "description": "Tom Fellenz — official site.",
     "tags": [
       "artist",
       "music"
@@ -2259,7 +2252,7 @@
     "url": "https://soundcloud.com/tomfellenz",
     "category": "ZAO Members",
     "subcategory": "Tom Fellenz",
-    "description": "",
+    "description": "Listen to Tom Fellenz on SoundCloud.",
     "tags": [
       "artist",
       "soundcloud"
@@ -2271,7 +2264,7 @@
     "url": "https://x.com/tomfellenz",
     "category": "ZAO Members",
     "subcategory": "Tom Fellenz",
-    "description": "",
+    "description": "Tom Fellenz on X (Twitter).",
     "tags": [
       "artist",
       "x"
@@ -2283,7 +2276,7 @@
     "url": "https://x.com/ritzy_p",
     "category": "ZAO Members",
     "subcategory": "Ritzy Periwinkle",
-    "description": "",
+    "description": "Ritzy Periwinkle on X (Twitter).",
     "tags": [
       "artist",
       "x"
@@ -2295,7 +2288,7 @@
     "url": "https://www.instagram.com/ritzyp",
     "category": "ZAO Members",
     "subcategory": "Ritzy Periwinkle",
-    "description": "",
+    "description": "Ritzy Periwinkle on Instagram.",
     "tags": [
       "artist",
       "instagram"
@@ -2307,7 +2300,7 @@
     "url": "https://soundcloud.com/luijoseph",
     "category": "ZAO Members",
     "subcategory": "Joseph Goats",
-    "description": "",
+    "description": "Listen to Joseph Goats on SoundCloud.",
     "tags": [
       "artist",
       "soundcloud"
@@ -2319,7 +2312,7 @@
     "url": "https://www.thezao.com/artists/attabotty",
     "category": "ZAO Members",
     "subcategory": "Attabotty",
-    "description": "",
+    "description": "Attabotty's artist profile on The ZAO.",
     "tags": [
       "artist",
       "music"
@@ -2331,7 +2324,7 @@
     "url": "https://x.com/bettercallzaal",
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal",
-    "description": "",
+    "description": "BetterCallZaal on X (Twitter).",
     "tags": [
       "founder",
       "x"
@@ -2343,7 +2336,7 @@
     "url": "https://farcaster.xyz/bettercallzaal",
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal",
-    "description": "",
+    "description": "BetterCallZaal on Farcaster.",
     "tags": [
       "founder",
       "farcaster"
@@ -2355,7 +2348,7 @@
     "url": "https://github.com/bettercallzaal",
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal",
-    "description": "",
+    "description": "BetterCallZaal's open-source work on GitHub.",
     "tags": [
       "founder",
       "github"
@@ -2367,7 +2360,7 @@
     "url": "https://farcaster.xyz/~/user/josephgoats",
     "category": "ZAO Members",
     "subcategory": "Joseph Goats",
-    "description": "",
+    "description": "Joseph Goats on Farcaster.",
     "tags": [
       "artist",
       "farcaster"
@@ -2379,7 +2372,7 @@
     "url": "https://linkedin.com/in/ritzyp",
     "category": "ZAO Members",
     "subcategory": "Ritzy Periwinkle",
-    "description": "",
+    "description": "Ritzy Periwinkle on LinkedIn.",
     "tags": [
       "artist",
       "linkedin"
@@ -2391,7 +2384,7 @@
     "url": "https://empirebuilder.world/profile/0x7234c36A71ec237c2Ae7698e8916e0735001E9Af",
     "category": "Community Projects",
     "subcategory": "ZABAL",
-    "description": "",
+    "description": "ZABAL on Empire Builder — token leaderboards and empire mechanics.",
     "tags": [
       "zabal",
       "empire-builder"
@@ -2403,7 +2396,7 @@
     "url": "https://github.com/bettercallzaal/ZAOOS/tree/main/research",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "ZAOOS Research Library — browse on GitHub.",
     "tags": [
       "github",
       "research",
@@ -2416,7 +2409,7 @@
     "url": "https://zaoos.com/spaces",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "ZAO Spaces — part of ZAO OS, the ZAO operating system.",
     "tags": [
       "zaoos",
       "spaces",
@@ -2429,7 +2422,7 @@
     "url": "https://zaoos.com/live",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "ZAO Live — part of ZAO OS, the ZAO operating system.",
     "tags": [
       "zaoos",
       "live",
@@ -2442,7 +2435,7 @@
     "url": "https://zaoos.com/juke-status",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "ZAO Juke — part of ZAO OS, the ZAO operating system.",
     "tags": [
       "zaoos",
       "juke",
@@ -2456,7 +2449,7 @@
     "url": "https://farcaster.xyz/zaal",
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal",
-    "description": "",
+    "description": "BetterCallZaal on Farcaster.",
     "tags": [
       "founder",
       "farcaster"
@@ -2468,7 +2461,7 @@
     "url": "https://basescan.org/token/0xbB48f19B0494Ff7C1fE5Dc2032aeEE14312f0b07",
     "category": "Ecosystem & Tokens",
     "subcategory": "Tokens",
-    "description": "",
+    "description": "$ZABAL on BaseScan — on-chain contract on BaseScan (Base network explorer).",
     "tags": [
       "zabal",
       "token",
@@ -2481,7 +2474,7 @@
     "url": "https://dexscreener.com/base/0xbB48f19B0494Ff7C1fE5Dc2032aeEE14312f0b07",
     "category": "Ecosystem & Tokens",
     "subcategory": "Tokens",
-    "description": "",
+    "description": "$ZABAL on DexScreener — live price, charts, and liquidity on DexScreener.",
     "tags": [
       "zabal",
       "token",
@@ -2495,7 +2488,7 @@
     "url": "https://dexscreener.com/base/0x03315307b202bf9c55ebebb8e9341d30411a0bc4",
     "category": "Community Projects",
     "subcategory": "$Loanz",
-    "description": "",
+    "description": "$LOANZ on DexScreener — live price, charts, and liquidity on DexScreener.",
     "tags": [
       "loanz",
       "token",
@@ -2509,7 +2502,7 @@
     "url": "https://basescan.org/address/0xCB80Ef04DA68667c9a4450013BDD69269842c883",
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
-    "description": "",
+    "description": "ZOUNZ DAO on BaseScan — on-chain contract on BaseScan (Base network explorer).",
     "tags": [
       "zounz",
       "dao",
@@ -2523,7 +2516,7 @@
     "url": "https://www.thezao.com/about",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "ZAO About — official page on thezao.com.",
     "tags": [
       "about",
       "official"
@@ -2535,7 +2528,7 @@
     "url": "https://www.thezao.com/community",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "ZAO Community — official page on thezao.com.",
     "tags": [
       "community"
     ],
@@ -2546,7 +2539,7 @@
     "url": "https://thezao.com/timeline",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "ZAO Timeline — official page on thezao.com.",
     "tags": [
       "timeline",
       "history"
@@ -2558,7 +2551,7 @@
     "url": "https://optimystics.io/respectgame",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "Respect Game (Optimystics) — Optimystics on-chain governance tooling used by The ZAO (Respect / fractal coordination).",
     "tags": [
       "governance",
       "respect",
@@ -2571,7 +2564,7 @@
     "url": "https://optimystics.io",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "Optimystics — Optimystics on-chain governance tooling used by The ZAO (Respect / fractal coordination).",
     "tags": [
       "governance",
       "partner"
@@ -2583,7 +2576,7 @@
     "url": "https://github.com/Optimystics/fractalgram",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "Source code on GitHub (Optimystics/fractalgram).",
     "tags": [
       "governance",
       "github",
@@ -2596,7 +2589,7 @@
     "url": "https://songjam.space",
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
-    "description": "",
+    "description": "Songjam — turn X/Twitter Spaces into music drops and contribution leaderboards.",
     "tags": [
       "partner",
       "audio",
@@ -2609,7 +2602,7 @@
     "url": "https://magnetiq.xyz",
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
-    "description": "",
+    "description": "Magnetiq on Magnetiq.",
     "tags": [
       "partner",
       "pom",
@@ -2622,7 +2615,7 @@
     "url": "https://wavewarz.info",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "WaveWarZ info hub — stats and details on the music-battle platform.",
     "tags": [
       "wavewarz",
       "info"
@@ -2634,7 +2627,7 @@
     "url": "https://app.manifold.xyz/c/zao-card-jango-uu-ZAO-PALOOZA",
     "category": "ZAO Onchain",
     "subcategory": "ZAO Tokens",
-    "description": "",
+    "description": "ZAO-PALOOZA Jango UU Card (Manifold) on Manifold.",
     "tags": [
       "nft",
       "manifold",
@@ -2647,7 +2640,7 @@
     "url": "https://www.jangouu.com",
     "category": "ZAO Members",
     "subcategory": "Jango UU",
-    "description": "",
+    "description": "Jango UU — official site.",
     "tags": [
       "artist",
       "website"
@@ -2659,7 +2652,7 @@
     "url": "https://ohnahjiu.com",
     "category": "ZAO Members",
     "subcategory": "Ohnahji B",
-    "description": "",
+    "description": "Ohnahji B — official site.",
     "tags": [
       "artist",
       "website"
@@ -2671,7 +2664,7 @@
     "url": "https://x.com/CandyToyBoxYT1",
     "category": "ZAO Members",
     "subcategory": "CandyToyBox",
-    "description": "",
+    "description": "CandyToyBox on X (Twitter).",
     "tags": [
       "artist",
       "cofounder",
@@ -2684,7 +2677,7 @@
     "url": "https://knownorigin.io/ezincrypto",
     "category": "ZAO Members",
     "subcategory": "EZinCrypto",
-    "description": "",
+    "description": "EZinCrypto on KnownOrigin.",
     "tags": [
       "artist",
       "nft"
@@ -2696,7 +2689,7 @@
     "url": "https://www.ninaprotocol.com/releases/nessy-the-rilla-with-love-1-5",
     "category": "ZAO Members",
     "subcategory": "NessytheRilla",
-    "description": "",
+    "description": "Listen to NessytheRilla on Nina Protocol.",
     "tags": [
       "artist",
       "release",
@@ -2709,7 +2702,7 @@
     "url": "https://mrdariusmusic.com",
     "category": "ZAO Members",
     "subcategory": "Mr Darius",
-    "description": "",
+    "description": "Mr Darius — official site.",
     "tags": [
       "artist",
       "music"
@@ -2721,7 +2714,7 @@
     "url": "https://www.stilo.world",
     "category": "ZAO Members",
     "subcategory": "Stilo World",
-    "description": "",
+    "description": "Stilo World — official site.",
     "tags": [
       "artist",
       "website"
@@ -2733,7 +2726,7 @@
     "url": "https://www.thezao.com/calendar",
     "category": "The ZAO",
     "subcategory": "Calendars",
-    "description": "",
+    "description": "ZAO Calendar — official page on thezao.com.",
     "tags": [
       "calendar",
       "events"
@@ -2745,7 +2738,7 @@
     "url": "https://www.thezao.com/newsletter",
     "category": "The ZAO",
     "subcategory": "Daily Newsletter",
-    "description": "",
+    "description": "ZAO Newsletter — official page on thezao.com.",
     "tags": [
       "newsletter"
     ],
@@ -2756,7 +2749,7 @@
     "url": "https://www.thezao.com/zao-map",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "ZAO Map — official page on thezao.com.",
     "tags": [
       "map",
       "community",
@@ -2769,7 +2762,7 @@
     "url": "https://www.thezao.com/artists/formerly-len",
     "category": "ZAO Members",
     "subcategory": "Formerly LEN",
-    "description": "",
+    "description": "Formerly LEN's artist profile on The ZAO.",
     "tags": [
       "artist",
       "music"
@@ -2781,7 +2774,7 @@
     "url": "https://music.apple.com/us/artist/formerly-len/1536989729",
     "category": "ZAO Members",
     "subcategory": "Formerly LEN",
-    "description": "",
+    "description": "Listen to Formerly LEN on Apple Music.",
     "tags": [
       "artist",
       "apple-music"
@@ -2793,7 +2786,7 @@
     "url": "https://www.wavewarz.com/donate",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Support the WaveWarZ mainnet launch.",
     "tags": [
       "wavewarz",
       "donate"
@@ -2805,7 +2798,7 @@
     "url": "https://www.thezao.com/artists/hurric4n3ike",
     "category": "ZAO Members",
     "subcategory": "Hurric4n3Ike",
-    "description": "",
+    "description": "Hurric4n3Ike's artist profile on The ZAO.",
     "tags": [
       "artist",
       "music"
@@ -2817,7 +2810,7 @@
     "url": "https://www.thezao.com/artists/clejan",
     "category": "ZAO Members",
     "subcategory": "Clejan",
-    "description": "",
+    "description": "Clejan's artist profile on The ZAO.",
     "tags": [
       "artist",
       "music"
@@ -2829,7 +2822,7 @@
     "url": "https://www.thezao.com/artists/goldilox",
     "category": "ZAO Members",
     "subcategory": "Goldilox",
-    "description": "",
+    "description": "Goldilox's artist profile on The ZAO.",
     "tags": [
       "artist",
       "music"
@@ -2841,7 +2834,7 @@
     "url": "https://www.thezao.com/artists/nessytherilla",
     "category": "ZAO Members",
     "subcategory": "NessytheRilla",
-    "description": "",
+    "description": "NessytheRilla's artist profile on The ZAO.",
     "tags": [
       "artist",
       "music"
@@ -2853,7 +2846,7 @@
     "url": "https://touchgrass.midipunkz.com/midielves",
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
-    "description": "",
+    "description": "MidiElves Collection — MidiPunkZ on-chain music experience.",
     "tags": [
       "midipunkz",
       "nft",
@@ -2866,7 +2859,7 @@
     "url": "https://ima.midipunkz.com/buy-moon-song",
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
-    "description": "",
+    "description": "The Moon Song (MidiPunkZ) — MidiPunkZ on-chain music experience.",
     "tags": [
       "midipunkz",
       "music",
@@ -2879,7 +2872,7 @@
     "url": "https://midivaderz.midipunkz.com",
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
-    "description": "",
+    "description": "MiDiVaderZ (game) — MidiPunkZ on-chain music experience.",
     "tags": [
       "midipunkz",
       "game"
@@ -2891,7 +2884,7 @@
     "url": "https://optimystics.io/ordao",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "ORDAO (governance) — Optimystics on-chain governance tooling used by The ZAO (Respect / fractal coordination).",
     "tags": [
       "governance",
       "ordao"
@@ -2903,7 +2896,7 @@
     "url": "https://optimystics.io/orec",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "OREC (Executive Contract) — Optimystics on-chain governance tooling used by The ZAO (Respect / fractal coordination).",
     "tags": [
       "governance",
       "orec"
@@ -2915,7 +2908,7 @@
     "url": "https://optimystics.io/respect",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "Respect Tokens (Optimystics) — Optimystics on-chain governance tooling used by The ZAO (Respect / fractal coordination).",
     "tags": [
       "governance",
       "respect"
@@ -2927,7 +2920,7 @@
     "url": "https://ima.midipunkz.com/events/zao-chella-vibes-2024",
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals",
-    "description": "",
+    "description": "ZAO-CHELLA Vibes (MidiVaderZ event) — MidiPunkZ on-chain music experience.",
     "tags": [
       "zaochella",
       "game",
@@ -2940,7 +2933,7 @@
     "url": "https://www.thezao.com/artists/daniel-obute",
     "category": "ZAO Members",
     "subcategory": "Daniel Obuté",
-    "description": "",
+    "description": "Daniel Obuté's artist profile on The ZAO.",
     "tags": [
       "artist",
       "music"
@@ -2952,7 +2945,7 @@
     "url": "https://candytoybox.com",
     "category": "ZAO Members",
     "subcategory": "CandyToyBox",
-    "description": "",
+    "description": "CandyToyBox — official site.",
     "tags": [
       "cofounder",
       "web3",
@@ -2965,7 +2958,7 @@
     "url": "https://paragraph.com/@thezao/category/artists",
     "category": "The ZAO",
     "subcategory": "Daily Newsletter",
-    "description": "",
+    "description": "ZAO Artists Newsletter — published on The ZAO's Paragraph newsletter.",
     "tags": [
       "newsletter",
       "artists"
@@ -2977,7 +2970,7 @@
     "url": "https://www.godcloud.org/shop",
     "category": "ZAO Members",
     "subcategory": "GodCloud",
-    "description": "",
+    "description": "GodCloud — official site.",
     "tags": [
       "artist",
       "sample-packs",
@@ -2990,7 +2983,7 @@
     "url": "https://www.godcloud.org/about",
     "category": "ZAO Members",
     "subcategory": "GodCloud",
-    "description": "",
+    "description": "GodCloud — official site.",
     "tags": [
       "artist",
       "bio"
@@ -3002,7 +2995,7 @@
     "url": "https://www.thezao.com/artists/godcloud",
     "category": "ZAO Members",
     "subcategory": "GodCloud",
-    "description": "",
+    "description": "GodCloud's artist profile on The ZAO.",
     "tags": [
       "artist",
       "music"
@@ -3014,7 +3007,7 @@
     "url": "https://www.youtube.com/thegodcloud",
     "category": "ZAO Members",
     "subcategory": "GodCloud",
-    "description": "",
+    "description": "GodCloud on YouTube.",
     "tags": [
       "artist",
       "youtube"
@@ -3026,7 +3019,7 @@
     "url": "https://www.youtube.com/@CandyToyBox",
     "category": "ZAO Members",
     "subcategory": "CandyToyBox",
-    "description": "",
+    "description": "CandyToyBox on YouTube.",
     "tags": [
       "cofounder",
       "youtube"
@@ -3038,7 +3031,7 @@
     "url": "https://www.instagram.com/candytoyboxyt",
     "category": "ZAO Members",
     "subcategory": "CandyToyBox",
-    "description": "",
+    "description": "CandyToyBox on Instagram.",
     "tags": [
       "cofounder",
       "instagram"
@@ -3050,7 +3043,7 @@
     "url": "https://www.tiktok.com/@candytoybox",
     "category": "ZAO Members",
     "subcategory": "CandyToyBox",
-    "description": "",
+    "description": "CandyToyBox on TikTok.",
     "tags": [
       "cofounder",
       "tiktok"
@@ -3062,7 +3055,7 @@
     "url": "https://hug.art/artists/mrdarius",
     "category": "ZAO Members",
     "subcategory": "Mr Darius",
-    "description": "",
+    "description": "Mr Darius on HUG.",
     "tags": [
       "artist",
       "hug",
@@ -3075,7 +3068,7 @@
     "url": "https://open.spotify.com/artist/5FPLqTys3eNuqINrJWAGJ5",
     "category": "ZAO Members",
     "subcategory": "Daniel Obuté",
-    "description": "",
+    "description": "Listen to Daniel Obuté on Spotify.",
     "tags": [
       "artist",
       "spotify"
@@ -3087,7 +3080,7 @@
     "url": "https://x.com/Hurric4n3Ike",
     "category": "ZAO Members",
     "subcategory": "Hurric4n3Ike",
-    "description": "",
+    "description": "Hurric4n3Ike on X (Twitter).",
     "tags": [
       "artist",
       "x"
@@ -3099,7 +3092,7 @@
     "url": "https://hurric4n3ike.beatstars.com",
     "category": "ZAO Members",
     "subcategory": "Hurric4n3Ike",
-    "description": "",
+    "description": "Listen to Hurric4n3Ike on BeatStars.",
     "tags": [
       "artist",
       "beats"
@@ -3111,7 +3104,7 @@
     "url": "https://www.tiktok.com/@hurric4n3ike",
     "category": "ZAO Members",
     "subcategory": "Hurric4n3Ike",
-    "description": "",
+    "description": "Hurric4n3Ike on TikTok.",
     "tags": [
       "artist",
       "tiktok"
@@ -3123,7 +3116,7 @@
     "url": "https://www.instagram.com/hurric4n3ike.wav",
     "category": "ZAO Members",
     "subcategory": "Hurric4n3Ike",
-    "description": "",
+    "description": "Hurric4n3Ike on Instagram.",
     "tags": [
       "artist",
       "instagram"
@@ -3135,7 +3128,7 @@
     "url": "https://soundcloud.com/yesiamgoldilocks",
     "category": "ZAO Members",
     "subcategory": "Goldilox",
-    "description": "",
+    "description": "Listen to Goldilox on SoundCloud.",
     "tags": [
       "artist",
       "soundcloud"
@@ -3147,7 +3140,7 @@
     "url": "https://open.spotify.com/artist/336wP75Xfy1WoqKRFt17IO",
     "category": "ZAO Members",
     "subcategory": "Goldilox",
-    "description": "",
+    "description": "Listen to Goldilox on Spotify.",
     "tags": [
       "artist",
       "spotify"
@@ -3159,7 +3152,7 @@
     "url": "https://www.tiktok.com/@thetrapviolinist",
     "category": "ZAO Members",
     "subcategory": "Clejan",
-    "description": "",
+    "description": "Clejan on TikTok.",
     "tags": [
       "artist",
       "tiktok"
@@ -3171,7 +3164,7 @@
     "url": "https://www.youtube.com/@Thetrapviolinist",
     "category": "ZAO Members",
     "subcategory": "Clejan",
-    "description": "",
+    "description": "Clejan on YouTube.",
     "tags": [
       "artist",
       "youtube"
@@ -3183,7 +3176,7 @@
     "url": "https://www.instagram.com/attabotty",
     "category": "ZAO Members",
     "subcategory": "Attabotty",
-    "description": "",
+    "description": "Attabotty on Instagram.",
     "tags": [
       "artist",
       "instagram"
@@ -3195,7 +3188,7 @@
     "url": "https://www.youtube.com/channel/UC3cB4FnMIRKcNFGUOPvNvsg",
     "category": "ZAO Members",
     "subcategory": "Attabotty",
-    "description": "",
+    "description": "Attabotty on YouTube.",
     "tags": [
       "artist",
       "youtube"
@@ -3207,7 +3200,7 @@
     "url": "https://x.com/AttaBotty",
     "category": "ZAO Members",
     "subcategory": "Attabotty",
-    "description": "",
+    "description": "Attabotty on X (Twitter).",
     "tags": [
       "artist",
       "x"
@@ -3219,7 +3212,7 @@
     "url": "https://open.spotify.com/artist/7MS7B4QRp1n6c5H8N7s3wB",
     "category": "ZAO Members",
     "subcategory": "Joseph Goats",
-    "description": "",
+    "description": "Listen to Joseph Goats on Spotify.",
     "tags": [
       "artist",
       "spotify"
@@ -3231,7 +3224,7 @@
     "url": "https://fellenz.net",
     "category": "ZAO Members",
     "subcategory": "Tom Fellenz",
-    "description": "",
+    "description": "Tom Fellenz — official site.",
     "tags": [
       "artist",
       "links"
@@ -3243,7 +3236,7 @@
     "url": "https://www.youtube.com/@ritzyperiwinkle",
     "category": "ZAO Members",
     "subcategory": "Ritzy Periwinkle",
-    "description": "",
+    "description": "Ritzy Periwinkle on YouTube.",
     "tags": [
       "artist",
       "youtube"
@@ -3255,7 +3248,7 @@
     "url": "https://warpcast.com/ezincrypto",
     "category": "ZAO Members",
     "subcategory": "EZinCrypto",
-    "description": "",
+    "description": "EZinCrypto on Farcaster.",
     "tags": [
       "contributor",
       "farcaster"
@@ -3267,7 +3260,7 @@
     "url": "https://open.spotify.com/artist/3zXy9QS3GpoMQPVLPbuqtb",
     "category": "ZAO Members",
     "subcategory": "Mr Darius",
-    "description": "",
+    "description": "Listen to Mr Darius on Spotify.",
     "tags": [
       "artist",
       "spotify"
@@ -3279,7 +3272,7 @@
     "url": "https://music.apple.com/us/artist/mr-darius/1576522851",
     "category": "ZAO Members",
     "subcategory": "Mr Darius",
-    "description": "",
+    "description": "Listen to Mr Darius on Apple Music.",
     "tags": [
       "artist",
       "apple-music"
@@ -3291,7 +3284,7 @@
     "url": "https://soundcloud.com/mrdariusofficial",
     "category": "ZAO Members",
     "subcategory": "Mr Darius",
-    "description": "",
+    "description": "Listen to Mr Darius on SoundCloud.",
     "tags": [
       "artist",
       "soundcloud"
@@ -3303,7 +3296,7 @@
     "url": "https://www.instagram.com/mrdariusmusic",
     "category": "ZAO Members",
     "subcategory": "Mr Darius",
-    "description": "",
+    "description": "Mr Darius on Instagram.",
     "tags": [
       "artist",
       "instagram"
@@ -3315,7 +3308,7 @@
     "url": "https://www.youtube.com/@mrdariusmusic",
     "category": "ZAO Members",
     "subcategory": "Mr Darius",
-    "description": "",
+    "description": "Mr Darius on YouTube.",
     "tags": [
       "artist",
       "youtube"
@@ -3327,7 +3320,7 @@
     "url": "https://x.com/mrdariusone",
     "category": "ZAO Members",
     "subcategory": "Mr Darius",
-    "description": "",
+    "description": "Mr Darius on X (Twitter).",
     "tags": [
       "artist",
       "x"
@@ -3339,7 +3332,7 @@
     "url": "https://www.instagram.com/faetd_",
     "category": "ZAO Members",
     "subcategory": "FAETD",
-    "description": "",
+    "description": "FAETD on Instagram.",
     "tags": [
       "artist",
       "instagram"
@@ -3351,7 +3344,7 @@
     "url": "https://soundcloud.com/dopestilo",
     "category": "ZAO Members",
     "subcategory": "Stilo World",
-    "description": "",
+    "description": "Listen to Stilo World on SoundCloud.",
     "tags": [
       "artist",
       "soundcloud"
@@ -3363,7 +3356,7 @@
     "url": "https://x.com/DopeStilo",
     "category": "ZAO Members",
     "subcategory": "Stilo World",
-    "description": "",
+    "description": "Stilo World on X (Twitter).",
     "tags": [
       "artist",
       "x"
@@ -3375,7 +3368,7 @@
     "url": "https://www.instagram.com/dopestilo",
     "category": "ZAO Members",
     "subcategory": "Stilo World",
-    "description": "",
+    "description": "Stilo World on Instagram.",
     "tags": [
       "artist",
       "instagram"
@@ -3387,7 +3380,7 @@
     "url": "https://www.youtube.com/@jangouuforever",
     "category": "ZAO Members",
     "subcategory": "Jango UU",
-    "description": "",
+    "description": "Jango UU on YouTube.",
     "tags": [
       "artist",
       "youtube"
@@ -3399,7 +3392,7 @@
     "url": "https://soundcloud.com/jangouuforever",
     "category": "ZAO Members",
     "subcategory": "Jango UU",
-    "description": "",
+    "description": "Listen to Jango UU on SoundCloud.",
     "tags": [
       "artist",
       "soundcloud"
@@ -3411,7 +3404,7 @@
     "url": "https://pods.media/lets-talk-about-web3",
     "category": "Community Projects",
     "subcategory": "Web3 Podcast",
-    "description": "",
+    "description": "Let's Talk About Web3 (Podcast) on Pods.media.",
     "tags": [
       "podcast",
       "web3"
@@ -3423,7 +3416,7 @@
     "url": "https://ltaw3.thezao.com",
     "category": "Community Projects",
     "subcategory": "Web3 Podcast",
-    "description": "",
+    "description": "Let's Talk Web3 (LTAW3) — the ZAO's Web3 podcast community.",
     "tags": [
       "podcast",
       "community"
@@ -3435,7 +3428,7 @@
     "url": "https://blonderecords.com/goldi",
     "category": "ZAO Members",
     "subcategory": "Goldilox",
-    "description": "",
+    "description": "Listen to Goldilox on Blonde Records.",
     "tags": [
       "artist",
       "label"
@@ -3447,7 +3440,7 @@
     "url": "https://app.bonfires.ai",
     "category": "Community Projects",
     "subcategory": "Bonfire",
-    "description": "",
+    "description": "Bonfires App — Bonfire, the ZAO knowledge-graph / agent layer.",
     "tags": [
       "bonfire",
       "app",
@@ -3460,7 +3453,7 @@
     "url": "https://paragraph.com/@thezao/ztalent-newsletter5",
     "category": "The ZAO",
     "subcategory": "Daily Newsletter",
-    "description": "",
+    "description": "ZTalent Newsletter #5 — published on The ZAO's Paragraph newsletter.",
     "tags": [
       "newsletter",
       "ztalent"
@@ -3472,7 +3465,7 @@
     "url": "https://paragraph.com/@thezao/zabal-update-3",
     "category": "Community Projects",
     "subcategory": "ZABAL",
-    "description": "",
+    "description": "ZABAL Update #3 — published on The ZAO's Paragraph newsletter.",
     "tags": [
       "zabal",
       "update"
@@ -3484,7 +3477,7 @@
     "url": "https://hackmd.io/2DVVvP1oTzCMIqLKRSLgRw",
     "category": "The ZAO",
     "subcategory": "ZAO Whitepaper",
-    "description": "",
+    "description": "ZAO Whitepaper 2026 (HackMD) — collaborative doc on HackMD.",
     "tags": [
       "whitepaper",
       "docs",
@@ -3497,7 +3490,7 @@
     "url": "https://discord.thezao.com",
     "category": "The ZAO",
     "subcategory": "ZAO Social Media Chats",
-    "description": "",
+    "description": "Join the ZAO community Discord.",
     "tags": [
       "discord",
       "chat"
@@ -3509,7 +3502,7 @@
     "url": "https://bettercallzaal.com/poidh.html",
     "category": "Community Projects",
     "subcategory": "POIDH",
-    "description": "",
+    "description": "POIDH (BCZ) — page on BetterCallZaal's site.",
     "tags": [
       "poidh",
       "bounties"
@@ -3521,7 +3514,7 @@
     "url": "https://bettercallzaal.com/poidh-bounty-best-practices.html",
     "category": "Community Projects",
     "subcategory": "POIDH",
-    "description": "",
+    "description": "POIDH Bounty Best Practices — page on BetterCallZaal's site.",
     "tags": [
       "poidh",
       "guide"
@@ -3533,7 +3526,7 @@
     "url": "https://bettercallzaal.com/assets/zabal-games-brand/",
     "category": "Community Projects",
     "subcategory": "ZABAL Games",
-    "description": "",
+    "description": "ZABAL Games Brand Kit — page on BetterCallZaal's site.",
     "tags": [
       "zabal",
       "brand-kit"
@@ -3545,7 +3538,7 @@
     "url": "https://www.hatsprotocol.xyz",
     "category": "Ecosystem & Tokens",
     "subcategory": "Infrastructure",
-    "description": "",
+    "description": "Hats Protocol — roles and permissions via Hats Protocol.",
     "tags": [
       "governance",
       "hats",
@@ -3558,7 +3551,7 @@
     "url": "https://optimismfractal.com",
     "category": "Ecosystem & Tokens",
     "subcategory": "Infrastructure",
-    "description": "",
+    "description": "Optimism Fractal — fractal governance community (Respect Game) related to The ZAO.",
     "tags": [
       "governance",
       "fractal",
@@ -3571,7 +3564,7 @@
     "url": "https://edenfractal.com",
     "category": "Ecosystem & Tokens",
     "subcategory": "Infrastructure",
-    "description": "",
+    "description": "Eden Fractal — fractal governance community (Respect Game) related to The ZAO.",
     "tags": [
       "governance",
       "fractal",
@@ -3584,7 +3577,7 @@
     "url": "https://splits.org",
     "category": "Ecosystem & Tokens",
     "subcategory": "Infrastructure",
-    "description": "",
+    "description": "0xSplits — on-chain revenue splits via Splits.",
     "tags": [
       "revenue",
       "splits",
@@ -3597,7 +3590,7 @@
     "url": "https://iq.wiki/wiki/student-loanz-loanz",
     "category": "Community Projects",
     "subcategory": "$Loanz",
-    "description": "",
+    "description": "$LOANZ on IQ.wiki — reference entry on IQ.wiki.",
     "tags": [
       "loanz",
       "token",
@@ -3610,7 +3603,7 @@
     "url": "https://x.com/SongjamSpace",
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
-    "description": "",
+    "description": "SongJam on X (Twitter).",
     "tags": [
       "partner",
       "songjam",
@@ -3623,7 +3616,7 @@
     "url": "https://github.com/bettercallzaal/bcz-journal",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/bcz-journal).",
     "tags": [
       "github",
       "journal",
@@ -3636,7 +3629,7 @@
     "url": "https://github.com/bettercallzaal/zao-101",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zao-101).",
     "tags": [
       "github",
       "learn",
@@ -3649,7 +3642,7 @@
     "url": "https://github.com/bettercallzaal/zao-claude-skills",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zao-claude-skills).",
     "tags": [
       "github",
       "agents",
@@ -3662,7 +3655,7 @@
     "url": "https://github.com/bettercallzaal/wwbase",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/wwbase).",
     "tags": [
       "wavewarz",
       "base",
@@ -3675,7 +3668,7 @@
     "url": "https://github.com/bettercallzaal/wavewarzapp",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/wavewarzapp).",
     "tags": [
       "wavewarz",
       "app",
@@ -3688,7 +3681,7 @@
     "url": "https://github.com/CandyToyBox/V2-Stats-App-WaveWarz",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Source code on GitHub (CandyToyBox/V2-Stats-App-WaveWarz).",
     "tags": [
       "wavewarz",
       "stats",
@@ -3701,7 +3694,7 @@
     "url": "https://github.com/CandyToyBox/wavewarz-merch-shop",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Source code on GitHub (CandyToyBox/wavewarz-merch-shop).",
     "tags": [
       "wavewarz",
       "merch",
@@ -3714,7 +3707,7 @@
     "url": "https://github.com/ZAODEVZ/zabalgames",
     "category": "Community Projects",
     "subcategory": "ZABAL Games",
-    "description": "",
+    "description": "Source code on GitHub (ZAODEVZ/zabalgames).",
     "tags": [
       "zabal",
       "games",
@@ -3727,7 +3720,7 @@
     "url": "https://github.com/ZAODEVZ/ZAOcowork",
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
-    "description": "",
+    "description": "Source code on GitHub (ZAODEVZ/ZAOcowork).",
     "tags": [
       "coworking",
       "app",
@@ -3740,7 +3733,7 @@
     "url": "https://github.com/bettercallzaal/zaoscribe",
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zaoscribe).",
     "tags": [
       "bot",
       "discord",
@@ -3753,7 +3746,7 @@
     "url": "https://github.com/bettercallzaal/zaomusicbot",
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zaomusicbot).",
     "tags": [
       "bot",
       "music",
@@ -3766,7 +3759,7 @@
     "url": "https://github.com/bettercallzaal/zlank",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zlank).",
     "tags": [
       "farcaster",
       "builder",
@@ -3779,7 +3772,7 @@
     "url": "https://github.com/bettercallzaal/ZOUNZ",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/ZOUNZ).",
     "tags": [
       "farcaster",
       "music",
@@ -3793,7 +3786,7 @@
     "url": "https://github.com/bettercallzaal/Aurdour",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/Aurdour).",
     "tags": [
       "dj",
       "music",
@@ -3807,7 +3800,7 @@
     "url": "https://github.com/ZAODEVZ/ZAOfractal",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "Source code on GitHub (ZAODEVZ/ZAOfractal).",
     "tags": [
       "governance",
       "fractal",
@@ -3820,7 +3813,7 @@
     "url": "https://github.com/bettercallzaal/bettercallzaal-coding-hub",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/bettercallzaal-coding-hub).",
     "tags": [
       "github",
       "projects",
@@ -3833,7 +3826,7 @@
     "url": "https://github.com/bettercallzaal/farscout",
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/farscout).",
     "tags": [
       "agent",
       "farcaster",
@@ -3846,7 +3839,7 @@
     "url": "https://github.com/bettercallzaal/zaoprojects",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zaoprojects).",
     "tags": [
       "github",
       "projects"
@@ -3858,7 +3851,7 @@
     "url": "https://github.com/bettercallzaal/zao-stock",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zao-stock).",
     "tags": [
       "github",
       "zaostock",
@@ -3871,7 +3864,7 @@
     "url": "https://github.com/bettercallzaal/ZAO-Leaderboard",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/ZAO-Leaderboard).",
     "tags": [
       "github",
       "leaderboard"
@@ -3883,7 +3876,7 @@
     "url": "https://github.com/bettercallzaal/SidebySidev2",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/SidebySidev2).",
     "tags": [
       "github",
       "music",
@@ -3896,7 +3889,7 @@
     "url": "https://github.com/bettercallzaal/zaloraV1",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zaloraV1).",
     "tags": [
       "github",
       "mascot",
@@ -3909,7 +3902,7 @@
     "url": "https://github.com/bettercallzaal/ZAO-Video-Editor",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/ZAO-Video-Editor).",
     "tags": [
       "github",
       "tool",
@@ -3922,7 +3915,7 @@
     "url": "https://github.com/bettercallzaal/zaaltimelinev1.1",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zaaltimelinev1.1).",
     "tags": [
       "github",
       "timeline"
@@ -3934,7 +3927,7 @@
     "url": "https://github.com/bettercallzaal/ZAONEXUS",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/ZAONEXUS).",
     "tags": [
       "github",
       "nexus",
@@ -3947,7 +3940,7 @@
     "url": "https://github.com/bettercallzaal/imanprojects",
     "category": "The ZAO",
     "subcategory": "Open Source",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/imanprojects).",
     "tags": [
       "github",
       "projects"
@@ -3959,7 +3952,7 @@
     "url": "https://github.com/bettercallzaal/fishbowlz",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/fishbowlz).",
     "tags": [
       "github",
       "fishbowlz",
@@ -3972,7 +3965,7 @@
     "url": "https://github.com/bettercallzaal/zlank-snap-template",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zlank-snap-template).",
     "tags": [
       "github",
       "farcaster",
@@ -3985,7 +3978,7 @@
     "url": "https://github.com/bettercallzaal/zaocowork",
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zaocowork).",
     "tags": [
       "github",
       "agent",
@@ -3998,7 +3991,7 @@
     "url": "https://github.com/bettercallzaal/newsletter-bot-1",
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/newsletter-bot-1).",
     "tags": [
       "github",
       "bot",
@@ -4011,7 +4004,7 @@
     "url": "https://github.com/bettercallzaal/ZAO-FRACTAL-BOTV2",
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/ZAO-FRACTAL-BOTV2).",
     "tags": [
       "github",
       "bot",
@@ -4024,7 +4017,7 @@
     "url": "https://github.com/bettercallzaal/zabalbot",
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zabalbot).",
     "tags": [
       "github",
       "bot",
@@ -4037,7 +4030,7 @@
     "url": "https://github.com/ZAODEVZ/ZAOsribeBOT",
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
-    "description": "",
+    "description": "Source code on GitHub (ZAODEVZ/ZAOsribeBOT).",
     "tags": [
       "github",
       "bot",
@@ -4050,7 +4043,7 @@
     "url": "https://github.com/ZAODEVZ/Zuke",
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
-    "description": "",
+    "description": "Source code on GitHub (ZAODEVZ/Zuke).",
     "tags": [
       "github",
       "zaodevz"
@@ -4062,7 +4055,7 @@
     "url": "https://github.com/bettercallzaal/WARZAI",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/WARZAI).",
     "tags": [
       "github",
       "wavewarz",
@@ -4075,7 +4068,7 @@
     "url": "https://github.com/CandyToyBox/wavewarz-base",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Source code on GitHub (CandyToyBox/wavewarz-base).",
     "tags": [
       "github",
       "wavewarz",
@@ -4088,7 +4081,7 @@
     "url": "https://github.com/CandyToyBox/analytics-wave-warz",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Source code on GitHub (CandyToyBox/analytics-wave-warz).",
     "tags": [
       "github",
       "wavewarz",
@@ -4101,7 +4094,7 @@
     "url": "https://github.com/CandyToyBox/WaveWarz-Stats-App",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Source code on GitHub (CandyToyBox/WaveWarz-Stats-App).",
     "tags": [
       "github",
       "wavewarz",
@@ -4114,7 +4107,7 @@
     "url": "https://github.com/CandyToyBox/MusicToken",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Source code on GitHub (CandyToyBox/MusicToken).",
     "tags": [
       "github",
       "wavewarz",
@@ -4127,7 +4120,7 @@
     "url": "https://github.com/CandyToyBox/streamvoter",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Source code on GitHub (CandyToyBox/streamvoter).",
     "tags": [
       "github",
       "wavewarz",
@@ -4140,7 +4133,7 @@
     "url": "https://github.com/hurric4n3ike/wavewarzhomepage",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Source code on GitHub (hurric4n3ike/wavewarzhomepage).",
     "tags": [
       "github",
       "wavewarz",
@@ -4153,7 +4146,7 @@
     "url": "https://github.com/bettercallzaal/zabalsocials",
     "category": "Community Projects",
     "subcategory": "ZABAL",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zabalsocials).",
     "tags": [
       "github",
       "zabal",
@@ -4166,7 +4159,7 @@
     "url": "https://github.com/bettercallzaal/zabalartsubmission",
     "category": "Community Projects",
     "subcategory": "ZABAL",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zabalartsubmission).",
     "tags": [
       "github",
       "zabal",
@@ -4179,7 +4172,7 @@
     "url": "https://github.com/johngoad/MidiPunkz-Moon-Raid",
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
-    "description": "",
+    "description": "Source code on GitHub (johngoad/MidiPunkz-Moon-Raid).",
     "tags": [
       "github",
       "midipunkz",
@@ -4192,7 +4185,7 @@
     "url": "https://github.com/midipunkz/midipunkz.github.io",
     "category": "Community Projects",
     "subcategory": "MidiPunkZ",
-    "description": "",
+    "description": "Source code on GitHub (midipunkz/midipunkz.github.io).",
     "tags": [
       "github",
       "midipunkz",
@@ -4205,7 +4198,7 @@
     "url": "https://github.com/CandyToyBox/candytoybox-site",
     "category": "ZAO Members",
     "subcategory": "CandyToyBox",
-    "description": "",
+    "description": "Source code on GitHub (CandyToyBox/candytoybox-site).",
     "tags": [
       "github",
       "website"
@@ -4217,7 +4210,7 @@
     "url": "https://github.com/SongjamSpace/songjam-ui",
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
-    "description": "",
+    "description": "Source code on GitHub (SongjamSpace/songjam-ui).",
     "tags": [
       "github",
       "songjam"
@@ -4229,7 +4222,7 @@
     "url": "https://github.com/SongjamSpace/songjam-site",
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
-    "description": "",
+    "description": "Source code on GitHub (SongjamSpace/songjam-site).",
     "tags": [
       "github",
       "songjam"
@@ -4241,7 +4234,7 @@
     "url": "https://github.com/bettercallzaal/duodo-snap",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/duodo-snap).",
     "tags": [
       "github",
       "farcaster",
@@ -4254,7 +4247,7 @@
     "url": "https://github.com/bettercallzaal/ltaesnap",
     "category": "Community Projects",
     "subcategory": "Web3 Podcast",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/ltaesnap).",
     "tags": [
       "github",
       "farcaster",
@@ -4267,7 +4260,7 @@
     "url": "https://github.com/bettercallzaal/bettercallzaal-strategies",
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/bettercallzaal-strategies).",
     "tags": [
       "github",
       "strategies"
@@ -4279,7 +4272,7 @@
     "url": "https://github.com/bettercallzaal/zabalnewsletter",
     "category": "Community Projects",
     "subcategory": "ZABAL",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/zabalnewsletter).",
     "tags": [
       "github",
       "zabal",
@@ -4292,7 +4285,7 @@
     "url": "https://github.com/bettercallzaal/ZAOFlights",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/ZAOFlights).",
     "tags": [
       "github",
       "app"
@@ -4304,7 +4297,7 @@
     "url": "https://github.com/bettercallzaal/ethboulderjournal",
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/ethboulderjournal).",
     "tags": [
       "github",
       "journal",
@@ -4317,7 +4310,7 @@
     "url": "https://zao-leaderboard.vercel.app",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "ZAO Leaderboard (app) — deployed ZAO ecosystem app.",
     "tags": [
       "leaderboard",
       "app"
@@ -4329,7 +4322,7 @@
     "url": "https://wavewarzapp.vercel.app",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "WaveWarZ Live (app) — deployed ZAO ecosystem app.",
     "tags": [
       "wavewarz",
       "app",
@@ -4342,7 +4335,7 @@
     "url": "https://zaofractal.vercel.app",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "ZAO Fractal (app) — deployed ZAO ecosystem app.",
     "tags": [
       "governance",
       "fractal",
@@ -4355,7 +4348,7 @@
     "url": "https://www.thezao.com/nexus",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "ZAO Nexus — official page on thezao.com.",
     "tags": [
       "nexus",
       "directory"
@@ -4367,7 +4360,7 @@
     "url": "https://farcaster.xyz/~/channel/zabal",
     "category": "Community Projects",
     "subcategory": "ZABAL",
-    "description": "",
+    "description": "The ZABAL channel on Farcaster.",
     "tags": [
       "zabal",
       "farcaster",
@@ -4380,7 +4373,7 @@
     "url": "https://app.magnetiq.xyz/brand/zabal/magnet/zabal-gamez",
     "category": "Community Projects",
     "subcategory": "ZABAL Games",
-    "description": "",
+    "description": "ZABAL Gamez (Magnetiq) on Magnetiq.",
     "tags": [
       "zabal",
       "games",
@@ -4393,7 +4386,7 @@
     "url": "https://www.thezao.xyz",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "The ZAO — alternate official domain.",
     "tags": [
       "official",
       "website",
@@ -4406,7 +4399,7 @@
     "url": "https://zabalsocials.vercel.app",
     "category": "Community Projects",
     "subcategory": "ZABAL",
-    "description": "",
+    "description": "ZABAL Socials (app) — deployed ZAO ecosystem app.",
     "tags": [
       "zabal",
       "socials",
@@ -4419,7 +4412,7 @@
     "url": "https://github.com/hurric4n3ike/zoundz",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "Source code on GitHub (hurric4n3ike/zoundz).",
     "tags": [
       "zoundz",
       "marketplace",
@@ -4432,7 +4425,7 @@
     "url": "https://poidh.xyz/base/bounty/1151",
     "category": "Community Projects",
     "subcategory": "POIDH",
-    "description": "",
+    "description": "A ZAO bounty on POIDH (pics or it didn't happen).",
     "tags": [
       "poidh",
       "bounty"
@@ -4444,7 +4437,7 @@
     "url": "https://poidh.xyz/base/bounty/1166",
     "category": "Community Projects",
     "subcategory": "POIDH",
-    "description": "",
+    "description": "A ZAO bounty on POIDH (pics or it didn't happen).",
     "tags": [
       "poidh",
       "bounty"
@@ -4456,7 +4449,7 @@
     "url": "https://poidh.xyz/base/bounty/1180",
     "category": "Community Projects",
     "subcategory": "POIDH",
-    "description": "",
+    "description": "A ZAO bounty on POIDH (pics or it didn't happen).",
     "tags": [
       "poidh",
       "bounty"
@@ -4468,7 +4461,7 @@
     "url": "https://bettercallzaal.com/kit.html",
     "category": "Ecosystem & Tokens",
     "subcategory": "Directory",
-    "description": "",
+    "description": "ZABAL Brand Kit — page on BetterCallZaal's site.",
     "tags": [
       "zabal",
       "brand-kit",
@@ -4481,7 +4474,7 @@
     "url": "https://zuke.thezao.com",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "Zuke — ZAO Festivals app.",
     "tags": [
       "zuke",
       "app"
@@ -4493,7 +4486,7 @@
     "url": "https://optimystics.io/introducing-the-respect-game",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "The Respect Game (intro) — Optimystics on-chain governance tooling used by The ZAO (Respect / fractal coordination).",
     "tags": [
       "governance",
       "respect"
@@ -4505,7 +4498,7 @@
     "url": "https://solscan.io/account/9TUfEHvk5fN5vogtQyrefgNqzKy2Bqb4nWVhSFUg2fYo",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "WaveWarZ on-chain (Solscan) — on-chain view on Solscan (Solana explorer).",
     "tags": [
       "wavewarz",
       "solana",
@@ -4518,7 +4511,7 @@
     "url": "https://huddle01.app/room/zfp-tzyh-anm",
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal",
-    "description": "",
+    "description": "BetterCallZaal — live audio/video room on Huddle01.",
     "tags": [
       "founder",
       "meeting",
@@ -4531,7 +4524,7 @@
     "url": "https://soundcloud.com/aporkalypse-now",
     "category": "ZAO Members",
     "subcategory": "APORKALYPSE",
-    "description": "",
+    "description": "Listen to APORKALYPSE on SoundCloud.",
     "tags": [
       "artist",
       "soundcloud"
@@ -4543,7 +4536,7 @@
     "url": "https://music.apple.com/us/artist/aporkalypse-now/1633048308",
     "category": "ZAO Members",
     "subcategory": "APORKALYPSE",
-    "description": "",
+    "description": "Listen to APORKALYPSE on Apple Music.",
     "tags": [
       "artist",
       "apple-music"
@@ -4555,7 +4548,7 @@
     "url": "https://www.instagram.com/aporkalypsenownola",
     "category": "ZAO Members",
     "subcategory": "APORKALYPSE",
-    "description": "",
+    "description": "APORKALYPSE on Instagram.",
     "tags": [
       "artist",
       "instagram"
@@ -4567,7 +4560,7 @@
     "url": "https://www.instagram.com/_luithe1st",
     "category": "ZAO Members",
     "subcategory": "Joseph Goats",
-    "description": "",
+    "description": "Joseph Goats on Instagram.",
     "tags": [
       "artist",
       "instagram"
@@ -4579,7 +4572,7 @@
     "url": "https://www.stilosd.com/music",
     "category": "ZAO Members",
     "subcategory": "Stilo World",
-    "description": "",
+    "description": "Stilo World — official site.",
     "tags": [
       "artist",
       "music"
@@ -4591,7 +4584,7 @@
     "url": "https://github.com/Coop-Records/sonata",
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
-    "description": "",
+    "description": "Source code on GitHub (Coop-Records/sonata).",
     "tags": [
       "partner",
       "farcaster",
@@ -4604,7 +4597,7 @@
     "url": "https://www.instagram.com/danici.art",
     "category": "ZAO Members",
     "subcategory": "Danici",
-    "description": "",
+    "description": "Danici on Instagram.",
     "tags": [
       "artist",
       "instagram"
@@ -4616,7 +4609,7 @@
     "url": "https://www.instagram.com/ohnahji",
     "category": "ZAO Members",
     "subcategory": "Ohnahji B",
-    "description": "",
+    "description": "Ohnahji B on Instagram.",
     "tags": [
       "artist",
       "instagram"
@@ -4628,7 +4621,7 @@
     "url": "https://soundcloud.com/hurric4n3ike",
     "category": "ZAO Members",
     "subcategory": "Hurric4n3Ike",
-    "description": "",
+    "description": "Listen to Hurric4n3Ike on SoundCloud.",
     "tags": [
       "artist",
       "soundcloud"
@@ -4640,7 +4633,7 @@
     "url": "https://x.com/dcoopofficial",
     "category": "ZAO Members",
     "subcategory": "DCoop",
-    "description": "",
+    "description": "DCoop on X (Twitter).",
     "tags": [
       "producer",
       "x"
@@ -4652,7 +4645,7 @@
     "url": "https://x.com/3PlanetStudio",
     "category": "ZAO Members",
     "subcategory": "3Planet Studio",
-    "description": "",
+    "description": "3Planet Studio on X (Twitter).",
     "tags": [
       "studio",
       "x"
@@ -4664,7 +4657,7 @@
     "url": "https://x.com/ohnahji",
     "category": "ZAO Members",
     "subcategory": "Ohnahji B",
-    "description": "",
+    "description": "Ohnahji B on X (Twitter).",
     "tags": [
       "artist",
       "x"
@@ -4676,7 +4669,7 @@
     "url": "https://medium.com/ohnahji",
     "category": "ZAO Members",
     "subcategory": "Ohnahji B",
-    "description": "",
+    "description": "Ohnahji B on Medium.",
     "tags": [
       "artist",
       "blog"
@@ -4688,7 +4681,7 @@
     "url": "https://soundcloud.com/coopdville",
     "category": "ZAO Members",
     "subcategory": "DCoop",
-    "description": "",
+    "description": "Listen to DCoop on SoundCloud.",
     "tags": [
       "producer",
       "soundcloud"
@@ -4700,7 +4693,7 @@
     "url": "https://open.spotify.com/artist/5m9Qd7ozenUHMPtxePX0Zl",
     "category": "ZAO Members",
     "subcategory": "DCoop",
-    "description": "",
+    "description": "Listen to DCoop on Spotify.",
     "tags": [
       "producer",
       "spotify"
@@ -4712,7 +4705,7 @@
     "url": "https://coopdville.bandcamp.com",
     "category": "ZAO Members",
     "subcategory": "DCoop",
-    "description": "",
+    "description": "Listen to DCoop on Bandcamp.",
     "tags": [
       "producer",
       "bandcamp"
@@ -4724,7 +4717,7 @@
     "url": "https://www.instagram.com/coopdville2000",
     "category": "ZAO Members",
     "subcategory": "DCoop",
-    "description": "",
+    "description": "DCoop on Instagram.",
     "tags": [
       "producer",
       "instagram"
@@ -4736,7 +4729,7 @@
     "url": "https://www.facebook.com/DCoopOfficial",
     "category": "ZAO Members",
     "subcategory": "DCoop",
-    "description": "",
+    "description": "DCoop on Facebook.",
     "tags": [
       "producer",
       "facebook"
@@ -4748,7 +4741,7 @@
     "url": "https://www.stevesthemepark.com",
     "category": "ZAO Members",
     "subcategory": "Steve's Theme Park",
-    "description": "",
+    "description": "Steve's Theme Park — official site.",
     "tags": [
       "artist",
       "website"
@@ -4760,7 +4753,7 @@
     "url": "https://music.apple.com/us/artist/steves-theme-park/1618265192",
     "category": "ZAO Members",
     "subcategory": "Steve's Theme Park",
-    "description": "",
+    "description": "Listen to Steve's Theme Park on Apple Music.",
     "tags": [
       "artist",
       "apple-music"
@@ -4772,7 +4765,7 @@
     "url": "https://x.com/polyraiders",
     "category": "ZAO Members",
     "subcategory": "PolyRaiders",
-    "description": "",
+    "description": "PolyRaiders on X (Twitter).",
     "tags": [
       "member",
       "x"
@@ -4784,7 +4777,7 @@
     "url": "https://thezao.com/zabal",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "ZAO ZABAL — official page on thezao.com.",
     "tags": [
       "zabal"
     ],
@@ -4795,7 +4788,7 @@
     "url": "https://thezao.com/festivals",
     "category": "The ZAO",
     "subcategory": "ZAO Platforms",
-    "description": "",
+    "description": "ZAO Festivals — official page on thezao.com.",
     "tags": [
       "festivals"
     ],
@@ -4806,7 +4799,7 @@
     "url": "https://portal.zaoos.com",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "ZAO Member Portal — part of ZAO OS, the ZAO operating system.",
     "tags": [
       "zaoos",
       "portal"
@@ -4818,7 +4811,7 @@
     "url": "https://claude.zaoos.com",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "ZAO Claude Agent — part of ZAO OS, the ZAO operating system.",
     "tags": [
       "zaoos",
       "agents",
@@ -4831,7 +4824,7 @@
     "url": "https://agents.zaoos.com",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "ZAO Agent Registry — part of ZAO OS, the ZAO operating system.",
     "tags": [
       "zaoos",
       "agents"
@@ -4843,7 +4836,7 @@
     "url": "https://ao.zaoos.com",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "ZAO Agent Orchestrator — part of ZAO OS, the ZAO operating system.",
     "tags": [
       "zaoos",
       "agents",
@@ -4856,7 +4849,7 @@
     "url": "https://api.zaoos.com/mcp",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "ZAO Public API + MCP — part of ZAO OS, the ZAO operating system.",
     "tags": [
       "zaoos",
       "api",
@@ -4869,7 +4862,7 @@
     "url": "https://fishbowlz.xyz",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "FISHBOWLZ — ZAO live audio rooms and spaces.",
     "tags": [
       "fishbowlz",
       "music"
@@ -4881,7 +4874,7 @@
     "url": "https://fishbowlz.xyz/rooms/",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "Browse live FISHBOWLZ rooms.",
     "tags": [
       "fishbowlz",
       "rooms"
@@ -4893,7 +4886,7 @@
     "url": "https://zlank.online",
     "category": "ZAO OS",
     "subcategory": "ZAO OS",
-    "description": "",
+    "description": "zlank — no-code Farcaster Snap builder: stack blocks, hit deploy, share to feed.",
     "tags": [
       "zlank",
       "farcaster"
@@ -4905,7 +4898,7 @@
     "url": "https://zaostock.com",
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals",
-    "description": "",
+    "description": "ZAOstock — The ZAO's Maine music festival.",
     "tags": [
       "zaostock",
       "festival"
@@ -4917,7 +4910,7 @@
     "url": "https://zaostock.com/apply",
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals",
-    "description": "",
+    "description": "Apply to perform or participate in ZAOstock.",
     "tags": [
       "zaostock",
       "apply"
@@ -4929,7 +4922,7 @@
     "url": "https://zaostock.com/volunteer",
     "category": "ZAO Festivals",
     "subcategory": "ZAO Festivals",
-    "description": "",
+    "description": "Volunteer for ZAOstock.",
     "tags": [
       "zaostock",
       "volunteer"
@@ -4941,7 +4934,7 @@
     "url": "https://bettercallzaal.com/zabalgames.html",
     "category": "Community Projects",
     "subcategory": "ZABAL Games",
-    "description": "",
+    "description": "ZABAL Games — page on BetterCallZaal's site.",
     "tags": [
       "zabal",
       "games"
@@ -4953,7 +4946,7 @@
     "url": "https://github.com/bettercallzaal/CoCConcertZ",
     "category": "Community Projects",
     "subcategory": "C.O.C ConcertZ",
-    "description": "",
+    "description": "Source code on GitHub (bettercallzaal/CoCConcertZ).",
     "tags": [
       "cocconcertz",
       "github"
@@ -4965,7 +4958,7 @@
     "url": "https://bettercallzaal.com/wavewarz/",
     "category": "Community Projects",
     "subcategory": "WaveWarZ",
-    "description": "",
+    "description": "WaveWarZ (BCZ — page on BetterCallZaal's site.",
     "tags": [
       "wavewarz"
     ],
@@ -4976,7 +4969,7 @@
     "url": "https://bettercallzaal.com/bczyapz/",
     "category": "Community Projects",
     "subcategory": "BCZ YapZ",
-    "description": "",
+    "description": "BCZ YapZ — page on BetterCallZaal's site.",
     "tags": [
       "yapz"
     ],
@@ -4987,7 +4980,7 @@
     "url": "https://bczyapz.com/ep/",
     "category": "Community Projects",
     "subcategory": "BCZ YapZ",
-    "description": "",
+    "description": "Browse BCZ YapZ episodes — Zaal's long-form interview show.",
     "tags": [
       "yapz",
       "episodes"
@@ -4999,7 +4992,7 @@
     "url": "https://open.spotify.com/show/1Bk6bsMYciOMyJohMVZUgt",
     "category": "Community Projects",
     "subcategory": "BCZ YapZ",
-    "description": "",
+    "description": "BCZ YapZ Podcast on Spotify.",
     "tags": [
       "yapz",
       "podcast",
@@ -5012,7 +5005,7 @@
     "url": "https://github.com/NERDDAO/bonfires-sdk",
     "category": "Community Projects",
     "subcategory": "Bonfire",
-    "description": "",
+    "description": "Source code on GitHub (NERDDAO/bonfires-sdk).",
     "tags": [
       "bonfire",
       "sdk"
@@ -5024,7 +5017,7 @@
     "url": "https://mint.bonfires.ai",
     "category": "Community Projects",
     "subcategory": "Bonfire",
-    "description": "",
+    "description": "Bonfires Mint — Bonfire, the ZAO knowledge-graph / agent layer.",
     "tags": [
       "bonfire",
       "mint"
@@ -5036,7 +5029,7 @@
     "url": "https://poidh.xyz/a/thezao",
     "category": "Community Projects",
     "subcategory": "POIDH",
-    "description": "",
+    "description": "The ZAO's bounty profile on POIDH.",
     "tags": [
       "poidh"
     ],
@@ -5047,7 +5040,7 @@
     "url": "https://juke.audio",
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
-    "description": "",
+    "description": "Juke (audio client) on Juke.",
     "tags": [
       "partner",
       "juke",
@@ -5060,7 +5053,7 @@
     "url": "https://juke.audio/developers",
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
-    "description": "",
+    "description": "Juke Developers on Juke.",
     "tags": [
       "partner",
       "juke",
@@ -5073,7 +5066,7 @@
     "url": "https://songjam.io",
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
-    "description": "",
+    "description": "Songjam — music drops and Spaces contribution platform.",
     "tags": [
       "partner",
       "songjam"
@@ -5085,7 +5078,7 @@
     "url": "https://docs.songjam.space",
     "category": "Ecosystem & Tokens",
     "subcategory": "Partners",
-    "description": "",
+    "description": "Songjam documentation.",
     "tags": [
       "partner",
       "songjam",
@@ -5098,7 +5091,7 @@
     "url": "https://www.coingecko.com/en/coins/songjam-by-virtuals",
     "category": "Ecosystem & Tokens",
     "subcategory": "Tokens",
-    "description": "",
+    "description": "$SANG on CoinGecko — market data on CoinGecko.",
     "tags": [
       "sang",
       "songjam",
@@ -5111,7 +5104,7 @@
     "url": "https://optimystics.io/tools",
     "category": "Ecosystem & Tokens",
     "subcategory": "Infrastructure",
-    "description": "",
+    "description": "Optimystics Tools — Optimystics on-chain governance tooling used by The ZAO (Respect / fractal coordination).",
     "tags": [
       "governance",
       "tools"
@@ -5123,7 +5116,7 @@
     "url": "https://youtube.com/@bettercallzaal",
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal",
-    "description": "",
+    "description": "BetterCallZaal on YouTube.",
     "tags": [
       "founder",
       "youtube"
@@ -5135,7 +5128,7 @@
     "url": "https://www.linkedin.com/in/zaalp",
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal",
-    "description": "",
+    "description": "BetterCallZaal on LinkedIn.",
     "tags": [
       "founder",
       "linkedin"
@@ -5147,7 +5140,7 @@
     "url": "https://instagram.com/bettercallzaal",
     "category": "ZAO Members",
     "subcategory": "BetterCallZaal",
-    "description": "",
+    "description": "BetterCallZaal on Instagram.",
     "tags": [
       "founder",
       "instagram"
@@ -5159,7 +5152,7 @@
     "url": "https://linktr.ee/fellenzmusic",
     "category": "ZAO Members",
     "subcategory": "Tom Fellenz",
-    "description": "",
+    "description": "Tom Fellenz on Linktree.",
     "tags": [
       "artist",
       "links"
@@ -5171,7 +5164,7 @@
     "url": "https://www.linkedin.com/in/tomfellenz",
     "category": "ZAO Members",
     "subcategory": "Tom Fellenz",
-    "description": "",
+    "description": "Tom Fellenz on LinkedIn.",
     "tags": [
       "artist",
       "linkedin"
@@ -5183,7 +5176,7 @@
     "url": "https://soundcloud.com/stilosd",
     "category": "ZAO Members",
     "subcategory": "Stilo World",
-    "description": "",
+    "description": "Listen to Stilo World on SoundCloud.",
     "tags": [
       "artist",
       "soundcloud"
@@ -5195,7 +5188,7 @@
     "url": "https://x.com/stilo_world",
     "category": "ZAO Members",
     "subcategory": "Stilo World",
-    "description": "",
+    "description": "Stilo World on X (Twitter).",
     "tags": [
       "artist",
       "x"
@@ -5207,7 +5200,7 @@
     "url": "https://zabalgames.com",
     "category": "Community Projects",
     "subcategory": "ZABAL Games",
-    "description": "",
+    "description": "ZABAL Gamez — Farcaster mini app: workshops, data streams, and a builder leaderboard.",
     "tags": [
       "zabal",
       "games",
@@ -5220,7 +5213,7 @@
     "url": "https://hackmd.io/@bB0dXoPfSAuUEqyo43pHZw/Hyq0LS-Z-g",
     "category": "Community Projects",
     "subcategory": "ZABAL Games",
-    "description": "",
+    "description": "ZABAL Games Doc (HackMD) — collaborative doc on HackMD.",
     "tags": [
       "zabal",
       "games",
@@ -5233,7 +5226,7 @@
     "url": "https://empirebuilder.world/empire/0xbB48f19B0494Ff7C1fE5Dc2032aeEE14312f0b07",
     "category": "Ecosystem & Tokens",
     "subcategory": "Tokens",
-    "description": "",
+    "description": "$ZABAL on Empire Builder — token leaderboards and empire mechanics.",
     "tags": [
       "zabal",
       "token",
@@ -5252,8 +5245,7 @@
       "links",
       "app"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "Songjam Site (leaderboard)",
@@ -5353,8 +5345,7 @@
       "art",
       "app"
     ],
-    "audience": "ecosystem",
-    "addedDate": "2026-06-06"
+    "audience": "ecosystem"
   },
   {
     "title": "BCZ YapZ (live)",
@@ -5380,8 +5371,7 @@
       "community",
       "app"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "Aurdour (live)",
@@ -5420,8 +5410,7 @@
       "farcaster",
       "app"
     ],
-    "audience": "ecosystem",
-    "addedDate": "2026-06-06"
+    "audience": "ecosystem"
   },
   {
     "title": "Duo Do Snap (live)",
@@ -5434,8 +5423,7 @@
       "farcaster",
       "app"
     ],
-    "audience": "ecosystem",
-    "addedDate": "2026-06-06"
+    "audience": "ecosystem"
   },
   {
     "title": "ZABAL Snap 1 (live)",
@@ -5448,8 +5436,7 @@
       "farcaster",
       "app"
     ],
-    "audience": "ecosystem",
-    "addedDate": "2026-06-06"
+    "audience": "ecosystem"
   },
   {
     "title": "LTAE Snap (live)",
@@ -5462,8 +5449,7 @@
       "farcaster",
       "app"
     ],
-    "audience": "ecosystem",
-    "addedDate": "2026-06-06"
+    "audience": "ecosystem"
   },
   {
     "title": "Songjam Site (repo)",
@@ -5476,8 +5462,7 @@
       "music",
       "open-source"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "Nouns Snap (repo)",
@@ -5490,8 +5475,7 @@
       "snap",
       "open-source"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "ZABAL Snap 1 (repo)",
@@ -5504,8 +5488,7 @@
       "snap",
       "open-source"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "ZAO Video Editor (repo)",
@@ -5518,8 +5501,7 @@
       "video",
       "open-source"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "ZAO Stock (repo)",
@@ -5532,8 +5514,7 @@
       "stock",
       "open-source"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "Hermes Orchestrator (repo)",
@@ -5546,8 +5527,7 @@
       "agents",
       "open-source"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "Fractal Bot (repo)",
@@ -5560,8 +5540,7 @@
       "fractals",
       "open-source"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "Workshop: Empire Builder V3 (yerbearserker)",
@@ -5630,8 +5609,7 @@
       "show",
       "content"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "Farcaster Agentic Bootcamp (Builders Garden)",
@@ -5644,8 +5622,7 @@
       "farcaster",
       "partner"
     ],
-    "audience": "ecosystem",
-    "addedDate": "2026-06-06"
+    "audience": "ecosystem"
   },
   {
     "title": "Farcaster Agentic Bootcamp (Luma)",
@@ -5658,8 +5635,7 @@
       "event",
       "luma"
     ],
-    "audience": "ecosystem",
-    "addedDate": "2026-06-06"
+    "audience": "ecosystem"
   },
   {
     "title": "ZABAL Gamez — Data Streams",
@@ -5672,8 +5648,7 @@
       "data",
       "feed"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "ZABAL Gamez — Graph Explorer",
@@ -5686,8 +5661,7 @@
       "graph",
       "bonfire"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "ZABAL Gamez — Leaderboard",
@@ -5699,8 +5673,7 @@
       "games",
       "leaderboard"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "ZABAL Gamez — Workshop Sign-up",
@@ -5713,8 +5686,7 @@
       "workshop",
       "signup"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "ZABAL Gamez — Finals",
@@ -5727,8 +5699,7 @@
       "finals",
       "prizes"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "ZAO Projects (live)",
@@ -5741,8 +5712,7 @@
       "directory",
       "app"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "BCZ Coding Hub (live)",
@@ -5755,8 +5725,7 @@
       "hub",
       "app"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "BetterCallZaal Strategies (live)",
@@ -5768,8 +5737,7 @@
       "strategies",
       "app"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "Side by Side (live)",
@@ -5780,8 +5748,7 @@
     "tags": [
       "app"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "$Loanz Platform (live)",
@@ -5794,8 +5761,7 @@
       "defi",
       "app"
     ],
-    "audience": "ecosystem",
-    "addedDate": "2026-06-06"
+    "audience": "ecosystem"
   },
   {
     "title": "ZABAL Newsletter (live)",
@@ -5808,8 +5774,7 @@
       "newsletter",
       "app"
     ],
-    "audience": "ecosystem",
-    "addedDate": "2026-06-06"
+    "audience": "ecosystem"
   },
   {
     "title": "Zaal Timeline (live)",
@@ -5821,8 +5786,7 @@
       "timeline",
       "app"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "Fractal Bot (live)",
@@ -5835,8 +5799,7 @@
       "bot",
       "app"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "$Loanz Platform (repo)",
@@ -5849,8 +5812,7 @@
       "loanz",
       "open-source"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "WaveWarZ Intelligence (repo)",
@@ -5863,8 +5825,7 @@
       "wavewarz",
       "open-source"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "WaveWarZ Analytics (live)",
@@ -5907,8 +5868,7 @@
       "africa",
       "open-source"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "$ZABAL on GeckoTerminal",
@@ -5922,8 +5882,7 @@
       "charts",
       "base"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   },
   {
     "title": "$LOANZ on GeckoTerminal",
@@ -5937,7 +5896,6 @@
       "charts",
       "base"
     ],
-    "audience": "both",
-    "addedDate": "2026-06-06"
+    "audience": "both"
   }
 ]
