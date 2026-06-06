@@ -3394,5 +3394,29 @@
       "instagram"
     ],
     "audience": "community"
+  },
+  {
+    "title": "Jango UU YouTube",
+    "url": "https://www.youtube.com/@jangouuforever",
+    "category": "ZAO Members",
+    "subcategory": "Jango UU",
+    "description": "",
+    "tags": [
+      "artist",
+      "youtube"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Jango UU SoundCloud",
+    "url": "https://soundcloud.com/jangouuforever",
+    "category": "ZAO Members",
+    "subcategory": "Jango UU",
+    "description": "",
+    "tags": [
+      "artist",
+      "soundcloud"
+    ],
+    "audience": "community"
   }
 ]

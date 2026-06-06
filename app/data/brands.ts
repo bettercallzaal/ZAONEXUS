@@ -1026,9 +1026,7 @@ export const brands: Brand[] = [
     status: 'live',
     homepage: 'https://www.thezao.com/artists/losi',
     links: [
-      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/losi', description: 'Artist page on The ZAO' },
-      { title: 'Spotify', url: 'https://open.spotify.com/artist/6M6yBsOJ4aYKwOuaKHh1JY', description: 'Music platform (unverified)' },
-      { title: 'X / Twitter', url: 'https://x.com/izzylosi', description: '@izzylosi (unverified)' }
+      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/losi', description: 'Artist page on The ZAO' }
     ]
   },
 
