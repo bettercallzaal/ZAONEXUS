@@ -1041,7 +1041,9 @@ export const brands: Brand[] = [
     status: 'live',
     homepage: 'https://www.thezao.com/artists/goldilox',
     links: [
-      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/goldilox', description: 'Artist page on The ZAO' }
+      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/goldilox', description: 'Artist page on The ZAO' },
+      { title: 'Website', url: 'https://www.yesiamgoldilocks.com', description: 'Official site' },
+      { title: 'Instagram', url: 'https://www.instagram.com/yesiamgoldilocks', description: '@yesiamgoldilocks' }
     ]
   },
 
@@ -1074,7 +1076,9 @@ export const brands: Brand[] = [
     status: 'live',
     homepage: 'https://www.thezao.com/artists/nessytherilla',
     links: [
-      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/nessytherilla', description: 'Artist page on The ZAO' }
+      { title: 'ZAO Music profile', url: 'https://www.thezao.com/artists/nessytherilla', description: 'Artist page on The ZAO' },
+      { title: 'SoundCloud', url: 'https://soundcloud.com/nessytherilla', description: 'Music platform' },
+      { title: 'Facebook', url: 'https://www.facebook.com/nessytherilla', description: 'Official page' }
     ]
   },
 
