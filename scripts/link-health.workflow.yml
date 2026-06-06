@@ -1,0 +1,84 @@
+name: Link health
+
+on:
+  # Run on PRs that touch the link data so dead links are caught before merge.
+  pull_request:
+    paths:
+      - 'app/data/links.json'
+      - 'scripts/check-links.mjs'
+      - '.github/workflows/link-health.yml'
+  # Weekly sweep to catch link rot over time (Mondays 13:00 UTC).
+  schedule:
+    - cron: '0 13 * * 1'
+  # Allow manual runs from the Actions tab.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check links
+        id: check
+        run: node scripts/check-links.mjs
+        continue-on-error: true
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-health-report
+          path: link-health-report.md
+
+      - name: Add report to job summary
+        if: always()
+        run: cat link-health-report.md >> "$GITHUB_STEP_SUMMARY"
+
+      # On scheduled runs, open (or update) an issue when dead links are found
+      # so rot gets surfaced even when no one is watching a PR.
+      - name: Open issue on scheduled failure
+        if: ${{ always() && steps.check.outcome == 'failure' && github.event_name == 'schedule' }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('link-health-report.md', 'utf8');
+            const title = 'Dead links detected in ZAO Nexus directory';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'link-health',
+            });
+            if (issues.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issues[0].number,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['link-health'],
+              });
+            }
+
+      # Fail the job (after surfacing the report) so PR checks go red on dead links.
+      - name: Enforce result on PRs
+        if: ${{ steps.check.outcome == 'failure' && github.event_name == 'pull_request' }}
+        run: |
+          echo "Dead links found — see the job summary / artifact."
+          exit 1
