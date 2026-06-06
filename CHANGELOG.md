@@ -2,6 +2,14 @@
 
 All notable changes to ZAO Nexus will be documented in this file.
 
+## [1.3.2] - 2026-06-06
+
+### 🔗 Verified socials + cleanups
+
+- **Artist socials** (verified via web search): added Goldilox (yesiamgoldilocks.com + Instagram) and NessytheRilla (SoundCloud + Facebook). Losi left as-is — the only "izzylosi" match is a different artist (Melbourne, AU), not the Cali/Colombia ZAO artist.
+- **`zaomusic.xyz`** added as an alternate-domain link mirroring thezao.com. Total **146 links** — `/community` 69, `/ecosystem` 102.
+- **README polish**: corrected `cd NexusV2` → `cd zaonexus`, updated the project-structure tree (links.json/links.ts/brands.ts/sitemap/robots), softened the unverified "WCAG 2.1 AA compliant" claim.
+
 ## [1.3.1] - 2026-06-06
 
 ### 🔗 Restored links + authoring tooling

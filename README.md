@@ -2,7 +2,7 @@
 
 > **Version 1.2.0** - Two-audience portal for ZAO community and ecosystem discovery
 
-A comprehensive two-route link directory featuring 145 curated links across 9 categories, plus 44 ecosystem brands. Built with Next.js 14, React 18, TypeScript, and TailwindCSS v3. Strategy D canonical rebuild per research/community/624.
+A comprehensive two-route link directory featuring 146 curated links across 9 categories, plus 44 ecosystem brands. Built with Next.js 14, React 18, TypeScript, and TailwindCSS v3. Strategy D canonical rebuild per research/community/624.
 
 ## ✨ Features
 
@@ -10,7 +10,7 @@ A comprehensive two-route link directory featuring 145 curated links across 9 ca
 - 🔍 **Smart Search** - Real-time search across titles, descriptions, and URLs
 - 🎯 **Auto-Expand Results** - Automatically opens categories containing search matches
 - 📂 **Dual-Audience Routes** - Community-focused and ecosystem-focused views
-- 🔗 **145 Curated Links** - Across 9 categories, plus 44 ecosystem brands
+- 🔗 **146 Curated Links** - Across 9 categories, plus 44 ecosystem brands
 
 ### Two-Audience Architecture
 - **/community** - Member-facing content (ZAO holder resources, internal tools, governance)
@@ -23,7 +23,7 @@ A comprehensive two-route link directory featuring 145 curated links across 9 ca
 - 🎨 **Dark/Light Mode** - Toggle between ZAO brand themes
 - 📱 **Fully Responsive** - Optimized for all devices
 - ✨ **Smooth Animations** - Professional transitions and hover effects
-- ♿ **Accessible** - WCAG 2.1 AA compliant
+- ♿ **Accessible** - Semantic HTML, keyboard-navigable, focus indicators
 
 ### Performance
 - ⚡ **Fast Loading** - Next.js 14 optimization
@@ -42,7 +42,7 @@ A comprehensive two-route link directory featuring 145 curated links across 9 ca
 1. Clone the repository:
 ```bash
 git clone <your-repo-url>
-cd NexusV2
+cd zaonexus
 ```
 
 2. Install dependencies:
@@ -103,14 +103,19 @@ Or simply link to it:
 ## Project Structure
 
 ```
-NexusV2/
+zaonexus/
 ├── app/
 │   ├── data/
-│   │   └── links.ts          # All links data
+│   │   ├── links.json        # Canonical flat link data (source of truth)
+│   │   ├── links.ts          # Loads + groups links.json (GitHub-sync loader)
+│   │   └── brands.ts         # Ecosystem brand data
+│   ├── ecosystem/            # Brand showcase + detail pages
+│   ├── sitemap.ts            # sitemap.xml
+│   ├── robots.ts             # robots.txt
 │   ├── globals.css           # Global styles
-│   ├── layout.tsx            # Root layout
+│   ├── layout.tsx            # Root layout + metadata
 │   └── page.tsx              # Main page component
-├── public/                   # Static assets
+├── scripts/add-link.js       # Append a link to links.json
 ├── package.json              # Dependencies
 ├── tailwind.config.js        # Tailwind configuration
 ├── tsconfig.json             # TypeScript configuration
@@ -299,7 +304,7 @@ For issues or questions, reach out to the ZAO community.
 
 ## Changelog
 
-> **Current canonical totals:** 145 links across 9 categories and 44 ecosystem brands. Numbers in older entries below are historical (e.g. the original "126 links / 8 categories") and are kept as a record, not current counts.
+> **Current canonical totals:** 146 links across 9 categories and 44 ecosystem brands. Numbers in older entries below are historical (e.g. the original "126 links / 8 categories") and are kept as a record, not current counts.
 
 ### 1.2.0 - Strategy D Canonical Rebuild (2026-05-07)
 

@@ -72,6 +72,15 @@
     "audience": "both"
   },
   {
+    "title": "ZAO Music (zaomusic.xyz)",
+    "url": "https://zaomusic.xyz",
+    "category": "The ZAO",
+    "subcategory": "ZAO Platforms",
+    "description": "Alternate domain mirroring thezao.com.",
+    "tags": ["official", "website", "mirror"],
+    "audience": "both"
+  },
+  {
     "title": "ZAO YouTube",
     "url": "https://www.youtube.com/@thezaodao",
     "category": "The ZAO",
