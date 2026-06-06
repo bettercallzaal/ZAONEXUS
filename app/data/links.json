@@ -3630,5 +3630,161 @@
       "x"
     ],
     "audience": "ecosystem"
+  },
+  {
+    "title": "BCZ Journal (build in public)",
+    "url": "https://github.com/bettercallzaal/bcz-journal",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "journal",
+      "open-source"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO 101 (learn)",
+    "url": "https://github.com/bettercallzaal/zao-101",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "learn",
+      "onboarding"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Claude Skills",
+    "url": "https://github.com/bettercallzaal/zao-claude-skills",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "",
+    "tags": [
+      "github",
+      "agents",
+      "skills"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ Base (brief)",
+    "url": "https://github.com/bettercallzaal/wwbase",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "wavewarz",
+      "base",
+      "github"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ Live (mobile app)",
+    "url": "https://github.com/bettercallzaal/wavewarzapp",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "wavewarz",
+      "app",
+      "github"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ Stats App",
+    "url": "https://github.com/CandyToyBox/V2-Stats-App-WaveWarz",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "wavewarz",
+      "stats",
+      "github"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ Merch Shop (repo)",
+    "url": "https://github.com/CandyToyBox/wavewarz-merch-shop",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "",
+    "tags": [
+      "wavewarz",
+      "merch",
+      "github"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZABAL Games (repo)",
+    "url": "https://github.com/ZAODEVZ/zabalgames",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "",
+    "tags": [
+      "zabal",
+      "games",
+      "github"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZAO Coworking (app)",
+    "url": "https://github.com/ZAODEVZ/ZAOcowork",
+    "category": "Agents & Bots",
+    "subcategory": "Telegram Bots",
+    "description": "",
+    "tags": [
+      "coworking",
+      "app",
+      "github"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAOScribe (Discord capture)",
+    "url": "https://github.com/bettercallzaal/zaoscribe",
+    "category": "Agents & Bots",
+    "subcategory": "Telegram Bots",
+    "description": "",
+    "tags": [
+      "bot",
+      "discord",
+      "github"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "ZAO Music Bot",
+    "url": "https://github.com/bettercallzaal/zaomusicbot",
+    "category": "Agents & Bots",
+    "subcategory": "Telegram Bots",
+    "description": "",
+    "tags": [
+      "bot",
+      "music",
+      "github"
+    ],
+    "audience": "community"
+  },
+  {
+    "title": "Zlank (Farcaster Snap builder)",
+    "url": "https://github.com/bettercallzaal/zlank",
+    "category": "ZAO OS",
+    "subcategory": "ZAO OS",
+    "description": "",
+    "tags": [
+      "farcaster",
+      "builder",
+      "github"
+    ],
+    "audience": "ecosystem"
   }
 ]
