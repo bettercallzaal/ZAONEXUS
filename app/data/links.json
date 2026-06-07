@@ -246,7 +246,12 @@
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
     "description": "Knowledge graph recall",
-    "audience": "community"
+    "audience": "community",
+    "tags": [
+      "telegram",
+      "bot",
+      "bonfire"
+    ]
   },
   {
     "title": "ZABAL Bonfire (web)",
@@ -254,7 +259,12 @@
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
     "description": "Knowledge-graph memory",
-    "audience": "community"
+    "audience": "community",
+    "tags": [
+      "bonfire",
+      "knowledge-graph",
+      "agents"
+    ]
   },
   {
     "title": "ZAO Coworking (@ZAOcoworkingBot)",
@@ -262,7 +272,12 @@
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
     "description": "Coworking team tracker",
-    "audience": "community"
+    "audience": "community",
+    "tags": [
+      "telegram",
+      "bot",
+      "cowork"
+    ]
   },
   {
     "title": "Hermes (@zoe_hermes_bot)",
@@ -270,7 +285,12 @@
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
     "description": "Autonomous fix-PR pipeline",
-    "audience": "community"
+    "audience": "community",
+    "tags": [
+      "telegram",
+      "bot",
+      "agents"
+    ]
   },
   {
     "title": "ZAO Devz (@zaodevz_bot)",
@@ -278,7 +298,12 @@
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
     "description": "Group dispatch + learning tips",
-    "audience": "community"
+    "audience": "community",
+    "tags": [
+      "telegram",
+      "bot",
+      "devs"
+    ]
   },
   {
     "title": "ZOE (@zaoclaw_bot)",
@@ -286,7 +311,13 @@
     "category": "Agents & Bots",
     "subcategory": "Telegram Bots",
     "description": "Single concierge - tasks, captures, brief/reflect",
-    "audience": "community"
+    "audience": "community",
+    "tags": [
+      "telegram",
+      "bot",
+      "agents",
+      "concierge"
+    ]
   },
   {
     "title": "Attabotty Interview",
@@ -694,7 +725,12 @@
     "category": "Community Projects",
     "subcategory": "POIDH",
     "description": "BCZ POIDH bounty home",
-    "audience": "ecosystem"
+    "audience": "ecosystem",
+    "tags": [
+      "github",
+      "poidh",
+      "bounties"
+    ]
   },
   {
     "title": "Artist Sign-Up Form",
@@ -1219,7 +1255,12 @@
     "category": "Community Projects",
     "subcategory": "ZABAL Games",
     "description": "Tokenless ZABAL Games empire",
-    "audience": "ecosystem"
+    "audience": "ecosystem",
+    "tags": [
+      "games",
+      "empire-builder",
+      "token"
+    ]
   },
   {
     "title": "ZABAL Games workshop booking",
@@ -1227,7 +1268,12 @@
     "category": "Community Projects",
     "subcategory": "ZABAL Games",
     "description": "Workshop slot booker",
-    "audience": "ecosystem"
+    "audience": "ecosystem",
+    "tags": [
+      "games",
+      "workshop",
+      "booking"
+    ]
   },
   {
     "title": "BetterCallZaal Linktree",
@@ -1454,7 +1500,12 @@
     "category": "Ecosystem & Tokens",
     "subcategory": "Directory",
     "description": "14-brand ecosystem directory",
-    "audience": "ecosystem"
+    "audience": "ecosystem",
+    "tags": [
+      "directory",
+      "links",
+      "bcz"
+    ]
   },
   {
     "title": "Clanker",
@@ -1540,7 +1591,12 @@
     "category": "Ecosystem & Tokens",
     "subcategory": "Site",
     "description": "Zaal personal/agency site",
-    "audience": "ecosystem"
+    "audience": "ecosystem",
+    "tags": [
+      "founder",
+      "bcz",
+      "website"
+    ]
   },
   {
     "title": "$ZABAL Token",
@@ -1549,7 +1605,12 @@
     "subcategory": "Tokens",
     "description": "ZABAL token on Base (Clanker)",
     "audience": "ecosystem",
-    "featured": true
+    "featured": true,
+    "tags": [
+      "token",
+      "zabal",
+      "clanker"
+    ]
   },
   {
     "title": "Mint Attabotty ZAO-PALOOZA Card",
@@ -1633,7 +1694,12 @@
     "category": "ZAO Stock",
     "subcategory": "Calendar",
     "description": "ZAO events calendar",
-    "audience": "both"
+    "audience": "both",
+    "tags": [
+      "calendar",
+      "events",
+      "luma"
+    ]
   },
   {
     "title": "ZAO Artists",
