@@ -343,11 +343,14 @@ export default function Home({ audience = 'community' }: { audience?: 'community
           {/* Quick-jump + actions row */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
-              {allData.map(cat => (
+              {allData.map(cat => {
+                const catCount = cat.subcategories.reduce((s, sub) => s + sub.links.length, 0);
+                return (
                 <button
                   key={cat.mainCategory}
                   onClick={() => scrollTo(cat.mainCategory.toLowerCase().replace(/\s+/g, '-'))}
                   style={{
+                    display: 'flex', alignItems: 'center', gap: 5,
                     padding: '4px 10px', borderRadius: 6, fontSize: 12, fontWeight: 500,
                     border: `1px solid ${border}`,
                     background: 'transparent', color: text,
@@ -368,8 +371,10 @@ export default function Home({ audience = 'community' }: { audience?: 'community
                   }}
                 >
                   {cat.mainCategory}
+                  <span style={{ fontSize: 10, fontWeight: 700, opacity: 0.6 }}>{catCount}</span>
                 </button>
-              ))}
+                );
+              })}
             </div>
             <div style={{ display: 'flex', gap: 4 }}>
               {[
