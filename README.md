@@ -81,23 +81,29 @@ vercel login
 vercel
 ```
 
-## Embedding (nexus.thezao.com)
+## Custom domain (nexus.thezao.com)
 
-The Nexus is served on Vercel and embedded at **nexus.thezao.com**. To embed
-it on a Webflow/HTML page, iframe the Vercel deployment:
+**nexus.thezao.com points directly at this Next.js app** (the Vercel
+deployment) — it is *not* an iframe embed on another page. Serving the app at
+the apex domain is required for the Farcaster Mini App: the manifest at
+`/.well-known/farcaster.json`, the `fc:miniapp` embed meta, and the Mini App
+SDK all need to live on the same origin the domain resolves to.
 
-```html
-<iframe
-  src="https://zaonexus.vercel.app"
-  width="100%"
-  height="800px"
-  frameborder="0"
-  style="border: none; border-radius: 8px;"
-  title="ZAO NEXUS"
-></iframe>
-```
+### Pointing the domain at Vercel
 
-Or simply link to it:
+1. In the **Vercel project → Settings → Domains**, add `nexus.thezao.com`.
+2. At your DNS provider, create the record Vercel shows — typically a
+   **CNAME** `nexus` → `cname.vercel-dns.com` (or the A record Vercel
+   provides for an apex). Remove any old Webflow/iframe record for this
+   subdomain.
+3. Wait for Vercel to issue the TLS cert, then confirm:
+   - `https://nexus.thezao.com` loads the app directly (no iframe), and
+   - `https://nexus.thezao.com/.well-known/farcaster.json` returns the manifest.
+4. Sign the Mini App `accountAssociation` for `nexus.thezao.com` (Warpcast →
+   Settings → Developer → Domains) and paste it into
+   `public/.well-known/farcaster.json`.
+
+To link to it from elsewhere (e.g. the ZAO site), just link out — don't iframe:
 
 ```html
 <a href="https://nexus.thezao.com" target="_blank" rel="noopener">
