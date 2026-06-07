@@ -5994,5 +5994,48 @@
     ],
     "audience": "both",
     "addedDate": "2026-06-07"
+  },
+  {
+    "title": "ZABAL Gamez Workshops (Luma)",
+    "url": "https://lu.ma/zabal-games-workshops",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "Live Luma calendar for ZABAL Gamez Season 1 workshops — RSVP to upcoming sessions.",
+    "tags": [
+      "workshop",
+      "calendar",
+      "luma",
+      "games"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-07"
+  },
+  {
+    "title": "Empire Builder Docs",
+    "url": "https://empire-builder.gitbook.io/empire-builder-docs",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "Documentation for Empire Builder — token empires, leaderboards, and API used by ZABAL Gamez.",
+    "tags": [
+      "partner",
+      "docs",
+      "empire-builder"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-07"
+  },
+  {
+    "title": "Stilo World (website)",
+    "url": "https://stiloworld.com",
+    "category": "ZAO Members",
+    "subcategory": "Stilo World",
+    "description": "Official site for ZAO artist Stilo World (Dope Stilo).",
+    "tags": [
+      "member",
+      "artist",
+      "music"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-07"
   }
 ]
