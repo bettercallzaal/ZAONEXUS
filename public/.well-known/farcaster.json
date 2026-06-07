@@ -9,7 +9,7 @@
     "name": "ZAO NEXUS",
     "iconUrl": "https://nexus.thezao.com/icon.svg",
     "homeUrl": "https://nexus.thezao.com",
-    "imageUrl": "https://nexus.thezao.com/opengraph-image",
+    "imageUrl": "https://nexus.thezao.com/embed",
     "buttonTitle": "Open ZAO Nexus",
     "splashImageUrl": "https://nexus.thezao.com/icon.svg",
     "splashBackgroundColor": "#111820",
@@ -22,14 +22,19 @@
       "wavewarz",
       "directory",
       "music"
-    ]
+    ],
+    "tagline": "All things ZAO, one place",
+    "heroImageUrl": "https://nexus.thezao.com/embed",
+    "ogTitle": "ZAO NEXUS",
+    "ogDescription": "The central hub for ZAO, ZABAL, and WaveWarZ links, projects, and brands.",
+    "ogImageUrl": "https://nexus.thezao.com/embed"
   },
   "frame": {
     "version": "1",
     "name": "ZAO NEXUS",
     "iconUrl": "https://nexus.thezao.com/icon.svg",
     "homeUrl": "https://nexus.thezao.com",
-    "imageUrl": "https://nexus.thezao.com/opengraph-image",
+    "imageUrl": "https://nexus.thezao.com/embed",
     "buttonTitle": "Open ZAO Nexus",
     "splashImageUrl": "https://nexus.thezao.com/icon.svg",
     "splashBackgroundColor": "#111820",
@@ -42,6 +47,11 @@
       "wavewarz",
       "directory",
       "music"
-    ]
+    ],
+    "tagline": "All things ZAO, one place",
+    "heroImageUrl": "https://nexus.thezao.com/embed",
+    "ogTitle": "ZAO NEXUS",
+    "ogDescription": "The central hub for ZAO, ZABAL, and WaveWarZ links, projects, and brands.",
+    "ogImageUrl": "https://nexus.thezao.com/embed"
   }
 }
