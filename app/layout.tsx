@@ -1,11 +1,18 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import MiniAppProvider from './components/MiniAppProvider'
 
 const SITE_URL = 'https://nexus.thezao.com'
 const SITE_NAME = 'ZAO NEXUS'
 const SITE_DESCRIPTION =
   'The central hub for all ZAO links, projects, brands, and community resources.'
+
+export const viewport: Viewport = {
+  themeColor: '#111820',
+  // Let content extend into the safe areas so our env(safe-area-inset-*)
+  // padding can position it correctly in the Mini App webview.
+  viewportFit: 'cover',
+}
 
 // Farcaster Mini App embed — lets the Nexus launch in-feed on Farcaster.
 // `fc:miniapp` is the current key; `fc:frame` is kept for back-compat.
