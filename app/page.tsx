@@ -651,6 +651,12 @@ export default function Home({ audience = 'community' }: { audience?: 'community
                                       {isRecent(link.addedDate) && (
                                         <span style={{ fontSize: 9, fontWeight: 700, color: '#0a1628', backgroundColor: accent, padding: '1px 5px', borderRadius: 4, letterSpacing: '0.04em', flexShrink: 0 }}>NEW</span>
                                       )}
+                                      {link.status === 'down' && (
+                                        <span title="This link was unreachable in the latest health check" style={{ fontSize: 9, fontWeight: 700, color: '#fff', backgroundColor: '#c0392b', padding: '1px 5px', borderRadius: 4, letterSpacing: '0.04em', flexShrink: 0 }}>⚠ DOWN</span>
+                                      )}
+                                      {link.status === 'paused' && (
+                                        <span title="This project is paused" style={{ fontSize: 9, fontWeight: 700, color: muted, backgroundColor: surface, padding: '1px 5px', borderRadius: 4, letterSpacing: '0.04em', flexShrink: 0 }}>PAUSED</span>
+                                      )}
                                       <ExternalLink size={11} style={{ opacity: 0.25, flexShrink: 0 }} />
                                     </div>
                                     {link.description && (

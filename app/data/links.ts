@@ -45,6 +45,7 @@ export interface FlatLink {
   audience?: 'community' | 'ecosystem' | 'both';
   featured?: boolean;
   addedDate?: string;
+  status?: 'live' | 'down' | 'paused';
 }
 
 /** Canonical display order of the top-level categories. */
@@ -89,6 +90,7 @@ export function groupLinks(flat: FlatLink[]): MainCategory[] {
       tags: item.tags,
       featured: item.featured,
       addedDate: item.addedDate,
+      status: item.status,
     });
   }
 

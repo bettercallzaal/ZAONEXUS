@@ -14,8 +14,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   issues: write
+  pull-requests: write
 
 jobs:
   check:
@@ -27,9 +28,11 @@ jobs:
         with:
           node-version: 20
 
+      # On PRs/manual: report only. On the weekly cron: also stamp status
+      # onto links.json so the UI can badge dead links.
       - name: Check links
         id: check
-        run: node scripts/check-links.mjs
+        run: node scripts/check-links.mjs ${{ github.event_name == 'schedule' && '--write' || '' }}
         continue-on-error: true
 
       - name: Upload report
@@ -75,6 +78,22 @@ jobs:
                 labels: ['link-health'],
               });
             }
+
+      # On the weekly cron, open a PR with any status changes (down badges
+      # added/cleared) so a human reviews before the UI updates.
+      - name: Open status-update PR on schedule
+        if: ${{ github.event_name == 'schedule' }}
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'chore: update link health status (automated weekly sweep)'
+          branch: link-health/status-update
+          delete-branch: true
+          title: 'Link health: status update from weekly sweep'
+          body: |
+            Automated weekly link-health sweep. Updates `status` on `links.json`
+            (dead links flagged `down`, recovered links cleared). See the run's
+            job summary / `link-health-report.md` artifact for the full report.
+          labels: link-health
 
       # Fail the job (after surfacing the report) so PR checks go red on dead links.
       - name: Enforce result on PRs

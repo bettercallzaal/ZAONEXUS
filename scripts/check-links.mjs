@@ -100,6 +100,26 @@ async function run() {
   await writeFile(REPORT, report);
   console.log('\n' + report);
 
+  // `--write` stamps status onto links.json so the UI can badge dead links.
+  // Dead → status:'down'; healthy → clear any stale 'down' (leave 'paused' alone).
+  if (process.argv.includes('--write')) {
+    const deadUrls = new Set(dead.map(d => d.url));
+    let changed = 0;
+    for (const l of links) {
+      if (deadUrls.has(l.url)) {
+        if (l.status !== 'down') { l.status = 'down'; changed++; }
+      } else if (l.status === 'down') {
+        delete l.status; changed++;
+      }
+    }
+    if (changed) {
+      await writeFile(DATA, JSON.stringify(links, null, 2) + '\n');
+      console.log(`\n--write: updated status on ${changed} link(s) in links.json`);
+    } else {
+      console.log('\n--write: no status changes');
+    }
+  }
+
   process.exit(dead.length ? 1 : 0);
 }
 
