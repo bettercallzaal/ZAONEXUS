@@ -18,7 +18,7 @@ export const viewport: Viewport = {
 // `fc:miniapp` is the current key; `fc:frame` is kept for back-compat.
 const miniappEmbed = JSON.stringify({
   version: '1',
-  imageUrl: `${SITE_URL}/opengraph-image`,
+  imageUrl: `${SITE_URL}/embed`,
   button: {
     title: 'Open ZAO Nexus',
     action: {
