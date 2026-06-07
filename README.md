@@ -111,6 +111,39 @@ To link to it from elsewhere (e.g. the ZAO site), just link out — don't iframe
 </a>
 ```
 
+## Public API
+
+The canonical link data is exposed as a read-only JSON API so other ZAO
+surfaces (zaoos.com, zabalgamez.com, bots) can consume the same source of
+truth. CORS-open and edge-cached (`s-maxage=3600`).
+
+```
+GET https://nexus.thezao.com/api/links
+```
+
+Optional filters (combine freely):
+
+| Param | Example | Effect |
+|---|---|---|
+| `category` | `?category=ZAO OS` | one of the 9 canonical categories |
+| `audience` | `?audience=community` | `community` \| `ecosystem` \| `both` (includes `both`) |
+| `tag` | `?tag=wavewarz` | links carrying that tag |
+| `featured` | `?featured=true` | only featured links |
+| `q` | `?q=songjam` | search title/description/url/tags |
+| `limit` | `?limit=50` | cap the number returned |
+
+Response shape:
+
+```json
+{
+  "source": "https://nexus.thezao.com",
+  "total": 481,
+  "count": 12,
+  "generatedAt": "2026-06-07T...",
+  "links": [ { "title": "...", "url": "...", "category": "...", "tags": ["..."], "audience": "both" } ]
+}
+```
+
 ## Project Structure
 
 ```
