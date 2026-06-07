@@ -1,4 +1,9 @@
 {
+  "accountAssociation": {
+    "header": "eyJmaWQiOjE5NjQwLCJ0eXBlIjoiYXV0aCIsImtleSI6IjB4Yjc5Y2RBYkY2ZjJmQjhGZWE3MEMyZTUxNUFFQzM1RTgyN2JGNzkzMiJ9",
+    "payload": "eyJkb21haW4iOiJuZXh1cy50aGV6YW8uY29tIn0",
+    "signature": "ufA6TKWo10StMXaN0A4+0lt/kWDGgZeBlY2gp7sg0xUcQnYTE6oQjC/SF5pmlDpv1KjQHcvvaey2BdaYjch9GBs="
+  },
   "miniapp": {
     "version": "1",
     "name": "ZAO NEXUS",
@@ -11,7 +16,13 @@
     "subtitle": "The central hub for all ZAO links",
     "description": "Search 470+ curated ZAO, ZABAL, and WaveWarZ links, projects, and brands.",
     "primaryCategory": "social",
-    "tags": ["zao", "zabal", "wavewarz", "directory", "music"]
+    "tags": [
+      "zao",
+      "zabal",
+      "wavewarz",
+      "directory",
+      "music"
+    ]
   },
   "frame": {
     "version": "1",
