@@ -93,6 +93,34 @@ export default async function BrandDetailPage(props: BrandDetailPageProps) {
   const parentBrand = brand.parent ? getBrandBySlug(brand.parent) : null;
   const ss = STAGE_STYLE[brand.stage];
 
+  const SITE = 'https://nexus.thezao.com';
+  const sameAs = [
+    brand.homepage,
+    brand.github,
+    brand.x ? `https://x.com/${brand.x}` : null,
+    brand.farcaster?.handle ? `https://warpcast.com/${brand.farcaster.handle}` : null,
+  ].filter(Boolean) as string[];
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': `${SITE}/ecosystem/${brand.slug}#org`,
+        name: brand.name,
+        description: brand.description || brand.tagline,
+        url: brand.homepage || `${SITE}/ecosystem/${brand.slug}`,
+        ...(sameAs.length ? { sameAs } : {}),
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Ecosystem', item: `${SITE}/ecosystem` },
+          { '@type': 'ListItem', position: 2, name: brand.name, item: `${SITE}/ecosystem/${brand.slug}` },
+        ],
+      },
+    ],
+  };
+
   const socialLinkClass =
     'flex items-center gap-2 px-3.5 py-2 rounded-lg border text-sm font-medium transition-opacity duration-150 hover:opacity-75';
   const socialLinkStyle = {
@@ -102,6 +130,10 @@ export default async function BrandDetailPage(props: BrandDetailPageProps) {
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#0a1628', color: '#e4e2dd' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* Navigation */}
       <nav className="border-b" style={{ borderColor: 'rgba(228,226,221,0.08)' }}>
