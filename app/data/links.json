@@ -48,7 +48,8 @@
       "newsletter",
       "paragraph"
     ],
-    "audience": "both"
+    "audience": "both",
+    "featured": true
   },
   {
     "title": "Subscribe to the newsletter",
@@ -183,7 +184,8 @@
       "whitepaper",
       "docs"
     ],
-    "audience": "both"
+    "audience": "both",
+    "featured": true
   },
   {
     "title": "FISHBOWLZ",
@@ -4908,7 +4910,8 @@
       "zaostock",
       "festival"
     ],
-    "audience": "community"
+    "audience": "community",
+    "featured": true
   },
   {
     "title": "ZAOstock Apply",

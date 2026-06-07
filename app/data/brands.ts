@@ -209,6 +209,7 @@ export const brands: Brand[] = [
     status: 'live',
     founded: 'April 2026',
     homepage: 'https://zaofestivals.com/zaostock',
+    github: 'https://github.com/bettercallzaal/zaostock',
     farcaster: { channel: 'zaostock' },
     links: [
       {
@@ -288,11 +289,17 @@ export const brands: Brand[] = [
     parent: 'wavewarz',
     status: 'live',
     founders: ['Iman'],
+    github: 'https://github.com/songchaindao-dot/africa-battle-live-ui',
     links: [
       {
         title: 'WaveWarZ',
-        url: 'https://wavewarz.io',
+        url: 'https://wavewarz.com',
         description: 'Learn more on main site'
+      },
+      {
+        title: 'Africa Battle Zone (repo)',
+        url: 'https://github.com/songchaindao-dot/africa-battle-live-ui',
+        description: 'Frontend for WaveWarz Africa live music battles'
       }
     ]
   },
@@ -307,11 +314,18 @@ export const brands: Brand[] = [
     parent: 'the-zao',
     status: 'live',
     founded: 'June 3 2024',
+    homepage: 'https://thezao.com/fractals',
+    github: 'https://github.com/ZAODEVZ/ZAOfractal',
     links: [
       {
         title: 'Fractal Info',
         url: 'https://thezao.com/fractals',
         description: 'Join the Fractals'
+      },
+      {
+        title: 'ZAOfractal (app)',
+        url: 'https://zaofractal.vercel.app',
+        description: 'Fractal governance app'
       }
     ]
   },
@@ -326,11 +340,18 @@ export const brands: Brand[] = [
     parent: 'the-zao',
     status: 'live',
     founded: '2026',
+    homepage: 'https://zabalnewsletter.vercel.app',
+    github: 'https://github.com/bettercallzaal/zabalnewsletter',
     links: [
       {
         title: 'Subscribe',
         url: 'https://paragraph.com/@thezao',
         description: 'Get daily updates'
+      },
+      {
+        title: 'ZABAL Newsletter (app)',
+        url: 'https://zabalnewsletter.vercel.app',
+        description: 'Newsletter app'
       }
     ]
   },
@@ -366,11 +387,12 @@ export const brands: Brand[] = [
     parent: 'the-zao',
     status: 'live',
     founders: ['Zaal', 'Ohnahji B'],
+    homepage: 'https://ltaw3.thezao.com',
     links: [
       {
         title: 'Episodes',
-        url: 'https://zaofestivals.com',
-        description: 'Find all episodes on ZAO Festivals'
+        url: 'https://ltaw3.thezao.com',
+        description: "Let's Talk Web3 (LTAW3) podcast community"
       }
     ]
   },
@@ -438,11 +460,12 @@ export const brands: Brand[] = [
     parent: 'zao-os',
     status: 'live',
     telegram: 'zoe_hermes_bot',
+    github: 'https://github.com/bettercallzaal/hermes-orchestrator',
     links: [
       {
-        title: 'GitHub Integration',
-        url: 'https://github.com/bettercallzaal/ZAOOS',
-        description: 'Integrated in ZAOOS repo'
+        title: 'Hermes Orchestrator (repo)',
+        url: 'https://github.com/bettercallzaal/hermes-orchestrator',
+        description: 'Agent/automation orchestration'
       }
     ]
   },
@@ -458,6 +481,7 @@ export const brands: Brand[] = [
     status: 'live',
     founded: '2024',
     homepage: 'https://cocconcertz.com',
+    github: 'https://github.com/bettercallzaal/CoCConcertZ',
     x: 'cocconcertz',
     instagram: 'cocconcertz',
     links: [
@@ -532,11 +556,17 @@ export const brands: Brand[] = [
     parent: 'bettercallzaal',
     status: 'live',
     homepage: 'https://poidh.xyz',
+    github: 'https://github.com/bettercallzaal/zpoidh',
     links: [
       {
         title: 'POIDH Platform',
         url: 'https://poidh.xyz',
         description: 'Explore bounties'
+      },
+      {
+        title: 'zPOIDH (BCZ bounty ops)',
+        url: 'https://zpoidh.vercel.app',
+        description: 'Rounds, judging, and brand kit'
       },
       {
         title: 'First ZAO Bounty',
@@ -583,6 +613,7 @@ export const brands: Brand[] = [
     status: 'paused',
     founded: '2024',
     homepage: 'https://fishbowlz.xyz',
+    github: 'https://github.com/bettercallzaal/fishbowlz',
     links: [
       {
         title: 'Historical Site',
@@ -760,6 +791,8 @@ export const brands: Brand[] = [
     status: 'live',
     founded: '2023',
     homepage: 'https://midipunkz.com',
+    x: 'midipunkz',
+    instagram: 'midipunkz',
     links: [
       {
         title: 'Website',
@@ -925,6 +958,7 @@ export const brands: Brand[] = [
     parent: 'bettercallzaal',
     status: 'live',
     homepage: 'https://app.magnetiq.xyz/brand/ZABAL/magnet/Zabal%20Connector',
+    x: 'magnetiq_xyz',
     links: [
       {
         title: 'ZABAL Connector (zabal.lol)',
@@ -964,7 +998,14 @@ export const brands: Brand[] = [
     parent: 'bettercallzaal',
     status: 'live',
     founded: 'Jun 1 2026',
+    homepage: 'https://zabalgamez.com',
+    github: 'https://github.com/ZAODEVZ/zabalgames',
     links: [
+      {
+        title: 'ZABAL Gamez (mini app)',
+        url: 'https://zabalgamez.com',
+        description: 'Workshops, data streams, and builder leaderboard'
+      },
       {
         title: 'ZABAL Gamez Empire',
         url: 'https://empirebuilder.world/empire/zabalgamez01e9af',
