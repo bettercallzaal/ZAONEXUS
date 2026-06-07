@@ -27,7 +27,8 @@
     "heroImageUrl": "https://nexus.thezao.com/embed",
     "ogTitle": "ZAO NEXUS",
     "ogDescription": "The central hub for ZAO, ZABAL, and WaveWarZ links, projects, and brands.",
-    "ogImageUrl": "https://nexus.thezao.com/embed"
+    "ogImageUrl": "https://nexus.thezao.com/embed",
+    "webhookUrl": "https://nexus.thezao.com/api/webhook"
   },
   "frame": {
     "version": "1",
@@ -52,6 +53,7 @@
     "heroImageUrl": "https://nexus.thezao.com/embed",
     "ogTitle": "ZAO NEXUS",
     "ogDescription": "The central hub for ZAO, ZABAL, and WaveWarZ links, projects, and brands.",
-    "ogImageUrl": "https://nexus.thezao.com/embed"
+    "ogImageUrl": "https://nexus.thezao.com/embed",
+    "webhookUrl": "https://nexus.thezao.com/api/webhook"
   }
 }

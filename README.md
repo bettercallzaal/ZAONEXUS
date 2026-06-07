@@ -111,6 +111,67 @@ To link to it from elsewhere (e.g. the ZAO site), just link out — don't iframe
 </a>
 ```
 
+## Public API
+
+The canonical link data is exposed as a read-only JSON API so other ZAO
+surfaces (zaoos.com, zabalgamez.com, bots) can consume the same source of
+truth. CORS-open and edge-cached (`s-maxage=3600`).
+
+```
+GET https://nexus.thezao.com/api/links
+```
+
+Optional filters (combine freely):
+
+| Param | Example | Effect |
+|---|---|---|
+| `category` | `?category=ZAO OS` | one of the 9 canonical categories |
+| `audience` | `?audience=community` | `community` \| `ecosystem` \| `both` (includes `both`) |
+| `tag` | `?tag=wavewarz` | links carrying that tag |
+| `featured` | `?featured=true` | only featured links |
+| `q` | `?q=songjam` | search title/description/url/tags |
+| `limit` | `?limit=50` | cap the number returned |
+
+Response shape:
+
+```json
+{
+  "source": "https://nexus.thezao.com",
+  "total": 481,
+  "count": 12,
+  "generatedAt": "2026-06-07T...",
+  "links": [ { "title": "...", "url": "...", "category": "...", "tags": ["..."], "audience": "both" } ]
+}
+```
+
+## Mini App notifications
+
+The Mini App can push notifications ("new links added", "ZAOstock soon",
+workshop reminders) to users who added it. The plumbing ships ready and
+**gracefully no-ops until a KV store is connected**:
+
+- `GET/POST /api/webhook` — declared as `webhookUrl` in the manifest; Farcaster
+  calls it when a user adds/removes the app or toggles notifications. It stores
+  each user's notification token.
+- `POST /api/notify` — admin sender (see below).
+
+To enable, set in Vercel (Storage → KV/Upstash auto-populates the first two):
+
+| Variable | Purpose |
+|---|---|
+| `KV_REST_API_URL` | Redis REST endpoint (Vercel KV / Upstash) |
+| `KV_REST_API_TOKEN` | Redis REST token |
+| `NOTIFY_SECRET` | Bearer secret guarding `POST /api/notify` |
+
+Send a notification:
+
+```bash
+curl -X POST https://nexus.thezao.com/api/notify \
+  -H "authorization: Bearer $NOTIFY_SECRET" \
+  -H "content-type: application/json" \
+  -d '{"title":"New on ZAO Nexus","body":"5 new ZABAL Gamez links just added","targetUrl":"https://nexus.thezao.com"}'
+```
+
 ## Project Structure
 
 ```
