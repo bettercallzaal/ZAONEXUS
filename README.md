@@ -144,6 +144,34 @@ Response shape:
 }
 ```
 
+## Mini App notifications
+
+The Mini App can push notifications ("new links added", "ZAOstock soon",
+workshop reminders) to users who added it. The plumbing ships ready and
+**gracefully no-ops until a KV store is connected**:
+
+- `GET/POST /api/webhook` — declared as `webhookUrl` in the manifest; Farcaster
+  calls it when a user adds/removes the app or toggles notifications. It stores
+  each user's notification token.
+- `POST /api/notify` — admin sender (see below).
+
+To enable, set in Vercel (Storage → KV/Upstash auto-populates the first two):
+
+| Variable | Purpose |
+|---|---|
+| `KV_REST_API_URL` | Redis REST endpoint (Vercel KV / Upstash) |
+| `KV_REST_API_TOKEN` | Redis REST token |
+| `NOTIFY_SECRET` | Bearer secret guarding `POST /api/notify` |
+
+Send a notification:
+
+```bash
+curl -X POST https://nexus.thezao.com/api/notify \
+  -H "authorization: Bearer $NOTIFY_SECRET" \
+  -H "content-type: application/json" \
+  -d '{"title":"New on ZAO Nexus","body":"5 new ZABAL Gamez links just added","targetUrl":"https://nexus.thezao.com"}'
+```
+
 ## Project Structure
 
 ```
