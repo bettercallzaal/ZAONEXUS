@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import MiniAppProvider from './components/MiniAppProvider'
 
 const SITE_URL = 'https://nexus.thezao.com'
 const SITE_NAME = 'ZAO NEXUS'
@@ -98,7 +99,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {children}
+        <MiniAppProvider>{children}</MiniAppProvider>
       </body>
     </html>
   )
