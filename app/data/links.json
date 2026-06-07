@@ -6037,5 +6037,65 @@
     ],
     "audience": "ecosystem",
     "addedDate": "2026-06-07"
+  },
+  {
+    "title": "Workshop: Intro to Sopha (fireside)",
+    "url": "https://luma.com/42rdpyyb",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Gamez workshop (Jun 8) — fireside introducing Sopha to the community: the philosophy and what it is.",
+    "tags": [
+      "workshop",
+      "event",
+      "luma",
+      "sopha"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-07"
+  },
+  {
+    "title": "Workshop: Owning your music on Farcaster (Jose Cabrera)",
+    "url": "https://luma.com/nxfm7edg",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Gamez workshop (Jun 9) — owning your music as an independent artist on Farcaster: releasing and more.",
+    "tags": [
+      "workshop",
+      "event",
+      "luma",
+      "music"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-07"
+  },
+  {
+    "title": "Workshop: Building KFMedia (Will T)",
+    "url": "https://luma.com/za2b259z",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Gamez workshop (Jun 10) — Will T on building KFMedia: what he is building, how, and lessons learned.",
+    "tags": [
+      "workshop",
+      "event",
+      "luma",
+      "builder"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-07"
+  },
+  {
+    "title": "Workshop: ZABAL Gamez overview + tour (Zaal)",
+    "url": "https://luma.com/e4g2kbxp",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Games",
+    "description": "ZABAL Gamez workshop (Jun 11) — Zaal on ZABAL Gamez and the projects you can build on, plus a tour.",
+    "tags": [
+      "workshop",
+      "event",
+      "luma",
+      "games"
+    ],
+    "audience": "both",
+    "addedDate": "2026-06-07"
   }
 ]

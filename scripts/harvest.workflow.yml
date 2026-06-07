@@ -1,0 +1,57 @@
+name: Auto-harvest links
+
+# Weekly scan of the canonical ZABAL Gamez sources for net-new links, surfaced
+# as an issue for human review. Does NOT edit links.json (curation stays manual).
+# To enable: move this file to .github/workflows/auto-harvest.yml
+#   (the sandbox can't push workflow files directly).
+
+on:
+  schedule:
+    - cron: '0 14 * * 1' # Mondays 14:00 UTC (after link-health at 13:00)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Harvest candidates
+        run: node scripts/harvest.mjs
+
+      - name: Add report to job summary
+        if: always()
+        run: cat harvest-candidates.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open/refresh harvest issue
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('harvest-candidates.md', 'utf8');
+            // Only nag when there's something to review.
+            if (/Candidates: \*\*0\*\*/.test(body)) return;
+            const title = 'Link harvest: new candidates to review';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'harvest',
+            });
+            if (issues.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issues[0].number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['harvest'],
+              });
+            }
