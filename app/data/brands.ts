@@ -436,10 +436,11 @@ export const brands: Brand[] = [
     status: 'live',
     telegram: 'zaoclaw_bot',
     farcaster: { handle: 'zaoclaw_bot' },
+    homepage: 'https://zoe.zaoos.com',
     links: [
       {
-        title: 'Chat Interface',
-        url: 'https://chat.zaoos.com',
+        title: 'ZOE Dashboard',
+        url: 'https://zoe.zaoos.com',
         description: 'Talk to ZOE'
       },
       {
@@ -612,18 +613,12 @@ export const brands: Brand[] = [
     tier: 'project',
     status: 'paused',
     founded: '2024',
-    homepage: 'https://fishbowlz.xyz',
     github: 'https://github.com/bettercallzaal/fishbowlz',
     links: [
       {
-        title: 'Historical Site',
-        url: 'https://fishbowlz.xyz',
-        description: 'Archived (paused)'
-      },
-      {
-        title: 'Rooms',
-        url: 'https://fishbowlz.xyz/rooms/',
-        description: 'Browse FISHBOWLZ rooms (archived)'
+        title: 'Repository (archived)',
+        url: 'https://github.com/bettercallzaal/fishbowlz',
+        description: 'Source code — project paused, fishbowlz.xyz is offline'
       }
     ]
   },

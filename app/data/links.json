@@ -175,19 +175,6 @@
     "audience": "both"
   },
   {
-    "title": "ZAO Whitepaper Draft",
-    "url": "https://app.charmverse.io/the-zao/the-zao-whitepaper-draft-2-6565388910657037",
-    "category": "The ZAO",
-    "subcategory": "ZAO Whitepaper",
-    "description": "Dive into the ZAO Whitepaper for a deeper understanding of the ecosystem.",
-    "tags": [
-      "whitepaper",
-      "docs"
-    ],
-    "audience": "both",
-    "featured": true
-  },
-  {
     "title": "FISHBOWLZ",
     "url": "https://fishbowlz.com",
     "category": "ZAO OS",
@@ -1578,19 +1565,6 @@
     "audience": "ecosystem"
   },
   {
-    "title": "Mint ZAO-CHELLA Vibez Track on Zora",
-    "url": "https://song.thezao.com",
-    "category": "ZAO Onchain",
-    "subcategory": "ZAO Tokens",
-    "description": "Own a piece of the ZAO-CHELLA experience by minting the Vibez track.",
-    "tags": [
-      "mint",
-      "nft",
-      "zora"
-    ],
-    "audience": "ecosystem"
-  },
-  {
     "title": "Mint Zalora - the ZAO Mascot (MidiVerse)",
     "url": "https://zalora.thezao.com",
     "category": "ZAO Onchain",
@@ -1797,19 +1771,6 @@
     "audience": "community"
   },
   {
-    "title": "Chat (ZOE)",
-    "url": "https://chat.zaoos.com",
-    "category": "ZAO OS",
-    "subcategory": "ZAO OS",
-    "description": "Chat (ZOE) — part of ZAO OS, the ZAO operating system.",
-    "tags": [
-      "zaoos",
-      "agents",
-      "zoe"
-    ],
-    "audience": "both"
-  },
-  {
     "title": "ZAO OS on X",
     "url": "https://x.com/zaoos",
     "category": "ZAO OS",
@@ -1902,17 +1863,6 @@
     "tags": [
       "wavewarz",
       "github"
-    ],
-    "audience": "ecosystem"
-  },
-  {
-    "title": "WaveWarZ.io",
-    "url": "https://wavewarz.io",
-    "category": "Community Projects",
-    "subcategory": "WaveWarZ",
-    "description": "WaveWarZ — live-traded music battles where fans trade per-battle tokens on a bonding curve.",
-    "tags": [
-      "wavewarz"
     ],
     "audience": "ecosystem"
   },
@@ -2156,18 +2106,6 @@
       "midipunkz",
       "mint",
       "nft"
-    ],
-    "audience": "ecosystem"
-  },
-  {
-    "title": "MidiPunkZ Mint List",
-    "url": "https://mint-list.midipunkz.com",
-    "category": "Community Projects",
-    "subcategory": "MidiPunkZ",
-    "description": "MidiPunkZ Mint List — MidiPunkZ on-chain music experience.",
-    "tags": [
-      "midipunkz",
-      "mint"
     ],
     "audience": "ecosystem"
   },
@@ -2713,18 +2651,6 @@
     "tags": [
       "artist",
       "music"
-    ],
-    "audience": "community"
-  },
-  {
-    "title": "Stilo World (stilo.world)",
-    "url": "https://www.stilo.world",
-    "category": "ZAO Members",
-    "subcategory": "Stilo World",
-    "description": "Stilo World — official site.",
-    "tags": [
-      "artist",
-      "website"
     ],
     "audience": "community"
   },
@@ -3490,7 +3416,8 @@
       "docs",
       "2026"
     ],
-    "audience": "both"
+    "audience": "both",
+    "featured": true
   },
   {
     "title": "ZAO Discord (vanity)",
@@ -4575,18 +4502,6 @@
     "audience": "community"
   },
   {
-    "title": "Suspekt Stilo (stilosd.com)",
-    "url": "https://www.stilosd.com/music",
-    "category": "ZAO Members",
-    "subcategory": "Stilo World",
-    "description": "Stilo World — official site.",
-    "tags": [
-      "artist",
-      "music"
-    ],
-    "audience": "community"
-  },
-  {
     "title": "Sonata (Coop Records)",
     "url": "https://github.com/Coop-Records/sonata",
     "category": "Ecosystem & Tokens",
@@ -4852,43 +4767,6 @@
     "audience": "ecosystem"
   },
   {
-    "title": "ZAO Public API + MCP",
-    "url": "https://api.zaoos.com/mcp",
-    "category": "ZAO OS",
-    "subcategory": "ZAO OS",
-    "description": "ZAO Public API + MCP — part of ZAO OS, the ZAO operating system.",
-    "tags": [
-      "zaoos",
-      "api",
-      "mcp"
-    ],
-    "audience": "ecosystem"
-  },
-  {
-    "title": "FISHBOWLZ (fishbowlz.xyz)",
-    "url": "https://fishbowlz.xyz",
-    "category": "ZAO OS",
-    "subcategory": "ZAO OS",
-    "description": "FISHBOWLZ — ZAO live audio rooms and spaces.",
-    "tags": [
-      "fishbowlz",
-      "music"
-    ],
-    "audience": "both"
-  },
-  {
-    "title": "FISHBOWLZ Rooms",
-    "url": "https://fishbowlz.xyz/rooms/",
-    "category": "ZAO OS",
-    "subcategory": "ZAO OS",
-    "description": "Browse live FISHBOWLZ rooms.",
-    "tags": [
-      "fishbowlz",
-      "rooms"
-    ],
-    "audience": "both"
-  },
-  {
     "title": "Zlank (live)",
     "url": "https://zlank.online",
     "category": "ZAO OS",
@@ -5066,31 +4944,6 @@
       "partner",
       "juke",
       "dev"
-    ],
-    "audience": "ecosystem"
-  },
-  {
-    "title": "SongJam (.io)",
-    "url": "https://songjam.io",
-    "category": "Ecosystem & Tokens",
-    "subcategory": "Partners",
-    "description": "Songjam — music drops and Spaces contribution platform.",
-    "tags": [
-      "partner",
-      "songjam"
-    ],
-    "audience": "ecosystem"
-  },
-  {
-    "title": "SongJam Docs",
-    "url": "https://docs.songjam.space",
-    "category": "Ecosystem & Tokens",
-    "subcategory": "Partners",
-    "description": "Songjam documentation.",
-    "tags": [
-      "partner",
-      "songjam",
-      "docs"
     ],
     "audience": "ecosystem"
   },
