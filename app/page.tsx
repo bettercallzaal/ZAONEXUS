@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
 import {
   Search, ChevronDown, Moon, Sun, Maximize2, Minimize2,
-  Copy, Check, ExternalLink, X, Star, Sparkles,
+  Copy, Check, ExternalLink, X, Star, Sparkles, Archive,
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -703,6 +703,23 @@ export default function Home({ audience = 'community' }: { audience?: 'community
                                     }}
                                     onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
                                   >
+                                    {link.status === 'down' && (
+                                      <a
+                                        href={`https://web.archive.org/web/${link.url}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        title="Link is down — view an archived snapshot (Wayback Machine)"
+                                        aria-label="View archived snapshot"
+                                        style={{
+                                          padding: '5px 6px', borderRadius: 7, color: text,
+                                          display: 'flex', textDecoration: 'none', transition: 'background 0.1s',
+                                        }}
+                                        onMouseEnter={e => (e.currentTarget.style.backgroundColor = rowHov)}
+                                        onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
+                                      >
+                                        <Archive size={13} />
+                                      </a>
+                                    )}
                                     <button
                                       onClick={() => copyURL(link.url)}
                                       title="Copy URL"
