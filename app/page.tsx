@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useMemo, useEffect, useRef } from 'react';
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import {
   Search, ChevronDown, Moon, Sun, Maximize2, Minimize2,
-  Copy, Check, ExternalLink, X, Star, Sparkles, Archive,
+  Copy, Check, ExternalLink, X, Star, Sparkles, Archive, Shuffle,
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -85,6 +85,15 @@ export default function Home({ audience = 'community' }: { audience?: 'community
   }, [allData]);
 
   const featuredLinks = useMemo(() => allLinks.filter(l => l.featured), [allLinks]);
+
+  // Random "pick of the moment": chosen client-side so it reshuffles on every
+  // refresh (and via the shuffle button), with no SSR hydration mismatch.
+  type FlatLink = (typeof allLinks)[number];
+  const [randomLink, setRandomLink] = useState<FlatLink | null>(null);
+  const shuffle = useCallback(() => {
+    setRandomLink(allLinks.length ? allLinks[Math.floor(Math.random() * allLinks.length)] : null);
+  }, [allLinks]);
+  useEffect(() => { shuffle(); }, [shuffle]);
 
   const recentLinks = useMemo(
     () => allLinks
@@ -459,6 +468,66 @@ export default function Home({ audience = 'community' }: { audience?: 'community
             </p>
           )}
         </div>
+
+        {/* ── RANDOM PICK ── */}
+        {!hasFilter && randomLink && (
+          <section style={{ marginTop: 8, marginBottom: 14 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8 }}>
+              <Shuffle size={13} style={{ color: accent }} />
+              <h2 style={{ margin: 0, fontSize: 13, fontWeight: 700, color: text, letterSpacing: '-0.01em' }}>Random Pick</h2>
+              <span style={{ fontSize: 12, color: muted }}>A different ZAO link every refresh.</span>
+            </div>
+            <div style={{
+              display: 'flex', alignItems: 'center', gap: 12, padding: '13px 15px',
+              borderRadius: 12, border: `1px solid ${border}`, background: surface,
+            }}>
+              <a
+                href={randomLink.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ flex: 1, minWidth: 0, textDecoration: 'none' }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 14, fontWeight: 600, color: text, marginBottom: 3 }}>
+                  <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{randomLink.title}</span>
+                  <ExternalLink size={11} style={{ opacity: 0.3, flexShrink: 0 }} />
+                </div>
+                {randomLink.description && (
+                  <p style={{ margin: 0, fontSize: 12, color: muted, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{randomLink.description}</p>
+                )}
+              </a>
+              <div style={{ display: 'flex', gap: 4, flexShrink: 0 }}>
+                <button
+                  onClick={() => shareFarcaster(randomLink.url, randomLink.title)}
+                  title="Share this pick on Farcaster"
+                  aria-label="Share this pick on Farcaster"
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: 5, padding: '6px 11px', borderRadius: 8,
+                    fontSize: 12, fontWeight: 600, border: 'none', cursor: 'pointer',
+                    background: accent, color: '#0a1628', transition: 'opacity 0.12s',
+                  }}
+                  onMouseEnter={e => (e.currentTarget.style.opacity = '0.85')}
+                  onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+                >
+                  Share
+                </button>
+                <button
+                  onClick={shuffle}
+                  title="Shuffle — pick another"
+                  aria-label="Shuffle to another random link"
+                  style={{
+                    display: 'flex', alignItems: 'center', padding: '6px 9px', borderRadius: 8,
+                    border: `1px solid ${border}`, background: 'transparent', color: text,
+                    cursor: 'pointer', transition: 'background 0.12s',
+                  }}
+                  onMouseEnter={e => (e.currentTarget.style.backgroundColor = surfaceHov)}
+                  onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
+                >
+                  <Shuffle size={14} />
+                </button>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* ── START HERE (featured) ── */}
         {!hasFilter && featuredLinks.length > 0 && (
