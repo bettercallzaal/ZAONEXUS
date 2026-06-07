@@ -49,6 +49,23 @@ export default function Home({ audience = 'community' }: { audience?: 'community
     return () => { active = false; };
   }, []);
 
+  // Keyboard shortcuts: "/" focuses search, Esc clears it.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const el = document.activeElement;
+      const typing = el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement;
+      if (e.key === '/' && !typing) {
+        e.preventDefault();
+        searchRef.current?.focus();
+      } else if (e.key === 'Escape' && el === searchRef.current) {
+        setSearchQuery('');
+        searchRef.current?.blur();
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+
   const allData = useMemo(() => filterByAudience(linkData, currentAudience), [linkData, currentAudience]);
 
   const totalLinks = useMemo(
@@ -419,12 +436,15 @@ export default function Home({ audience = 'community' }: { audience?: 'community
           )}
         </div>
 
-        {/* ── FEATURED ── */}
+        {/* ── START HERE (featured) ── */}
         {!hasFilter && featuredLinks.length > 0 && (
           <section style={{ marginTop: 8, marginBottom: 14 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8 }}>
-              <Star size={13} style={{ color: accent }} fill={accent} />
-              <h2 style={{ margin: 0, fontSize: 13, fontWeight: 700, color: text, letterSpacing: '-0.01em' }}>Featured</h2>
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: 8, marginBottom: 8, flexWrap: 'wrap' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <Star size={13} style={{ color: accent }} fill={accent} />
+                <h2 style={{ margin: 0, fontSize: 13, fontWeight: 700, color: text, letterSpacing: '-0.01em' }}>Start Here</h2>
+              </div>
+              <span style={{ fontSize: 12, color: muted }}>New to ZAO? These are the essentials.</span>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: 8 }}>
               {featuredLinks.map((l, i) => (
@@ -762,8 +782,35 @@ export default function Home({ audience = 'community' }: { audience?: 'community
             </div>
           ))}
         </div>
+        {/* ── SUGGEST A LINK ── */}
+        <div style={{ textAlign: 'center', marginTop: 24 }}>
+          <a
+            href={
+              'https://github.com/bettercallzaal/ZAONEXUS/issues/new?title=' +
+              encodeURIComponent('Add link: ') +
+              '&body=' +
+              encodeURIComponent(
+                '**Title:**\n**URL:**\n**Category:** (The ZAO / ZAO OS / Agents & Bots / ZAO Festivals / Community Projects / ZAO Members / Ecosystem & Tokens / ZAO Onchain / ZAO Stock)\n**Description:**\n**Audience:** (community / ecosystem / both)\n'
+              ) +
+              '&labels=' + encodeURIComponent('link-suggestion')
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: 6,
+              padding: '8px 16px', borderRadius: 10, fontSize: 13, fontWeight: 600,
+              border: `1px solid ${border}`, background: surface, color: text,
+              textDecoration: 'none', transition: 'border-color 0.12s, background 0.12s',
+            }}
+            onMouseEnter={e => { e.currentTarget.style.borderColor = borderHov; e.currentTarget.style.background = surfaceHov; }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = border; e.currentTarget.style.background = surface; }}
+          >
+            + Suggest a link
+          </a>
+        </div>
         <p style={{ textAlign: 'center', fontSize: 12, color: faint, marginTop: 16 }}>
           ZAO NEXUS © {new Date().getFullYear()} · Built for the ZAO Community
+          <span style={{ opacity: 0.6 }}> · press “/” to search</span>
         </p>
       </div>
 
