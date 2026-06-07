@@ -2,9 +2,13 @@
 
 import { createContext, useContext, useEffect, useState } from 'react';
 
+type MiniAppUser = { fid?: number; username?: string; displayName?: string; pfpUrl?: string };
+
 type MiniAppCtx = {
   /** True once we've confirmed we're running inside a Farcaster Mini App host. */
   isMiniApp: boolean;
+  /** The viewing Farcaster user, when available inside a Mini App host. */
+  user: MiniAppUser | null;
   /** Open an external URL — natively in-client when in a Mini App, else a normal new tab. */
   openUrl: (url: string) => void;
   /** Compose a cast — native composer in a Mini App, else Warpcast web compose. */
@@ -15,6 +19,7 @@ type MiniAppCtx = {
 
 const Ctx = createContext<MiniAppCtx>({
   isMiniApp: false,
+  user: null,
   openUrl: (url) => window.open(url, '_blank', 'noopener,noreferrer'),
   composeCast: (text, embedUrl) =>
     window.open(
@@ -32,6 +37,7 @@ export function useMiniApp() {
 
 export default function MiniAppProvider({ children }: { children: React.ReactNode }) {
   const [isMiniApp, setIsMiniApp] = useState(false);
+  const [user, setUser] = useState<MiniAppUser | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -42,6 +48,13 @@ export default function MiniAppProvider({ children }: { children: React.ReactNod
         if (cancelled) return;
         if (inMiniApp) {
           setIsMiniApp(true);
+          try {
+            const ctx = await sdk.context;
+            const u = ctx?.user;
+            if (!cancelled && u) {
+              setUser({ fid: u.fid, username: u.username, displayName: u.displayName, pfpUrl: u.pfpUrl });
+            }
+          } catch { /* context optional */ }
           // Critical: dismiss the host splash screen once the app is rendered.
           // Without this the Mini App appears to hang on launch.
           await sdk.actions.ready();
@@ -57,6 +70,7 @@ export default function MiniAppProvider({ children }: { children: React.ReactNod
 
   const value: MiniAppCtx = {
     isMiniApp,
+    user,
     openUrl: (url) => {
       if (isMiniApp) {
         import('@farcaster/miniapp-sdk').then(({ sdk }) => sdk.actions.openUrl(url)).catch(() => {});

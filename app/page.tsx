@@ -8,6 +8,7 @@ import {
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { linksData, fetchLinksData, type MainCategory } from './data/links';
+import { useMiniApp } from './components/MiniAppProvider';
 
 type Audience = 'community' | 'ecosystem' | 'both';
 
@@ -39,6 +40,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
   const [linkData, setLinkData]         = useState<MainCategory[]>(linksData);
   const [selectedTags, setSelectedTags] = useState<Set<string>>(new Set());
   const searchRef = useRef<HTMLInputElement>(null);
+  const { isMiniApp, user, composeCast, addMiniApp } = useMiniApp();
 
   // Sync the latest links from raw GitHub at runtime (no redeploy needed to
   // edit links). Bundled data renders immediately; the fetch silently falls
@@ -175,10 +177,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
     );
 
   const shareFarcaster = (url: string, title: string) =>
-    window.open(
-      `https://warpcast.com/~/compose?text=${encodeURIComponent(`"${title}" on ZAO NEXUS: ${url}`)}`,
-      '_blank', 'width=550,height=600'
-    );
+    composeCast(`"${title}" on ZAO NEXUS`, url);
 
   const filteredCount = filtered.reduce(
     (t, c) => t + c.subcategories.reduce((s, sub) => s + sub.links.length, 0), 0
@@ -222,6 +221,11 @@ export default function Home({ audience = 'community' }: { audience?: 'community
             }}>
               {totalLinks}
             </span>
+            {user?.username && (
+              <span style={{ fontSize: 12, color: muted, whiteSpace: 'nowrap' }}>
+                gm, @{user.username}
+              </span>
+            )}
           </div>
 
           {/* Right: nav tabs + theme toggle */}
@@ -248,6 +252,21 @@ export default function Home({ audience = 'community' }: { audience?: 'community
                 {tab.label}
               </Link>
             ))}
+            {isMiniApp && (
+              <button
+                onClick={() => addMiniApp()}
+                title="Add ZAO Nexus to your Farcaster apps"
+                style={{
+                  marginLeft: 4, padding: '5px 10px', borderRadius: 8, fontSize: 13, fontWeight: 600,
+                  border: `1px solid ${border}`, background: 'transparent', color: text,
+                  cursor: 'pointer', transition: 'all 0.15s', whiteSpace: 'nowrap',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = surface; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
+              >
+                + Add
+              </button>
+            )}
             <button
               onClick={() => setLightMode(l => !l)}
               title={lightMode ? 'Switch to dark' : 'Switch to light'}
