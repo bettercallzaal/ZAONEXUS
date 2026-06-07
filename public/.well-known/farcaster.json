@@ -1,0 +1,26 @@
+{
+  "miniapp": {
+    "version": "1",
+    "name": "ZAO NEXUS",
+    "iconUrl": "https://nexus.thezao.com/icon.svg",
+    "homeUrl": "https://nexus.thezao.com",
+    "imageUrl": "https://nexus.thezao.com/opengraph-image",
+    "buttonTitle": "Open ZAO Nexus",
+    "splashImageUrl": "https://nexus.thezao.com/icon.svg",
+    "splashBackgroundColor": "#111820",
+    "subtitle": "The central hub for all ZAO links",
+    "description": "Search 470+ curated ZAO, ZABAL, and WaveWarZ links, projects, and brands.",
+    "primaryCategory": "social",
+    "tags": ["zao", "zabal", "wavewarz", "directory", "music"]
+  },
+  "frame": {
+    "version": "1",
+    "name": "ZAO NEXUS",
+    "iconUrl": "https://nexus.thezao.com/icon.svg",
+    "homeUrl": "https://nexus.thezao.com",
+    "imageUrl": "https://nexus.thezao.com/opengraph-image",
+    "buttonTitle": "Open ZAO Nexus",
+    "splashImageUrl": "https://nexus.thezao.com/icon.svg",
+    "splashBackgroundColor": "#111820"
+  }
+}

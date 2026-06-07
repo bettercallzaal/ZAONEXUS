@@ -6,6 +6,23 @@ const SITE_NAME = 'ZAO NEXUS'
 const SITE_DESCRIPTION =
   'The central hub for all ZAO links, projects, brands, and community resources.'
 
+// Farcaster Mini App embed — lets the Nexus launch in-feed on Farcaster.
+// `fc:miniapp` is the current key; `fc:frame` is kept for back-compat.
+const miniappEmbed = JSON.stringify({
+  version: '1',
+  imageUrl: `${SITE_URL}/opengraph-image`,
+  button: {
+    title: 'Open ZAO Nexus',
+    action: {
+      type: 'launch_miniapp',
+      name: SITE_NAME,
+      url: SITE_URL,
+      splashImageUrl: `${SITE_URL}/icon.svg`,
+      splashBackgroundColor: '#111820',
+    },
+  },
+})
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -34,6 +51,10 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
     googleBot: { index: true, follow: true },
+  },
+  other: {
+    'fc:miniapp': miniappEmbed,
+    'fc:frame': miniappEmbed,
   },
 }
 
