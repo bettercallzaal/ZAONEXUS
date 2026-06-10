@@ -30,6 +30,7 @@ const CORS = {
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
   const category = searchParams.get('category');
+  const subcategory = searchParams.get('subcategory');
   const audience = searchParams.get('audience');
   const tag = searchParams.get('tag');
   const featured = searchParams.get('featured');
@@ -38,6 +39,7 @@ export async function GET(req: Request) {
 
   let items = ALL;
   if (category) items = items.filter(l => l.category.toLowerCase() === category.toLowerCase());
+  if (subcategory) items = items.filter(l => (l.subcategory || '').toLowerCase() === subcategory.toLowerCase());
   if (audience) items = items.filter(l => !l.audience || l.audience === audience || l.audience === 'both');
   if (tag) items = items.filter(l => l.tags?.some(t => t.toLowerCase() === tag.toLowerCase()));
   if (featured === 'true') items = items.filter(l => l.featured === true);

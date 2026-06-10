@@ -126,6 +126,7 @@ Optional filters (combine freely):
 | Param | Example | Effect |
 |---|---|---|
 | `category` | `?category=ZAO OS` | one of the 9 canonical categories |
+| `subcategory` | `?subcategory=ZABAL Games` | links within a subcategory |
 | `audience` | `?audience=community` | `community` \| `ecosystem` \| `both` (includes `both`) |
 | `tag` | `?tag=wavewarz` | links carrying that tag |
 | `featured` | `?featured=true` | only featured links |
@@ -143,6 +144,24 @@ Response shape:
   "links": [ { "title": "...", "url": "...", "category": "...", "tags": ["..."], "audience": "both" } ]
 }
 ```
+
+### Connecting other ZAO surfaces
+
+The Nexus is the **canonical source**; other surfaces consume the API rather than
+duplicating link data. Example — ZABAL Gamez (`zabalgamez.com`) embedding its own
+slice of the directory:
+
+```js
+const res = await fetch('https://nexus.thezao.com/api/links?subcategory=ZABAL%20Games');
+const { links } = await res.json();
+// render links however you like
+```
+
+The flow both directions:
+- **Inbound:** `scripts/harvest.mjs` pulls from the ZABAL Gamez data files **and** the
+  BetterCallZaal coding hub (filtered to ZAO repos) → surfaces net-new links for review.
+- **Outbound:** `/api/links` + `/api/brands` let ZABAL Gamez, the coding hub, bots, and
+  other ZAO sites read the curated data live.
 
 ## Mini App notifications
 
