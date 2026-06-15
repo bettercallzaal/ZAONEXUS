@@ -242,6 +242,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
             {([
               { href: '/community', label: 'Community', active: currentAudience === 'community' },
               { href: '/ecosystem', label: 'Ecosystem', active: currentAudience === 'ecosystem' },
+              { href: '/journeys', label: 'Journeys', active: false },
             ] as const).map(tab => (
               <Link
                 key={tab.href}

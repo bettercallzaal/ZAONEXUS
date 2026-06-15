@@ -1,0 +1,574 @@
+[
+  {
+    "slug": "zaal",
+    "name": "Zaal Panthaki",
+    "handle": "bettercallzaal",
+    "role": "Web3 Founder & Builder — The ZAO / ZABAL",
+    "summary": "Founder of The ZAO and ZABAL — the coordination layer for independent creators. Multi-chain tools, tested governance, real communities.",
+    "links": [
+      {
+        "label": "Linktree",
+        "url": "https://linktr.ee/bettercallzaal"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/bettercallzaal"
+      },
+      {
+        "label": "Farcaster",
+        "url": "https://farcaster.xyz/zaal"
+      }
+    ],
+    "milestones": [
+      {
+        "year": "2011",
+        "date": "2011-07-01",
+        "title": "Mobed Training in India",
+        "summary": "Completed Mobed (Zoroastrian priesthood) training in India as a teenager. Exact school, city, and curriculum details are Unknown.",
+        "category": "learning",
+        "era": "foundations",
+        "importance": "supporting"
+      },
+      {
+        "year": "2014-2017",
+        "date": "2014-09-01",
+        "title": "Card & Board Games Club — President",
+        "summary": "President of the Card & Board Games Club at Xaverian High School (2014–2017). Weekly meetings, organized tournaments, community outreach, membership growth.",
+        "category": "community",
+        "era": "foundations",
+        "importance": "supporting"
+      },
+      {
+        "year": "2015-2016",
+        "date": "2016-07-15",
+        "title": "Eagle Scout Rank & Senior Patrol Leader",
+        "summary": "Served as Senior Patrol Leader (2015-2016) and completed Eagle Scout project at Hale Reservation, building erosion-prevention steps along a 65-foot path to the Nurses Station.",
+        "category": "milestones",
+        "era": "foundations",
+        "importance": "supporting"
+      },
+      {
+        "year": "2016",
+        "date": "2016-09-01",
+        "title": "Eagle Scout Award Earned",
+        "summary": "Earned Eagle Scout rank in 2016 after completing a community infrastructure project at Hale Reservation in Westwood, MA.",
+        "category": "milestones",
+        "era": "foundations",
+        "importance": "core"
+      },
+      {
+        "year": "2017-2020",
+        "date": "2017-06-01",
+        "title": "GDIT / Comtech Internship",
+        "summary": "Technical Intern to Senior Technical Intern (2017-2020) across GDIT and Comtech, supporting NextGen 9-1-1 infrastructure, AWS/Terraform security changes, and field operations.",
+        "category": "career",
+        "era": "early-career",
+        "importance": "supporting"
+      },
+      {
+        "year": "2017-2022",
+        "date": "2017-09-01",
+        "title": "RIT Flag Football: Events Coordinator",
+        "summary": "Executive board member. Organized tournaments, managed logistics, built team culture.",
+        "category": "community",
+        "era": "early-career",
+        "importance": "optional"
+      },
+      {
+        "year": "2017-2022",
+        "date": "2017-09-01",
+        "title": "College Journey and RIT Engineering Path",
+        "summary": "Started college in September 2017 and completed the RIT Electrical Engineering path, culminating in a B.S. in May 2022.",
+        "category": "learning",
+        "era": "early-career",
+        "importance": "core"
+      },
+      {
+        "year": "2020",
+        "date": "2020-01-01",
+        "title": "Joined M/E Engineering as Electrical Engineering Co-op",
+        "summary": "Joined M/E Engineering as an electrical engineering co-op supporting CAD-based electrical design and contract drawing revisions.",
+        "category": "career",
+        "era": "early-career",
+        "importance": "supporting"
+      },
+      {
+        "year": "2020-2022",
+        "date": "2020-09-01",
+        "title": "Theta Chi Fraternity Leadership",
+        "summary": "Held leadership and coordination roles. Managed events, budgets, and member relations.",
+        "category": "community",
+        "era": "early-career",
+        "importance": "supporting"
+      },
+      {
+        "year": "2021",
+        "date": "2021-01-01",
+        "title": "Joined Wyman Gordon as Manufacturing Engineer Co-op",
+        "summary": "Joined Wyman Gordon as a manufacturing engineering co-op supporting forging operations, compliance systems, and documentation digitization.",
+        "category": "career",
+        "era": "early-career",
+        "importance": "supporting"
+      },
+      {
+        "year": "2022",
+        "date": "2022-01-01",
+        "title": "Web3 Academy: Learning Phase",
+        "summary": "Joined Web3 Academy as a participant. First structured Web3 education beyond self-study.",
+        "category": "learning",
+        "era": "web3-awakening",
+        "importance": "supporting"
+      },
+      {
+        "year": "2022",
+        "date": "2022-01-01",
+        "title": "Lean Six Sigma Yellow Belt Certification",
+        "summary": "Earned Lean Six Sigma Yellow Belt certification, supporting process improvement and quality management in manufacturing engineering roles.",
+        "category": "learning",
+        "era": "web3-awakening",
+        "importance": "optional"
+      },
+      {
+        "year": "2022",
+        "date": "2022-05-01",
+        "title": "Graduated from RIT with Electrical Engineering Degree",
+        "summary": "Graduated from RIT in May 2022 with a B.S. in Electrical Engineering (GPA 3.3).",
+        "category": "learning",
+        "era": "web3-awakening",
+        "importance": "core"
+      },
+      {
+        "year": "2022",
+        "date": "2022-07-01",
+        "title": "Joined PCC Structurals as Automation Engineer",
+        "summary": "Joined PCC Structurals in July 2022 to lead capital automation projects in aerospace manufacturing.",
+        "category": "career",
+        "era": "web3-awakening",
+        "importance": "core"
+      },
+      {
+        "year": "2022-2024",
+        "date": "2022-07-01",
+        "title": "PCC Structurals",
+        "summary": "Automation Engineer at PCC Structurals (July 2022 - July 2024). Capital projects up to $2M, 7x throughput, 50% faster inspection, 20% fewer production errors.",
+        "category": "career",
+        "era": "web3-awakening",
+        "importance": "supporting"
+      },
+      {
+        "year": "2022",
+        "date": "2022-12-01",
+        "title": "ZAO Formation Pivot",
+        "summary": "Pivoted from ZTalent Agency to The ZAO in December 2022, based on guidance from Candy Toybox, formalizing a broader creator-community mission.",
+        "category": "governance",
+        "era": "web3-awakening",
+        "importance": "core"
+      },
+      {
+        "year": "2022",
+        "date": "2022-12-01",
+        "title": "Web3 Academy DAO Ends",
+        "summary": "The DAO wound down after a year of operation. Zaal took lessons about sustainability and governance.",
+        "category": "learning",
+        "era": "web3-awakening",
+        "importance": "optional"
+      },
+      {
+        "year": "2023",
+        "date": "2023-01-01",
+        "title": "First NFT Minted",
+        "summary": "Minted first NFT as an experiment in onchain ownership. Exact platform, collection name, and asset details are currently Unknown.",
+        "category": "learning",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2023",
+        "date": "2023-01-01",
+        "title": "FANUC Robotics Training Certification",
+        "summary": "Completed FANUC robotics training certification, enabling management of FANUC robotic systems for automation projects.",
+        "category": "learning",
+        "era": "live-governance",
+        "importance": "optional"
+      },
+      {
+        "year": "2023-2024",
+        "date": "2023-01-01",
+        "title": "Collaborations & Partnerships",
+        "summary": "Cross-community collaborations with DAOs, music collectives, and Web3 ecosystems. 50+ communities engaged. Individual partnerships documented as child events.",
+        "category": "community",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2023",
+        "date": "2023-03-19",
+        "title": "First On-Chain Transaction",
+        "summary": "Executed first blockchain transaction on Ethereum mainnet, transitioning from Web3 research into direct on-chain participation.",
+        "category": "learning",
+        "era": "live-governance",
+        "importance": "core"
+      },
+      {
+        "year": "2023",
+        "date": "2023-04-01",
+        "title": "First DAO-Style Community: ETH PDX",
+        "summary": "Joined ETH PDX, Portland's Ethereum community, as the first DAO-style collective he participated in. Exact join date and role details are Unknown.",
+        "category": "community",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2023",
+        "date": "2023-05-01",
+        "title": "ETH PDX Transitions to Inactive",
+        "summary": "Portland's Ethereum community group wound down. Zaal shifted focus to remote-first coordination.",
+        "category": "community",
+        "era": "live-governance",
+        "importance": "optional"
+      },
+      {
+        "year": "2023-2024",
+        "date": "2023-06-01",
+        "title": "WaveWarZ Launch",
+        "summary": "On-chain music battles on Solana. $50K+ volume (unverified), 50+ weekly listeners, automated payouts, zero exploits.",
+        "category": "tech",
+        "era": "live-governance",
+        "importance": "core"
+      },
+      {
+        "year": "2023-2024",
+        "date": "2023-06-01",
+        "title": "Twitter & Farcaster Spaces",
+        "summary": "Regular governance calls, AMAs, and community discussions across Twitter and Farcaster. Foundation for ZABAL's cross-platform model.",
+        "category": "community",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2023",
+        "date": "2023-06-01",
+        "title": "ZAO Fractal Governance",
+        "summary": "Weekly fractal democracy sessions. 77+ weeks running. 20+ Respect Games. Soulbound $ZAO Respect tokens. Recognized by Optimism Fractal.",
+        "category": "governance",
+        "era": "live-governance",
+        "importance": "core"
+      },
+      {
+        "year": "2023",
+        "date": "2023-06-09",
+        "title": "First Twitter Space Appearance",
+        "summary": "First time speaking live on a Twitter Space. Hosted by Love Story Unicorns (@LoveStoryGlobal). Recording status: Unknown.",
+        "category": "community",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2023",
+        "date": "2023-07-01",
+        "title": "ZAO Leaderboard System",
+        "summary": "Gamified contribution tracking. Points for introductions, meetings, articles, and artist profiles. Soulbound $ZAO linkage.",
+        "category": "governance",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2023",
+        "date": "2023-08-01",
+        "title": "First External Guest at Fractal Session (Approximate)",
+        "summary": "First time an external community member or collaborator joined a ZAO Fractal governance session. Guest identity and session topic are Unknown.",
+        "category": "governance",
+        "era": "live-governance",
+        "importance": "optional"
+      },
+      {
+        "year": "2023",
+        "date": "2023-08-05",
+        "title": "First Hosted Twitter Space (Approximate)",
+        "summary": "First time hosting a Twitter Space on X (Twitter), moving from guest to facilitator. Exact topic, guest list, and recording are Unknown.",
+        "category": "community",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2023",
+        "date": "2023-09-01",
+        "title": "First Referral Incentive Experiment (Approximate)",
+        "summary": "Tested a 'bring 4 friends' incentive to earn bonus $ZAO Respect tokens. Exact mechanics and participation rates are Unknown.",
+        "category": "governance",
+        "era": "live-governance",
+        "importance": "optional"
+      },
+      {
+        "year": "2023",
+        "date": "2023-09-01",
+        "title": "First Space with External Community (Approximate)",
+        "summary": "First Twitter Space co-hosted or cross-promoted with a community outside The ZAO's immediate network. Partner community and topic are Unknown.",
+        "category": "community",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2023",
+        "date": "2023-10-01",
+        "title": "First Recurring Space Format Established (Approximate)",
+        "summary": "First instance of a regularly scheduled Space format (weekly or themed). Exact schedule and topic focus are Unknown.",
+        "category": "community",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2023",
+        "date": "2023-10-01",
+        "title": "Blockchain 101 Collectables (Unverified Details)",
+        "summary": "Prototype onchain educational collectibles tentatively referred to as \"Blockchain 101 Collectables.\" Public documentation is limited; many specifics remain unverified.",
+        "category": "learning",
+        "era": "live-governance",
+        "importance": "optional"
+      },
+      {
+        "year": "2023",
+        "date": "2023-10-15",
+        "title": "Internal Milestone: 10+ Respect Games (Approximate)",
+        "summary": "The ZAO reached approximately 10 Respect Game sessions before external recognition from Optimism Fractal. Exact session count at this point is Approximate.",
+        "category": "governance",
+        "era": "live-governance",
+        "importance": "optional"
+      },
+      {
+        "year": "2023",
+        "date": "2023-11-18",
+        "title": "Why Blockchain Matters 4 Musicians",
+        "summary": "First hosted event. Virtual workshop with Music Tech Connect on blockchain for independent musicians.",
+        "category": "community",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2023",
+        "date": "2023-11-19",
+        "title": "Produced First Event as Lead Organizer",
+        "summary": "Led and organized the panel event 'Why Blockchain Matters for Musicians,' coordinating hosts, speakers, and educational flow.",
+        "category": "productions",
+        "era": "live-governance",
+        "importance": "core"
+      },
+      {
+        "year": "2023",
+        "date": "2023-12-01",
+        "title": "Optimism Fractal Recognition",
+        "summary": "ZAO Fractal featured on Optimism Fractal's feedback page. Third-party validation of governance model.",
+        "category": "governance",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2024",
+        "date": "2024-01-01",
+        "title": "ZAO Governance Meetings Began",
+        "summary": "Began recurring ZAO governance meetings focused on discussion-based coordination and decentralized decision-making.",
+        "category": "governance",
+        "era": "live-governance",
+        "importance": "core"
+      },
+      {
+        "year": "2024",
+        "date": "2024-01-01",
+        "title": "ABB Robotics Training Certification",
+        "summary": "Completed ABB robotics training certification, expanding capabilities in multi-vendor robotic systems management.",
+        "category": "learning",
+        "era": "live-governance",
+        "importance": "optional"
+      },
+      {
+        "year": "2024",
+        "date": "2024-01-15",
+        "title": "First Respect Game Scoring Adjustment (Approximate)",
+        "summary": "First documented change to the Respect Game scoring or ranking rules. Specific adjustment and rationale are Unknown.",
+        "category": "governance",
+        "era": "live-governance",
+        "importance": "optional"
+      },
+      {
+        "year": "2024",
+        "date": "2024-02-01",
+        "title": "First Session Without Designated Facilitator (Approximate)",
+        "summary": "First Respect Game session that ran without a single designated facilitator. Introduced a change in process toward distributed moderation.",
+        "category": "governance",
+        "era": "live-governance",
+        "importance": "optional"
+      },
+      {
+        "year": "2024",
+        "date": "2024-03-01",
+        "title": "First Farcaster-Native Space (Approximate)",
+        "summary": "First live audio session hosted natively on Farcaster rather than Twitter/X. Exact date and format are Approximate.",
+        "category": "community",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2024",
+        "date": "2024-04-03",
+        "title": "ZAO-PALOOZA at NFT NYC",
+        "summary": "Opening night of NFT NYC 2024. 15+ artists, 250+ RSVPs, 6 Web3 onboardings. April 3, 2024.",
+        "category": "productions",
+        "era": "live-governance",
+        "importance": "core"
+      },
+      {
+        "year": "2024",
+        "date": "2024-04-03",
+        "title": "First Governance Session During IRL Event",
+        "summary": "First time fractal governance ran during an in-person ZAO event (ZAO-PALOOZA at NFT NYC). Format adaptation details are Unknown.",
+        "category": "governance",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2024",
+        "date": "2024-06-03",
+        "title": "First ZAO Respect Game",
+        "summary": "Ran the first ZAO Respect Game, formalizing a weekly governance mechanism for decentralized participation and decision-making.",
+        "category": "governance",
+        "era": "live-governance",
+        "importance": "core"
+      },
+      {
+        "year": "2024",
+        "date": "2024-08-01",
+        "title": "Jackson Laboratory",
+        "summary": "Building Automation Technician at Jackson Laboratory (since Aug 2024). BAS/HVAC/fire reliability, 30% downtime reduction, 15% efficiency improvement.",
+        "category": "career",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2024",
+        "date": "2024-08-07",
+        "title": "Fractal Impact Concert",
+        "summary": "Cross-fractal collaboration concert featuring Jose Cabrera, Fellenz Music, and DuoDo Musicia. Hosted by Dan Singjoy (Eden Fractal), EzinCrypto (Token Smart), and BettercallZaal (ZAO Fractal).",
+        "category": "productions",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2024",
+        "date": "2024-12-06",
+        "title": "ZAO-CHELLA at Miami Art Basel",
+        "summary": "Web3 music showcase at Art Basel Miami. 10+ artists, live WaveWarZ battle (Hurric4n3Ike vs Jango UU), free admission. December 6, 2024, 4PM–11PM.",
+        "category": "productions",
+        "era": "live-governance",
+        "importance": "core"
+      },
+      {
+        "year": "2024",
+        "date": "2024-12-31",
+        "title": "Spaces in 2024",
+        "summary": "Spaces matured into recurring governance infrastructure. Regular cadence across Twitter/X and Farcaster, supporting events, partnerships, and ecosystem coordination.",
+        "category": "community",
+        "era": "live-governance",
+        "importance": "supporting"
+      },
+      {
+        "year": "2025",
+        "date": "2025-01-01",
+        "title": "Year of the ZAO: Daily Newsletter",
+        "summary": "365-day writing challenge. Daily reflections, project updates, and community building on Paragraph. 500+ subscribers, 67+ supporters.",
+        "category": "community",
+        "era": "zabal-synthesis",
+        "importance": "core"
+      },
+      {
+        "year": "2025",
+        "date": "2025-02-16",
+        "title": "Student $LOANZ Launch on Base",
+        "summary": "Student $LOANZ launched on Base via Flaunch as an onchain coordination hub for student debt. Innovation currently on pause; mission and learnings feed into ZABAL.",
+        "category": "tech",
+        "era": "zabal-synthesis",
+        "importance": "core"
+      },
+      {
+        "year": "2025",
+        "date": "2025-03-29",
+        "title": "COC Concertz #1",
+        "summary": "First COC Concertz metaverse show featuring AttaBotty and Clejan, with artist sets published via YouTube and community pages. Zaal served as host, event organizer, and technical streaming coordinator.",
+        "category": "productions",
+        "era": "zabal-synthesis",
+        "importance": "supporting"
+      },
+      {
+        "year": "2025",
+        "date": "2025-04-14",
+        "title": "Podcast NFTs: Let's Talk About Web3",
+        "summary": "On-chain podcast with EZinCrypto and Ohnahji. 19 episodes (Ep 0–18) on Base, 500+ subscribers, $8K+ ecosystem revenue.",
+        "category": "tech",
+        "era": "zabal-synthesis",
+        "importance": "core"
+      },
+      {
+        "year": "2025",
+        "date": "2025-04-14",
+        "title": "Let's Talk About Web3: Episode 0 Minted",
+        "summary": "First episode of Let's Talk About Web3 minted as an NFT on Base via pods.media. Marked the beginning of on-chain podcast distribution.",
+        "category": "tech",
+        "era": "zabal-synthesis",
+        "importance": "supporting"
+      },
+      {
+        "year": "2025",
+        "date": "2025-05-01",
+        "title": "Let's Talk About Web3: First Guest Episode (Approximate)",
+        "summary": "First episode featuring an external guest. Guest identity and episode number are Unknown; date is Approximate.",
+        "category": "tech",
+        "era": "zabal-synthesis",
+        "importance": "supporting"
+      },
+      {
+        "year": "2025-2026",
+        "date": "2025-08-01",
+        "title": "Heart of Ellsworth Promotions Committee Volunteer",
+        "summary": "Volunteering on the Heart of Ellsworth Promotions Committee since August 2025, contributing to creative programming and downtown activation efforts.",
+        "category": "community",
+        "era": "zabal-synthesis",
+        "importance": "supporting"
+      },
+      {
+        "year": "2025",
+        "date": "2025-09-01",
+        "title": "ZABAL Development",
+        "summary": "Cross-platform engagement token experiment. ERC-20 launch planned Jan 1, 2026. First 100 slots reserved for $ZAO holders. Built with SongJam leaderboard.",
+        "category": "governance",
+        "era": "zabal-synthesis",
+        "importance": "core"
+      },
+      {
+        "year": "2025",
+        "date": "2025-10-11",
+        "title": "COC Concertz #2",
+        "summary": "Second COC Concertz event with Fellenz opening, Stilo World WaveWarZ segment, and AttaBotty closing performance. Zaal served as host, event organizer, and technical streaming coordinator. Built as a collaboration with the Salty Sharks community.",
+        "category": "productions",
+        "era": "zabal-synthesis",
+        "importance": "supporting"
+      },
+      {
+        "year": "2025",
+        "date": "2025-12-31",
+        "title": "Spaces in 2025",
+        "summary": "Hosted, co-hosted, and attended community Spaces throughout 2025, with recurring WaveWarZ and ZAO conversations plus mutual community collaborations.",
+        "category": "community",
+        "era": "zabal-synthesis",
+        "importance": "supporting"
+      },
+      {
+        "year": "2026",
+        "date": "2026-03-07",
+        "title": "COC Concertz #3",
+        "summary": "COC Concertz #3 in StiloWorld with Dúo Dø Musica, Jose Cabrera, and Stilo World plus an English vs Spanish WaveWarZ community battle. Zaal served as host, event organizer, and technical streaming coordinator.",
+        "category": "productions",
+        "era": "zabal-synthesis",
+        "importance": "core"
+      }
+    ]
+  }
+]
