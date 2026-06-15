@@ -67,13 +67,35 @@ async function run() {
     }
   }
 
+  // Connected source: BetterCallZaal's coding hub (the full BCZ repo index).
+  // It lists everything (incl. client/utility/test repos), so we only surface
+  // ZAO-ecosystem repos by keyword and skip archived/old-version names — that
+  // way new ZAO projects added to the hub auto-appear here for review without
+  // dragging in noise.
+  const CODING_HUB = 'https://raw.githubusercontent.com/bettercallzaal/bettercallzaal-coding-hub/main/projects.json';
+  const ZAO_RE = /\b(zao|zabal|wavewarz|warz|fractal|loanz|songjam|poidh|nexus|midi|zounz|zalora|coc|concert|stock|zlank|fishbowl|snap|empire|bonfire|yapz|aurdour|zuke)\b/i;
+  const SKIP_NAME = /(archive|old|test\d|v1$|feb20|mar(ch)?20|dec20|nov20)/i;
+  try {
+    const raw = await get(CODING_HUB);
+    const projects = raw ? JSON.parse(raw) : [];
+    for (const p of projects) {
+      if (!p?.url) continue;
+      const n = norm(p.url);
+      if (have.has(n) || NOISE.some(re => re.test(p.url))) continue;
+      if (!ZAO_RE.test(`${p.name} ${p.description || ''}`)) continue;
+      if (SKIP_NAME.test(p.name)) continue;
+      if (!found.has(n)) found.set(n, { url: p.url, sources: new Set() });
+      found.get(n).sources.add('coding-hub');
+    }
+  } catch { /* coding hub optional */ }
+
   const candidates = [...found.values()].sort((a, b) => a.url.localeCompare(b.url));
   const lines = [
     '# ZAO Nexus — harvest candidates',
     '',
-    `Net-new URLs found in the canonical ZABAL Gamez sources that are **not** in the directory (${links.length} links) and aren't infra/templated/external noise. Vet each, then add the real ones to \`app/data/links.json\`.`,
+    `Net-new URLs found in the canonical ZABAL Gamez sources + the BetterCallZaal coding hub that are **not** in the directory (${links.length} links) and aren't infra/templated/external noise. Vet each, then add the real ones to \`app/data/links.json\`.`,
     '',
-    `- Sources scanned: ${SOURCES.length}`,
+    `- Sources scanned: ${SOURCES.length + 1}`,
     `- Candidates: **${candidates.length}**`,
     `- Generated: ${new Date().toISOString()}`,
     '',
