@@ -4306,18 +4306,6 @@
     "audience": "community"
   },
   {
-    "title": "ZAO Leaderboard (app)",
-    "url": "https://zao-leaderboard.vercel.app",
-    "category": "The ZAO",
-    "subcategory": "ZAO Platforms",
-    "description": "ZAO Leaderboard (app) — deployed ZAO ecosystem app.",
-    "tags": [
-      "leaderboard",
-      "app"
-    ],
-    "audience": "both"
-  },
-  {
     "title": "WaveWarZ Live (app)",
     "url": "https://wavewarzapp.vercel.app",
     "category": "Community Projects",
@@ -4393,19 +4381,6 @@
       "mirror"
     ],
     "audience": "both"
-  },
-  {
-    "title": "ZABAL Socials (app)",
-    "url": "https://zabalsocials.vercel.app",
-    "category": "Community Projects",
-    "subcategory": "ZABAL",
-    "description": "ZABAL Socials (app) — deployed ZAO ecosystem app.",
-    "tags": [
-      "zabal",
-      "socials",
-      "app"
-    ],
-    "audience": "ecosystem"
   },
   {
     "title": "ZoundZ Marketplace (mini-app)",
@@ -5233,20 +5208,6 @@
     "addedDate": "2026-06-06"
   },
   {
-    "title": "ZAO Stock (live)",
-    "url": "https://zaostock.vercel.app",
-    "category": "ZAO Stock",
-    "subcategory": "Calendar",
-    "description": "ZAOstock app — stock footage / asset library for ZAO Festivals creators.",
-    "tags": [
-      "stock",
-      "assets",
-      "app"
-    ],
-    "audience": "ecosystem",
-    "addedDate": "2026-06-06"
-  },
-  {
     "title": "ZABAL Gamez (mini app)",
     "url": "https://zabalgamez.com",
     "category": "Community Projects",
@@ -5612,106 +5573,6 @@
       "games",
       "finals",
       "prizes"
-    ],
-    "audience": "both"
-  },
-  {
-    "title": "ZAO Projects (live)",
-    "url": "https://zaoprojects.vercel.app",
-    "category": "The ZAO",
-    "subcategory": "ZAO Platforms",
-    "description": "ZAO Projects — index of ZAO ecosystem projects and builds.",
-    "tags": [
-      "projects",
-      "directory",
-      "app"
-    ],
-    "audience": "both"
-  },
-  {
-    "title": "BCZ Coding Hub (live)",
-    "url": "https://bettercallzaal-coding-hub.vercel.app",
-    "category": "ZAO Members",
-    "subcategory": "BetterCallZaal Media",
-    "description": "BetterCallZaal personal GitHub hub — aggregates all projects with embedded READMEs.",
-    "tags": [
-      "github",
-      "hub",
-      "app"
-    ],
-    "audience": "both"
-  },
-  {
-    "title": "BetterCallZaal Strategies (live)",
-    "url": "https://bettercallzaal-strategies.vercel.app",
-    "category": "ZAO Members",
-    "subcategory": "BetterCallZaal",
-    "description": "BetterCallZaal strategies app.",
-    "tags": [
-      "strategies",
-      "app"
-    ],
-    "audience": "both"
-  },
-  {
-    "title": "Side by Side (live)",
-    "url": "https://sideby-sidev2.vercel.app",
-    "category": "The ZAO",
-    "subcategory": "ZAO Platforms",
-    "description": "Side by Side — ZAO comparison/showcase app.",
-    "tags": [
-      "app"
-    ],
-    "audience": "both"
-  },
-  {
-    "title": "$Loanz Platform (live)",
-    "url": "https://loanz-platform-1.vercel.app",
-    "category": "Community Projects",
-    "subcategory": "$Loanz",
-    "description": "$Loanz platform — donate/lend ETH surface in the ZAO ecosystem.",
-    "tags": [
-      "loanz",
-      "defi",
-      "app"
-    ],
-    "audience": "ecosystem"
-  },
-  {
-    "title": "ZABAL Newsletter (live)",
-    "url": "https://zabalnewsletter.vercel.app",
-    "category": "Community Projects",
-    "subcategory": "ZABAL",
-    "description": "ZABAL newsletter app.",
-    "tags": [
-      "zabal",
-      "newsletter",
-      "app"
-    ],
-    "audience": "ecosystem"
-  },
-  {
-    "title": "Zaal Timeline (live)",
-    "url": "https://zaaltimelinev1-1.vercel.app",
-    "category": "ZAO Members",
-    "subcategory": "BetterCallZaal Media",
-    "description": "BetterCallZaal interactive timeline of builds and milestones.",
-    "tags": [
-      "timeline",
-      "app"
-    ],
-    "audience": "both"
-  },
-  {
-    "title": "Fractal Bot (live)",
-    "url": "https://fractalbotnov2025.vercel.app",
-    "category": "The ZAO",
-    "subcategory": "ZAO Platforms",
-    "description": "Fractal Bot — governance/fractals automation surface (Nov 2025).",
-    "tags": [
-      "fractals",
-      "bot",
-      "app"
     ],
     "audience": "both"
   },
