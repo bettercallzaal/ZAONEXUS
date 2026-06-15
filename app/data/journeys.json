@@ -570,5 +570,96 @@
         "importance": "core"
       }
     ]
+  },
+  {
+    "slug": "candytoybox",
+    "name": "CandyToyBox (Samantha)",
+    "handle": "CandyToyBoxYT1",
+    "role": "WaveWarZ co-founder · analytics builder",
+    "summary": "Co-founder of WaveWarZ and builder of its analytics/intelligence stack. Content creator across YouTube, X, and TikTok.",
+    "links": [
+      {
+        "label": "X",
+        "url": "https://x.com/CandyToyBoxYT1"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@CandyToyBox"
+      }
+    ],
+    "milestones": [
+      {
+        "year": "2024",
+        "title": "Co-founded WaveWarZ",
+        "summary": "Cofounder of WaveWarZ — live-traded music battles on Solana, with Zaal and Hurric4n3ike.",
+        "importance": "core"
+      },
+      {
+        "year": "2026",
+        "title": "Built WaveWarZ Intelligence & Analytics",
+        "summary": "Shipped the WaveWarZ analytics and intelligence dashboards tracking battles, artists, and traders.",
+        "importance": "core"
+      }
+    ]
+  },
+  {
+    "slug": "jango-uu",
+    "name": "Jango UU",
+    "handle": "jangouuforever",
+    "role": "The ZAO co-founder · artist",
+    "summary": "ZAO co-founder and musician. Releases across Spotify, Apple Music, SoundCloud, and YouTube.",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.jangouu.com"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/artist/5nc2dgefoPLfvsrJVx3PNz"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/jangouuforever"
+      }
+    ],
+    "milestones": [
+      {
+        "year": "2024",
+        "title": "Co-founder of The ZAO",
+        "summary": "One of the founding ZAO collaborators; artist within the ecosystem.",
+        "importance": "core"
+      }
+    ]
+  },
+  {
+    "slug": "attabotty",
+    "name": "Attabotty",
+    "handle": "AttaBotty",
+    "role": "The ZAO + ZAO Festivals co-founder · artist",
+    "summary": "ZAO co-founder and co-founder of ZAO Festivals, the live-events arm. ZAO-PALOOZA artist.",
+    "links": [
+      {
+        "label": "X",
+        "url": "https://x.com/AttaBotty"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/attabotty"
+      }
+    ],
+    "milestones": [
+      {
+        "year": "2024",
+        "title": "Co-founder of The ZAO",
+        "summary": "A founding ZAO collaborator.",
+        "importance": "core"
+      },
+      {
+        "year": "2024",
+        "title": "Co-founded ZAO Festivals",
+        "summary": "Cofounder (with Zaal) of ZAO Festivals — the IRL/digital events arm behind ZAOstock.",
+        "importance": "core"
+      }
+    ]
   }
 ]
