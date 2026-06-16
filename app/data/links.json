@@ -5958,5 +5958,73 @@
     ],
     "audience": "both",
     "addedDate": "2026-06-07"
+  },
+  {
+    "title": "ZAO 101 — Start Here",
+    "url": "https://zao-101.vercel.app",
+    "category": "The ZAO",
+    "subcategory": "ZAO 101",
+    "description": "The public explainer for The ZAO — a decentralized impact network. The cleanest front door for anyone new.",
+    "tags": [
+      "onboarding",
+      "explainer",
+      "start-here"
+    ],
+    "audience": "both",
+    "featured": true,
+    "addedDate": "2026-06-16"
+  },
+  {
+    "title": "ZAO Org Chart",
+    "url": "https://zao-101.vercel.app/org",
+    "category": "The ZAO",
+    "subcategory": "ZAO 101",
+    "description": "How The ZAO fits together: The ZAO leads; incubated projects (WaveWarZ, ZAO Festivals, ZABAL/ZABAL Games); community partnerships (COC Concertz).",
+    "tags": [
+      "org-chart",
+      "structure",
+      "brand"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZAO Ecosystem Overview (101)",
+    "url": "https://zao-101.vercel.app/ecosystem",
+    "category": "The ZAO",
+    "subcategory": "ZAO 101",
+    "description": "Overview of the live ZAO projects grouped by the org chart — incubated projects, partnerships, and toolstack.",
+    "tags": [
+      "ecosystem",
+      "overview"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "ZABAL Games (ZAO 101)",
+    "url": "https://zao-101.vercel.app/zabal-games",
+    "category": "The ZAO",
+    "subcategory": "ZAO 101",
+    "description": "ZABAL Games explained as the outsider-facing builder door that grows The ZAO — an incubated project, not the marquee.",
+    "tags": [
+      "games",
+      "builders",
+      "explainer"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "Join The ZAO",
+    "url": "https://zao-101.vercel.app/join",
+    "category": "The ZAO",
+    "subcategory": "ZAO 101",
+    "description": "Where to plug in: pick a door (artist / builder / supporter), how committing works (self-commit + two-per-task), and your first action.",
+    "tags": [
+      "onboarding",
+      "join",
+      "entry-point"
+    ],
+    "audience": "both",
+    "featured": true,
+    "addedDate": "2026-06-16"
   }
 ]
