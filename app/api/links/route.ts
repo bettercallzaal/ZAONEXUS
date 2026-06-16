@@ -1,4 +1,5 @@
 import rawLinks from '../../data/links.json';
+import { groupLinks } from '../../data/links';
 
 // Public read-only API for the canonical ZAO Nexus link data, so other ZAO
 // surfaces (zaoos.com, zabalgamez.com, bots) can consume the same source of
@@ -51,13 +52,17 @@ export async function GET(req: Request) {
   );
   if (limit > 0) items = items.slice(0, limit);
 
+  // ?group=true returns the nested category -> subcategory -> links shape the
+  // UI renders, so embedders (ZAO 101/201) don't re-implement grouping.
+  const grouped = searchParams.get('group') === 'true';
+
   const body = JSON.stringify(
     {
       source: 'https://nexus.thezao.com',
       total: ALL.length,
       count: items.length,
       generatedAt: new Date().toISOString(),
-      links: items,
+      ...(grouped ? { categories: groupLinks(items) } : { links: items }),
     },
     null,
     2,
