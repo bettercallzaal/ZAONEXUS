@@ -132,6 +132,11 @@ Optional filters (combine freely):
 | `featured` | `?featured=true` | only featured links |
 | `q` | `?q=songjam` | search title/description/url/tags |
 | `limit` | `?limit=50` | cap the number returned |
+| `group` | `?group=true` | return nested `categories → subcategories → links` instead of a flat list |
+
+Companion endpoints: **`/api/brands`** (ecosystem brands) and **`/api/journeys`**
+(member timelines, `?slug=zaal`). Same `{ source, total, count, generatedAt, ... }`
+envelope, CORS-open, edge-cached.
 
 Response shape:
 
@@ -156,6 +161,12 @@ const res = await fetch('https://nexus.thezao.com/api/links?subcategory=ZABAL%20
 const { links } = await res.json();
 // render links however you like
 ```
+
+**ZAO 101 / 201:** the Nexus stays the canonical engine; ZAO 101 (public) links to
+it, and ZAO 201 (member-gated) renders the member directory live from the API —
+e.g. `fetch('https://nexus.thezao.com/api/links?audience=community&group=true')` →
+render `categories`. No data is duplicated; editing `links.json` updates every
+surface at once.
 
 The flow both directions:
 - **Inbound:** `scripts/harvest.mjs` pulls from the ZABAL Gamez data files **and** the
