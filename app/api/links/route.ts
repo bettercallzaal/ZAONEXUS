@@ -6,6 +6,7 @@ import { groupLinks } from '../../data/links';
 // truth. GET /api/links with optional filters:
 //   ?category=ZAO%20OS   ?audience=community   ?tag=wavewarz
 //   ?featured=true       ?q=search-term        ?limit=50
+//   ?status=live         ?subcategory=ZABAL    ?group=true
 // CORS-open + cached at the edge.
 
 type Link = {
@@ -34,6 +35,7 @@ export async function GET(req: Request) {
   const subcategory = searchParams.get('subcategory');
   const audience = searchParams.get('audience');
   const tag = searchParams.get('tag');
+  const status = searchParams.get('status');
   const featured = searchParams.get('featured');
   const q = (searchParams.get('q') || '').trim().toLowerCase();
   const limit = parseInt(searchParams.get('limit') || '0', 10);
@@ -43,6 +45,9 @@ export async function GET(req: Request) {
   if (subcategory) items = items.filter(l => (l.subcategory || '').toLowerCase() === subcategory.toLowerCase());
   if (audience) items = items.filter(l => !l.audience || l.audience === audience || l.audience === 'both');
   if (tag) items = items.filter(l => l.tags?.some(t => t.toLowerCase() === tag.toLowerCase()));
+  // ?status=live treats a missing status as live (the implicit default), so
+  // embedders can request only-healthy links: e.g. ZAO 201 hiding down/paused.
+  if (status) items = items.filter(l => (l.status || 'live').toLowerCase() === status.toLowerCase());
   if (featured === 'true') items = items.filter(l => l.featured === true);
   if (q) items = items.filter(l =>
     l.title.toLowerCase().includes(q) ||

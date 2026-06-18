@@ -10,9 +10,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/validate-links.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "validate": "node scripts/validate-links.mjs",
     "check-links": "node scripts/check-links.mjs"
   },
   "dependencies": {

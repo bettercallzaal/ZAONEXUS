@@ -158,7 +158,8 @@ export default function Home({ audience = 'community' }: { audience?: 'community
               const matchesSearch = !q ||
                 l.title.toLowerCase().includes(q) ||
                 l.description.toLowerCase().includes(q) ||
-                l.url.toLowerCase().includes(q);
+                l.url.toLowerCase().includes(q) ||
+                (l.tags?.some(t => t.toLowerCase().includes(q)) ?? false);
               const matchesTags = selectedTags.size === 0 ||
                 (l.tags ? l.tags.some(t => selectedTags.has(t)) : false);
               return matchesSearch && matchesTags;
