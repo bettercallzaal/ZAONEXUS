@@ -1,3 +1,4 @@
+import { parseWebhookEvent, verifyAppKeyWithNeynar } from '@farcaster/miniapp-node';
 import { saveToken, deleteToken } from '../../lib/notifications';
 import {
   validatePayloadSize,
@@ -11,19 +12,23 @@ import {
 // adds/removes the app or toggles notifications.
 //
 // SECURITY FIXES (2026-06-28 godsticky audit):
-// 1. Validate payload size to prevent DoS attacks
-// 2. Rate-limit events per FID (max 20 events/minute per user)
-// 3. Validate and allowlist notification callback URLs (no arbitrary SSRF)
-// 4. Reject invalid/oversized tokens
-//
-// NOTE - JFS SIGNATURE VERIFICATION:
-// This implementation does NOT yet verify the Farcaster JFS envelope signature.
-// Future hardening: import @farcaster/miniapp-sdk and verify the signed envelope
-// against the app's registered key via Neynar. This would prevent attackers from
-// spoofing webhook events if they intercept the webhook endpoint URL.
-// See github.com/farcaster/frame-node for verification patterns.
+// 1. Validate JFS envelope signature against app key via Neynar (MED-2 CLOSED)
+// 2. Validate payload size to prevent DoS attacks
+// 3. Rate-limit events per FID (max 20 events/minute per user)
+// 4. Validate and allowlist notification callback URLs (no arbitrary SSRF)
+// 5. Reject invalid/oversized tokens
+// 6. Bind stored FID to verified signature, not client-claimed values
 
 export async function POST(req: Request) {
+  // Verify NEYNAR_API_KEY is configured for signature verification at runtime
+  const neynarApiKey = process.env.NEYNAR_API_KEY;
+  if (!neynarApiKey) {
+    console.error('NEYNAR_API_KEY not configured for webhook signature verification');
+    return new Response(JSON.stringify({ error: 'service unavailable' }), {
+      status: 503,
+      headers: { 'content-type': 'application/json' },
+    });
+  }
   // Periodically clean up stale rate limit entries
   if (Math.random() < 0.01) cleanupRateLimits();
 
@@ -44,46 +49,48 @@ export async function POST(req: Request) {
     });
   }
 
-  let fid: number | undefined;
-  let event: { event?: string; notificationDetails?: unknown } | undefined;
+  // Parse and verify JFS envelope signature
+  let bodyJson: unknown;
+  try {
+    bodyJson = JSON.parse(bodyString);
+  } catch {
+    return new Response(JSON.stringify({ error: 'invalid json' }), {
+      status: 400,
+      headers: { 'content-type': 'application/json' },
+    });
+  }
+
+  let fid: number;
+  let event: { event?: string; notificationDetails?: unknown };
 
   try {
-    const envelope = JSON.parse(bodyString);
+    // Parse and verify the webhook event using Farcaster's JFS signature verification
+    // This validates the signature against the app's registered key via Neynar
+    const result = await parseWebhookEvent(bodyJson, verifyAppKeyWithNeynar);
 
-    // Decode base64url-encoded header and payload
-    const header = JSON.parse(Buffer.from(envelope.header, 'base64url').toString('utf8'));
-    fid = header?.fid;
+    fid = result.fid;
+    event = result.event as { event?: string; notificationDetails?: unknown };
 
-    const payload = JSON.parse(Buffer.from(envelope.payload, 'base64url').toString('utf8'));
-    event = payload;
-
-    // Validate header/payload structure
-    if (!Number.isInteger(fid) || (fid as number) <= 0) {
-      return new Response(JSON.stringify({ error: 'invalid fid' }), {
-        status: 400,
-        headers: { 'content-type': 'application/json' },
-      });
-    }
-
+    // Validate event structure
     if (typeof event?.event !== 'string') {
       return new Response(JSON.stringify({ error: 'invalid event' }), {
         status: 400,
         headers: { 'content-type': 'application/json' },
       });
     }
-  } catch {
-    return new Response(JSON.stringify({ error: 'invalid envelope' }), {
-      status: 400,
+  } catch (error: unknown) {
+    // Signature verification or parsing failed
+    const errorMessage = error instanceof Error ? error.message : 'unknown error';
+    console.error('Webhook signature verification failed:', errorMessage);
+    return new Response(JSON.stringify({ error: 'signature verification failed' }), {
+      status: 401,
       headers: { 'content-type': 'application/json' },
     });
   }
 
-  // Type assertion after validation - we've already checked these are valid above
-  const validFid = fid as number;
-  const validEvent = event as { event: string; notificationDetails?: unknown };
-
-  // Rate limit per FID
-  if (!checkRateLimit(validFid)) {
+  // FID is now verified against the JFS signature, not a client-claimed value
+  // Rate limit per verified FID
+  if (!checkRateLimit(fid)) {
     return new Response(JSON.stringify({ error: 'rate limited' }), {
       status: 429,
       headers: { 'content-type': 'application/json' },
@@ -92,14 +99,14 @@ export async function POST(req: Request) {
 
   // Process the event
   try {
-    const eventType = validEvent.event;
+    const eventType = event.event;
 
     if (
       (eventType === 'miniapp_added' || eventType === 'notifications_enabled') &&
-      validEvent.notificationDetails
+      event.notificationDetails
     ) {
       // Validate notification details (URL allowlist, size limits)
-      const validation = validateNotificationDetails(validEvent.notificationDetails);
+      const validation = validateNotificationDetails(event.notificationDetails);
       if (!validation.valid) {
         return new Response(JSON.stringify({ error: validation.error }), {
           status: 400,
@@ -107,9 +114,9 @@ export async function POST(req: Request) {
         });
       }
 
-      await saveToken(validFid, validEvent.notificationDetails as { url: string; token: string });
+      await saveToken(fid, event.notificationDetails as { url: string; token: string });
     } else if (eventType === 'miniapp_removed' || eventType === 'notifications_disabled') {
-      await deleteToken(validFid);
+      await deleteToken(fid);
     }
   } catch {
     // Storage failure shouldn't 500 the webhook; the host retries on non-200
