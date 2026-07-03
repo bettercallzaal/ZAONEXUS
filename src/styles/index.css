@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #111820;
+  --bg-deep: #0a1628;
+  --text: #e0ddaa;
+  --text-muted: rgba(224, 221, 170, 0.55);
+  --text-faint: rgba(224, 221, 170, 0.3);
+  --card-bg: rgba(255, 255, 255, 0.045);
+  --card-border: rgba(224, 221, 170, 0.09);
+  --card-border-hover: rgba(224, 221, 170, 0.22);
+  --nav-bg: rgba(17, 24, 32, 0.75);
+  color-scheme: dark;
+}
+
+.light {
+  --bg: #f0edc8;
+  --bg-deep: #e7e3b8;
+  --text: #141e27;
+  --text-muted: rgba(20, 30, 39, 0.55);
+  --text-faint: rgba(20, 30, 39, 0.32);
+  --card-bg: rgba(0, 0, 0, 0.035);
+  --card-border: rgba(20, 30, 39, 0.09);
+  --card-border-hover: rgba(20, 30, 39, 0.22);
+  --nav-bg: rgba(240, 237, 200, 0.75);
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+::selection {
+  background: rgba(245, 166, 35, 0.35);
+  color: var(--text);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--card-border-hover);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 166, 35, 0.4);
+}
+
+@layer utilities {
+  .glass {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+  .glass-hover {
+    transition: border-color 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+  }
+  .glass-hover:hover {
+    border-color: var(--card-border-hover);
+    transform: translateY(-2px);
+  }
+  .text-muted {
+    color: var(--text-muted);
+  }
+  .text-faint {
+    color: var(--text-faint);
+  }
+  .bg-surface {
+    background-color: var(--bg);
+  }
+  .bg-surface-deep {
+    background-color: var(--bg-deep);
+  }
+  .nav-blur {
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(20px) saturate(1.4);
+    -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  }
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-90vh);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
