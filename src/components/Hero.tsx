@@ -60,7 +60,7 @@ export function Hero({ onOpenSearch }: { onOpenSearch: () => void }) {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="mx-auto mt-5 max-w-xl text-center text-base text-muted sm:text-lg"
         >
-          Artists, builders, tools, tokens, and members — all of The ZAO ecosystem, searchable
+          Artists, builders, tools, tokens, and members: all of The ZAO ecosystem, searchable
           in seconds and always up to date.
         </motion.p>
 

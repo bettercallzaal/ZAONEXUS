@@ -65,7 +65,7 @@ export function MembersSpotlight() {
       <div className="mb-8">
         <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Members Spotlight</h2>
         <p className="mt-2 max-w-xl text-sm text-muted">
-          {members.length} ZAO members with their own corner of the ecosystem — artists,
+          {members.length} ZAO members with their own corner of the ecosystem: artists,
           builders, and creators shipping in the open.
         </p>
       </div>

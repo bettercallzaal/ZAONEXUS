@@ -56,7 +56,7 @@ export function StartHere() {
         <div>
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Start Here</h2>
           <p className="mt-2 max-w-xl text-sm text-muted">
-            New to The ZAO? These are the cleanest front doors — pick one and jump in.
+            New to The ZAO? These are the cleanest front doors: pick one and jump in.
           </p>
         </div>
       </div>

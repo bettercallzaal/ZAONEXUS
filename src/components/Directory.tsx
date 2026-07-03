@@ -39,7 +39,7 @@ export function Directory() {
       <div className="mb-6">
         <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">The Full Directory</h2>
         <p className="mt-2 max-w-xl text-sm text-muted">
-          Every link in the ecosystem — filter by category, audience, or tag to find exactly
+          Every link in the ecosystem: filter by category, audience, or tag to find exactly
           what you need.
         </p>
       </div>

@@ -21,7 +21,7 @@ export function Footer() {
             ZAO NEXUS
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted">
-            The living directory for The ZAO — a decentralized impact network of artists,
+            The living directory for The ZAO: a decentralized impact network of artists,
             builders, and supporters.
           </p>
         </div>
