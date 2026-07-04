@@ -4,14 +4,14 @@ All notable changes to ZAO Nexus will be documented in this file.
 
 ## [1.4.0] - 2026-06-06
 
-### ✨ Discovery features
+### NEW FEATURES: Discovery features
 
 - **Featured links** — links flagged `featured: true` render in a Featured grid at the top and get a star badge in-list. Seeded 6 marquee links (ZAO Website, ZAO OS App, Discord, WaveWarZ, $ZABAL Token, ZAO Artists).
 - **What's New** — links with an `addedDate` surface in a grid with a NEW badge (shown for the last 45 days). Seeded the 7 most recently added links.
 - **Tag filtering** — toolbar tag chips (top 18 by frequency) filter links across all categories; combine with search. Clear-all when active.
 - Plumbing: `groupLinks` now passes `featured` / `addedDate` through from `links.json`; `FlatLink` gains both fields.
 
-### 🔧 Audit fixes
+### FIXES: Audit fixes
 
 - ZOR DAO link `http://` → `https://`.
 - Removed a duplicate `paragraph.com/@thezao` entry ("ZAO Paragraph", same URL as "Daily Newsletter Articles"). Total **146 → 145** (`/community` 68, `/ecosystem` 101).
@@ -20,7 +20,7 @@ All notable changes to ZAO Nexus will be documented in this file.
 
 ## [1.3.2] - 2026-06-06
 
-### 🔗 Verified socials + cleanups
+### UPDATES: Verified socials + cleanups
 
 - **Artist socials** (verified via web search): added Goldilox (yesiamgoldilocks.com + Instagram) and NessytheRilla (SoundCloud + Facebook). Losi left as-is — the only "izzylosi" match is a different artist (Melbourne, AU), not the Cali/Colombia ZAO artist.
 - **`zaomusic.xyz`** added as an alternate-domain link mirroring thezao.com. Total **146 links** — `/community` 69, `/ecosystem` 102.
@@ -28,14 +28,14 @@ All notable changes to ZAO Nexus will be documented in this file.
 
 ## [1.3.1] - 2026-06-06
 
-### 🔗 Restored links + authoring tooling
+### UPDATES: Restored links + authoring tooling
 
 - **Re-added 6 links** dropped during the canonical consolidation: ZAO Artists, Music Releases, ZTalent Ecosystem (ZAO CHART), ZAO Leaderboard, $ZAO Respect Token, and the ZTalent Whitepaper (HackMD). Total now **145 links** — `/community` = 68, `/ecosystem` = 101.
 - **`scripts/add-link.js`** rewritten to append to the flat `app/data/links.json` (new schema: title/url/category/subcategory/description/tags/audience, with the canonical 9 categories) instead of the old nested `links.ts`.
 
 ## [1.3.0] - 2026-06-06
 
-### 🔄 Canonical data consolidation + GitHub sync
+### CHANGES: Canonical data consolidation + GitHub sync
 
 - **Canonical link set** - Replaced the bundled link data with a consolidated set of **139 links across 9 categories** (The ZAO, ZAO OS, Agents & Bots, ZAO Festivals, Community Projects, ZAO Members, Ecosystem & Tokens, ZAO Onchain, ZAO Stock), merged from three previously-drifted sources.
 - **Audience split** - Each link carries an `audience` (`community` / `ecosystem` / `both`). `/community` shows community + both (64); `/ecosystem` shows ecosystem + both (96). The 21 `both` links appear on each.
@@ -44,7 +44,7 @@ All notable changes to ZAO Nexus will be documented in this file.
 
 ## [1.1.0] - 2026-02-12
 
-### ✨ New Features
+### NEW FEATURES: New Features
 
 #### **Social Sharing**
 - **Share to X (Twitter)** - One-click sharing with custom message format
@@ -64,13 +64,13 @@ All notable changes to ZAO Nexus will be documented in this file.
 - **Hover States** - Improved button interactions
 - **Compact Layout** - Buttons integrated without cluttering design
 
-### 🎨 Design Improvements
+### DESIGN: Design Improvements
 - Stats displayed in highlighted card with brand colors
 - Social sharing icons using official X and Farcaster logos
 - Smooth button animations and hover effects
 - Better visual hierarchy with external link indicators
 
-### 🔧 Technical Updates
+### FIXES: Technical Updates
 - Added social sharing utility functions
 - Implemented clipboard API for copy functionality
 - Window.open for social share popups
@@ -80,11 +80,11 @@ All notable changes to ZAO Nexus will be documented in this file.
 
 ## [1.0.0] - 2026-02-12
 
-### 🎉 Initial Release - ZAO Nexus V1
+### RELEASE: Initial Release - ZAO Nexus V1
 
 A modern, responsive link directory for the ZAO community with 200+ curated links across 5 main categories.
 
-### ✨ Features
+### NEW FEATURES: Features
 
 #### **Core Functionality**
 - **Smart Search** - Real-time search across titles, descriptions, and URLs
@@ -126,7 +126,7 @@ A modern, responsive link directory for the ZAO community with 200+ curated link
 - **Icons**: Lucide React
 - **Deployment**: Vercel-ready
 
-### 🎨 Design System
+### DESIGN: Design System
 
 - **Brand Colors**: 
   - Dark Mode: `#141e27` background, `#e0ddaa` text
@@ -149,7 +149,7 @@ A modern, responsive link directory for the ZAO community with 200+ curated link
 - **Vercel Compatible**: Auto-deploy ready
 - **Webflow Embeddable**: Clean iframe integration
 
-### 🔧 Developer Features
+### FIXES: Developer Features
 
 - **Link Management Script** - `scripts/add-link.js` for easy link additions
 - **TypeScript Types** - Full type safety for link data

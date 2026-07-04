@@ -94,7 +94,7 @@ async function run() {
       lines.push(`| ${d.status || d.error} | ${d.category} | ${d.title} | ${d.url} |`);
     }
   } else {
-    lines.push(`All links healthy. 🎉`);
+    lines.push(`All links healthy.`);
   }
   const report = lines.join('\n') + '\n';
   await writeFile(REPORT, report);
