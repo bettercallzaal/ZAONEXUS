@@ -76,7 +76,7 @@ async function run() {
   }
   await Promise.all(Array.from({ length: CONCURRENCY }, worker));
 
-  const dead = results.filter(r => !r.ok).sort((a, b) => a.category.localeCompare(b.category));
+  const dead = results.filter(r => !r.ok).sort((a, b) => (a.category || '').localeCompare(b.category || ''));
   const lines = [];
   lines.push(`# Link health report`);
   lines.push('');
@@ -91,7 +91,8 @@ async function run() {
     lines.push(`| Status | Category | Title | URL |`);
     lines.push(`|---|---|---|---|`);
     for (const d of dead) {
-      lines.push(`| ${d.status || d.error} | ${d.category} | ${d.title} | ${d.url} |`);
+      const escapePipes = (s) => (s || '').replace(/\|/g, '\\|');
+      lines.push(`| ${escapePipes(d.status || d.error)} | ${escapePipes(d.category)} | ${escapePipes(d.title)} | ${escapePipes(d.url)} |`);
     }
   } else {
     lines.push(`All links healthy.`);

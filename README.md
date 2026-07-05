@@ -129,6 +129,7 @@ Optional filters (combine freely):
 | `subcategory` | `?subcategory=ZABAL Games` | links within a subcategory |
 | `audience` | `?audience=community` | `community` \| `ecosystem` \| `both` (includes `both`) |
 | `tag` | `?tag=wavewarz` | links carrying that tag |
+| `status` | `?status=live` | `live` \| `down` \| `paused` (missing status counts as `live`) |
 | `featured` | `?featured=true` | only featured links |
 | `q` | `?q=songjam` | search title/description/url/tags |
 | `limit` | `?limit=50` | cap the number returned |

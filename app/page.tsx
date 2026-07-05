@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import {
   Search, ChevronDown, Moon, Sun, Maximize2, Minimize2,
-  Copy, Check, ExternalLink, X, Star, Sparkles, Archive, Shuffle,
+  Copy, Check, ExternalLink, X, Star, Sparkles, Archive, Shuffle, Share2,
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -37,6 +37,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
   const [expandedCats, setExpandedCats] = useState<Set<string>>(new Set());
   const [expandedSubs, setExpandedSubs] = useState<Set<string>>(new Set());
   const [copied, setCopied]             = useState<string | null>(null);
+  const [viewShared, setViewShared]     = useState(false);
   const [linkData, setLinkData]         = useState<MainCategory[]>(linksData);
   const [selectedTags, setSelectedTags] = useState<Set<string>>(new Set());
   const searchRef = useRef<HTMLInputElement>(null);
@@ -66,6 +67,20 @@ export default function Home({ audience = 'community' }: { audience?: 'community
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
+  }, []);
+
+  // Shareable URL state: hydrate the search query + selected tags from
+  // ?q= and ?tags= on first load, then reflect any change back into the URL
+  // (via replaceState, no history spam) so ANY filtered view can be copied
+  // and shared as a deep link.
+  const didHydrate = useRef(false);
+  useEffect(() => {
+    const p = new URLSearchParams(window.location.search);
+    const q = p.get('q');
+    const tags = p.get('tags');
+    if (q) setSearchQuery(q);
+    if (tags) setSelectedTags(new Set(tags.split(',').map(s => s.trim()).filter(Boolean)));
+    didHydrate.current = true;
   }, []);
 
   const allData = useMemo(() => filterByAudience(linkData, currentAudience), [linkData, currentAudience]);
@@ -106,7 +121,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
   const topTags = useMemo(() => {
     const counts: Record<string, number> = {};
     allLinks.forEach(l => l.tags?.forEach(t => { counts[t] = (counts[t] || 0) + 1; }));
-    return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 18).map(e => e[0]);
+    return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 18) as [string, number][];
   }, [allLinks]);
 
   const isRecent = (d?: string) => {
@@ -119,6 +134,16 @@ export default function Home({ audience = 'community' }: { audience?: 'community
     setSelectedTags(p => { const n = new Set(p); n.has(t) ? n.delete(t) : n.add(t); return n; });
 
   const hasFilter = searchQuery.trim() !== '' || selectedTags.size > 0;
+
+  // Reflect the active filters into the URL so the current view is shareable.
+  useEffect(() => {
+    if (!didHydrate.current) return;
+    const p = new URLSearchParams();
+    if (searchQuery.trim()) p.set('q', searchQuery.trim());
+    if (selectedTags.size) p.set('tags', Array.from(selectedTags).join(','));
+    const qs = p.toString();
+    window.history.replaceState(null, '', qs ? `${window.location.pathname}?${qs}` : window.location.pathname);
+  }, [searchQuery, selectedTags]);
 
   const filtered = useMemo(() => {
     if (!hasFilter) return allData;
@@ -133,7 +158,8 @@ export default function Home({ audience = 'community' }: { audience?: 'community
               const matchesSearch = !q ||
                 l.title.toLowerCase().includes(q) ||
                 l.description.toLowerCase().includes(q) ||
-                l.url.toLowerCase().includes(q);
+                l.url.toLowerCase().includes(q) ||
+                (l.tags?.some(t => t.toLowerCase().includes(q)) ?? false);
               const matchesTags = selectedTags.size === 0 ||
                 (l.tags ? l.tags.some(t => selectedTags.has(t)) : false);
               return matchesSearch && matchesTags;
@@ -187,6 +213,25 @@ export default function Home({ audience = 'community' }: { audience?: 'community
 
   const shareFarcaster = (url: string, title: string) =>
     composeCast(`"${title}" on ZAO NEXUS`, url);
+
+  // Share the *current view* (including any active search/tag filters, which
+  // are encoded in the URL) — copy the deep link, or cast it on Farcaster.
+  const viewLabel = () =>
+    hasFilter
+      ? `ZAO NEXUS — ${filteredCount} link${filteredCount !== 1 ? 's' : ''}` +
+        (selectedTags.size ? ` tagged ${Array.from(selectedTags).join(', ')}` : '') +
+        (searchQuery.trim() ? ` for "${searchQuery.trim()}"` : '')
+      : `ZAO NEXUS — ${totalLinks} curated links for the ZAO community`;
+
+  const copyView = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setViewShared(true);
+      setTimeout(() => setViewShared(false), 2000);
+    } catch {}
+  };
+
+  const castView = () => composeCast(viewLabel(), window.location.href);
 
   const filteredCount = filtered.reduce(
     (t, c) => t + c.subcategories.reduce((s, sub) => s + sub.links.length, 0), 0
@@ -387,6 +432,41 @@ export default function Home({ audience = 'community' }: { audience?: 'community
               })}
             </div>
             <div style={{ display: 'flex', gap: 4 }}>
+              <button
+                onClick={copyView}
+                title={hasFilter ? 'Copy a shareable link to this filtered view' : 'Copy a shareable link to the Nexus'}
+                aria-label="Share this view"
+                style={{
+                  display: 'flex', alignItems: 'center', gap: 5,
+                  padding: '4px 11px', borderRadius: 6, fontSize: 12, fontWeight: 600,
+                  border: `1px solid ${viewShared ? accent : border}`,
+                  background: viewShared ? accent : 'transparent',
+                  color: viewShared ? '#0a1628' : accent,
+                  cursor: 'pointer', transition: 'all 0.12s',
+                }}
+              >
+                {viewShared ? <Check size={11} /> : <Share2 size={11} />}
+                {viewShared ? 'Copied!' : 'Share'}
+              </button>
+              {isMiniApp && (
+                <button
+                  onClick={castView}
+                  title="Cast this view to Farcaster"
+                  aria-label="Cast this view to Farcaster"
+                  style={{
+                    display: 'flex', alignItems: 'center',
+                    padding: '4px 9px', borderRadius: 6,
+                    border: `1px solid ${border}`, background: 'transparent', color: accent,
+                    cursor: 'pointer', transition: 'all 0.12s',
+                  }}
+                >
+                  <svg width="13" height="13" viewBox="0 0 1000 1000" fill="currentColor">
+                    <path d="M257.778 155.556H742.222V844.445H671.111V528.889H670.414C662.554 441.677 589.258 373.333 500 373.333C410.742 373.333 337.446 441.677 329.586 528.889H328.889V844.445H257.778V155.556Z"/>
+                    <path d="M128.889 253.333L157.778 351.111H182.222V746.667C169.949 746.667 160 756.616 160 768.889V795.556H155.556C143.283 795.556 133.333 805.505 133.333 817.778V844.445H382.222V817.778C382.222 805.505 372.273 795.556 360 795.556H355.556V768.889C355.556 756.616 345.606 746.667 333.333 746.667H306.667V253.333H128.889Z"/>
+                    <path d="M871.111 253.333L842.222 351.111H817.778V746.667C830.051 746.667 840 756.616 840 768.889V795.556H844.444C856.717 795.556 866.667 805.505 866.667 817.778V844.445H617.778V817.778C617.778 805.505 627.727 795.556 640 795.556H644.444V768.889C644.444 756.616 654.394 746.667 666.667 746.667H693.333V253.333H871.111Z"/>
+                  </svg>
+                </button>
+              )}
               {[
                 { icon: <Maximize2 size={11} />, label: 'Expand', fn: expandAll },
                 { icon: <Minimize2 size={11} />, label: 'Collapse', fn: collapseAll },
@@ -428,13 +508,14 @@ export default function Home({ audience = 'community' }: { audience?: 'community
               <span style={{ fontSize: 11, fontWeight: 600, color: faint, textTransform: 'uppercase', letterSpacing: '0.06em', marginRight: 2 }}>
                 Tags
               </span>
-              {topTags.map(t => {
+              {topTags.map(([t, count]) => {
                 const on = selectedTags.has(t);
                 return (
                   <button
                     key={t}
                     onClick={() => toggleTag(t)}
                     style={{
+                      display: 'flex', alignItems: 'center', gap: 4,
                       padding: '3px 9px', borderRadius: 20, fontSize: 12, fontWeight: 600,
                       border: `1px solid ${on ? accent : border}`,
                       background: on ? accent : 'transparent',
@@ -443,6 +524,7 @@ export default function Home({ audience = 'community' }: { audience?: 'community
                     }}
                   >
                     {t}
+                    <span style={{ fontSize: 10, fontWeight: 700, opacity: 0.6 }}>{count}</span>
                   </button>
                 );
               })}
@@ -858,11 +940,43 @@ export default function Home({ audience = 'community' }: { audience?: 'community
 
         {/* ── EMPTY STATE ── */}
         {filtered.length === 0 && (
-          <div style={{ textAlign: 'center', padding: '80px 0', color: faint }}>
-            <p style={{ fontSize: 17, fontWeight: 600, margin: '0 0 6px' }}>
-              No results for &ldquo;{searchQuery}&rdquo;
+          <div style={{ textAlign: 'center', padding: '64px 16px', color: faint }}>
+            <p style={{ fontSize: 17, fontWeight: 600, color: text, margin: '0 0 6px' }}>
+              Nothing matches
+              {searchQuery.trim() && <> &ldquo;{searchQuery.trim()}&rdquo;</>}
+              {selectedTags.size > 0 && <> {searchQuery.trim() ? '+ ' : ''}tagged {Array.from(selectedTags).join(', ')}</>}
             </p>
-            <p style={{ fontSize: 13, margin: 0 }}>Try a different search term</p>
+            <p style={{ fontSize: 13, margin: '0 0 18px' }}>
+              Clear your filters to browse all {totalLinks} links, or try a tag below.
+            </p>
+            <button
+              onClick={() => { setSearchQuery(''); setSelectedTags(new Set()); }}
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: 6,
+                padding: '8px 16px', borderRadius: 10, fontSize: 13, fontWeight: 700,
+                border: 'none', background: accent, color: '#0a1628', cursor: 'pointer',
+                marginBottom: 18,
+              }}
+            >
+              <X size={13} /> Clear filters
+            </button>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'center', maxWidth: 480, margin: '0 auto' }}>
+              {topTags.slice(0, 8).map(([t, count]) => (
+                <button
+                  key={t}
+                  onClick={() => { setSearchQuery(''); setSelectedTags(new Set([t])); }}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: 4,
+                    padding: '3px 9px', borderRadius: 20, fontSize: 12, fontWeight: 600,
+                    border: `1px solid ${border}`, background: 'transparent',
+                    color: text, opacity: 0.7, cursor: 'pointer',
+                  }}
+                >
+                  {t}
+                  <span style={{ fontSize: 10, fontWeight: 700, opacity: 0.6 }}>{count}</span>
+                </button>
+              ))}
+            </div>
           </div>
         )}
 

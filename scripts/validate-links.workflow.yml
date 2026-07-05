@@ -1,0 +1,32 @@
+# ZAO Nexus — links.json integrity gate.
+#
+# Validates the canonical dataset on every PR and push that touches it, so a
+# malformed entry can never reach `main` (and therefore the live runtime fetch).
+#
+# To enable: move this file to .github/workflows/validate-links.yml
+#   git mv scripts/validate-links.workflow.yml .github/workflows/validate-links.yml
+# (it ships under scripts/ because the app's OAuth token lacks the `workflow`
+# scope needed to push files under .github/workflows/.)
+
+name: validate-links
+
+on:
+  push:
+    paths:
+      - 'app/data/links.json'
+      - 'scripts/validate-links.mjs'
+  pull_request:
+    paths:
+      - 'app/data/links.json'
+      - 'scripts/validate-links.mjs'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate links.json
+        run: node scripts/validate-links.mjs
