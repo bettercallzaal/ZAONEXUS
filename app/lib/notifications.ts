@@ -7,6 +7,11 @@
 //
 // Env (set in Vercel when ready):
 //   KV_REST_API_URL, KV_REST_API_TOKEN   (Vercel KV / Upstash REST)
+//
+// SECURITY: All URLs are validated + allowlisted at webhook intake (webhook-validation.ts).
+// The sendNotification function applies an additional safeguard to skip non-allowlisted hosts.
+
+import { isAllowlistedNotificationHost } from './webhook-validation';
 
 const KV_URL = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL;
 const KV_TOKEN = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN;
@@ -62,6 +67,13 @@ export async function sendNotification(opts: { title: string; body: string; targ
   const notificationId = `nexus-${Date.now()}`;
   let sent = 0;
   for (const [url, toks] of Array.from(byUrl.entries())) {
+    // Double-check: skip any stored URLs that are no longer allowlisted
+    // (defense in depth in case allowlist changes)
+    if (!isAllowlistedNotificationHost(url)) {
+      console.warn(`[notifications] skipping non-allowlisted host: ${url}`);
+      continue;
+    }
+
     for (let i = 0; i < toks.length; i += 100) {
       const batch = toks.slice(i, i + 100);
       try {
