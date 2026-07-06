@@ -104,7 +104,7 @@ async function run() {
     lines.push('| URL | Seen in |', '|---|---|');
     for (const c of candidates) lines.push(`| ${c.url} | ${[...c.sources].join(', ')} |`);
   } else {
-    lines.push('No new candidates — the directory is current with these sources. 🎉');
+    lines.push('No new candidates - the directory is current with these sources.');
   }
   const report = lines.join('\n') + '\n';
   await writeFile(REPORT, report);

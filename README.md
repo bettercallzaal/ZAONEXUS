@@ -4,13 +4,13 @@
 
 A comprehensive two-route link directory featuring 479 curated links across 9 categories, plus 44 ecosystem brands. Built with Next.js 14, React 18, TypeScript, and TailwindCSS v3. Strategy D canonical rebuild per research/community/624.
 
-## ✨ Features
+## Features
 
 ### Core Functionality
-- 🔍 **Smart Search** - Real-time search across titles, descriptions, and URLs
-- 🎯 **Auto-Expand Results** - Automatically opens categories containing search matches
-- 📂 **Dual-Audience Routes** - Community-focused and ecosystem-focused views
-- 🔗 **479 Curated Links** - Across 9 categories, plus 44 ecosystem brands
+- [SEARCH] **Smart Search** - Real-time search across titles, descriptions, and URLs
+- [AUTO] **Auto-Expand Results** - Automatically opens categories containing search matches
+- [DUAL] **Dual-Audience Routes** - Community-focused and ecosystem-focused views
+- [LINKS] **479 Curated Links** - Across 9 categories, plus 44 ecosystem brands
 
 ### Two-Audience Architecture
 - **/community** - Member-facing content (ZAO holder resources, internal tools, governance)
@@ -18,22 +18,22 @@ A comprehensive two-route link directory featuring 479 curated links across 9 ca
 - **Smart Filtering** - Each link tagged with audience (`community`, `ecosystem`, or `both`)
 
 ### Discovery
-- ⭐ **Featured Links** - Marquee links pinned to a Featured grid + a star badge in-list (`featured: true`)
-- 🆕 **What's New** - Recently added links surfaced in a grid with a NEW badge (`addedDate`, last 45 days)
-- 🏷️ **Tag Filtering** - Filter links across all categories by tag (chips in the toolbar; combine with search)
+- [FEATURED] **Featured Links** - Marquee links pinned to a Featured grid + a star badge in-list (`featured: true`)
+- [NEW] **What's New** - Recently added links surfaced in a grid with a NEW badge (`addedDate`, last 45 days)
+- [TAGS] **Tag Filtering** - Filter links across all categories by tag (chips in the toolbar; combine with search)
 
 ### Navigation & UX
-- ⚡ **Quick Jump** - Instant scroll to any category
-- 📌 **Sticky Search** - Always accessible search bar
-- 🎨 **Dark/Light Mode** - Toggle between ZAO brand themes
-- 📱 **Fully Responsive** - Optimized for all devices
-- ✨ **Smooth Animations** - Professional transitions and hover effects
-- ♿ **Accessible** - Semantic HTML, keyboard-navigable, focus indicators
+- [FAST] **Quick Jump** - Instant scroll to any category
+- [STICKY] **Sticky Search** - Always accessible search bar
+- [THEMES] **Dark/Light Mode** - Toggle between ZAO brand themes
+- [RESPONSIVE] **Fully Responsive** - Optimized for all devices
+- [SMOOTH] **Smooth Animations** - Professional transitions and hover effects
+- [ACCESSIBLE] **Accessible** - Semantic HTML, keyboard-navigable, focus indicators
 
 ### Performance
-- ⚡ **Fast Loading** - Next.js 14 optimization
-- 🚀 **Instant Search** - Sub-50ms response time
-- 💾 **Efficient** - Optimized with React hooks
+- [FAST] **Fast Loading** - Next.js 14 optimization
+- [INSTANT] **Instant Search** - Sub-50ms response time
+- [EFFICIENT] **Efficient** - Optimized with React hooks
 
 ## Getting Started
 

@@ -95,7 +95,7 @@ async function run() {
       lines.push(`| ${escapePipes(d.status || d.error)} | ${escapePipes(d.category)} | ${escapePipes(d.title)} | ${escapePipes(d.url)} |`);
     }
   } else {
-    lines.push(`All links healthy. 🎉`);
+    lines.push(`All links healthy.`);
   }
   const report = lines.join('\n') + '\n';
   await writeFile(REPORT, report);
