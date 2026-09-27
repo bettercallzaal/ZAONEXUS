@@ -529,13 +529,13 @@ export const brands: Brand[] = [
     parent: 'bettercallzaal',
     status: 'live',
     // Team note: Joshua.eth (Josh) is the FOUNDER. Ryan ("Rskagy") is a SEPARATE
-    // person who authors the Bonfires SDK — do NOT conflate Josh and Ryan.
+    // person who authors the Bonfires SDK  -  do NOT conflate Josh and Ryan.
     // Plat0x = Carlos (technical architect). Jen Tran = business strategy (UNCONFIRMED).
     founders: ['Joshua.eth (Josh)'],
     staff: [
       'Plat0x / Carlos (technical architect)',
       'Ryan / Rskagy (Bonfires SDK author)',
-      'Jen Tran (business strategy — unconfirmed)'
+      'Jen Tran (business strategy  -  unconfirmed)'
     ],
     homepage: 'https://bonfires.ai',
     links: [
@@ -618,7 +618,7 @@ export const brands: Brand[] = [
       {
         title: 'Repository (archived)',
         url: 'https://github.com/bettercallzaal/fishbowlz',
-        description: 'Source code — project paused, fishbowlz.xyz is offline'
+        description: 'Source code  -  project paused, fishbowlz.xyz is offline'
       }
     ]
   },
@@ -854,8 +854,8 @@ export const brands: Brand[] = [
     stage: 'paused',
     tier: 'sub-brand',
     parent: 'the-zao',
-    status: 'paused', // was 'unknown' — reconciled to a dormant placeholder
-    links: [] // intentionally empty — no canonical links yet
+    status: 'paused', // was 'unknown'  -  reconciled to a dormant placeholder
+    links: [] // intentionally empty  -  no canonical links yet
   },
 
   {
@@ -867,7 +867,7 @@ export const brands: Brand[] = [
     tier: 'sub-brand',
     parent: 'the-zao',
     status: 'paused',
-    links: [] // intentionally empty — "coming soon", no surface yet
+    links: [] // intentionally empty  -  "coming soon", no surface yet
   },
 
   {
@@ -879,7 +879,7 @@ export const brands: Brand[] = [
     tier: 'sub-brand',
     parent: 'the-zao',
     status: 'paused',
-    links: [] // intentionally empty — "coming soon", no surface yet
+    links: [] // intentionally empty  -  "coming soon", no surface yet
   },
 
   {
@@ -891,7 +891,7 @@ export const brands: Brand[] = [
     tier: 'sub-brand',
     parent: 'the-zao',
     status: 'live',
-    links: [] // intentionally empty — staff contributor, no dedicated brand surface
+    links: [] // intentionally empty  -  staff contributor, no dedicated brand surface
   },
 
   // Other Ecosystems & Tools (if any should be tracked)
@@ -921,11 +921,6 @@ export const brands: Brand[] = [
         description: 'Live leaderboard JSON for ZABAL holders'
       },
       {
-        title: 'Magnetiq Zabal Connector (zabal.lol)',
-        url: 'https://app.magnetiq.xyz/brand/ZABAL/magnet/Zabal%20Connector',
-        description: 'ZABAL x Magnetiq partnership magnet. Vanity URL: zabal.lol'
-      },
-      {
         title: 'Bonfires KG for ZABAL',
         url: 'https://graph.bonfires.ai/zabal',
         description: 'ZABAL knowledge-graph view'
@@ -934,31 +929,6 @@ export const brands: Brand[] = [
         title: 'Incented org',
         url: 'https://incented.co/organizations/zabal',
         description: 'ZABAL on Incented'
-      },
-      {
-        title: 'SongJam ZABAL hub',
-        url: 'https://songjam.space/zabal',
-        description: 'ZABAL track on SongJam'
-      }
-    ]
-  },
-
-  {
-    slug: 'magnetiq',
-    name: 'Magnetiq',
-    tagline: 'Brand-magnet platform partnered with ZABAL',
-    description: 'Magnetiq powers the ZABAL Connector magnet at zabal.lol -> app.magnetiq.xyz/brand/ZABAL. Partnership for ecosystem activation flows.',
-    stage: 'active',
-    tier: 'sub-brand',
-    parent: 'bettercallzaal',
-    status: 'live',
-    homepage: 'https://app.magnetiq.xyz/brand/ZABAL/magnet/Zabal%20Connector',
-    x: 'magnetiq_xyz',
-    links: [
-      {
-        title: 'ZABAL Connector (zabal.lol)',
-        url: 'https://app.magnetiq.xyz/brand/ZABAL/magnet/Zabal%20Connector',
-        description: 'Vanity: zabal.lol -> ZABAL magnet on Magnetiq'
       }
     ]
   },
@@ -986,8 +956,8 @@ export const brands: Brand[] = [
   {
     slug: 'zabal-gamez',
     name: 'ZABAL Gamez',
-    tagline: 'Season 1 — 3-month community buildathon',
-    description: 'ZABAL Gamez Season 1 is live: a 3-month buildathon running daily workshops. Day 1 (Jun 1 2026) shipped two workshops — yerbearserker on Empire Builder (a tokenless ZABAL Gamez Empire was created live) and Joshua.eth + Plat0x on Bonfire. Day 2 (Jun 2 2026) Ohnahji on livestreaming.',
+    tagline: 'Season 1  -  3-month community buildathon',
+    description: 'ZABAL Gamez Season 1 is live: a 3-month buildathon running daily workshops. Day 1 (Jun 1 2026) shipped two workshops  -  yerbearserker on Empire Builder (a tokenless ZABAL Gamez Empire was created live) and Joshua.eth + Plat0x on Bonfire. Day 2 (Jun 2 2026) Ohnahji on livestreaming.',
     stage: 'active',
     tier: 'project',
     parent: 'bettercallzaal',
@@ -1034,12 +1004,12 @@ export const brands: Brand[] = [
     ]
   },
 
-  // $ZAO Respect — soulbound reputation token (distinct from tradable $ZABAL)
+  // $ZAO Respect  -  soulbound reputation token (distinct from tradable $ZABAL)
   {
     slug: 'zao-respect-token',
     name: '$ZAO Respect',
     tagline: 'Soulbound reputation token for ZAO members',
-    description: 'The $ZAO Respect token is illiquid (not for sale or trade) and soulbound (non-transferable), representing a member\'s on-chain identity and contributions to The ZAO. Allocated via the Respect Game / Hats role tree — distinct from the tradable $ZABAL token.',
+    description: 'The $ZAO Respect token is illiquid (not for sale or trade) and soulbound (non-transferable), representing a member\'s on-chain identity and contributions to The ZAO. Allocated via the Respect Game / Hats role tree  -  distinct from the tradable $ZABAL token.',
     stage: 'active',
     tier: 'project',
     parent: 'the-zao',
@@ -1052,12 +1022,12 @@ export const brands: Brand[] = [
   },
 
   // ZAO Music artist roster (sub-brands under The ZAO). Profiles live at thezao.com/artists/<slug>.
-  // Socials are search-derived where included — verify before treating as canonical.
+  // Socials are search-derived where included  -  verify before treating as canonical.
   {
     slug: 'faetd',
     name: 'FAETD',
     tagline: 'House producer & sound engineer',
-    description: 'Filip, aka FAETD — a music producer and sound engineer with 10+ years making electronic music, mainly house. ZAO Music artist.',
+    description: 'Filip, aka FAETD  -  a music producer and sound engineer with 10+ years making electronic music, mainly house. ZAO Music artist.',
     stage: 'active',
     tier: 'sub-brand',
     parent: 'the-zao',
