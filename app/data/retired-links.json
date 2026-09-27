@@ -1,0 +1,235 @@
+[
+  {
+    "title": "WaveWarZ OG Badge - Magnetiq",
+    "url": "https://app.magnetiq.xyz/brand/WaveWarZ/magnet/WaveWarZ%20OGz",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "Collect the official WaveWarZ OG Badge on Magnetiq.",
+    "tags": [
+      "wavewarz",
+      "badge",
+      "magnetiq"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "WaveWarZ Songjam Leaderboard",
+    "url": "https://leaderboard.songjam.space/",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "WaveWarZ leaderboard powered by Songjam.",
+    "tags": [
+      "wavewarz",
+      "leaderboard",
+      "songjam"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Songjam Interview",
+    "url": "https://x.com/SongjamSpace/status/1957865525545197905",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ Content",
+    "description": "The Future of Music Engagement with Adam Place.",
+    "tags": [
+      "wavewarz",
+      "interview",
+      "songjam"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Magnetiq X",
+    "url": "https://x.com/magnetiq_xyz",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ Partners",
+    "description": "Follow Magnetiq on X.",
+    "tags": [
+      "wavewarz",
+      "partner",
+      "magnetiq"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZABAL on Songjam",
+    "url": "https://songjam.space/zabal",
+    "category": "Community Projects",
+    "subcategory": "ZABAL",
+    "description": "ZABAL hub on Songjam.",
+    "tags": [
+      "zabal",
+      "songjam"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "MAGNETIQ",
+    "url": "https://app.magnetiq.xyz",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "Proof of Meet hub - verify real-world connections and earn attestations.",
+    "tags": [
+      "partner",
+      "pom",
+      "attestation"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "SongJam",
+    "url": "https://songjam.space/zabal",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "Live audio spaces & ZABAL mention leaderboard - host rooms, earn points.",
+    "tags": [
+      "partner",
+      "audio",
+      "leaderboard"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZABAL Connector (Magnetiq)",
+    "url": "https://app.magnetiq.xyz/brand/ZABAL/magnet/Zabal%20Connector",
+    "category": "Community Projects",
+    "subcategory": "ZABAL",
+    "description": "ZABAL Connector (Magnetiq) on Magnetiq.",
+    "tags": [
+      "zabal",
+      "magnetiq"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "SongJam (platform)",
+    "url": "https://songjam.space",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "Songjam \u2014 turn X/Twitter Spaces into music drops and contribution leaderboards.",
+    "tags": [
+      "partner",
+      "audio",
+      "songjam"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Magnetiq (site)",
+    "url": "https://magnetiq.xyz",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "Magnetiq on Magnetiq.",
+    "tags": [
+      "partner",
+      "pom",
+      "magnetiq"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "SongJam X",
+    "url": "https://x.com/SongjamSpace",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "SongJam on X (Twitter).",
+    "tags": [
+      "partner",
+      "songjam",
+      "x"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "SongJam UI (repo)",
+    "url": "https://github.com/SongjamSpace/songjam-ui",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "Source code on GitHub (SongjamSpace/songjam-ui).",
+    "tags": [
+      "github",
+      "songjam"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "SongJam Site (repo)",
+    "url": "https://github.com/SongjamSpace/songjam-site",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "Source code on GitHub (SongjamSpace/songjam-site).",
+    "tags": [
+      "github",
+      "songjam"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "ZABAL Gamez (Magnetiq)",
+    "url": "https://app.magnetiq.xyz/brand/zabal/magnet/zabal-gamez",
+    "category": "Community Projects",
+    "subcategory": "ZABAL Gamez",
+    "description": "ZABAL Gamez (Magnetiq) on Magnetiq.",
+    "tags": [
+      "zabal",
+      "games",
+      "magnetiq"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "$SANG on CoinGecko",
+    "url": "https://www.coingecko.com/en/coins/songjam-by-virtuals",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Tokens",
+    "description": "$SANG on CoinGecko \u2014 market data on CoinGecko.",
+    "tags": [
+      "sang",
+      "songjam",
+      "token"
+    ],
+    "audience": "ecosystem"
+  },
+  {
+    "title": "Songjam Site (leaderboard)",
+    "url": "https://songjam-site-delta.vercel.app",
+    "category": "Community Projects",
+    "subcategory": "WaveWarZ",
+    "description": "Songjam leaderboard + music-drops frontend \u2014 aggregates Farcaster, Space, and timeline contribution points into a live leaderboard.",
+    "tags": [
+      "music",
+      "leaderboard",
+      "farcaster",
+      "app"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  },
+  {
+    "title": "Songjam Site (repo)",
+    "url": "https://github.com/bettercallzaal/songjam-site",
+    "category": "The ZAO",
+    "subcategory": "Open Source",
+    "description": "Source for the Songjam leaderboard + music-drops frontend.",
+    "tags": [
+      "github",
+      "music",
+      "open-source"
+    ],
+    "audience": "both"
+  },
+  {
+    "title": "Songjam on GitHub",
+    "url": "https://github.com/SongjamSpace",
+    "category": "Ecosystem & Tokens",
+    "subcategory": "Partners",
+    "description": "Songjam's open-source GitHub org \u2014 the X/Spaces-to-music-drops platform behind the WaveWarZ leaderboard and ZABAL spaces.",
+    "tags": [
+      "partner",
+      "songjam",
+      "open-source"
+    ],
+    "audience": "ecosystem",
+    "addedDate": "2026-06-06"
+  }
+]
