@@ -14,6 +14,45 @@ export interface MainCategory {
   subcategories: Subcategory[];
 }
 
+export interface FeaturedProject {
+  id: string;
+  name: string;
+  tagline: string;
+  websiteUrl: string;
+  sectionId: string;
+}
+
+export const featuredProjects: FeaturedProject[] = [
+  {
+    id: 'wavewarz',
+    name: 'WaveWarZ',
+    tagline: 'Live-Traded Music Battles',
+    websiteUrl: 'https://wavewarz.com',
+    sectionId: 'wavewarz',
+  },
+  {
+    id: 'fractals',
+    name: 'ZAO Fractals',
+    tagline: 'Community Governance',
+    websiteUrl: 'https://thezao.com',
+    sectionId: 'zao-fractals',
+  },
+  {
+    id: 'festivals',
+    name: 'ZAO Festivals',
+    tagline: 'Web3 Music Events',
+    websiteUrl: 'https://zaofestivals.com',
+    sectionId: 'zao-festivals',
+  },
+  {
+    id: 'zabal',
+    name: 'ZABAL',
+    tagline: 'Streaming & Coordination',
+    websiteUrl: 'https://zabal.art',
+    sectionId: 'zabal',
+  },
+];
+
 export const linksData: MainCategory[] = [
   {
     mainCategory: "ZAO Onchain",
@@ -78,6 +117,16 @@ export const linksData: MainCategory[] = [
         links: [
           { title: "Daily Newsletter Articles", url: "https://paragraph.xyz/@thezao", description: "Read daily newsletter articles." },
           { title: "Subscribe to the newsletter", url: "https://paragraph.xyz/@thezao/subscribe", description: "Subscribe for daily updates." }
+        ]
+      },
+      {
+        subTitle: "ZAO Fractals",
+        links: [
+          { title: "ZAO Fractal Events (Luma)", url: "https://lu.ma/zao", description: "Join weekly ZAO Fractal governance sessions on Luma." },
+          { title: "ZAO Discord", url: "https://discord.gg/ACJyYQH3BE", description: "Participate in Fractal discussions on Discord." },
+          { title: "Hats Protocol (ZAO ORG)", url: "https://hats.thezao.com", description: "View the ZAO organizational structure using Hats Protocol." },
+          { title: "ZAO Whitepaper (Governance)", url: "https://app.charmverse.io/the-zao/the-zao-whitepaper-draft-2-6565388910657037", description: "Learn about ZAO's fractal governance model in the whitepaper." },
+          { title: "$ZAO Respect Token", url: "https://www.thezao.com/zao-token", description: "Earn soulbound ZAO Respect tokens through community participation." }
         ]
       }
     ]

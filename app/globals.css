@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --bg-color: #141e27;
-  --text-color: #e0ddaa;
-  --accent-bg: #e0ddaa;
-  --accent-text: #141e27;
-  --hover-border: #e0ddaa;
-  --link-bg: #1a2834;
+  --bg-color: #e0ddaa;
+  --text-color: #141e27;
+  --accent-bg: #141e27;
+  --accent-text: #e0ddaa;
+  --hover-border: #141e27;
+  --link-bg: #d4d1a0;
 }
 
 body {
@@ -19,12 +19,12 @@ body {
 }
 
 .dark-mode {
-  --bg-color: #e0ddaa;
-  --text-color: #141e27;
-  --accent-bg: #141e27;
-  --accent-text: #e0ddaa;
-  --hover-border: #141e27;
-  --link-bg: #d4d1a0;
+  --bg-color: #141e27;
+  --text-color: #e0ddaa;
+  --accent-bg: #e0ddaa;
+  --accent-text: #141e27;
+  --hover-border: #e0ddaa;
+  --link-bg: #1a2834;
 }
 
 .fade-in {
@@ -57,4 +57,30 @@ button:focus-visible,
 a:focus-visible {
   outline: 2px solid var(--accent-bg);
   outline-offset: 2px;
+}
+
+/* Hero Section Styles */
+.hero-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(0,0,0,0.05) 100%);
+  pointer-events: none;
+}
+
+.hero-card:hover {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+/* Scroll margin for sections */
+[id] {
+  scroll-margin-top: 10rem;
 }
